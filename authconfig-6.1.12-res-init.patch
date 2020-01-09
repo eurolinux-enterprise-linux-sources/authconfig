@@ -1,0 +1,20 @@
+diff -up authconfig-6.1.12/acutilmodule.c.res-init authconfig-6.1.12/acutilmodule.c
+--- authconfig-6.1.12/acutilmodule.c.res-init	2010-12-23 17:38:53.000000000 +0100
++++ authconfig-6.1.12/acutilmodule.c	2014-06-19 10:26:34.667131142 +0200
+@@ -20,6 +20,8 @@
+ 
+ #include "config.h"
+ #include <Python.h>
++#include <netinet/in.h>
++#include <arpa/nameser.h>
+ #include <resolv.h>
+ #include <unistd.h>
+ 
+@@ -60,6 +62,7 @@ resolver_send(PyObject *self, PyObject *
+ 	
+ 	asize = DEFAULT_ASIZE;
+ 	ans = malloc(asize);
++	res_init();
+ 	do {
+ 		rv = res_send(req, reqlen, ans, asize);
+ 		if (rv >= asize) {

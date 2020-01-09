@@ -1,0 +1,23 @@
+diff -up authconfig-6.1.12/authinfo.py.sssd-config authconfig-6.1.12/authinfo.py
+--- authconfig-6.1.12/authinfo.py.sssd-config	2014-06-17 16:23:14.000000000 +0200
++++ authconfig-6.1.12/authinfo.py	2014-06-17 16:32:41.526721432 +0200
+@@ -1302,6 +1302,7 @@ class AuthInfo:
+ 		if SSSDConfig:
+ 			try:
+ 				self.sssdConfig = SSSDConfig.SSSDConfig()
++				self.sssdConfig.new_config()
+ 			except IOError:
+ 				pass
+ 		self.save_groups = [
+@@ -1658,9 +1659,11 @@ class AuthInfo:
+ 	def readSSSD(self, ref):
+ 		if not self.sssdConfig:
+ 			return True
++		self.sssdConfig = SSSDConfig.SSSDConfig()
+ 		try:
+ 			self.sssdConfig.import_config(all_configs[CFG_SSSD].origPath)
+ 		except (IOError, SSSDConfig.ParsingError):
++			self.sssdConfig = SSSDConfig.SSSDConfig()
+ 			self.sssdConfig.new_config()
+ 		try:
+ 			domain = self.sssdDomain = self.sssdConfig.get_domain(SSSD_AUTHCONFIG_DOMAIN)

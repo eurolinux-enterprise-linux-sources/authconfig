@@ -1,0 +1,108 @@
+diff -up authconfig-6.1.12/authinfo.py.backupshadow authconfig-6.1.12/authinfo.py
+--- authconfig-6.1.12/authinfo.py.backupshadow	2014-06-17 15:37:18.000000000 +0200
++++ authconfig-6.1.12/authinfo.py	2014-06-17 15:54:07.043379702 +0200
+@@ -206,7 +206,7 @@ def checkNSS(configuration, candidate):
+ 	return None
+ 
+ def openfdLocked(filename, mode, perms):
+-	fd = -1
++	fd = None
+ 	try:
+ 		fd = os.open(filename, mode, perms)
+ 		if mode == os.O_RDONLY:
+@@ -214,7 +214,7 @@ def openfdLocked(filename, mode, perms):
+ 		else:
+ 			fcntl.lockf(fd, fcntl.LOCK_EX)
+ 	except OSError as (errno, strerr):
+-		if fd != -1:
++		if fd != None:
+ 			try:
+ 				os.close(fd)
+ 			except OSError:
+@@ -985,9 +985,14 @@ class FileBackup:
+ 			srcfd = openfdLocked(src, os.O_RDONLY, 0)
+ 		except IOError:
+ 			return True
++		try:
++			mode = stat.S_IMODE(os.fstat(srcfd).st_mode)
++		except (IOError, OSError):
++			os.close(srcfd)
++			return True
+ 
+ 		try:
+-			destfile = SafeFile(dest, 0644)
++			destfile = SafeFile(dest, mode)
+ 			destfile.rewind()
+ 		except IOError:
+ 			rv = False
+@@ -1040,6 +1045,13 @@ class FileBackup:
+ 		if rv and os.path.isfile(backuppath):
+ 			rv = self.safeCopy(backuppath, self.origPath)
+ 
++		try:
++			if rv:
++				call(["/sbin/restorecon", self.origPath],
++					stderr=os.open('/dev/null', os.O_WRONLY))
++		except (IOError, OSError):
++			pass
++
+ 		return rv
+ 
+ def readCache():
+@@ -1113,7 +1125,7 @@ class CacheBackup(FileBackup):
+ (CFG_HESIOD, CFG_YP, CFG_LDAP, CFG_NSSLDAP, CFG_PAMLDAP, CFG_NSLCD, CFG_OPENLDAP, CFG_KRB5,
+ 	CFG_KRB, CFG_PAM_PKCS11, CFG_SMB, CFG_NSSWITCH, CFG_CACHE,
+ 	CFG_PAM, CFG_PASSWORD_PAM, CFG_FINGERPRINT_PAM, CFG_SMARTCARD_PAM, CFG_AUTHCONFIG, CFG_NETWORK, CFG_LIBUSER,
+-	CFG_LOGIN_DEFS, CFG_SSSD) = range(0, 22)
++	CFG_LOGIN_DEFS, CFG_SSSD, CFG_SHADOW, CFG_PASSWD, CFG_GSHADOW, CFG_GROUP) = range(0, 26)
+ all_configs = [
+ 	FileBackup("hesiod.conf", SYSCONFDIR+"/hesiod.conf"),
+ 	FileBackup("yp.conf", SYSCONFDIR+"/yp.conf"),
+@@ -1136,7 +1148,11 @@ all_configs = [
+ 	FileBackup("network", SYSCONFDIR+"/sysconfig/network"),
+ 	FileBackup("libuser.conf", SYSCONFDIR+"/libuser.conf"),
+ 	FileBackup("login.defs", SYSCONFDIR+"/login.defs"),
+-	FileBackup("sssd.conf", SYSCONFDIR+"/sssd/sssd.conf")]
++	FileBackup("sssd.conf", SYSCONFDIR+"/sssd/sssd.conf"),
++	FileBackup("shadow", SYSCONFDIR+"/shadow"),
++	FileBackup("passwd", SYSCONFDIR+"/passwd"),
++	FileBackup("gshadow", SYSCONFDIR+"/gshadow"),
++	FileBackup("group", SYSCONFDIR+"/group")]
+ 
+ sssdopt_map = {
+ 	'ldapServer': 'ldap_uri',
+@@ -1322,7 +1338,8 @@ class AuthInfo:
+ 		("enableSSSD", "b"), ("enableSSSDAuth", "b"), ("enableForceLegacy", "b"),
+ 		("ipav2Server", "i"), ("ipav2Domain", "i"), ("ipav2Realm", "c"),
+ 		("enableIPAv2", "b"), ("ipaDomainJoined", "b"), ("ipav2NoNTP", "b")]),
+-	SaveGroup(self.writeNetwork, [("nisDomain", "c")])]
++	SaveGroup(self.writeNetwork, [("nisDomain", "c")]),
++	SaveGroup(self.toggleShadow, None, [("enableShadow", "b")])]
+ 
+ 	def setParam(self, attr, value, ref):
+ 		oldval = getattr(self, attr)
+@@ -3518,6 +3535,7 @@ class AuthInfo:
+ 			ret = ret and self.writePAM()
+ 			ret = ret and self.writeSysconfig()
+ 			ret = ret and self.writeNetwork()
++			ret = ret and self.toggleShadow()
+ 		except (OSError, IOError):
+ 			return False
+ 		return ret
+@@ -3692,6 +3710,8 @@ class AuthInfo:
+ 		print "Authenticate system accounts against network services is %s" % formatBool(self.enableSysNetAuth)
+ 
+ 	def toggleShadow(self):
++		for cfg in (CFG_SHADOW, CFG_PASSWD, CFG_GSHADOW, CFG_GROUP):
++			all_configs[cfg].backup(self.backupDir)
+ 		# now, do file manipulation on the password files themselves.
+ 		if self.enableShadow:
+ 			os.system("/usr/sbin/pwconv")
+@@ -3755,7 +3775,6 @@ class AuthInfo:
+ 				self.messageCB(_("IPAv2 domain join was not succesful. The ipa-client-install command failed."))
+ 
+ 	def post(self, nostart):
+-		self.toggleShadow()
+ 		onlystart = not self.confChanged
+ 		toggleNisService(self.enableNIS, self.nisDomain, nostart, onlystart)
+ 		toggleSplatbindService(self.enableWinbind or self.enableWinbindAuth,

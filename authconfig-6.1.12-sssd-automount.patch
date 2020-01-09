@@ -1,0 +1,59 @@
+diff -up authconfig-6.1.12/authinfo.py.sssd-automount authconfig-6.1.12/authinfo.py
+--- authconfig-6.1.12/authinfo.py.sssd-automount	2014-06-17 16:12:22.000000000 +0200
++++ authconfig-6.1.12/authinfo.py	2014-06-17 16:23:14.892417431 +0200
+@@ -116,6 +116,8 @@ PATH_PAM_PKCS11 = AUTH_MODULE_DIR + "/pa
+ PATH_PAM_FPRINTD = AUTH_MODULE_DIR + "/pam_fprintd.so"
+ PATH_PAM_SSS = AUTH_MODULE_DIR + "/pam_sss.so"
+ 
++PATH_LIBSSS_AUTOFS = "/usr" + LIBDIR + "/sssd/modules/libsss_autofs.so"
++
+ PATH_WINBIND_NET = "/usr/bin/net"
+ PATH_IPA_CLIENT_INSTALL = "/usr/sbin/ipa-client-install"
+ 
+@@ -2880,10 +2882,17 @@ class AuthInfo:
+ 				self.sssdDomain = self.sssdConfig.get_domain(SSSD_AUTHCONFIG_DOMAIN)
+ 		domain = self.sssdDomain
+ 
++		try:
++			self.sssdConfig.get_service('autofs')
++		except SSSDConfig.NoServiceError:
++			self.sssdConfig.new_service('autofs')
++		self.sssdConfig.activate_service('autofs')
++
+ 		activate = False
+ 		if self.enableLDAP:
+ 			activate = True
+ 			self.changeProvider(domain, 'ldap', 'id')
++			self.changeProvider(domain, 'ldap', 'autofs')
+ 		if self.enableKerberos:
+ 			self.changeProvider(domain, 'krb5', 'auth')
+ 			self.changeProvider(domain, 'krb5', 'chpass')
+@@ -3153,13 +3162,12 @@ class AuthInfo:
+ 			if self.enableWinbind:
+ 				users += " winbind"
+ 
+-			# Now replace sss with ldap or remove it
+-			# in all non-user info entries - this might be changed in future
+-			# if sssd is able to provide automounts, netgroups, and so on.
+-			if self.enableLDAP and self.implicitSSSD:
+-				normal = normal.replace("sss", "ldap")
+-			else:
+-				normal = normal.replace(" sss", "")
++			if not os.access(PATH_LIBSSS_AUTOFS, os.R_OK):
++				# No support for automount in sssd
++				if self.enableLDAP and self.implicitSSSD:
++					normal = normal.replace("sss", "ldap")
++				else:
++					normal = normal.replace(" sss", "")
+ 
+ 			# Hostnames we treat specially.
+ 			hosts += " files"
+@@ -3249,7 +3257,7 @@ class AuthInfo:
+ 				output += "\n"
+ 			if not wrotenetgroup:
+ 				output += "netgroup:  "
+-				output += normal
++				output += netgroup
+ 				output += "\n"
+ 			if not wroteautomount:
+ 				output += "automount: "

@@ -1,7 +1,7 @@
 Summary: Command line tool for setting up authentication from network services
 Name: authconfig
 Version: 6.1.12
-Release: 13%{?dist}
+Release: 19%{?dist}
 License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -22,6 +22,19 @@ Patch11: authconfig-6.1.12-services.patch
 Patch12: authconfig-6.1.12-translations-update.patch
 Patch13: authconfig-6.1.12-idmap-range.patch
 Patch14: authconfig-6.1.12-sssd-restart.patch
+Patch15: authconfig-6.1.12-backupshadow.patch
+Patch16: authconfig-6.1.12-ldapbase.patch
+Patch17: authconfig-6.1.12-sssd-automount.patch
+Patch18: authconfig-6.1.12-sssd-config.patch
+Patch19: authconfig-6.1.12-write-error.patch
+Patch20: authconfig-6.1.12-save-join.patch
+Patch21: authconfig-6.1.12-mkhomedir-args.patch
+Patch22: authconfig-6.1.12-utf8-usage.patch
+Patch23: authconfig-6.1.12-ldap-uri.patch
+Patch24: authconfig-6.1.12-restarts.patch
+Patch25: authconfig-6.1.12-join-error.patch
+Patch26: authconfig-6.1.12-res-init.patch
+Patch27: authconfig-6.1.12-man-services.patch
 Requires: newt-python, pam >= 0.99.10.0, python
 Conflicts: pam_krb5 < 1.49, samba-common < 3.0, samba-client < 3.0
 Conflicts: nss_ldap < 254, sssd < 0.99.1
@@ -62,6 +75,19 @@ authentication schemes.
 %patch12 -p1 -b .tupdate
 %patch13 -p1 -b .idmap
 %patch14 -p1 -b .sssd-restart
+%patch15 -p1 -b .backupshadow
+%patch16 -p1 -b .ldapbase
+%patch17 -p1 -b .sssd-automount
+%patch18 -p1 -b .sssd-config
+%patch19 -p1 -b .write-error
+%patch20 -p1 -b .save-join
+%patch21 -p1 -b .mkhomedir-args
+%patch22 -p1 -b .utf8-usage
+%patch23 -p1 -b .ldap-uri
+%patch24 -p1 -b .restarts
+%patch25 -p1 -b .join-error
+%patch26 -p1 -b .res-init
+%patch27 -p1 -b .man-services
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -fPIC"; export CFLAGS
@@ -138,6 +164,32 @@ authconfig --update --nostart >/dev/null 2>&1 || :
 %{_datadir}/icons/hicolor/48x48/apps/system-config-authentication.*
 
 %changelog
+* Fri Jul 25 2014 Tomas Mraz <tmraz@redhat.com> - 6.1.12-19
+- use --unattended option when ipa_client_install is called from GUI
+
+* Tue Jul  8 2014 Tomas Mraz <tmraz@redhat.com> - 6.1.12-18
+- additional documentation of services startup (#1116372)
+
+* Thu Jun 19 2014 Tomas Mraz <tmraz@redhat.com> - 6.1.12-17
+- keep output of domain join commands visible in command line UI
+
+* Thu Jun 19 2014 Tomas Mraz <tmraz@redhat.com> - 6.1.12-16
+- call res_init before sending DNS query (#800368)
+
+* Wed Jun 18 2014 Tomas Mraz <tmraz@redhat.com> - 6.1.12-15
+- save backups of password files when toggling shadow support (#852997)
+- read and overwrite only the general ldap base (#912851)
+- use sss for automount
+- more robust initialization of SSSDConfig (#1016404)
+- output error message from write error
+- properly set IPAV2DOMAINJOINED and call ipa client uninstall
+  when appropriate (#1023286)
+- add umask=0077 to initial pam_mkhomedir args (#1025065)
+- fix broken --help output (#1066811)
+- check whether ldap URI is valid (#707590)
+- restart only services affected by configuration changes (#1023293, #975203)
+- report error from winbind and ipa domain joins
+
 * Wed Dec  5 2012 Tomas Mraz <tmraz@redhat.com> - 6.1.12-13
 - do not start or restart sssd with incomplete domain (#874527)
 

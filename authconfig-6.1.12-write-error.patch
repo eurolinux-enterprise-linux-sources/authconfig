@@ -1,0 +1,19 @@
+diff -up authconfig-6.1.12/authinfo.py.write-error authconfig-6.1.12/authinfo.py
+--- authconfig-6.1.12/authinfo.py.write-error	2014-06-17 16:32:41.000000000 +0200
++++ authconfig-6.1.12/authinfo.py	2014-06-17 16:54:21.869252160 +0200
+@@ -3564,6 +3564,7 @@ class AuthInfo:
+ 			ret = ret and self.writeNetwork()
+ 			ret = ret and self.toggleShadow()
+ 		except (OSError, IOError):
++			sys.stderr.write(str(sys.exc_info()[1]) + "\n")
+ 			return False
+ 		return ret
+ 
+@@ -3579,6 +3580,7 @@ class AuthInfo:
+ 					self.confChanged = True
+ 					ret = ret and group.saveFunction()
+ 		except (OSError, IOError):
++			sys.stderr.write(str(sys.exc_info()[1]) + "\n")
+ 			return False
+ 		return ret
+ 

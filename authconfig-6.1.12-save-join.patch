@@ -1,0 +1,118 @@
+diff -up authconfig-6.1.12/authconfig.py.save-join authconfig-6.1.12/authconfig.py
+--- authconfig-6.1.12/authconfig.py.save-join	2014-06-17 16:12:22.000000000 +0200
++++ authconfig-6.1.12/authconfig.py	2014-06-17 17:00:36.968059101 +0200
+@@ -467,10 +467,18 @@ class Authconfig:
+ 		return True
+ 
+ 	def joinDomain(self):
++		ret = True
+ 		if self.options.winbindjoin:
+-			self.info.joinDomain(True)
++			ret = self.info.joinDomain(True)
+ 		if self.options.ipav2join != None:
+-			self.info.joinIPADomain(True)
++			if self.info.joinIPADomain(True):
++				# This is a hack but otherwise we cannot
++				# get the IPAV2DOMAINJOINED saved
++				# unfortunately the backup will be overwritten
++				self.info.writeSysconfig()
++			else:
++				ret = False
++		return ret
+ 
+ 	def writeAuthInfo(self):
+ 		self.info.testLDAPCACerts()
+@@ -485,7 +493,8 @@ class Authconfig:
+ 			if not self.info.writeChanged(self.pristineinfo):
+ 				self.retval = 6
+ 		# FIXME: what about printing critical errors writing individual configs?
+-		self.joinDomain()
++		if not self.joinDomain():
++			self.retval = 6
+ 		self.info.post(self.options.nostart)
+ 
+ 	def run(self):
+diff -up authconfig-6.1.12/authinfo.py.save-join authconfig-6.1.12/authinfo.py
+--- authconfig-6.1.12/authinfo.py.save-join	2014-06-17 16:54:21.000000000 +0200
++++ authconfig-6.1.12/authinfo.py	2014-06-17 17:06:22.032160857 +0200
+@@ -1224,6 +1224,7 @@ class AuthInfo:
+ 		self.ipav2Realm = None
+ 		self.ipav2NoNTP = None
+ 		self.ipaDomainJoined = False
++		self.ipaUninstall = False
+ 
+ 		self.smartcardModule = ""
+ 		self.smartcardAction = ""
+@@ -2235,8 +2236,15 @@ class AuthInfo:
+ 		self.readSysconfig()
+ 		self.readNSS(ref)
+ 		self.readLibuser(ref)
+-		self.readLogindefs(ref)
+ 		self.readPAM(ref)
++
++		reallyimplicit = self.sssdSupported()
++		if self.implicitSSSD and not reallyimplicit and not self.enableIPAv2:
++			self.setParam("enableSSSD", True, ref)
++		if self.implicitSSSDAuth and not reallyimplicit and not self.enableIPAv2:
++			self.setParam("enableSSSDAuth", True, ref)
++
++		self.readLogindefs(ref)
+ 		self.readHesiod(ref)
+ 		self.readWinbind(ref)
+ 		self.readNetwork(ref)
+@@ -3531,6 +3539,10 @@ class AuthInfo:
+ 		modules = getSmartcardModules()
+ 		if len(modules) > 0 and self.smartcardModule not in modules:
+ 			self.smartcardModule = modules[0]
++		if self.ipaDomainJoined and not self.enableIPAv2:
++			# must uninstall IPAv2
++			self.ipaDomainJoined = False
++			self.ipaUninstall = True
+ 
+ 	def write(self):
+ 		self.update()
+@@ -3751,6 +3763,7 @@ class AuthInfo:
+ 		return True
+ 
+ 	def joinDomain(self, echo):
++		status = 0
+ 		if (self.enableWinbind or self.enableWinbindAuth) and self.joinUser:
+ 			server = self.smbServers.split(",", 1)[0].split(" ", 1)[0].split("\t", 1)[0]
+ 			domain = self.smbWorkgroup
+@@ -3769,11 +3782,13 @@ class AuthInfo:
+ 			if echo:
+ 				sys.stderr.write("[%s]\n" % cmd)
+ 			if self.joinPassword:
+-				feedFork(cmd, echo, "sword:", self.joinPassword)
++				status = feedFork(cmd, echo, "sword:", self.joinPassword)
+ 			else:
+-				os.system(cmd)
++				status = os.system(cmd)
++		return status == 0
+ 
+ 	def joinIPADomain(self, echo):
++		status = 0
+ 		if self.enableIPAv2:
+ 			server = self.ipav2Server
+ 			domain = self.ipav2Domain
+@@ -3802,6 +3817,11 @@ class AuthInfo:
+ 				self.ipaDomainJoined = True
+ 			else:
+ 				self.messageCB(_("IPAv2 domain join was not succesful. The ipa-client-install command failed."))
++		return status == 0
++
++	def uninstallIPA(self):
++		cmd = PATH_IPA_CLIENT_INSTALL + " --uninstall --noac"
++		os.system(cmd)
+ 
+ 	def post(self, nostart):
+ 		onlystart = not self.confChanged
+@@ -3839,6 +3859,8 @@ class AuthInfo:
+ 				PATH_ODDJOBD, PATH_ODDJOBD_PID,
+ 				"oddjobd", nostart, onlystart)
+ 		toggleCachingService(self.enableCache, nostart, onlystart)
++		if self.ipaUninstall:
++			self.uninstallIPA()
+ 
+ 	def testLDAPCACerts(self):
+ 		if self.enableLDAP or self.enableLDAPAuth:

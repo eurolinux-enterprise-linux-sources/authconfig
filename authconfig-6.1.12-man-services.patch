@@ -1,0 +1,36 @@
+diff -up authconfig-6.1.12/man/en/authconfig.8.man-services authconfig-6.1.12/man/en/authconfig.8
+--- authconfig-6.1.12/man/en/authconfig.8.man-services	2014-06-19 10:21:20.023743632 +0200
++++ authconfig-6.1.12/man/en/authconfig.8	2014-07-08 16:47:56.803278221 +0200
+@@ -35,7 +35,7 @@ be restored by the \fB--restorelastbacku
+ 
+ If \fB--nostart\fR is specified (which is what the install program does),
+ ypbind or other daemons will not be started or stopped immediately following
+-program execution, but only enabled to start or stop at boot time. 
++program execution, but only enabled to start or stop at boot time.
+ 
+ The \fB--enablenis\fP, \fB--enableldap\fP, \fB--enablewinbind\fP,
+ and \fB--enablehesiod\fP options
+@@ -90,6 +90,23 @@ The \fBauthconfig-tui\fR is deprecated.
+ supported by its text user interface. Use \fBsystem-config-authentication\fR GUI
+ application or the command line options instead.
+ 
++The SSSD service is enabled and possibly started by authconfig when at least two of
++the following three conditions are met:
++.br
++1) /etc/sssd/sssd.conf file exists (or is configured via the implicit SSSD support)
++.br
++2) SSSD authentication is enabled (pam_sss.so is used in PAM configuration)
++.br
++3) SSSD is enabled for user identity (nsswitch.conf contains sss)
++
++When \fB--update\fR action is used the enablement or disablement and possible restart
++of services happens only in case the changed configuration options affect the
++service to be restarted. This means that if for example the ypbind service is
++enabled with \fBauthconfig --update --nostart --enablenis\fR but not started
++and you run the same command without the \fB--nostart\fR later the ypbind
++service will not be started because no configuration change affecting ypbind
++happened.
++
+ .PD
+ .SH "RETURN CODES"
+ \fBauthconfig\fR returns 0 on success, 2 on error.
