@@ -1,0 +1,1334 @@
+# translation of authconfig.pot to Bulgarian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Nikolay Sarmadzhiev <nikolayd@sarmadzhiev.tk>, 2004, 2005.
+# Doncho N. Gunchev <gunchev@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: authconfig\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-10 16:29+0200\n"
+"PO-Revision-Date: 2007-08-26 02:38+0300\n"
+"Last-Translator: Doncho N. Gunchev <gunchev@gmail.com>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../authconfig.py:81
+#, python-format
+msgid "usage: %s [options]"
+msgstr "употреба: %s [опции]"
+
+#: ../authconfig.py:88
+msgid "enable shadowed passwords by default"
+msgstr "включване на сенчести пароли по подразбиране"
+
+#: ../authconfig.py:90
+msgid "disable shadowed passwords by default"
+msgstr "изключване на сенчестите пароли по подразбиране"
+
+#: ../authconfig.py:92
+msgid "enable MD5 passwords by default"
+msgstr "включване на MD5 паролите по подразбиране"
+
+#: ../authconfig.py:94
+msgid "disable MD5 passwords by default"
+msgstr "изключване на MD5 паролите по подразбиране"
+
+#: ../authconfig.py:97
+msgid "hash/crypt algorithm for new passwords"
+msgstr ""
+
+#: ../authconfig.py:100
+msgid "enable NIS for user information by default"
+msgstr "включване на NIS за потребителска информация по подразбиране"
+
+#: ../authconfig.py:102
+msgid "disable NIS for user information by default"
+msgstr "изключване на NIS за потребителска информация по подразбиране"
+
+#: ../authconfig.py:103
+msgid "<domain>"
+msgstr "<домейн>"
+
+#: ../authconfig.py:104
+msgid "default NIS domain"
+msgstr "NIS домейн по подразбиране"
+
+#: ../authconfig.py:105 ../authconfig.py:116 ../authconfig.py:154
+#: ../authconfig.py:156
+msgid "<server>"
+msgstr "<server>"
+
+#: ../authconfig.py:106
+msgid "default NIS server"
+msgstr "NIS сървър по подразбиране"
+
+#: ../authconfig.py:109
+msgid "enable LDAP for user information by default"
+msgstr "включване на LDAP за потребителска информация по подразбиране"
+
+#: ../authconfig.py:111
+msgid "disable LDAP for user information by default"
+msgstr "изключване на LDAP за потребителска информация по подразбиране"
+
+#: ../authconfig.py:113
+msgid "enable LDAP for authentication by default"
+msgstr "включване на LDAP удостоверяване по подразбиране"
+
+#: ../authconfig.py:115
+msgid "disable LDAP for authentication by default"
+msgstr "изключване на LDAP удостоверяване по подразбиране"
+
+#: ../authconfig.py:117
+#, fuzzy
+msgid "default LDAP server hostname or URI"
+msgstr "LDAP сървър по подразбиране"
+
+#: ../authconfig.py:118
+msgid "<dn>"
+msgstr "<dn>"
+
+#: ../authconfig.py:119
+msgid "default LDAP base DN"
+msgstr "базов LDAP DN по подразбиране"
+
+#: ../authconfig.py:121
+#, fuzzy
+msgid "enable use of TLS with LDAP (RFC-2830)"
+msgstr "включване на използването на TLS със LDAP"
+
+#: ../authconfig.py:123
+#, fuzzy
+msgid "disable use of TLS with LDAP (RFC-2830)"
+msgstr "изключване на използването на TLS със LDAP"
+
+#: ../authconfig.py:125
+msgid "enable use of RFC-2307bis schema for LDAP user information lookups"
+msgstr ""
+
+#: ../authconfig.py:127
+msgid "disable use of RFC-2307bis schema for LDAP user information lookups"
+msgstr ""
+
+#: ../authconfig.py:128
+msgid "<URL>"
+msgstr "<URL>"
+
+#: ../authconfig.py:129
+msgid "load CA certificate from the URL"
+msgstr "зареждане на CA сертификата от URL"
+
+#: ../authconfig.py:132
+msgid "enable authentication with smart card by default"
+msgstr "включване на удостоверяване със смарт-карти по подразбиране"
+
+#: ../authconfig.py:134
+msgid "disable authentication with smart card by default"
+msgstr "изключване на удостоверяване със смарт-карти по подразбиране"
+
+#: ../authconfig.py:136
+msgid "require smart card for authentication by default"
+msgstr "изискване на удостоверяване със смарт-карти по подразбиране"
+
+#: ../authconfig.py:138
+msgid "do not require smart card for authentication by default"
+msgstr "не се изисква на удостоверяване със смарт-карти по подразбиране"
+
+#: ../authconfig.py:139
+msgid "<module>"
+msgstr "<модул>"
+
+#: ../authconfig.py:140
+msgid "default smart card module to use"
+msgstr "подразбиращ се модул за смарт-карти"
+
+#: ../authconfig.py:143
+msgid "action to be taken on smart card removal"
+msgstr "действие при изваждане на смарт-карта"
+
+#: ../authconfig.py:146
+#, fuzzy
+msgid "enable authentication with fingerprint readers by default"
+msgstr "включване на удостоверяване със смарт-карти по подразбиране"
+
+#: ../authconfig.py:148
+#, fuzzy
+msgid "disable authentication with fingerprint readers by default"
+msgstr "изключване на удостоверяване със смарт-карти по подразбиране"
+
+#: ../authconfig.py:151
+msgid "enable kerberos authentication by default"
+msgstr "включване на Kerberos удостоверяване по подразбиране"
+
+#: ../authconfig.py:153
+msgid "disable kerberos authentication by default"
+msgstr "изключване на Kerberos удостоверяване по подразбиране"
+
+#: ../authconfig.py:155
+msgid "default kerberos KDC"
+msgstr "Kerberos KDC по подразбиране"
+
+#: ../authconfig.py:157
+msgid "default kerberos admin server"
+msgstr "Kerberos админ. сървър по подразбиране"
+
+#: ../authconfig.py:158 ../authconfig.py:188
+msgid "<realm>"
+msgstr "<област>"
+
+#: ../authconfig.py:159
+msgid "default kerberos realm"
+msgstr "Kerberos област по подразбиране"
+
+#: ../authconfig.py:161
+msgid "enable use of DNS to find kerberos KDCs"
+msgstr "включване на употребата на DNS  за намирането на Kerberos KDC-и"
+
+#: ../authconfig.py:163
+msgid "disable use of DNS to find kerberos KDCs"
+msgstr "изключване на употребата на DNS  за намирането на Kerberos KDC-и"
+
+#: ../authconfig.py:165
+msgid "enable use of DNS to find kerberos realms"
+msgstr "включване на употребата на DNS за намирането на kerberos области"
+
+#: ../authconfig.py:167
+msgid "disable use of DNS to find kerberos realms"
+msgstr "да не се ползва DNS при търсене на kerberos области"
+
+#: ../authconfig.py:170
+msgid "enable SMB authentication by default"
+msgstr "включване на SMB удостоверяване по подразбиране"
+
+#: ../authconfig.py:172
+msgid "disable SMB authentication by default"
+msgstr "изключване на SMB удостоверяване по подразбиране"
+
+#: ../authconfig.py:173
+msgid "<servers>"
+msgstr "<сървъри>"
+
+#: ../authconfig.py:174
+msgid "names of servers to authenticate against"
+msgstr "имена на сървърите за удостоверяване"
+
+#: ../authconfig.py:175
+msgid "<workgroup>"
+msgstr "<workgroup>"
+
+#: ../authconfig.py:176
+msgid "workgroup authentication servers are in"
+msgstr "Сървърите на работната група за удостоверение са в"
+
+#: ../authconfig.py:179
+msgid "enable winbind for user information by default"
+msgstr "включване на winbind за потребителска информация по подразбиране"
+
+#: ../authconfig.py:181
+msgid "disable winbind for user information by default"
+msgstr "изключване на winbind за потребителска информация по подразбиране"
+
+#: ../authconfig.py:183
+msgid "enable winbind for authentication by default"
+msgstr "включване на winbind удостоверяване по подразбиране"
+
+#: ../authconfig.py:185
+msgid "disable winbind for authentication by default"
+msgstr "изключване на winbind удостоверяване по подразбиране"
+
+#: ../authconfig.py:187
+msgid "security mode to use for samba and winbind"
+msgstr "Потребителски модел на сигурността за използване със Samba и Winbind"
+
+#: ../authconfig.py:189
+msgid "default realm for samba and winbind when security=ads"
+msgstr "Подразбираща се област за Samba и Winbind при security=ads"
+
+#: ../authconfig.py:190 ../authconfig.py:192
+msgid "<lowest-highest>"
+msgstr "<lowest-highest>"
+
+#: ../authconfig.py:191
+msgid "uid range winbind will assign to domain or ads users"
+msgstr ""
+"uid диапазон, от които Winbind ще назначава на домейн или ads потребителите"
+
+#: ../authconfig.py:193
+msgid "gid range winbind will assign to domain or ads users"
+msgstr ""
+"gid диапазон от които Winbind ще назначава на домейн или ads потребителите"
+
+#: ../authconfig.py:195
+msgid ""
+"the character which will be used to separate the domain and user part of "
+"winbind-created user names if winbindusedefaultdomain is not enabled"
+msgstr ""
+"Символът, които ще се използва за разграничаване на домейна и потребителя в "
+"Winbind създаденото потребителско име ако winbindusedefaultdomain не е "
+"включено"
+
+#: ../authconfig.py:197
+msgid "the directory which winbind-created users will have as home directories"
+msgstr ""
+"директорията, която създадените от winbind потребители ще имат за домашна"
+
+#: ../authconfig.py:199
+msgid "the group which winbind-created users will have as their primary group"
+msgstr "групата, която ще бъде основна за създадените от winbind потребители"
+
+#: ../authconfig.py:201
+msgid "the shell which winbind-created users will have as their login shell"
+msgstr ""
+"обвивката, която ще използват създадените от winbind потребители като "
+"обвивка при влизане"
+
+#: ../authconfig.py:203
+msgid ""
+"configures winbind to assume that users with no domain in their user names "
+"are domain users"
+msgstr ""
+"настройване на winbind за приемане като домейн потребители на тези без "
+"домейн в техните имена"
+
+#: ../authconfig.py:205
+msgid ""
+"configures winbind to assume that users with no domain in their user names "
+"are not domain users"
+msgstr ""
+"настройване на winbind за не приемане като домейн потребители на тези без "
+"домейн в техните имена"
+
+#: ../authconfig.py:207
+msgid "configures winbind to allow offline login"
+msgstr "настройване на winbind да разрешава вход без мрежова свързаност"
+
+#: ../authconfig.py:209
+msgid "configures winbind to prevent offline login"
+msgstr "настройване на winbind да не разрешава вход без мрежова свързаност"
+
+#: ../authconfig.py:211
+msgid "join the winbind domain or ads realm now as this administrator"
+msgstr "свързване с winbind домейн или ads област сега, с този администратор"
+
+#: ../authconfig.py:214
+msgid "enable wins for hostname resolution"
+msgstr "включваме на wins за разрешаване на хост имена"
+
+#: ../authconfig.py:216
+msgid "disable wins for hostname resolution"
+msgstr "изключване на wins за намиране имената на машините"
+
+#: ../authconfig.py:219
+#, fuzzy
+msgid "prefer dns over wins or nis for hostname resolution"
+msgstr "включваме на wins за разрешаване на хост имена"
+
+#: ../authconfig.py:221
+#, fuzzy
+msgid "do not prefer dns over wins or nis for hostname resolution"
+msgstr "включваме на wins за разрешаване на хост имена"
+
+#: ../authconfig.py:224
+msgid "enable hesiod for user information by default"
+msgstr "включване на hesiod за потребителска информация по подразбиране"
+
+#: ../authconfig.py:226
+msgid "disable hesiod for user information by default"
+msgstr "изключване на hesiod за потребителска информация по подразбиране"
+
+#: ../authconfig.py:228
+msgid "default hesiod LHS"
+msgstr "Подразбиращ се hesiod LHS"
+
+#: ../authconfig.py:230
+msgid "default hesiod RHS"
+msgstr "подразбиращ се hesiod RHS"
+
+#: ../authconfig.py:233
+#, fuzzy
+msgid ""
+"enable SSSD for user information by default with manually managed "
+"configuration"
+msgstr "включване на NIS за потребителска информация по подразбиране"
+
+#: ../authconfig.py:235
+#, fuzzy
+msgid ""
+"disable SSSD for user information by default (still used for supported "
+"configurations)"
+msgstr "изключване на NIS за потребителска информация по подразбиране"
+
+#: ../authconfig.py:237
+#, fuzzy
+msgid ""
+"enable SSSD for authentication by default with manually managed configuration"
+msgstr "включване на LDAP удостоверяване по подразбиране"
+
+#: ../authconfig.py:239
+#, fuzzy
+msgid ""
+"disable SSSD for authentication by default (still used for supported "
+"configurations"
+msgstr "изключване на LDAP удостоверяване по подразбиране"
+
+#: ../authconfig.py:241
+msgid "never use SSSD implicitly even for supported configurations"
+msgstr ""
+
+#: ../authconfig.py:243
+msgid "use SSSD implicitly if it supports the configuration"
+msgstr ""
+
+#: ../authconfig.py:246
+#, fuzzy
+msgid "enable caching of user credentials in SSSD by default"
+msgstr "включване на кеширането на потребителска информация по подразбиране"
+
+#: ../authconfig.py:248
+#, fuzzy
+msgid "disable caching of user credentials in SSSD by default"
+msgstr "изключване кеширането на потребителска информация по подразбиране"
+
+#: ../authconfig.py:251
+#, fuzzy
+msgid ""
+"enable caching of user information by default (automatically disabled when "
+"SSSD is used)"
+msgstr "включване на кеширането на потребителска информация по подразбиране"
+
+#: ../authconfig.py:253
+msgid "disable caching of user information by default"
+msgstr "изключване кеширането на потребителска информация по подразбиране"
+
+#: ../authconfig.py:256
+msgid "local authorization is sufficient for local users"
+msgstr "локалното удостоверяване е достатъчно за локални потребители"
+
+#: ../authconfig.py:258
+msgid "authorize local users also through remote service"
+msgstr "удостоверяване на локални потребители и през отдалечена услуга"
+
+#: ../authconfig.py:261
+msgid "check access.conf during account authorization"
+msgstr "проверка на access.conf при оторизиране на акаунта"
+
+#: ../authconfig.py:263
+msgid "do not check access.conf during account authorization"
+msgstr "без проверка на access.conf при оторизиране на акаунта"
+
+#: ../authconfig.py:266
+msgid "authenticate system accounts by network services"
+msgstr "удостоверяване на системните акаунти чрез мрежова услуга"
+
+#: ../authconfig.py:268
+msgid "authenticate system accounts by local files only"
+msgstr "удостоверяване на системните акаунти само от локални файлове"
+
+#: ../authconfig.py:271
+msgid "create home directories for users on their first login"
+msgstr ""
+
+#: ../authconfig.py:273
+msgid "do not create home directories for users on their first login"
+msgstr ""
+
+#: ../authconfig.py:276
+msgid "do not start/stop portmap, ypbind, and nscd"
+msgstr "да не се стартира/спира portmap, ypbind и nscd"
+
+#: ../authconfig.py:279
+msgid "do not update the configuration files, only print new settings"
+msgstr ""
+"да не се обновяват конфигурационните файлове, само извеждане на новите "
+"настройки"
+
+#: ../authconfig.py:283
+msgid "display Back instead of Cancel in the main dialog of the TUI"
+msgstr ""
+"показване на Назад вместо Отказ в главния диалогов прозорец на текстовия "
+"потребителски интерфейс"
+
+#: ../authconfig.py:285
+msgid "do not display the deprecated text user interface"
+msgstr "да не се показва остарелия текст в потребителския интерфейс"
+
+#: ../authconfig.py:288
+msgid "opposite of --test, update configuration files with changed settings"
+msgstr ""
+"обратното на --test, обновяване на конфигурационните файлове с променените "
+"настройки"
+
+#: ../authconfig.py:291
+msgid "update all configuration files"
+msgstr "обновяване на всички конфигурационни файлове"
+
+#: ../authconfig.py:294
+msgid "probe network for defaults and print them"
+msgstr "търсене в мрежата за подразбиращи се преглед"
+
+#: ../authconfig.py:296 ../authconfig.py:299
+#, fuzzy
+msgid "<name>"
+msgstr "<област>"
+
+#: ../authconfig.py:297
+#, fuzzy
+msgid "save a backup of all configuration files"
+msgstr "обновяване на всички конфигурационни файлове"
+
+#: ../authconfig.py:300
+#, fuzzy
+msgid "restore the backup of configuration files"
+msgstr "обновяване на всички конфигурационни файлове"
+
+#: ../authconfig.py:303
+msgid ""
+"restore the backup of configuration files saved before the previous "
+"configuration change"
+msgstr ""
+
+#: ../authconfig.py:308
+msgid "unexpected argument"
+msgstr "неочакван параметър"
+
+#: ../authconfig.py:439
+msgid "Bad smart card removal action specified."
+msgstr "Указано е грешно действие при изваждане на смарт-карта."
+
+#: ../authconfig.py:448
+msgid "Unknown password hashing algorithm specified, using sha256."
+msgstr ""
+
+#: ../authconfig.py:481
+msgid "can only be run as root"
+msgstr "може да се стартиран само като root"
+
+#: ../authconfig.py:497
+msgid "dialog was cancelled"
+msgstr "диалога бе прекъснат"
+
+#: ../authconfig.py:521
+#, python-format
+msgid ""
+"The %s file was not found, but it is required for %s support to work "
+"properly.\n"
+"Install the %s package, which provides this file."
+msgstr ""
+"Файла %s не бе намерен, но е необходим за правилната работата на поддръжката "
+"за %s.\n"
+"Инсталирайте пакета %s съдържащ този файл."
+
+#: ../authconfig.py:523 ../authconfig.py:869
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: ../authconfig.py:523 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:770
+#: ../authconfig.py:811 ../authconfig.py:869
+msgid "Ok"
+msgstr "Да"
+
+#: ../authconfig.py:527
+msgid "caching"
+msgstr "кеширане"
+
+#: ../authconfig.py:528
+#, fuzzy
+msgid "Fingerprint reader"
+msgstr "Включване на _winbind поддръжка"
+
+#: ../authconfig.py:529
+msgid "Kerberos"
+msgstr "Kerberos"
+
+#: ../authconfig.py:530
+msgid "LDAP authentication"
+msgstr "LDAP удостоверение"
+
+#: ../authconfig.py:531 ../authconfig-gtk.py:100
+msgid "LDAP"
+msgstr "LDAP"
+
+#: ../authconfig.py:532 ../authconfig-gtk.py:106
+msgid "NIS"
+msgstr "NIS"
+
+#: ../authconfig.py:533
+msgid "shadow password"
+msgstr "сенчеста парола"
+
+#: ../authconfig.py:534 ../authconfig.py:536 ../authconfig-gtk.py:109
+msgid "Winbind"
+msgstr "Winbind"
+
+#: ../authconfig.py:535
+msgid "Winbind authentication"
+msgstr "Winbind удостоверяване"
+
+#: ../authconfig.py:541
+msgid "User Information"
+msgstr "Информация за потребител"
+
+#: ../authconfig.py:544
+msgid "Cache Information"
+msgstr "Информация за кеша"
+
+#: ../authconfig.py:548
+msgid "Use Hesiod"
+msgstr "Използване на hesiod"
+
+#: ../authconfig.py:551
+msgid "Use LDAP"
+msgstr "Използване на LDAP"
+
+#: ../authconfig.py:555
+msgid "Use NIS"
+msgstr "Използване на NIS"
+
+#: ../authconfig.py:559
+msgid "Use Winbind"
+msgstr "Използване на winbind"
+
+#: ../authconfig.py:565 ../authconfig.desktop.in.h:1
+msgid "Authentication"
+msgstr "Удостоверяване"
+
+#: ../authconfig.py:568
+msgid "Use MD5 Passwords"
+msgstr "Използване на MD5 пароли"
+
+#: ../authconfig.py:571
+msgid "Use Shadow Passwords"
+msgstr "Използване на сенчести пароли"
+
+#: ../authconfig.py:575
+msgid "Use LDAP Authentication"
+msgstr "Използване на LDAP удостоверяване"
+
+#: ../authconfig.py:579
+msgid "Use Kerberos"
+msgstr "Използване на kerberos"
+
+#: ../authconfig.py:583
+msgid "Use Fingerprint reader"
+msgstr ""
+
+#: ../authconfig.py:588
+msgid "Use Winbind Authentication"
+msgstr "Използване на winbind удостоверяване"
+
+#: ../authconfig.py:592
+msgid "Local authorization is sufficient"
+msgstr "Достатъчно е и локално удостоверяване"
+
+#: ../authconfig.py:602 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:811
+msgid "Back"
+msgstr "Назад"
+
+#: ../authconfig.py:602 ../authconfig.py:770
+msgid "Cancel"
+msgstr "Отказ"
+
+#: ../authconfig.py:603 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:811
+msgid "Next"
+msgstr "Напред"
+
+#: ../authconfig.py:614 ../authconfig-gtk.py:639 ../authconfig.glade.h:15
+msgid "Authentication Configuration"
+msgstr "Настройване на удостоверяването"
+
+#: ../authconfig.py:737
+msgid "LHS:"
+msgstr "LHS:"
+
+#: ../authconfig.py:738
+msgid "RHS:"
+msgstr "RHS:"
+
+#: ../authconfig.py:739
+msgid "Hesiod Settings"
+msgstr "Hesiod настройки"
+
+#: ../authconfig.py:743
+msgid "Use TLS"
+msgstr "Използване на TLS"
+
+#: ../authconfig.py:744 ../authconfig.py:751
+msgid "Server:"
+msgstr "Сървър:"
+
+#: ../authconfig.py:745
+msgid "Base DN:"
+msgstr "Базов DN:"
+
+#: ../authconfig.py:746
+msgid "LDAP Settings"
+msgstr "LDAP настройки"
+
+#: ../authconfig.py:750 ../authconfig.py:805 ../authconfig.glade.h:22
+msgid "Domain:"
+msgstr "Домейн:"
+
+#: ../authconfig.py:752
+msgid "NIS Settings"
+msgstr "NIS настройки"
+
+#: ../authconfig.py:756
+msgid "Realm:"
+msgstr "Област:"
+
+#: ../authconfig.py:757
+msgid "KDC:"
+msgstr "KDC:"
+
+#: ../authconfig.py:758
+msgid "Admin Server:"
+msgstr "Админ. сървър:"
+
+#: ../authconfig.py:759
+msgid "Use DNS to resolve hosts to realms"
+msgstr "Използване на DNS за назначаване на хостове към областите"
+
+#: ../authconfig.py:760
+msgid "Use DNS to locate KDCs for realms"
+msgstr "Използване на DNS за намерените на KDC-ите за областите"
+
+#: ../authconfig.py:761
+msgid "Kerberos Settings"
+msgstr "Kerberos настройки"
+
+#: ../authconfig.py:765
+msgid "Domain Administrator:"
+msgstr "Администратор на домейна:"
+
+#: ../authconfig.py:766
+msgid "Password:"
+msgstr "Парола:"
+
+#: ../authconfig.py:769
+msgid "Join Settings"
+msgstr "Настройки за съединяването"
+
+#: ../authconfig.py:779 ../authconfig.glade.h:41
+msgid ""
+"Some of the configuration changes you've made should be saved to disk before "
+"continuing.  If you do not save them, then your attempt to join the domain "
+"may fail.  Save changes?"
+msgstr ""
+"Някой от промените на конфигурацията, които сте направили би трябвало да се "
+"запазят на диска преди да се продължи. Ако не ги запишете, опита да се "
+"присъедините към домейна може да се провали. Записване на промените?"
+
+#: ../authconfig.py:786
+msgid "Save Settings"
+msgstr "Записване на настройките"
+
+#: ../authconfig.py:787
+msgid "No"
+msgstr "Не"
+
+#: ../authconfig.py:787
+msgid "Yes"
+msgstr "Да"
+
+#. Why does your favorite shell not show up in the list?  Because it won't
+#. fit, that's why!
+#: ../authconfig.py:804
+msgid "Security Model:"
+msgstr "Модел на сигурност:"
+
+#: ../authconfig.py:806
+msgid "Domain Controllers:"
+msgstr "Домейн контролери:"
+
+#: ../authconfig.py:807
+msgid "ADS Realm:"
+msgstr "ADS област:"
+
+#: ../authconfig.py:808
+msgid "Template Shell:"
+msgstr "Шаблонна обвивка:"
+
+#: ../authconfig.py:810
+msgid "Winbind Settings"
+msgstr "Winbind настройки"
+
+#: ../authconfig.py:812
+msgid "Join Domain"
+msgstr "Прибавяне на домейн"
+
+#: ../authconfig.py:864
+#, python-format
+msgid ""
+"To connect to a LDAP server with TLS protocol enabled you need a CA "
+"certificate which signed your server's certificate. Copy the certificate in "
+"the PEM format to the '%s' directory.\n"
+"Then press OK."
+msgstr ""
+"За свързването с LDAP сървър с включен TLS протокол е необходим CA "
+"сертификата, подписал сертификата на този сървър. Сертификата се копира в "
+"PEM формат в директория '%s'.\n"
+"След тези действия натиснете Да."
+
+#. FIXME - version
+#: ../authconfig.py:878
+msgid ""
+" <Tab>/<Alt-Tab> between elements   |   <Space> selects   |  <F12> next "
+"screen"
+msgstr ""
+" <Tab>/<Alt-Tab> между елементи     |  <Интервал> избор  | <F12> следващ "
+"екран"
+
+#: ../authconfig.desktop.in.h:2
+msgid "Control how the system verifies users who attempt to log in"
+msgstr ""
+"Контролира удостоверяването на потребителите, желаещи да влязат в системата"
+
+#: ../authconfig-gtk.py:97
+msgid "Local accounts only"
+msgstr ""
+
+#: ../authconfig-gtk.py:103
+msgid "FreeIPA"
+msgstr ""
+
+#: ../authconfig-gtk.py:118
+#, fuzzy
+msgid "Password"
+msgstr "Парола:"
+
+#: ../authconfig-gtk.py:121
+#, fuzzy
+msgid "LDAP password"
+msgstr "Парола:"
+
+#: ../authconfig-gtk.py:124
+#, fuzzy
+msgid "Kerberos password"
+msgstr "Kerberos"
+
+#: ../authconfig-gtk.py:127
+#, fuzzy
+msgid "NIS password"
+msgstr "сенчеста парола"
+
+#: ../authconfig-gtk.py:130
+#, fuzzy
+msgid "Winbind password"
+msgstr "сенчеста парола"
+
+#: ../authconfig-gtk.py:434
+msgid ""
+"You must provide ldaps:// server address or use TLS for LDAP authentication."
+msgstr ""
+
+#: ../authconfig.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../authconfig.glade.h:2
+#, fuzzy
+msgid "<b>Authentication Configuration</b>"
+msgstr "Настройване на удостоверяването"
+
+#: ../authconfig.glade.h:3
+#, fuzzy
+msgid "<b>Local Authentication Options</b>"
+msgstr "Настройване на удостоверяването"
+
+#: ../authconfig.glade.h:4
+#, fuzzy
+msgid "<b>Other Authentication Options</b>"
+msgstr "Настройване на удостоверяването"
+
+#: ../authconfig.glade.h:5
+msgid "<b>Smart Card Authentication Options</b>"
+msgstr ""
+
+#: ../authconfig.glade.h:6
+msgid "<b>User Account Configuration</b>"
+msgstr ""
+
+#: ../authconfig.glade.h:7
+msgid ""
+"<small><b>Tip:</b> Smart cards support logging into both local and centrally "
+"managed accounts.</small>"
+msgstr ""
+
+#: ../authconfig.glade.h:8
+msgid ""
+"<small><b>Tip:</b> This is managed via /etc/security/access.conf.</small>"
+msgstr ""
+
+#: ../authconfig.glade.h:9
+#, fuzzy
+msgid "Ad_min Servers:"
+msgstr "Админ. сървър:"
+
+#: ../authconfig.glade.h:10
+msgid "Advanced _Options"
+msgstr ""
+
+#: ../authconfig.glade.h:11
+msgid "Alert"
+msgstr "Внимание"
+
+#: ../authconfig.glade.h:12
+msgid ""
+"All configuration files which were modified by the previous authentication "
+"configuration change will be restored from backup. Revert the changes?"
+msgstr ""
+
+#: ../authconfig.glade.h:13
+#, fuzzy
+msgid "Allow offline _login"
+msgstr "Вход без мрежова свързаност"
+
+#: ../authconfig.glade.h:14
+#, fuzzy
+msgid "Aut_hentication Method:"
+msgstr "Удостоверяване"
+
+#: ../authconfig.glade.h:16
+#, fuzzy
+msgid "Card Re_moval Action:"
+msgstr "_Действие при премахване на карта"
+
+#: ../authconfig.glade.h:17
+#, fuzzy
+msgid "Certificate _URL:"
+msgstr "_URL на сертификата"
+
+#: ../authconfig.glade.h:18
+msgid ""
+"Click this button if you did not download a CA certificate yet or you have "
+"not set the CA certificate up by other means."
+msgstr ""
+
+#: ../authconfig.glade.h:19
+msgid "Create _home directories on the first login"
+msgstr ""
+
+#: ../authconfig.glade.h:20
+msgid "Do_n't Save"
+msgstr "_Без запис"
+
+#: ../authconfig.glade.h:21
+#, fuzzy
+msgid "Domain _administrator:"
+msgstr "Администратор на домейна:"
+
+#: ../authconfig.glade.h:23
+msgid "Download CA Certificate"
+msgstr "Сваляне на CA сертификата"
+
+#: ../authconfig.glade.h:24
+#, fuzzy
+msgid "Enable _fingerprint reader support"
+msgstr "Включване на _winbind поддръжка"
+
+#: ../authconfig.glade.h:25
+msgid "Enable _local access control"
+msgstr ""
+
+#: ../authconfig.glade.h:26
+#, fuzzy
+msgid "Enable _smart card support"
+msgstr "Включване поддръжка за _смарт-карти"
+
+#: ../authconfig.glade.h:27
+#, fuzzy
+msgid ""
+"Fingerprint authentication allows you to log in by scanning your finger with "
+"the fingerprint reader."
+msgstr ""
+"Удостоверяването със смарт-карта позволява вход чрез сертификата и ключа на "
+"смарт-картите."
+
+#: ../authconfig.glade.h:28
+msgid "Hashing or crypto algorithm used for storing passwords of local users"
+msgstr ""
+
+#: ../authconfig.glade.h:29
+msgid "Hostname or ldap:// or ldaps:// URI pointing to the LDAP server."
+msgstr ""
+
+#: ../authconfig.glade.h:30
+msgid ""
+"If the home directory of an user doesn't exist yet it will be created "
+"automatically on his first login."
+msgstr ""
+
+#: ../authconfig.glade.h:31
+msgid "Joining Winbind Domain"
+msgstr "Свързване с winbind домейн"
+
+#: ../authconfig.glade.h:32
+#, fuzzy
+msgid "LDAP Search _Base DN:"
+msgstr "LDAP търсене на _базов DN"
+
+#: ../authconfig.glade.h:33
+#, fuzzy
+msgid "LDAP _Server:"
+msgstr "LDAP _сървър"
+
+#: ../authconfig.glade.h:34
+#, fuzzy
+msgid "NIS _Domain:"
+msgstr "NIS _Домейн"
+
+#: ../authconfig.glade.h:35
+#, fuzzy
+msgid "NIS _Server:"
+msgstr "NIS _Сървър"
+
+#: ../authconfig.glade.h:36
+#, fuzzy
+msgid "R_ealm:"
+msgstr "Област:"
+
+#: ../authconfig.glade.h:37
+#, fuzzy
+msgid "Require smart car_d for login"
+msgstr "_Изискване на смарт-карта за вход"
+
+#: ../authconfig.glade.h:38
+msgid ""
+"Restore the configuration files backed up before the previous configuration "
+"change"
+msgstr ""
+
+#: ../authconfig.glade.h:39
+#, fuzzy
+msgid "Revert"
+msgstr "Сървър:"
+
+#: ../authconfig.glade.h:40
+msgid ""
+"Smart card authentication allows you to log in using a certificate and key "
+"associated with a smart card."
+msgstr ""
+"Удостоверяването със смарт-карта позволява вход чрез сертификата и ключа на "
+"смарт-картите."
+
+#: ../authconfig.glade.h:42
+#, fuzzy
+msgid "Te_mplate Shell:"
+msgstr "Шаблонна обвивка:"
+
+#: ../authconfig.glade.h:43
+#, fuzzy
+msgid ""
+"To verify the LDAP server with TLS protocol enabled you need a CA "
+"certificate which signed the server's certificate. Please fill in the URL "
+"where the CA certificate in the PEM format can be downloaded from."
+msgstr ""
+"За свързването с LDAP сървър с включен TLS протокол е необходим CA "
+"сертификата, подписал сертификата на този сървър. Сертификата се копира в "
+"PEM формат в директория '%s'.\n"
+"След тези действия натиснете Да."
+
+#: ../authconfig.glade.h:44
+msgid "Use DNS to _locate KDCs for realms"
+msgstr "Използване DNS за _намиране KDC за областите"
+
+#: ../authconfig.glade.h:45
+#, fuzzy
+msgid "Use D_NS to resolve hosts to realms"
+msgstr "Използване на DNS за назначаване на хостове към областите"
+
+#: ../authconfig.glade.h:46
+msgid ""
+"Use Transport Layer Security extension for LDAP as defined by RFC-2830. It "
+"must not be ticked with ldaps server URI."
+msgstr ""
+
+#: ../authconfig.glade.h:47
+msgid "Use _TLS to encrypt connections"
+msgstr "Използване на _TLS за криптиране на връзките"
+
+#: ../authconfig.glade.h:48
+msgid ""
+"When enabled /etc/security/access.conf will be consulted for authorization "
+"of users access."
+msgstr ""
+
+#: ../authconfig.glade.h:49
+#, fuzzy
+msgid "Winbind ADS R_ealm:"
+msgstr "Winbind ADS _област"
+
+#: ../authconfig.glade.h:50
+#, fuzzy
+msgid "Winbind Domain Co_ntrollers:"
+msgstr "Winbind домейн ко_нтролери"
+
+#: ../authconfig.glade.h:51
+#, fuzzy
+msgid "Winbind _Domain:"
+msgstr "Winbind _домейн"
+
+#: ../authconfig.glade.h:52
+#, fuzzy
+msgid "_Download CA Certificate..."
+msgstr "Сваляне на CA сертификата"
+
+#: ../authconfig.glade.h:53
+#, fuzzy
+msgid "_Identity & Authentication"
+msgstr "Използване на SMB удостоверяване"
+
+#: ../authconfig.glade.h:54
+#, fuzzy
+msgid "_Join Domain..."
+msgstr "_Свързване с домейн"
+
+#: ../authconfig.glade.h:55
+#, fuzzy
+msgid "_KDCs:"
+msgstr "_KDCs"
+
+#: ../authconfig.glade.h:56
+msgid "_Password Hashing Algorithm:"
+msgstr ""
+
+#: ../authconfig.glade.h:57
+#, fuzzy
+msgid "_Password:"
+msgstr "Парола:"
+
+#: ../authconfig.glade.h:58
+#, fuzzy
+msgid "_Security Model:"
+msgstr "Модел на сигурност:"
+
+#: ../authconfig.glade.h:59
+msgid "_User Account Database:"
+msgstr ""
+
+#: ../authinfo.py:926 ../authinfo.py:1574 ../authinfo.py:2896
+msgid "Lock"
+msgstr "Заключване"
+
+#: ../authinfo.py:926 ../authinfo.py:1576
+msgid "Ignore"
+msgstr "Игнориране"
+
+#: ../authinfo.py:3268
+#, fuzzy, python-format
+msgid ""
+"Authentication module %s/pam_%s.so is missing. Authentication process might "
+"not work correctly."
+msgstr ""
+"Удостоверяващия модул %s/pam_%s.so липсва. Процеса на удостоверяване няма да "
+"работи коректно."
+
+#: ../authinfo.py:3829
+msgid "Error downloading CA certificate"
+msgstr "Грешка при сваляне сертификата на CA"
+
+#, fuzzy
+#~ msgid "Additional options for user information and authentication"
+#~ msgstr "изключване на hesiod за потребителска информация по подразбиране"
+
+#~ msgid "<b>Options</b>"
+#~ msgstr "<b>Опции</b>"
+
+#~ msgid "<b>Smart Card</b>"
+#~ msgstr "<b>Смарт-карта</b>"
+
+#, fuzzy
+#~ msgid "A_uthentication"
+#~ msgstr "Удостоверяване"
+
+#~ msgid "Cache User _Information"
+#~ msgstr "Кеширане на потребителската _информация"
+
+#, fuzzy
+#~ msgid "Check access.conf _during account authorization"
+#~ msgstr "_Проверка на access.conf при оторизиране на акаунта"
+
+#~ msgid "Configure H_esiod..."
+#~ msgstr "Конфигуриране на _hesiod..."
+
+#~ msgid "Configure K_erberos..."
+#~ msgstr "Конфигуриране на k_erberos..."
+
+#~ msgid "Configure L_DAP..."
+#~ msgstr "Конфигуриране на L_DAP..."
+
+#~ msgid "Configure NI_S..."
+#~ msgstr "Конфигуриране на _NIS..."
+
+#, fuzzy
+#~ msgid "Configure Sm_art Card..."
+#~ msgstr "Конфигуриране на _смарт-картите..."
+
+#~ msgid "Configure Win_bind..."
+#~ msgstr "Конфигуриране на win_bind..."
+
+#~ msgid "Domain"
+#~ msgstr "Домейн"
+
+#~ msgid "Domain _Administrator"
+#~ msgstr "_Администратор на домейна"
+
+#~ msgid "Enable _Hesiod Support"
+#~ msgstr "Включване на _hesiod поддръжка"
+
+#~ msgid "Enable _Kerberos Support"
+#~ msgstr "Включване на _kerberos поддръжка"
+
+#~ msgid "Enable _LDAP Support"
+#~ msgstr "Включване на _LDAP поддръжка"
+
+#~ msgid "Enable _NIS Support"
+#~ msgstr "Включване на _NIS поддръжка"
+
+#~ msgid "Enable _Winbind Support"
+#~ msgstr "Включване на _winbind поддръжка"
+
+#~ msgid ""
+#~ "For user accounts maintained in local /etc/passwd file system will not "
+#~ "check authorization from network services such as LDAP or Kerberos."
+#~ msgstr ""
+#~ "За потребителските акаунти държани в локалния /etc/passwd файл системата "
+#~ "няма да проверява за удостоверяване от мрежов сървър като LDAP или "
+#~ "Kerberos."
+
+#~ msgid "Hesiod _LHS"
+#~ msgstr "Hesiod _LHS"
+
+#~ msgid "Hesiod _RHS"
+#~ msgstr "Hesiod _RHS"
+
+#~ msgid ""
+#~ "Hesiod allows a system administrator to publish user and group "
+#~ "information in DNS.  It is sometimes used in very large networks."
+#~ msgstr ""
+#~ "Hesiod позволява на системния администратор да публикува потребителска и "
+#~ "групова информация в DNS. Понякога е използван от много големи мрежи."
+
+#~ msgid ""
+#~ "Kerberos is a trusted third-party authentication system which is commonly "
+#~ "used in medium to large networks."
+#~ msgstr ""
+#~ "Kerberos е доверителна, външна система за удостоверяване, която най-често "
+#~ "се използва в средни и големи мрежи."
+
+#~ msgid ""
+#~ "NIS is the Network Information Service.  It is commonly used on small to "
+#~ "medium networks."
+#~ msgstr ""
+#~ "NIS е мрежова информационна услуга. Обикновено е използвана в малки и "
+#~ "средни мрежи."
+
+#, fuzzy
+#~ msgid "Op_tions"
+#~ msgstr "Опции"
+
+#~ msgid "SMB Settings"
+#~ msgstr "SMB настройки"
+
+#~ msgid "Smart Card Settings"
+#~ msgstr "Настройки за смарт-карти"
+
+#~ msgid ""
+#~ "The Lightweight Directory Access Protocol is a standard way of searching "
+#~ "a directory, which can hold arbitrary data in a structured hierarchy. "
+#~ "LDAP is increasingly being used in small to large networks."
+#~ msgstr ""
+#~ "Лекия протокол за достъп до директории (LDAP) е стандарт при търсенето в "
+#~ "директории, които да държат произволни йерархични данни. LDAP все повече "
+#~ "се използва, както в малки, така и в големи мрежи."
+
+#~ msgid "Use _DNS to resolve hosts to realms"
+#~ msgstr "Използване _DNS за решаване на хостове към областите"
+
+#~ msgid "Use _Shadow Passwords"
+#~ msgstr "Използване на _сенчести пароли"
+
+#, fuzzy
+#~ msgid "User Infor_mation"
+#~ msgstr "Информация за потребител"
+
+#~ msgid ""
+#~ "When enabled allows network services such as LDAP or Kerberos to "
+#~ "authenticate system accounts including root on this machine."
+#~ msgstr ""
+#~ "Когато е включено, разрешава LDAP или Kerberos да удостоверява системните "
+#~ "акаунти, включително root на тази машина."
+
+#~ msgid ""
+#~ "Winbind allows a system to retrieve information about users and to "
+#~ "authenticate users by using information stored in an NTDOM or ADS "
+#~ "server.  It is used in small to large networks."
+#~ msgstr ""
+#~ "Winbind позволява на системата да получава информация и да удостоверява "
+#~ "потребителите, използвайки информацията запазена в NTDOM или ADS сървъри. "
+#~ "Използва се както в малки така и в големи мрежи."
+
+#~ msgid "_Admin Servers"
+#~ msgstr "_Админ. сървъри"
+
+#~ msgid "_Authenticate system accounts by network services"
+#~ msgstr "_Удостоверяване системните акаунти чрез мрежови услуги"
+
+#~ msgid "_Domain Controllers"
+#~ msgstr "_Домейн контролери"
+
+#~ msgid "_Local authorization is sufficient for local users"
+#~ msgstr "_Локалното удостоверяване е достатъчно за локалните потребители"
+
+#~ msgid "_Password"
+#~ msgstr "_Парола"
+
+#~ msgid "_Realm"
+#~ msgstr "_Област"
+
+#~ msgid "_Security Model"
+#~ msgstr "_Модел на сигурността"
+
+#~ msgid "_Template Shell"
+#~ msgstr "_Шаблонна обвивка"
+
+#~ msgid "_Workgroup"
+#~ msgstr "_Работна група"
+
+#~ msgid "SMB authentication"
+#~ msgstr "SMB удостоверяване"
+
+#~ msgid "Workgroup:"
+#~ msgstr "Работна група:"
+
+#~ msgid "Servers:"
+#~ msgstr "Сървъри:"
+
+#~ msgid "Shell:"
+#~ msgstr "Обвивка:"
+
+#~ msgid "Con_figure SMB..."
+#~ msgstr "Конфигуриране на _SMB..."
+
+#~ msgid "Enable SMB S_upport"
+#~ msgstr "Включване на SMB _поддръжка"
+
+#~ msgid ""
+#~ "SMB authentication verifies user passwords by attempting to connect to a "
+#~ "server which uses the SMB (system message block) protocol suite."
+#~ msgstr ""
+#~ "SMB удостоверяването проверява потребителската парола като се опитва да "
+#~ "се свърже със сървър използващ SMB (Системен блок за съобщения) протокола."
+
+#~ msgid "LDAP CA Certificate Check"
+#~ msgstr "Проверка на LDAP CA сертификата"
+
+#~ msgid "Use _MD5 Passwords"
+#~ msgstr "Използване на _MD5 пароли"

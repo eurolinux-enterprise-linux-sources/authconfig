@@ -1,0 +1,1257 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fedora 10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-10 16:29+0200\n"
+"PO-Revision-Date: 2009-02-18 21:00+0200\n"
+"Last-Translator: alexxed <alexxed@gmail.com>\n"
+"Language-Team: Romanian <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Narro 0.9.4 on http://tradu.softwareliber.ro\n"
+
+#: ../authconfig.py:81
+#, python-format
+msgid "usage: %s [options]"
+msgstr "utilizare: %s [opțiuni]"
+
+#: ../authconfig.py:88
+msgid "enable shadowed passwords by default"
+msgstr "activează implicit parolele umbrite (shadowed)"
+
+#: ../authconfig.py:90
+msgid "disable shadowed passwords by default"
+msgstr "dezactivează implicit parolele umbrite"
+
+#: ../authconfig.py:92
+msgid "enable MD5 passwords by default"
+msgstr "activează implicit parolele MD5"
+
+#: ../authconfig.py:94
+msgid "disable MD5 passwords by default"
+msgstr "dezactivează implicit parolele MD5"
+
+#: ../authconfig.py:97
+msgid "hash/crypt algorithm for new passwords"
+msgstr ""
+
+#: ../authconfig.py:100
+msgid "enable NIS for user information by default"
+msgstr "activează implicit NIS pentru informații despre utilizator"
+
+#: ../authconfig.py:102
+msgid "disable NIS for user information by default"
+msgstr "dezactivează implicit NIS pentru informații despre utilizator"
+
+#: ../authconfig.py:103
+msgid "<domain>"
+msgstr "<domeniu>"
+
+#: ../authconfig.py:104
+msgid "default NIS domain"
+msgstr "domeniu NIS implicit"
+
+#: ../authconfig.py:105 ../authconfig.py:116 ../authconfig.py:154
+#: ../authconfig.py:156
+msgid "<server>"
+msgstr ""
+
+#: ../authconfig.py:106
+msgid "default NIS server"
+msgstr "server NIS implicit"
+
+#: ../authconfig.py:109
+msgid "enable LDAP for user information by default"
+msgstr "activează implicit LDAP pentru informații despre utilizator"
+
+#: ../authconfig.py:111
+msgid "disable LDAP for user information by default"
+msgstr "dezactivează implicit LDAP pentru informații despre utilizator"
+
+#: ../authconfig.py:113
+msgid "enable LDAP for authentication by default"
+msgstr "activează implicit LDAP pentru autentificare"
+
+#: ../authconfig.py:115
+msgid "disable LDAP for authentication by default"
+msgstr "dezactivează implicit LDAP pentru autentificare"
+
+#: ../authconfig.py:117
+msgid "default LDAP server hostname or URI"
+msgstr ""
+
+#: ../authconfig.py:118
+msgid "<dn>"
+msgstr ""
+
+#: ../authconfig.py:119
+msgid "default LDAP base DN"
+msgstr "DN de bază implicit pentru LDAP"
+
+#: ../authconfig.py:121
+msgid "enable use of TLS with LDAP (RFC-2830)"
+msgstr ""
+
+#: ../authconfig.py:123
+msgid "disable use of TLS with LDAP (RFC-2830)"
+msgstr ""
+
+#: ../authconfig.py:125
+msgid "enable use of RFC-2307bis schema for LDAP user information lookups"
+msgstr ""
+
+#: ../authconfig.py:127
+msgid "disable use of RFC-2307bis schema for LDAP user information lookups"
+msgstr ""
+
+#: ../authconfig.py:128
+msgid "<URL>"
+msgstr ""
+
+#: ../authconfig.py:129
+msgid "load CA certificate from the URL"
+msgstr "încarcă certificatul CA de la o adresă"
+
+#: ../authconfig.py:132
+msgid "enable authentication with smart card by default"
+msgstr "activează implicit autentificarea cu card inteligent (smart card)"
+
+#: ../authconfig.py:134
+msgid "disable authentication with smart card by default"
+msgstr "dezactivează implicit autentificarea cu card inteligent"
+
+#: ../authconfig.py:136
+msgid "require smart card for authentication by default"
+msgstr "autentificarea cu card inteligent este implicit obligatorie"
+
+#: ../authconfig.py:138
+msgid "do not require smart card for authentication by default"
+msgstr "autentificarea cu card inteligent nu este implicit obligatorie"
+
+#: ../authconfig.py:139
+msgid "<module>"
+msgstr "<modul>"
+
+#: ../authconfig.py:140
+msgid "default smart card module to use"
+msgstr "modulul de card inteligent folosit implicit"
+
+#: ../authconfig.py:143
+msgid "action to be taken on smart card removal"
+msgstr "acțiunea de realizat la scoaterea cardului inteligent"
+
+#: ../authconfig.py:146
+msgid "enable authentication with fingerprint readers by default"
+msgstr ""
+
+#: ../authconfig.py:148
+msgid "disable authentication with fingerprint readers by default"
+msgstr ""
+
+#: ../authconfig.py:151
+msgid "enable kerberos authentication by default"
+msgstr "activează implicit autentificarea kerberos"
+
+#: ../authconfig.py:153
+msgid "disable kerberos authentication by default"
+msgstr "dezactivează implicit autentificarea kerberos"
+
+#: ../authconfig.py:155
+msgid "default kerberos KDC"
+msgstr "KDC implicit pentru kerberos"
+
+#: ../authconfig.py:157
+msgid "default kerberos admin server"
+msgstr "server admin implicit pentru kerberos"
+
+#: ../authconfig.py:158 ../authconfig.py:188
+msgid "<realm>"
+msgstr ""
+
+#: ../authconfig.py:159
+msgid "default kerberos realm"
+msgstr "realm implicit pentru kerberos"
+
+#: ../authconfig.py:161
+msgid "enable use of DNS to find kerberos KDCs"
+msgstr "activează utilizarea DNS pentru a găsi KDC-uri kerberos"
+
+#: ../authconfig.py:163
+msgid "disable use of DNS to find kerberos KDCs"
+msgstr "dezactivează utilizarea DNS pentru a găsi KDC-uri kerberos"
+
+#: ../authconfig.py:165
+msgid "enable use of DNS to find kerberos realms"
+msgstr "activează utilizarea DNS pentru a folos realm-uri kerberos"
+
+#: ../authconfig.py:167
+msgid "disable use of DNS to find kerberos realms"
+msgstr "dezactivează utilizarea DNS pentru a găsi realm-uri kerberos"
+
+#: ../authconfig.py:170
+msgid "enable SMB authentication by default"
+msgstr "activează implicit autentificarea SMB"
+
+#: ../authconfig.py:172
+msgid "disable SMB authentication by default"
+msgstr "dezactivează implicit autentificarea SMB"
+
+#: ../authconfig.py:173
+msgid "<servers>"
+msgstr "<servere>"
+
+#: ../authconfig.py:174
+msgid "names of servers to authenticate against"
+msgstr "numele serverelor de autentificare"
+
+#: ../authconfig.py:175
+msgid "<workgroup>"
+msgstr "<grup de lucru>"
+
+#: ../authconfig.py:176
+msgid "workgroup authentication servers are in"
+msgstr "serverele de autentificare a grupurilor de lucru sunt în"
+
+#: ../authconfig.py:179
+msgid "enable winbind for user information by default"
+msgstr "activează implicit winbind pentru informații despre utilizator"
+
+#: ../authconfig.py:181
+msgid "disable winbind for user information by default"
+msgstr "dezactivează implicit winbind pentru informații despre utilizator"
+
+#: ../authconfig.py:183
+msgid "enable winbind for authentication by default"
+msgstr "activează implicit winbind pentru autentificare"
+
+#: ../authconfig.py:185
+msgid "disable winbind for authentication by default"
+msgstr "dezactivează·implicit·winbind·pentru·autentificare"
+
+#: ../authconfig.py:187
+msgid "security mode to use for samba and winbind"
+msgstr "mod de securitate pentru a fi folosit cu samba și winbind"
+
+#: ../authconfig.py:189
+msgid "default realm for samba and winbind when security=ads"
+msgstr "realm implicit pentru samba și winbind când securitatea este ads"
+
+#: ../authconfig.py:190 ../authconfig.py:192
+msgid "<lowest-highest>"
+msgstr "<cea mai de jos-cea mai de sus>"
+
+#: ../authconfig.py:191
+msgid "uid range winbind will assign to domain or ads users"
+msgstr ""
+"plaja de uid-uri pe care winbind le va atribui domeniului sau utilizatorilor "
+"ads"
+
+#: ../authconfig.py:193
+msgid "gid range winbind will assign to domain or ads users"
+msgstr ""
+"plaja de gid-uri pe care winbind le va atribui domeniului sau utilizatorilor "
+"ads"
+
+#: ../authconfig.py:195
+msgid ""
+"the character which will be used to separate the domain and user part of "
+"winbind-created user names if winbindusedefaultdomain is not enabled"
+msgstr ""
+"caracterul care va fi folosit pentru a separa domeniul și utilizatorul din "
+"numele de utilizatori create de winbind dacă winbindusedefaultdomain este "
+"activat"
+
+#: ../authconfig.py:197
+msgid "the directory which winbind-created users will have as home directories"
+msgstr ""
+"directorul pe care utilizatorii creați de winbind îl vor avea ca director "
+"personal"
+
+#: ../authconfig.py:199
+msgid "the group which winbind-created users will have as their primary group"
+msgstr ""
+"grupul pe care îl vor avea utilizatorii creați de winbind ca grup primar"
+
+#: ../authconfig.py:201
+msgid "the shell which winbind-created users will have as their login shell"
+msgstr "shell-ul pe care ·îl·vor·avea utilizatorii creați de winbind"
+
+#: ../authconfig.py:203
+msgid ""
+"configures winbind to assume that users with no domain in their user names "
+"are domain users"
+msgstr ""
+"configurează winbind să presupună că utilizatorii fără domeniu în nume sunt "
+"utilizatori ai domeniului"
+
+#: ../authconfig.py:205
+msgid ""
+"configures winbind to assume that users with no domain in their user names "
+"are not domain users"
+msgstr ""
+"configurează winbind să presupună că utilizatorii fără domeniu în utilizator "
+"nu sunt utilizatori de domeniu"
+
+#: ../authconfig.py:207
+msgid "configures winbind to allow offline login"
+msgstr "configurează winbind să permită autentificarea offline"
+
+#: ../authconfig.py:209
+msgid "configures winbind to prevent offline login"
+msgstr "configurează winbind să nu permită autentificarea offline"
+
+#: ../authconfig.py:211
+msgid "join the winbind domain or ads realm now as this administrator"
+msgstr ""
+"alăturare imediată la domeniul winbind sau la realm ads ca acest "
+"administrator"
+
+#: ../authconfig.py:214
+msgid "enable wins for hostname resolution"
+msgstr "activează wins pentru rezolvarea gazdei"
+
+#: ../authconfig.py:216
+msgid "disable wins for hostname resolution"
+msgstr "dezactivează wins pentru rezolvarea gazdei"
+
+#: ../authconfig.py:219
+msgid "prefer dns over wins or nis for hostname resolution"
+msgstr ""
+
+#: ../authconfig.py:221
+msgid "do not prefer dns over wins or nis for hostname resolution"
+msgstr ""
+
+#: ../authconfig.py:224
+msgid "enable hesiod for user information by default"
+msgstr "dezactivează·implicit·winbind·pentru·autentificare"
+
+#: ../authconfig.py:226
+msgid "disable hesiod for user information by default"
+msgstr "dezactivează·implicit·hesiod pentru informații despre utilizator"
+
+#: ../authconfig.py:228
+msgid "default hesiod LHS"
+msgstr "LHS hesiod implicit"
+
+#: ../authconfig.py:230
+msgid "default hesiod RHS"
+msgstr "RHS hesiod implicit"
+
+#: ../authconfig.py:233
+#, fuzzy
+msgid ""
+"enable SSSD for user information by default with manually managed "
+"configuration"
+msgstr "activează implicit NIS pentru informații despre utilizator"
+
+#: ../authconfig.py:235
+#, fuzzy
+msgid ""
+"disable SSSD for user information by default (still used for supported "
+"configurations)"
+msgstr "dezactivează implicit NIS pentru informații despre utilizator"
+
+#: ../authconfig.py:237
+#, fuzzy
+msgid ""
+"enable SSSD for authentication by default with manually managed configuration"
+msgstr "activează implicit LDAP pentru autentificare"
+
+#: ../authconfig.py:239
+#, fuzzy
+msgid ""
+"disable SSSD for authentication by default (still used for supported "
+"configurations"
+msgstr "dezactivează implicit LDAP pentru autentificare"
+
+#: ../authconfig.py:241
+msgid "never use SSSD implicitly even for supported configurations"
+msgstr ""
+
+#: ../authconfig.py:243
+msgid "use SSSD implicitly if it supports the configuration"
+msgstr ""
+
+#: ../authconfig.py:246
+#, fuzzy
+msgid "enable caching of user credentials in SSSD by default"
+msgstr ""
+"activează implicit păstrarea temporară a informațiilor despre utilizator"
+
+#: ../authconfig.py:248
+#, fuzzy
+msgid "disable caching of user credentials in SSSD by default"
+msgstr ""
+"dezactivează implicit păstrarea temporară a informațiilor despre utilizator"
+
+#: ../authconfig.py:251
+#, fuzzy
+msgid ""
+"enable caching of user information by default (automatically disabled when "
+"SSSD is used)"
+msgstr ""
+"activează implicit păstrarea temporară a informațiilor despre utilizator"
+
+#: ../authconfig.py:253
+msgid "disable caching of user information by default"
+msgstr ""
+"dezactivează implicit păstrarea temporară a informațiilor despre utilizator"
+
+#: ../authconfig.py:256
+msgid "local authorization is sufficient for local users"
+msgstr "autorizarea locală este suficientă pentru utilizatorii locali"
+
+#: ../authconfig.py:258
+msgid "authorize local users also through remote service"
+msgstr "autorizează utilizatorii locali printr-un serviciu de la distanță"
+
+#: ../authconfig.py:261
+msgid "check access.conf during account authorization"
+msgstr "verifică access.conf în timpul autorizării contului"
+
+#: ../authconfig.py:263
+msgid "do not check access.conf during account authorization"
+msgstr "nu verifica access.conf în timpul autorizării contului"
+
+#: ../authconfig.py:266
+msgid "authenticate system accounts by network services"
+msgstr "autentifică conturile de sistem după serviciile de rețea"
+
+#: ../authconfig.py:268
+msgid "authenticate system accounts by local files only"
+msgstr "autentifică conturile de sistem doar după fișiere locale"
+
+#: ../authconfig.py:271
+msgid "create home directories for users on their first login"
+msgstr ""
+
+#: ../authconfig.py:273
+msgid "do not create home directories for users on their first login"
+msgstr ""
+
+#: ../authconfig.py:276
+msgid "do not start/stop portmap, ypbind, and nscd"
+msgstr "no porni/opri portmap, ypbind și nscd"
+
+#: ../authconfig.py:279
+msgid "do not update the configuration files, only print new settings"
+msgstr "nu actualiza fișierele de configurare, tipărește doar noile setări"
+
+#: ../authconfig.py:283
+msgid "display Back instead of Cancel in the main dialog of the TUI"
+msgstr "afișează Înapoi în loc de Renunță în dialogul principal al TUI"
+
+#: ../authconfig.py:285
+msgid "do not display the deprecated text user interface"
+msgstr "nu afișa interfața în mod text, interfață nesuportată"
+
+#: ../authconfig.py:288
+msgid "opposite of --test, update configuration files with changed settings"
+msgstr ""
+"opusul lui --test, actualizează fișierele de configurare cu setările "
+"schimbate"
+
+#: ../authconfig.py:291
+msgid "update all configuration files"
+msgstr "actualizează toate fișierele de configurare"
+
+#: ../authconfig.py:294
+msgid "probe network for defaults and print them"
+msgstr "probează rețeaua pentru valori implicite și afișează-le"
+
+#: ../authconfig.py:296 ../authconfig.py:299
+msgid "<name>"
+msgstr ""
+
+#: ../authconfig.py:297
+msgid "save a backup of all configuration files"
+msgstr ""
+
+#: ../authconfig.py:300
+msgid "restore the backup of configuration files"
+msgstr ""
+
+#: ../authconfig.py:303
+msgid ""
+"restore the backup of configuration files saved before the previous "
+"configuration change"
+msgstr ""
+
+#: ../authconfig.py:308
+msgid "unexpected argument"
+msgstr "argument neașteptat"
+
+#: ../authconfig.py:439
+msgid "Bad smart card removal action specified."
+msgstr "Acțiunea specificată pentru scoaterea cardului nu este bună."
+
+#: ../authconfig.py:448
+msgid "Unknown password hashing algorithm specified, using sha256."
+msgstr ""
+
+#: ../authconfig.py:481
+msgid "can only be run as root"
+msgstr "poate fi rulat doar ca root"
+
+#: ../authconfig.py:497
+msgid "dialog was cancelled"
+msgstr "dialogul a fost anulat"
+
+#: ../authconfig.py:521
+#, python-format
+msgid ""
+"The %s file was not found, but it is required for %s support to work "
+"properly.\n"
+"Install the %s package, which provides this file."
+msgstr ""
+"Fișierul %s nu a fost găsit, dar este necesar pentru ca suportul pentru %s "
+"să fie funcțional.\n"
+"Instalați pachetul %s care furnizează acest fișier."
+
+#: ../authconfig.py:523 ../authconfig.py:869
+msgid "Warning"
+msgstr "Avertisment"
+
+#: ../authconfig.py:523 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:770
+#: ../authconfig.py:811 ../authconfig.py:869
+msgid "Ok"
+msgstr ""
+
+#: ../authconfig.py:527
+msgid "caching"
+msgstr "se păstrează temporar"
+
+#: ../authconfig.py:528
+msgid "Fingerprint reader"
+msgstr ""
+
+#: ../authconfig.py:529
+msgid "Kerberos"
+msgstr ""
+
+#: ../authconfig.py:530
+msgid "LDAP authentication"
+msgstr "Autentificare LDAP"
+
+#: ../authconfig.py:531 ../authconfig-gtk.py:100
+msgid "LDAP"
+msgstr ""
+
+#: ../authconfig.py:532 ../authconfig-gtk.py:106
+msgid "NIS"
+msgstr ""
+
+#: ../authconfig.py:533
+msgid "shadow password"
+msgstr "parolă umbrită"
+
+#: ../authconfig.py:534 ../authconfig.py:536 ../authconfig-gtk.py:109
+msgid "Winbind"
+msgstr "WinBind"
+
+#: ../authconfig.py:535
+msgid "Winbind authentication"
+msgstr "Autentificare Winbind"
+
+#: ../authconfig.py:541
+msgid "User Information"
+msgstr "Informații despre utilizator"
+
+#: ../authconfig.py:544
+msgid "Cache Information"
+msgstr "Informații păstrate temporar"
+
+#: ../authconfig.py:548
+msgid "Use Hesiod"
+msgstr "Folosește Hesiod"
+
+#: ../authconfig.py:551
+msgid "Use LDAP"
+msgstr "Folosește LDAP"
+
+#: ../authconfig.py:555
+msgid "Use NIS"
+msgstr "Folosește NIS"
+
+#: ../authconfig.py:559
+msgid "Use Winbind"
+msgstr "Folosește WinBind"
+
+#: ../authconfig.py:565 ../authconfig.desktop.in.h:1
+msgid "Authentication"
+msgstr "Autentificare"
+
+#: ../authconfig.py:568
+msgid "Use MD5 Passwords"
+msgstr "Folosește parole MD5"
+
+#: ../authconfig.py:571
+msgid "Use Shadow Passwords"
+msgstr "Folosește parole umbrite (shadow)"
+
+#: ../authconfig.py:575
+msgid "Use LDAP Authentication"
+msgstr "Folosește autentificare LDAP"
+
+#: ../authconfig.py:579
+msgid "Use Kerberos"
+msgstr "Folosește Kerberos"
+
+#: ../authconfig.py:583
+msgid "Use Fingerprint reader"
+msgstr ""
+
+#: ../authconfig.py:588
+msgid "Use Winbind Authentication"
+msgstr "Folosește autentificarea Winbind"
+
+#: ../authconfig.py:592
+msgid "Local authorization is sufficient"
+msgstr "Autorizarea locală este suficientă"
+
+#: ../authconfig.py:602 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:811
+msgid "Back"
+msgstr "Înapoi"
+
+#: ../authconfig.py:602 ../authconfig.py:770
+msgid "Cancel"
+msgstr "Renunță"
+
+#: ../authconfig.py:603 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:811
+msgid "Next"
+msgstr "Înainte"
+
+#: ../authconfig.py:614 ../authconfig-gtk.py:639 ../authconfig.glade.h:15
+msgid "Authentication Configuration"
+msgstr "Configurare autentificare"
+
+#: ../authconfig.py:737
+msgid "LHS:"
+msgstr ""
+
+#: ../authconfig.py:738
+msgid "RHS:"
+msgstr ""
+
+#: ../authconfig.py:739
+msgid "Hesiod Settings"
+msgstr "Setări pentru hesiod"
+
+#: ../authconfig.py:743
+msgid "Use TLS"
+msgstr "Folosește TLS"
+
+#: ../authconfig.py:744 ../authconfig.py:751
+msgid "Server:"
+msgstr ""
+
+#: ../authconfig.py:745
+msgid "Base DN:"
+msgstr ""
+
+#: ../authconfig.py:746
+msgid "LDAP Settings"
+msgstr "Setări LDAP"
+
+#: ../authconfig.py:750 ../authconfig.py:805 ../authconfig.glade.h:22
+msgid "Domain:"
+msgstr "Domeniu:"
+
+#: ../authconfig.py:752
+msgid "NIS Settings"
+msgstr "Setări pentru NIS"
+
+#: ../authconfig.py:756
+msgid "Realm:"
+msgstr ""
+
+#: ../authconfig.py:757
+msgid "KDC:"
+msgstr ""
+
+#: ../authconfig.py:758
+msgid "Admin Server:"
+msgstr "Server Admin:"
+
+#: ../authconfig.py:759
+msgid "Use DNS to resolve hosts to realms"
+msgstr "Folosește DNS pentru a rezolva gazdele în realms"
+
+#: ../authconfig.py:760
+msgid "Use DNS to locate KDCs for realms"
+msgstr "Folosește DNS pentru a localiza KDC-uri pentru realm-uri"
+
+#: ../authconfig.py:761
+msgid "Kerberos Settings"
+msgstr "Setări pentru kerberos"
+
+#: ../authconfig.py:765
+msgid "Domain Administrator:"
+msgstr "Administrator de domeniu:"
+
+#: ../authconfig.py:766
+msgid "Password:"
+msgstr "Parolă:"
+
+#: ../authconfig.py:769
+msgid "Join Settings"
+msgstr "Setări pentru alăturare"
+
+#: ../authconfig.py:779 ../authconfig.glade.h:41
+msgid ""
+"Some of the configuration changes you've made should be saved to disk before "
+"continuing.  If you do not save them, then your attempt to join the domain "
+"may fail.  Save changes?"
+msgstr ""
+"Schimbările făcute configurației ar trebui salvate pe disc înainte de a "
+"continua.  Dacă nu le salvați, încercarea de a vă alătura domeniului ar "
+"putea eșua.  Salvați schimbările?"
+
+#: ../authconfig.py:786
+msgid "Save Settings"
+msgstr "Salvează setările"
+
+#: ../authconfig.py:787
+msgid "No"
+msgstr "Nu"
+
+#: ../authconfig.py:787
+msgid "Yes"
+msgstr "Da"
+
+#. Why does your favorite shell not show up in the list?  Because it won't
+#. fit, that's why!
+#: ../authconfig.py:804
+msgid "Security Model:"
+msgstr "Model de securitate:"
+
+#: ../authconfig.py:806
+msgid "Domain Controllers:"
+msgstr "Controlori de domeniu:"
+
+#: ../authconfig.py:807
+msgid "ADS Realm:"
+msgstr "Realm ADS:"
+
+#: ../authconfig.py:808
+msgid "Template Shell:"
+msgstr "Shell de bază:"
+
+#: ../authconfig.py:810
+msgid "Winbind Settings"
+msgstr "Setări pentru Winbind"
+
+#: ../authconfig.py:812
+msgid "Join Domain"
+msgstr "Domeniu de alăturare"
+
+#: ../authconfig.py:864
+#, python-format
+msgid ""
+"To connect to a LDAP server with TLS protocol enabled you need a CA "
+"certificate which signed your server's certificate. Copy the certificate in "
+"the PEM format to the '%s' directory.\n"
+"Then press OK."
+msgstr ""
+"Pentru a vă conecta la un server LDAP cu protocolul TLS activat aveți nevoie "
+"de un certificat CA care a fost semnat cu certificatul serverului "
+"dumneavoastră. Copiați certificatul în formatul PEM în directorul „%s”.\n"
+"Apoi apăsați OK."
+
+#. FIXME - version
+#: ../authconfig.py:878
+msgid ""
+" <Tab>/<Alt-Tab> between elements   |   <Space> selects   |  <F12> next "
+"screen"
+msgstr ""
+" <Tab>/<Alt-Tab> între elemente   |   <Space> selectează   |  <F12> "
+"următorul ecran"
+
+#: ../authconfig.desktop.in.h:2
+msgid "Control how the system verifies users who attempt to log in"
+msgstr ""
+"Controlează felul în care sistemul verifică utilizatorii care încearcă să se "
+"autentifice"
+
+#: ../authconfig-gtk.py:97
+msgid "Local accounts only"
+msgstr ""
+
+#: ../authconfig-gtk.py:103
+msgid "FreeIPA"
+msgstr ""
+
+#: ../authconfig-gtk.py:118
+#, fuzzy
+msgid "Password"
+msgstr "Parolă:"
+
+#: ../authconfig-gtk.py:121
+#, fuzzy
+msgid "LDAP password"
+msgstr "Parolă:"
+
+#: ../authconfig-gtk.py:124
+#, fuzzy
+msgid "Kerberos password"
+msgstr "parolă umbrită"
+
+#: ../authconfig-gtk.py:127
+#, fuzzy
+msgid "NIS password"
+msgstr "parolă umbrită"
+
+#: ../authconfig-gtk.py:130
+#, fuzzy
+msgid "Winbind password"
+msgstr "parolă umbrită"
+
+#: ../authconfig-gtk.py:434
+msgid ""
+"You must provide ldaps:// server address or use TLS for LDAP authentication."
+msgstr ""
+
+#: ../authconfig.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../authconfig.glade.h:2
+#, fuzzy
+msgid "<b>Authentication Configuration</b>"
+msgstr "Configurare autentificare"
+
+#: ../authconfig.glade.h:3
+#, fuzzy
+msgid "<b>Local Authentication Options</b>"
+msgstr "Configurare autentificare"
+
+#: ../authconfig.glade.h:4
+#, fuzzy
+msgid "<b>Other Authentication Options</b>"
+msgstr "Configurare autentificare"
+
+#: ../authconfig.glade.h:5
+msgid "<b>Smart Card Authentication Options</b>"
+msgstr ""
+
+#: ../authconfig.glade.h:6
+msgid "<b>User Account Configuration</b>"
+msgstr ""
+
+#: ../authconfig.glade.h:7
+msgid ""
+"<small><b>Tip:</b> Smart cards support logging into both local and centrally "
+"managed accounts.</small>"
+msgstr ""
+
+#: ../authconfig.glade.h:8
+msgid ""
+"<small><b>Tip:</b> This is managed via /etc/security/access.conf.</small>"
+msgstr ""
+
+#: ../authconfig.glade.h:9
+#, fuzzy
+msgid "Ad_min Servers:"
+msgstr "Server Admin:"
+
+#: ../authconfig.glade.h:10
+msgid "Advanced _Options"
+msgstr ""
+
+#: ../authconfig.glade.h:11
+msgid "Alert"
+msgstr "Alertă"
+
+#: ../authconfig.glade.h:12
+msgid ""
+"All configuration files which were modified by the previous authentication "
+"configuration change will be restored from backup. Revert the changes?"
+msgstr ""
+
+#: ../authconfig.glade.h:13
+msgid "Allow offline _login"
+msgstr ""
+
+#: ../authconfig.glade.h:14
+#, fuzzy
+msgid "Aut_hentication Method:"
+msgstr "Autentificare"
+
+#: ../authconfig.glade.h:16
+#, fuzzy
+msgid "Card Re_moval Action:"
+msgstr "_Acțiune la scoaterea cardului"
+
+#: ../authconfig.glade.h:17
+#, fuzzy
+msgid "Certificate _URL:"
+msgstr "Adresa certificat_ului"
+
+#: ../authconfig.glade.h:18
+msgid ""
+"Click this button if you did not download a CA certificate yet or you have "
+"not set the CA certificate up by other means."
+msgstr ""
+
+#: ../authconfig.glade.h:19
+msgid "Create _home directories on the first login"
+msgstr ""
+
+#: ../authconfig.glade.h:20
+msgid "Do_n't Save"
+msgstr "_Nu salva"
+
+#: ../authconfig.glade.h:21
+#, fuzzy
+msgid "Domain _administrator:"
+msgstr "Administrator de domeniu:"
+
+#: ../authconfig.glade.h:23
+msgid "Download CA Certificate"
+msgstr "Descărcare certificat CA"
+
+#: ../authconfig.glade.h:24
+#, fuzzy
+msgid "Enable _fingerprint reader support"
+msgstr "Activează suportul pentru _Winbind"
+
+#: ../authconfig.glade.h:25
+msgid "Enable _local access control"
+msgstr ""
+
+#: ../authconfig.glade.h:26
+#, fuzzy
+msgid "Enable _smart card support"
+msgstr "Activează suportul pentru _Hesiod"
+
+#: ../authconfig.glade.h:27
+msgid ""
+"Fingerprint authentication allows you to log in by scanning your finger with "
+"the fingerprint reader."
+msgstr ""
+
+#: ../authconfig.glade.h:28
+msgid "Hashing or crypto algorithm used for storing passwords of local users"
+msgstr ""
+
+#: ../authconfig.glade.h:29
+msgid "Hostname or ldap:// or ldaps:// URI pointing to the LDAP server."
+msgstr ""
+
+#: ../authconfig.glade.h:30
+msgid ""
+"If the home directory of an user doesn't exist yet it will be created "
+"automatically on his first login."
+msgstr ""
+
+#: ../authconfig.glade.h:31
+msgid "Joining Winbind Domain"
+msgstr "Domeniu Winbind de alăturare"
+
+#: ../authconfig.glade.h:32
+#, fuzzy
+msgid "LDAP Search _Base DN:"
+msgstr "DN de bază pentru căutarea LDAP"
+
+#: ../authconfig.glade.h:33
+#, fuzzy
+msgid "LDAP _Server:"
+msgstr "_Server LDAP"
+
+#: ../authconfig.glade.h:34
+#, fuzzy
+msgid "NIS _Domain:"
+msgstr "_Domeniu NIS"
+
+#: ../authconfig.glade.h:35
+#, fuzzy
+msgid "NIS _Server:"
+msgstr "_Server NIS"
+
+#: ../authconfig.glade.h:36
+#, fuzzy
+msgid "R_ealm:"
+msgstr "Realm ADS:"
+
+#: ../authconfig.glade.h:37
+#, fuzzy
+msgid "Require smart car_d for login"
+msgstr "Cere card inteligent pentru autentificare"
+
+#: ../authconfig.glade.h:38
+msgid ""
+"Restore the configuration files backed up before the previous configuration "
+"change"
+msgstr ""
+
+#: ../authconfig.glade.h:39
+msgid "Revert"
+msgstr ""
+
+#: ../authconfig.glade.h:40
+msgid ""
+"Smart card authentication allows you to log in using a certificate and key "
+"associated with a smart card."
+msgstr ""
+"Autentificarea cu card inteligent vă permite să vă autentificați folosind un "
+"certificat și o cheie asociate cu un card inteligent (smart card)."
+
+#: ../authconfig.glade.h:42
+#, fuzzy
+msgid "Te_mplate Shell:"
+msgstr "Shell de bază:"
+
+#: ../authconfig.glade.h:43
+msgid ""
+"To verify the LDAP server with TLS protocol enabled you need a CA "
+"certificate which signed the server's certificate. Please fill in the URL "
+"where the CA certificate in the PEM format can be downloaded from."
+msgstr ""
+
+#: ../authconfig.glade.h:44
+msgid "Use DNS to _locate KDCs for realms"
+msgstr "Fo_losește DNS pentru a localiza KDC-uri pentru realm-uri"
+
+#: ../authconfig.glade.h:45
+#, fuzzy
+msgid "Use D_NS to resolve hosts to realms"
+msgstr "Folosește DNS pentru a rezolva gazdele în realms"
+
+#: ../authconfig.glade.h:46
+msgid ""
+"Use Transport Layer Security extension for LDAP as defined by RFC-2830. It "
+"must not be ticked with ldaps server URI."
+msgstr ""
+
+#: ../authconfig.glade.h:47
+msgid "Use _TLS to encrypt connections"
+msgstr "Folosește _TLS pentru criptarea conexiunilor"
+
+#: ../authconfig.glade.h:48
+msgid ""
+"When enabled /etc/security/access.conf will be consulted for authorization "
+"of users access."
+msgstr ""
+
+#: ../authconfig.glade.h:49
+#, fuzzy
+msgid "Winbind ADS R_ealm:"
+msgstr "_Realm ADS pentru Winbind"
+
+#: ../authconfig.glade.h:50
+#, fuzzy
+msgid "Winbind Domain Co_ntrollers:"
+msgstr "Co_ntrolori de domeniu Winbind"
+
+#: ../authconfig.glade.h:51
+#, fuzzy
+msgid "Winbind _Domain:"
+msgstr "_Domeniu Winbind"
+
+#: ../authconfig.glade.h:52
+#, fuzzy
+msgid "_Download CA Certificate..."
+msgstr "Descărcare certificat CA"
+
+#: ../authconfig.glade.h:53
+#, fuzzy
+msgid "_Identity & Authentication"
+msgstr "Autentificare"
+
+#: ../authconfig.glade.h:54
+#, fuzzy
+msgid "_Join Domain..."
+msgstr "Domeniu de alăturare"
+
+#: ../authconfig.glade.h:55
+#, fuzzy
+msgid "_KDCs:"
+msgstr "_KDC-uri"
+
+#: ../authconfig.glade.h:56
+msgid "_Password Hashing Algorithm:"
+msgstr ""
+
+#: ../authconfig.glade.h:57
+#, fuzzy
+msgid "_Password:"
+msgstr "Parolă:"
+
+#: ../authconfig.glade.h:58
+#, fuzzy
+msgid "_Security Model:"
+msgstr "Model de securitate:"
+
+#: ../authconfig.glade.h:59
+msgid "_User Account Database:"
+msgstr ""
+
+#: ../authinfo.py:926 ../authinfo.py:1574 ../authinfo.py:2896
+msgid "Lock"
+msgstr "Blochează"
+
+#: ../authinfo.py:926 ../authinfo.py:1576
+msgid "Ignore"
+msgstr "Ignoră"
+
+#: ../authinfo.py:3268
+#, fuzzy, python-format
+msgid ""
+"Authentication module %s/pam_%s.so is missing. Authentication process might "
+"not work correctly."
+msgstr ""
+"Modulul de autentificare %s/pam_%s.so lipsește. Procesul de autentificare nu "
+"va funcționa corect."
+
+#: ../authinfo.py:3829
+msgid "Error downloading CA certificate"
+msgstr "Eroare la descărcarea certificatului CA"
+
+#, fuzzy
+#~ msgid "Additional options for user information and authentication"
+#~ msgstr "dezactivează·implicit·hesiod pentru informații despre utilizator"
+
+#~ msgid "<b>Options</b>"
+#~ msgstr "<b>Opțiuni</b>"
+
+#~ msgid "<b>Smart Card</b>"
+#~ msgstr "<b>Card inteligent</b>"
+
+#~ msgid "Cache User _Information"
+#~ msgstr "Păstrează temporar _informațiile"
+
+#~ msgid "Configure H_esiod..."
+#~ msgstr "Configur_ează Hesiod..."
+
+#~ msgid "Configure K_erberos..."
+#~ msgstr "Configur_ează Kerberos..."
+
+#~ msgid "Configure L_DAP..."
+#~ msgstr "Configurează L_DAP..."
+
+#~ msgid "Configure NI_S..."
+#~ msgstr "Configurează NI_S..."
+
+#~ msgid "Configure Win_bind..."
+#~ msgstr "Configurează Win_bind..."
+
+#~ msgid "Domain"
+#~ msgstr "Domeniu"
+
+#~ msgid "Domain _Administrator"
+#~ msgstr "_Administrator de domeniu"
+
+#~ msgid "Enable _Kerberos Support"
+#~ msgstr "Activează suportul pentru _Kerberos"
+
+#~ msgid "Enable _LDAP Support"
+#~ msgstr "Activează suportul pentru _LDAP"
+
+#~ msgid "Enable _NIS Support"
+#~ msgstr "Activează suportul pentru _NIS"
+
+#~ msgid ""
+#~ "For user accounts maintained in local /etc/passwd file system will not "
+#~ "check authorization from network services such as LDAP or Kerberos."
+#~ msgstr ""
+#~ "Pentru conturile de utilizator aflate în /etc/passwd pe sistemul de "
+#~ "fișiere nu se va cere autorizare de la servicii de rețea cum ar fi LDAP "
+#~ "sau Kerberos."
+
+#~ msgid "Hesiod _LHS"
+#~ msgstr "_LHS pentru Hesiod"
+
+#~ msgid "Hesiod _RHS"
+#~ msgstr "_RHS pentru hesiod"
+
+#~ msgid ""
+#~ "Hesiod allows a system administrator to publish user and group "
+#~ "information in DNS.  It is sometimes used in very large networks."
+#~ msgstr ""
+#~ "Hesiod permite unui administrator de sistem să publice informații despre "
+#~ "utilizatori și grupuri în DNS.  Este folosit uneori în rețele foarte mari."
+
+#~ msgid ""
+#~ "Kerberos is a trusted third-party authentication system which is commonly "
+#~ "used in medium to large networks."
+#~ msgstr ""
+#~ "Kerberos este un sistem de autentificare oferit de o parte terță. Este "
+#~ "folosit adesea în rețele medii până la cele mari."
+
+#~ msgid ""
+#~ "NIS is the Network Information Service.  It is commonly used on small to "
+#~ "medium networks."
+#~ msgstr ""
+#~ "NIS este un serviciu de rețea pentru obținerea de informații.  Este "
+#~ "folosit de obicei în rețele mici până la cele medii."
+
+#~ msgid "SMB Settings"
+#~ msgstr "Setări pentru SMB"
+
+#~ msgid "Smart Card Settings"
+#~ msgstr "Setări pentru card inteligent"
+
+#~ msgid ""
+#~ "The Lightweight Directory Access Protocol is a standard way of searching "
+#~ "a directory, which can hold arbitrary data in a structured hierarchy. "
+#~ "LDAP is increasingly being used in small to large networks."
+#~ msgstr ""
+#~ "Protocolul simplu de acces la un director (LDAP) este o modalitate "
+#~ "standard de a căuta un director care poate conține date arbitrare într-o "
+#~ "structură ierarhică. LDAP este folosit din ce în ce mai mult în rețele "
+#~ "mici până la rețele mari, în mod uzual pentru păstrarea agendelor cu date "
+#~ "personale și adrese de corespondență electronică."
+
+#~ msgid "Use _DNS to resolve hosts to realms"
+#~ msgstr "Folosește _DNS pentru a rezolva gazdele în realm-uri"
+
+#~ msgid "Use _Shadow Passwords"
+#~ msgstr "Folosește parole _umbrite"
+
+#~ msgid ""
+#~ "When enabled allows network services such as LDAP or Kerberos to "
+#~ "authenticate system accounts including root on this machine."
+#~ msgstr ""
+#~ "Când opțiunea este activată, se permite serviciilor de rețea cum ar fi "
+#~ "LDAP sau Kerberos să autentifice și conturile de sistem, cum ar fi root "
+#~ "pe acest sistem."
+
+#~ msgid ""
+#~ "Winbind allows a system to retrieve information about users and to "
+#~ "authenticate users by using information stored in an NTDOM or ADS "
+#~ "server.  It is used in small to large networks."
+#~ msgstr ""
+#~ "Winbind permite unui sistem să obțină informații despre utilizatori și să "
+#~ "autentifice utilizatori folosind informații stocate într-un server NTDOM "
+#~ "sau ADS.  Este folosit în rețele mici până la cele mari."
+
+#~ msgid "_Admin Servers"
+#~ msgstr "Servere admin"
+
+#~ msgid "_Authenticate system accounts by network services"
+#~ msgstr "_Autentifică conturile de sistem după serviciile de rețea"
+
+#~ msgid "_Domain Controllers"
+#~ msgstr "Controlori de domeniu"
+
+#~ msgid "_Local authorization is sufficient for local users"
+#~ msgstr "Autorizarea locală este suficientă pentru utilizatorii locali"
+
+#~ msgid "_Password"
+#~ msgstr "_Parolă"
+
+#~ msgid "_Security Model"
+#~ msgstr "Model de securitate"
+
+#~ msgid "_Template Shell"
+#~ msgstr "Shell de bază_"
+
+#~ msgid "_Workgroup"
+#~ msgstr "_Grup de lucru"

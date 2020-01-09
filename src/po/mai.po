@@ -1,0 +1,1281 @@
+# translation of authconfig.tip.mai.po to Maithili
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: authconfig.tip.mai\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-10 16:29+0200\n"
+"PO-Revision-Date: 2009-09-22 22:38+0530\n"
+"Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
+"Language-Team: Maithili <maithili.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../authconfig.py:81
+#, python-format
+msgid "usage: %s [options]"
+msgstr "प्रयोग: %s [विकल्प]"
+
+#: ../authconfig.py:88
+msgid "enable shadowed passwords by default"
+msgstr "पूर्वनिर्धारित रूपेँ छायांकित गुड़किल्ली केँ सक्रिय करू"
+
+#: ../authconfig.py:90
+msgid "disable shadowed passwords by default"
+msgstr "पूर्वनिर्धारित रूपेँ छायांकित गुड़किल्ली केँ निष्क्रिय करू"
+
+#: ../authconfig.py:92
+msgid "enable MD5 passwords by default"
+msgstr "पूर्वनिर्धारित रूपेँ MD5 गुड़किल्ली केँ सक्रिय करू"
+
+#: ../authconfig.py:94
+msgid "disable MD5 passwords by default"
+msgstr "पूर्वनिर्धारित रूपेँ MD5 गुड़किल्ली केँ निष्क्रिय करू"
+
+#: ../authconfig.py:97
+msgid "hash/crypt algorithm for new passwords"
+msgstr "hash/crypt अल्गोरिथम नव गुड़किल्लीक लेल"
+
+#: ../authconfig.py:100
+msgid "enable NIS for user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल NIS सक्रिय करू"
+
+#: ../authconfig.py:102
+msgid "disable NIS for user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल NIS निष्क्रिय करू"
+
+#: ../authconfig.py:103
+msgid "<domain>"
+msgstr "<domain>"
+
+#: ../authconfig.py:104
+msgid "default NIS domain"
+msgstr "पूर्वनिर्धारित NIS डोमेन"
+
+#: ../authconfig.py:105 ../authconfig.py:116 ../authconfig.py:154
+#: ../authconfig.py:156
+msgid "<server>"
+msgstr "<server>"
+
+#: ../authconfig.py:106
+msgid "default NIS server"
+msgstr "पूर्वनिर्धारित NIS सर्वर"
+
+#: ../authconfig.py:109
+msgid "enable LDAP for user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल LDAP केँ सक्रिय करू"
+
+#: ../authconfig.py:111
+msgid "disable LDAP for user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल LDAP केँ निष्क्रिय करू"
+
+#: ../authconfig.py:113
+msgid "enable LDAP for authentication by default"
+msgstr "पूर्वनिर्धारित रूपेँ सत्यापनक लेल LDAP केँ सक्रिय करू"
+
+#: ../authconfig.py:115
+msgid "disable LDAP for authentication by default"
+msgstr "पूर्वनिर्धारित रूपेँ सत्यापनक लेल LDAP केँ निष्क्रिय करू"
+
+#: ../authconfig.py:117
+msgid "default LDAP server hostname or URI"
+msgstr "पूर्वनिर्धारित LDAP सर्वर होस्टनेम अथवा URI"
+
+#: ../authconfig.py:118
+msgid "<dn>"
+msgstr "<dn>"
+
+#: ../authconfig.py:119
+msgid "default LDAP base DN"
+msgstr "पूर्वनिर्धारित LDAP बेस DN"
+
+#: ../authconfig.py:121
+msgid "enable use of TLS with LDAP (RFC-2830)"
+msgstr "LDAP क संग TLS क प्रयोग सक्रिय करू (RFC-2830)"
+
+#: ../authconfig.py:123
+msgid "disable use of TLS with LDAP (RFC-2830)"
+msgstr "LDAP क संग TLS क प्रयोग निष्क्रिय करू (RFC-2830)"
+
+#: ../authconfig.py:125
+msgid "enable use of RFC-2307bis schema for LDAP user information lookups"
+msgstr ""
+
+#: ../authconfig.py:127
+msgid "disable use of RFC-2307bis schema for LDAP user information lookups"
+msgstr ""
+
+#: ../authconfig.py:128
+msgid "<URL>"
+msgstr "<URL>"
+
+#: ../authconfig.py:129
+msgid "load CA certificate from the URL"
+msgstr "CA प्रमाणपत्र URL सँ लोड करू"
+
+#: ../authconfig.py:132
+msgid "enable authentication with smart card by default"
+msgstr "स्मार्टकार्ड क संग पूर्वनिर्धारित रूपेँ सत्यापन सक्रिय करू"
+
+#: ../authconfig.py:134
+msgid "disable authentication with smart card by default"
+msgstr "स्मार्टकार्डक संग पूर्वनिर्धारित रूपेँ सत्यापन निष्क्रिय करू"
+
+#: ../authconfig.py:136
+msgid "require smart card for authentication by default"
+msgstr "पूर्वनिर्धारित रूपेँ सत्यापनक लेल स्मार्टकार्ड जरूरी"
+
+#: ../authconfig.py:138
+msgid "do not require smart card for authentication by default"
+msgstr "पूर्वनिर्धारित रूपेँ सत्यापनक लेल स्मार्टकार्ड जरूरी नहि"
+
+#: ../authconfig.py:139
+msgid "<module>"
+msgstr "<module>"
+
+#: ../authconfig.py:140
+msgid "default smart card module to use"
+msgstr "प्रयोगक लेल पूर्वनिर्धारित स्मार्टकार्ड मॉड्यूल"
+
+#: ../authconfig.py:143
+msgid "action to be taken on smart card removal"
+msgstr "स्मार्टकार्ड प्रतिस्थापन पर कएल गेल कारवाइ"
+
+#: ../authconfig.py:146
+msgid "enable authentication with fingerprint readers by default"
+msgstr "पूर्वनिर्धारित रूपेँ फिंगरप्रिंट पाठक सँ सत्यापन सक्रिय करू"
+
+#: ../authconfig.py:148
+msgid "disable authentication with fingerprint readers by default"
+msgstr "पूर्वनिर्धारित रूपेँ फिंगरप्रिंट पाठक सँ सत्यापन निष्क्रिय करू"
+
+#: ../authconfig.py:151
+msgid "enable kerberos authentication by default"
+msgstr "पूर्वनिर्धारित रूपेँ करबरोस सत्यापन केँ सक्रिय करू"
+
+#: ../authconfig.py:153
+msgid "disable kerberos authentication by default"
+msgstr "पूर्वनिर्धारित रूपेँ करबरोस सत्यापन केँ निष्क्रिय करू"
+
+#: ../authconfig.py:155
+msgid "default kerberos KDC"
+msgstr "पूर्वनिर्धारित करबरोस KDC"
+
+#: ../authconfig.py:157
+msgid "default kerberos admin server"
+msgstr "पूर्वनिर्धारित करबरोस प्रशासक सर्वर"
+
+#: ../authconfig.py:158 ../authconfig.py:188
+msgid "<realm>"
+msgstr "<realm>"
+
+#: ../authconfig.py:159
+msgid "default kerberos realm"
+msgstr "पूर्वनिर्धारित करबरोस रेल्म"
+
+#: ../authconfig.py:161
+msgid "enable use of DNS to find kerberos KDCs"
+msgstr "करबरोस KDC केँ पाबैमे DNS क प्रयोग केँ सक्रिय करू"
+
+#: ../authconfig.py:163
+msgid "disable use of DNS to find kerberos KDCs"
+msgstr "करबरोस KDC केँ पाबैमे DNS क प्रयोग केँ निष्क्रिय करू"
+
+#: ../authconfig.py:165
+msgid "enable use of DNS to find kerberos realms"
+msgstr "करबरोस रियलम्स केँ पाबैमे DNS क प्रयोग केँ सक्रिय करू"
+
+#: ../authconfig.py:167
+msgid "disable use of DNS to find kerberos realms"
+msgstr "करबरोस रियलम्स केँ पाबैमे DNS क प्रयोग केँ निष्क्रिय करू"
+
+#: ../authconfig.py:170
+msgid "enable SMB authentication by default"
+msgstr "SMB सत्यापन केँ पूर्वनिर्धारित रूपेँ सक्रिय करू"
+
+#: ../authconfig.py:172
+msgid "disable SMB authentication by default"
+msgstr "SMB सत्यापन केँ पूर्वनिर्धारित रूपेँ निष्क्रिय करू"
+
+#: ../authconfig.py:173
+msgid "<servers>"
+msgstr "<servers>"
+
+#: ../authconfig.py:174
+msgid "names of servers to authenticate against"
+msgstr "एकर बरक्स सर्वर क नामकेँ सत्यापित करू"
+
+#: ../authconfig.py:175
+msgid "<workgroup>"
+msgstr "<workgroup>"
+
+#: ../authconfig.py:176
+msgid "workgroup authentication servers are in"
+msgstr "कार्यसमूह सत्यापन सर्वर एकरा मे अछि"
+
+#: ../authconfig.py:179
+msgid "enable winbind for user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल विंडविंड केँ सक्रिय करू"
+
+#: ../authconfig.py:181
+msgid "disable winbind for user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल विंडबिंड केँ निष्क्रिय करू"
+
+#: ../authconfig.py:183
+msgid "enable winbind for authentication by default"
+msgstr "पूर्वनिर्धारित रूपेँ सत्यापनक लेल winbind केँ सक्रिय करू"
+
+#: ../authconfig.py:185
+msgid "disable winbind for authentication by default"
+msgstr "पूर्वनिर्धारित रूपेँ सत्यापनक लेल winbind केँ निष्क्रिय करू"
+
+#: ../authconfig.py:187
+msgid "security mode to use for samba and winbind"
+msgstr "सांबा आओर विंडबिंडक प्रयोग करबाक लेल सुरक्षा मोड"
+
+#: ../authconfig.py:189
+msgid "default realm for samba and winbind when security=ads"
+msgstr "सांबा आओर विंडबिंडक लेल पूर्वनिर्धारित रियल्म जखन security=ads"
+
+#: ../authconfig.py:190 ../authconfig.py:192
+msgid "<lowest-highest>"
+msgstr "<lowest-highest>"
+
+#: ../authconfig.py:191
+msgid "uid range winbind will assign to domain or ads users"
+msgstr "uid रेंज विंडबिंड डोमेन अथवा ads users केँ सौंपताह"
+
+#: ../authconfig.py:193
+msgid "gid range winbind will assign to domain or ads users"
+msgstr "gid रेंज विंडबिंड डोमेन अथवा एड्स यूजर केँ सौंपताह"
+
+#: ../authconfig.py:195
+msgid ""
+"the character which will be used to separate the domain and user part of "
+"winbind-created user names if winbindusedefaultdomain is not enabled"
+msgstr ""
+"अक्षर जे डोमेन आओर विंडबिंड निर्मित प्रयोक्ता नाम केँ अलग करबाक लेल प्रयुक्त हाएत जँ "
+"winbindusedefaultdomain सक्रिय नहि अछि"
+
+#: ../authconfig.py:197
+msgid "the directory which winbind-created users will have as home directories"
+msgstr "डायरेक्टरी जकरा विंडबिंड-निर्मित प्रयोक्ता गृह डायरेक्टरी क रूपेँ रखताह"
+
+#: ../authconfig.py:199
+msgid "the group which winbind-created users will have as their primary group"
+msgstr "समूह जकरा विंडबिंड-निर्मित प्रयोक्ता प्राथमिक समूहक रूपेँ रखताह"
+
+#: ../authconfig.py:201
+msgid "the shell which winbind-created users will have as their login shell"
+msgstr "शैल जकरा विंडबिंड-निर्मित प्रयोक्ता अपन लागिन शैलक रूपेँ रखताह"
+
+#: ../authconfig.py:203
+msgid ""
+"configures winbind to assume that users with no domain in their user names "
+"are domain users"
+msgstr ""
+"ई मानैत विंडबिंड सक्रिय करू जे अपन प्रयोक्ता नाममे बिनु डोमेनक प्रयोक्ता डोमेन प्रयोक्ता अछि"
+
+#: ../authconfig.py:205
+msgid ""
+"configures winbind to assume that users with no domain in their user names "
+"are not domain users"
+msgstr ""
+"ई मानैत विंडबिंड सक्रिय करू जे अपन प्रयोक्ता नाम मे बिनु डोमेनक प्रयोक्ता डोमेन प्रयोक्ता "
+"नहि अछि"
+
+#: ../authconfig.py:207
+msgid "configures winbind to allow offline login"
+msgstr "आफलाइन लागिन स्वीकारब क लेल winbind विन्यस्त करैत अछि"
+
+#: ../authconfig.py:209
+msgid "configures winbind to prevent offline login"
+msgstr "आफलाइन लागिन रोकबाक लेल winbind विन्यस्त करैत अछि"
+
+#: ../authconfig.py:211
+msgid "join the winbind domain or ads realm now as this administrator"
+msgstr "आब ई प्रशासक कए रूपेँ विंडबिंड डोमेन अथवा ads रियल्म सँ जुड़ू"
+
+#: ../authconfig.py:214
+msgid "enable wins for hostname resolution"
+msgstr "मेजबाननाम समाधानक लेल विंस सक्रिय करू"
+
+#: ../authconfig.py:216
+msgid "disable wins for hostname resolution"
+msgstr "मेजबाननाम समाधानक लेल विंस निष्क्रिय करू"
+
+#: ../authconfig.py:219
+msgid "prefer dns over wins or nis for hostname resolution"
+msgstr "मेजबाननाम समाधानक लेल विंस अथवा निसक बदला dns पसंद करू"
+
+#: ../authconfig.py:221
+msgid "do not prefer dns over wins or nis for hostname resolution"
+msgstr "मेजबाननाम समाधानक लेल विंस अथवा निसक बदला dns पसंद नहि करू"
+
+#: ../authconfig.py:224
+msgid "enable hesiod for user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल हेसियड केँ सक्रिय करू"
+
+#: ../authconfig.py:226
+msgid "disable hesiod for user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल हेसियड केँ निष्क्रिय करू"
+
+#: ../authconfig.py:228
+msgid "default hesiod LHS"
+msgstr "पूर्वनिर्धारित हेसियड LHS"
+
+#: ../authconfig.py:230
+msgid "default hesiod RHS"
+msgstr "पूर्वनिर्धारित हेसियड RHS"
+
+#: ../authconfig.py:233
+#, fuzzy
+msgid ""
+"enable SSSD for user information by default with manually managed "
+"configuration"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल NIS सक्रिय करू"
+
+#: ../authconfig.py:235
+#, fuzzy
+msgid ""
+"disable SSSD for user information by default (still used for supported "
+"configurations)"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल NIS निष्क्रिय करू"
+
+#: ../authconfig.py:237
+#, fuzzy
+msgid ""
+"enable SSSD for authentication by default with manually managed configuration"
+msgstr "पूर्वनिर्धारित रूपेँ सत्यापनक लेल LDAP केँ सक्रिय करू"
+
+#: ../authconfig.py:239
+#, fuzzy
+msgid ""
+"disable SSSD for authentication by default (still used for supported "
+"configurations"
+msgstr "पूर्वनिर्धारित रूपेँ सत्यापनक लेल LDAP केँ निष्क्रिय करू"
+
+#: ../authconfig.py:241
+msgid "never use SSSD implicitly even for supported configurations"
+msgstr ""
+
+#: ../authconfig.py:243
+msgid "use SSSD implicitly if it supports the configuration"
+msgstr ""
+
+#: ../authconfig.py:246
+#, fuzzy
+msgid "enable caching of user credentials in SSSD by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक केश केँ सक्रिय करू"
+
+#: ../authconfig.py:248
+#, fuzzy
+msgid "disable caching of user credentials in SSSD by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक केश केँ निष्क्रिय करू"
+
+#: ../authconfig.py:251
+#, fuzzy
+msgid ""
+"enable caching of user information by default (automatically disabled when "
+"SSSD is used)"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक केश केँ सक्रिय करू"
+
+#: ../authconfig.py:253
+msgid "disable caching of user information by default"
+msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक केश केँ निष्क्रिय करू"
+
+#: ../authconfig.py:256
+msgid "local authorization is sufficient for local users"
+msgstr "स्थानीय दावेदारी स्थानीय प्रयोक्ताक लेल पर्याप्त अछि"
+
+#: ../authconfig.py:258
+msgid "authorize local users also through remote service"
+msgstr "दूरस्थ सेवाक द्वारा स्थानीय प्रयोक्ता केँ प्राधिकृत करू"
+
+#: ../authconfig.py:261
+msgid "check access.conf during account authorization"
+msgstr "सत्यापनक काले access.conf जाँचू"
+
+#: ../authconfig.py:263
+msgid "do not check access.conf during account authorization"
+msgstr "खाता सत्यापनक काले access.conf नहि जाँचू"
+
+#: ../authconfig.py:266
+msgid "authenticate system accounts by network services"
+msgstr "संजाल सेवाक द्वारा सिस्टम प्रमाणित करैत अछि"
+
+#: ../authconfig.py:268
+msgid "authenticate system accounts by local files only"
+msgstr "केवल स्थानीय फाइलक द्वारा सिस्टम खाता प्रमाणित करैत अछि"
+
+#: ../authconfig.py:271
+msgid "create home directories for users on their first login"
+msgstr "ओकर पहिले लागिन पर प्रयोक्ताक लेल घर निर्देशिका"
+
+#: ../authconfig.py:273
+msgid "do not create home directories for users on their first login"
+msgstr "ओकर पहिले लागिन पर प्रयोक्ताक लेल घर निर्देशिका नहि बनाउ"
+
+#: ../authconfig.py:276
+msgid "do not start/stop portmap, ypbind, and nscd"
+msgstr "portmap, ypbind, आओर nscd केँ आरंभ/अंत नहि करू "
+
+#: ../authconfig.py:279
+msgid "do not update the configuration files, only print new settings"
+msgstr "विन्यास फाइल अद्यतन नहि करू, केवल नयी जमावट केँ छापू"
+
+#: ../authconfig.py:283
+msgid "display Back instead of Cancel in the main dialog of the TUI"
+msgstr "TUI क मुख्य संवाद मे रद्द क बजाय पीछे केँ देखाउ"
+
+#: ../authconfig.py:285
+msgid "do not display the deprecated text user interface"
+msgstr "पदावनत पाठ प्रयोक्ता अंतरफलक केँ नहि देखाउ"
+
+#: ../authconfig.py:288
+msgid "opposite of --test, update configuration files with changed settings"
+msgstr "--test का विलोम, बदला जमावट क संग विन्यास फाइल अद्यतन करू"
+
+#: ../authconfig.py:291
+msgid "update all configuration files"
+msgstr "सभटा विन्यास फाइल अद्यतन करू"
+
+#: ../authconfig.py:294
+msgid "probe network for defaults and print them"
+msgstr "पूर्वनिर्धारितक लेल संजाल खोजू आओर ओकरा छापू"
+
+#: ../authconfig.py:296 ../authconfig.py:299
+msgid "<name>"
+msgstr "<name>"
+
+#: ../authconfig.py:297
+msgid "save a backup of all configuration files"
+msgstr "सभटा विन्यास फाइलक बैकअफ केँ सहेजैछ"
+
+#: ../authconfig.py:300
+msgid "restore the backup of configuration files"
+msgstr "विन्यास फाइलक बैकअप केँ पुनर्भंडारित करैत अछि"
+
+#: ../authconfig.py:303
+msgid ""
+"restore the backup of configuration files saved before the previous "
+"configuration change"
+msgstr "पछिला विन्यास परिवर्तनक पहिले विन्यास फाइलक बैकअप केँ पुनर्भंडारित करैत अछि"
+
+#: ../authconfig.py:308
+msgid "unexpected argument"
+msgstr "अप्रत्याशित तर्क"
+
+#: ../authconfig.py:439
+msgid "Bad smart card removal action specified."
+msgstr "खराब स्मार्टकार्ड विस्थापन क्रिया निर्दिष्ट."
+
+#: ../authconfig.py:448
+msgid "Unknown password hashing algorithm specified, using sha256."
+msgstr "अज्ञात गुड़किल्ली हैशिंग अलगोरिथम निर्दिष्ट, sha256 क प्रयोग कए रहल अछि."
+
+#: ../authconfig.py:481
+msgid "can only be run as root"
+msgstr "केवल रूट भएकए चलाए सकैत अछि"
+
+#: ../authconfig.py:497
+msgid "dialog was cancelled"
+msgstr "डाइलॉग केँ रद्द कएल गेल छल"
+
+#: ../authconfig.py:521
+#, python-format
+msgid ""
+"The %s file was not found, but it is required for %s support to work "
+"properly.\n"
+"Install the %s package, which provides this file."
+msgstr ""
+"%s फाइल भेटल नहि, मुदा %s समर्थन क लेल ई आवश्यक अछि.\n"
+"ई फाइल केँ दएबला %s संकुल का संस्थापन करू."
+
+#: ../authconfig.py:523 ../authconfig.py:869
+msgid "Warning"
+msgstr "चेतावनी"
+
+#: ../authconfig.py:523 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:770
+#: ../authconfig.py:811 ../authconfig.py:869
+msgid "Ok"
+msgstr "बेस"
+
+#: ../authconfig.py:527
+msgid "caching"
+msgstr "कैशिंग"
+
+#: ../authconfig.py:528
+msgid "Fingerprint reader"
+msgstr "फिंगरप्रिंट पाठक"
+
+#: ../authconfig.py:529
+msgid "Kerberos"
+msgstr "करबरोस"
+
+#: ../authconfig.py:530
+msgid "LDAP authentication"
+msgstr "LDAP सत्यापन"
+
+#: ../authconfig.py:531 ../authconfig-gtk.py:100
+msgid "LDAP"
+msgstr "LDAP"
+
+#: ../authconfig.py:532 ../authconfig-gtk.py:106
+msgid "NIS"
+msgstr "NIS"
+
+#: ../authconfig.py:533
+msgid "shadow password"
+msgstr "छाया गुड़किल्ली"
+
+#: ../authconfig.py:534 ../authconfig.py:536 ../authconfig-gtk.py:109
+msgid "Winbind"
+msgstr "विंडवाइंड"
+
+#: ../authconfig.py:535
+msgid "Winbind authentication"
+msgstr "विंडवाइंड सत्यापन"
+
+#: ../authconfig.py:541
+msgid "User Information"
+msgstr "प्रयोक्ता सूचना"
+
+#: ../authconfig.py:544
+msgid "Cache Information"
+msgstr "कैश सूचना"
+
+#: ../authconfig.py:548
+msgid "Use Hesiod"
+msgstr "हैसीएड प्रयोग करू"
+
+#: ../authconfig.py:551
+msgid "Use LDAP"
+msgstr "LDAP प्रयोग करू"
+
+#: ../authconfig.py:555
+msgid "Use NIS"
+msgstr "NIS प्रयोग करू"
+
+#: ../authconfig.py:559
+msgid "Use Winbind"
+msgstr "विंडवाइंड प्रयोग करू"
+
+#: ../authconfig.py:565 ../authconfig.desktop.in.h:1
+msgid "Authentication"
+msgstr "सत्यापन"
+
+#: ../authconfig.py:568
+msgid "Use MD5 Passwords"
+msgstr "MD5 गुड़किल्लीक प्रयोग करू"
+
+#: ../authconfig.py:571
+msgid "Use Shadow Passwords"
+msgstr "छाया गुड़किल्लीक प्रयोग करू"
+
+#: ../authconfig.py:575
+msgid "Use LDAP Authentication"
+msgstr "LDAP सत्यापन प्रयोग करू"
+
+#: ../authconfig.py:579
+msgid "Use Kerberos"
+msgstr "करबरोसक प्रयोग करू"
+
+#: ../authconfig.py:583
+msgid "Use Fingerprint reader"
+msgstr "फिंगरप्रिंट पाठक क प्रयोग करू"
+
+#: ../authconfig.py:588
+msgid "Use Winbind Authentication"
+msgstr "विंडवाइंड सत्यापन प्रयोग करू"
+
+#: ../authconfig.py:592
+msgid "Local authorization is sufficient"
+msgstr "स्थानीय प्राधिकार पर्याप्त अछि."
+
+#: ../authconfig.py:602 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:811
+msgid "Back"
+msgstr "पाछाँ"
+
+#: ../authconfig.py:602 ../authconfig.py:770
+msgid "Cancel"
+msgstr "रद्द"
+
+#: ../authconfig.py:603 ../authconfig.py:740 ../authconfig.py:747
+#: ../authconfig.py:753 ../authconfig.py:762 ../authconfig.py:811
+msgid "Next"
+msgstr "अगिला"
+
+#: ../authconfig.py:614 ../authconfig-gtk.py:639 ../authconfig.glade.h:15
+msgid "Authentication Configuration"
+msgstr "सत्यापन विन्यास"
+
+#: ../authconfig.py:737
+msgid "LHS:"
+msgstr "LHS:"
+
+#: ../authconfig.py:738
+msgid "RHS:"
+msgstr "RHS:"
+
+#: ../authconfig.py:739
+msgid "Hesiod Settings"
+msgstr "हैसीएड जमावट"
+
+#: ../authconfig.py:743
+msgid "Use TLS"
+msgstr "TLS प्रयोग करू"
+
+#: ../authconfig.py:744 ../authconfig.py:751
+msgid "Server:"
+msgstr "सर्वर:"
+
+#: ../authconfig.py:745
+msgid "Base DN:"
+msgstr "बेस DN:"
+
+#: ../authconfig.py:746
+msgid "LDAP Settings"
+msgstr "LDAP जमावट"
+
+#: ../authconfig.py:750 ../authconfig.py:805 ../authconfig.glade.h:22
+msgid "Domain:"
+msgstr "डोमेन:"
+
+#: ../authconfig.py:752
+msgid "NIS Settings"
+msgstr "NIS जमावट"
+
+#: ../authconfig.py:756
+msgid "Realm:"
+msgstr "रियल्म:"
+
+#: ../authconfig.py:757
+msgid "KDC:"
+msgstr "KDC:"
+
+#: ../authconfig.py:758
+msgid "Admin Server:"
+msgstr "प्रशासक सर्वर:"
+
+#: ../authconfig.py:759
+msgid "Use DNS to resolve hosts to realms"
+msgstr "रियलम्स मे मेजबान हल करबाक लेल DNS क प्रयोग करू"
+
+#: ../authconfig.py:760
+msgid "Use DNS to locate KDCs for realms"
+msgstr "रियल्म क लेल KDC केँ पता करबा मे DNS क प्रयोग करू"
+
+#: ../authconfig.py:761
+msgid "Kerberos Settings"
+msgstr "करबरोस जमावट"
+
+#: ../authconfig.py:765
+msgid "Domain Administrator:"
+msgstr "डोमेन प्रशासक:"
+
+#: ../authconfig.py:766
+msgid "Password:"
+msgstr "गुड़किल्ली:"
+
+#: ../authconfig.py:769
+msgid "Join Settings"
+msgstr "जमावट सँ जुड़ू"
+
+#: ../authconfig.py:779 ../authconfig.glade.h:41
+msgid ""
+"Some of the configuration changes you've made should be saved to disk before "
+"continuing.  If you do not save them, then your attempt to join the domain "
+"may fail.  Save changes?"
+msgstr ""
+"अहाँक द्वारा कएल गेल किछु विन्यास परिवर्तन जारी रखबा क पहिले डिस्क मे संग्रहित कएल "
+"जएनाइ चाही. जँ अहाँ ओकरा संग्रहित नहि करैत छी, तखन डोमेन सँ जुड़बाक अहाँक प्रयास विफल "
+"जाए सकैत अछि. परिवर्तन संग्रहित करू?"
+
+#: ../authconfig.py:786
+msgid "Save Settings"
+msgstr "जमावट संग्रहित करू"
+
+#: ../authconfig.py:787
+msgid "No"
+msgstr "नहि"
+
+#: ../authconfig.py:787
+msgid "Yes"
+msgstr "हँ"
+
+#. Why does your favorite shell not show up in the list?  Because it won't
+#. fit, that's why!
+#: ../authconfig.py:804
+msgid "Security Model:"
+msgstr "सुरक्षा माडल:"
+
+#: ../authconfig.py:806
+msgid "Domain Controllers:"
+msgstr "डोमेन नियंत्रक:"
+
+#: ../authconfig.py:807
+msgid "ADS Realm:"
+msgstr "ADS रियल्मः"
+
+#: ../authconfig.py:808
+msgid "Template Shell:"
+msgstr "टेम्प्लेट शैल:"
+
+#: ../authconfig.py:810
+msgid "Winbind Settings"
+msgstr "विंडवाइंड जमावट"
+
+#: ../authconfig.py:812
+msgid "Join Domain"
+msgstr "डोमेन सँ जुड़ू"
+
+#: ../authconfig.py:864
+#, python-format
+msgid ""
+"To connect to a LDAP server with TLS protocol enabled you need a CA "
+"certificate which signed your server's certificate. Copy the certificate in "
+"the PEM format to the '%s' directory.\n"
+"Then press OK."
+msgstr ""
+"TLS प्रोटोकॉल क संग LDAP सर्वर सँ जुड़ने क लेल अहाँकेँ एकटा CA प्रमाणपत्रक जरूरत अछि जे "
+"अहाँक सर्वर प्रमाणपत्र केँ हस्ताक्षर कएल अछि. PEM प्रारूप मे प्रमाणपत्र केँ कापी करू '%s' "
+"निर्देशिका मे.\n"
+"तखन बेस दबाउ."
+
+#. FIXME - version
+#: ../authconfig.py:878
+msgid ""
+" <Tab>/<Alt-Tab> between elements   |   <Space> selects   |  <F12> next "
+"screen"
+msgstr "  <Tab>/<Alt-Tab> अवयवक बीच |  <Space> चुनैत अछि |  <F12> अगला प्रपट्ट"
+
+#: ../authconfig.desktop.in.h:2
+msgid "Control how the system verifies users who attempt to log in"
+msgstr "नियंत्रित करू जे कहिना सिस्टम प्रयोक्ता केँ जाँचैत अछि जे लागिनक प्रयास करैत अछि"
+
+#: ../authconfig-gtk.py:97
+msgid "Local accounts only"
+msgstr ""
+
+#: ../authconfig-gtk.py:103
+msgid "FreeIPA"
+msgstr ""
+
+#: ../authconfig-gtk.py:118
+#, fuzzy
+msgid "Password"
+msgstr "गुड़किल्ली:"
+
+#: ../authconfig-gtk.py:121
+#, fuzzy
+msgid "LDAP password"
+msgstr "गुड़किल्ली:"
+
+#: ../authconfig-gtk.py:124
+#, fuzzy
+msgid "Kerberos password"
+msgstr "करबरोस"
+
+#: ../authconfig-gtk.py:127
+#, fuzzy
+msgid "NIS password"
+msgstr "छाया गुड़किल्ली"
+
+#: ../authconfig-gtk.py:130
+#, fuzzy
+msgid "Winbind password"
+msgstr "छाया गुड़किल्ली"
+
+#: ../authconfig-gtk.py:434
+msgid ""
+"You must provide ldaps:// server address or use TLS for LDAP authentication."
+msgstr ""
+
+#: ../authconfig.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../authconfig.glade.h:2
+#, fuzzy
+msgid "<b>Authentication Configuration</b>"
+msgstr "सत्यापन विन्यास"
+
+#: ../authconfig.glade.h:3
+#, fuzzy
+msgid "<b>Local Authentication Options</b>"
+msgstr "सत्यापन विन्यास"
+
+#: ../authconfig.glade.h:4
+#, fuzzy
+msgid "<b>Other Authentication Options</b>"
+msgstr "सत्यापन विन्यास"
+
+#: ../authconfig.glade.h:5
+msgid "<b>Smart Card Authentication Options</b>"
+msgstr ""
+
+#: ../authconfig.glade.h:6
+msgid "<b>User Account Configuration</b>"
+msgstr ""
+
+#: ../authconfig.glade.h:7
+msgid ""
+"<small><b>Tip:</b> Smart cards support logging into both local and centrally "
+"managed accounts.</small>"
+msgstr ""
+
+#: ../authconfig.glade.h:8
+msgid ""
+"<small><b>Tip:</b> This is managed via /etc/security/access.conf.</small>"
+msgstr ""
+
+#: ../authconfig.glade.h:9
+#, fuzzy
+msgid "Ad_min Servers:"
+msgstr "प्रशासक सर्वर:"
+
+#: ../authconfig.glade.h:10
+msgid "Advanced _Options"
+msgstr ""
+
+#: ../authconfig.glade.h:11
+msgid "Alert"
+msgstr "सावधान"
+
+#: ../authconfig.glade.h:12
+msgid ""
+"All configuration files which were modified by the previous authentication "
+"configuration change will be restored from backup. Revert the changes?"
+msgstr ""
+"सभटा विन्यास फाइल जे पछिला प्रमाणीकरण विन्यास परिवर्तन क द्वारा बदलल गेल छल, केँ बैकअप "
+"सँ वापस कएल जएताह. परिवर्तन केँ वापस लिअ'?"
+
+#: ../authconfig.glade.h:13
+#, fuzzy
+msgid "Allow offline _login"
+msgstr "आफलाइन लागिन स्वीकारू (_A)"
+
+#: ../authconfig.glade.h:14
+#, fuzzy
+msgid "Aut_hentication Method:"
+msgstr "सत्यापन"
+
+#: ../authconfig.glade.h:16
+#, fuzzy
+msgid "Card Re_moval Action:"
+msgstr "कार्ड हटाबैक क्रिया (_A)"
+
+#: ../authconfig.glade.h:17
+#, fuzzy
+msgid "Certificate _URL:"
+msgstr "प्रमाणपत्र _URL"
+
+#: ../authconfig.glade.h:18
+msgid ""
+"Click this button if you did not download a CA certificate yet or you have "
+"not set the CA certificate up by other means."
+msgstr ""
+
+#: ../authconfig.glade.h:19
+msgid "Create _home directories on the first login"
+msgstr "पहिले लागिन पर घर निर्देशिका बनाउ (_h)"
+
+#: ../authconfig.glade.h:20
+msgid "Do_n't Save"
+msgstr "नहि सहेजू (_n)"
+
+#: ../authconfig.glade.h:21
+#, fuzzy
+msgid "Domain _administrator:"
+msgstr "डोमेन प्रशासक:"
+
+#: ../authconfig.glade.h:23
+msgid "Download CA Certificate"
+msgstr "CA प्रमाणपत्र डाउनलोड करू"
+
+#: ../authconfig.glade.h:24
+#, fuzzy
+msgid "Enable _fingerprint reader support"
+msgstr "फिंगरप्रिंट पाठक समर्थन सक्रिय करू (_F)"
+
+#: ../authconfig.glade.h:25
+msgid "Enable _local access control"
+msgstr ""
+
+#: ../authconfig.glade.h:26
+#, fuzzy
+msgid "Enable _smart card support"
+msgstr "स्मार्टकार्ड समर्थन सक्रिय करू (_S)"
+
+#: ../authconfig.glade.h:27
+msgid ""
+"Fingerprint authentication allows you to log in by scanning your finger with "
+"the fingerprint reader."
+msgstr ""
+"फिंगरप्रिंट सत्यापन अहाँकेँ फिंगरप्रिंट पाठक सँ अहाँक अंगुली क स्कैन सँ लागिन करबाक स्वीकृति देत "
+"अछि."
+
+#: ../authconfig.glade.h:28
+#, fuzzy
+msgid "Hashing or crypto algorithm used for storing passwords of local users"
+msgstr "hash/crypt अल्गोरिथम नव गुड़किल्लीक लेल"
+
+#: ../authconfig.glade.h:29
+msgid "Hostname or ldap:// or ldaps:// URI pointing to the LDAP server."
+msgstr "मेजबाननाम ldap:// अथवा ldaps:// URI इंगित कएनाइ LDAP sसर्वर क लेल."
+
+#: ../authconfig.glade.h:30
+msgid ""
+"If the home directory of an user doesn't exist yet it will be created "
+"automatically on his first login."
+msgstr ""
+"जँ प्रयोक्ताक घर निर्देशिका अखन तकि मोजुद नहि अछि तँ ई ओकर पहिले लागिन पर स्वतः "
+"निर्मित कएल जएताह."
+
+#: ../authconfig.glade.h:31
+msgid "Joining Winbind Domain"
+msgstr "विंडबिंड डोमेन सँ जुड़ि रहल अछि"
+
+#: ../authconfig.glade.h:32
+#, fuzzy
+msgid "LDAP Search _Base DN:"
+msgstr "LDAP खोज आधार DN (_B)"
+
+#: ../authconfig.glade.h:33
+#, fuzzy
+msgid "LDAP _Server:"
+msgstr "LDAP सर्वर (_S)"
+
+#: ../authconfig.glade.h:34
+#, fuzzy
+msgid "NIS _Domain:"
+msgstr "NIS डोमेन (_D)"
+
+#: ../authconfig.glade.h:35
+#, fuzzy
+msgid "NIS _Server:"
+msgstr "NIS सर्वर (_S)"
+
+#: ../authconfig.glade.h:36
+#, fuzzy
+msgid "R_ealm:"
+msgstr "रियल्म:"
+
+#: ../authconfig.glade.h:37
+#, fuzzy
+msgid "Require smart car_d for login"
+msgstr "लागिन क लेल स्मार्ट कार्ड जरूरी (_R)"
+
+#: ../authconfig.glade.h:38
+msgid ""
+"Restore the configuration files backed up before the previous configuration "
+"change"
+msgstr "पछिला विन्यास परिवर्तन क पहिले बैकअप कएल विन्यास फाइल केँ फेर भंडारित करैत अछि"
+
+#: ../authconfig.glade.h:39
+msgid "Revert"
+msgstr "वापस करू"
+
+#: ../authconfig.glade.h:40
+msgid ""
+"Smart card authentication allows you to log in using a certificate and key "
+"associated with a smart card."
+msgstr ""
+"स्मार्टकार्ड सत्यापन अहाँकेँ लागिन की अनुमति स्मार्ट कार्डक संग जुड़ल प्रमाणपत्र व कुंजी क साथ "
+"देत अछि."
+
+#: ../authconfig.glade.h:42
+#, fuzzy
+msgid "Te_mplate Shell:"
+msgstr "टेम्प्लेट शैल:"
+
+#: ../authconfig.glade.h:43
+msgid ""
+"To verify the LDAP server with TLS protocol enabled you need a CA "
+"certificate which signed the server's certificate. Please fill in the URL "
+"where the CA certificate in the PEM format can be downloaded from."
+msgstr ""
+"TLS प्रोटोकॉल सक्रिय क संग LDAP सर्वर जांचने क लेल अहाँकेँ एकटा CA प्रमाणपत्र की जरूरत "
+"अछि जिसने सर्वर प्रमाणपत्र केँ हस्ताक्षरित कएल अछि. कृपया URL केँ भरें जहां PEM प्रारूप मे CA "
+"प्रमाणपत्र केँ डाउनलोड कएल जाए सकैत अछि."
+
+#: ../authconfig.glade.h:44
+msgid "Use DNS to _locate KDCs for realms"
+msgstr "रियल्म क लेल KDCs केँ पता करबा मे DNS क प्रयोग करू (_l)"
+
+#: ../authconfig.glade.h:45
+#, fuzzy
+msgid "Use D_NS to resolve hosts to realms"
+msgstr "रियलम्स मे मेजबान हल करबाक लेल DNS क प्रयोग करू"
+
+#: ../authconfig.glade.h:46
+msgid ""
+"Use Transport Layer Security extension for LDAP as defined by RFC-2830. It "
+"must not be ticked with ldaps server URI."
+msgstr ""
+"परिवहन स्तर सुरक्षा विस्तार क प्रयोग LDAP क लेल करू जहिना RFC-2830 क द्वारा परिभाषित "
+"अछि. एकरा जरूर ldaps सर्वर URI क संग टिक कएल जएनाइ चाही."
+
+#: ../authconfig.glade.h:47
+msgid "Use _TLS to encrypt connections"
+msgstr "संबंध केँ गुढ़लेखित करबाक लेल _TLS प्रयोग करू"
+
+#: ../authconfig.glade.h:48
+msgid ""
+"When enabled /etc/security/access.conf will be consulted for authorization "
+"of users access."
+msgstr ""
+"जखन /etc/security/access.conf केँ सक्रिय कएल जएनाइ प्रयोक्ता अभिगमक प्राधिकारक लिए "
+"सलाह कएल जएताह."
+
+#: ../authconfig.glade.h:49
+#, fuzzy
+msgid "Winbind ADS R_ealm:"
+msgstr "विंडबिंड ADS रियल्म (_R)"
+
+#: ../authconfig.glade.h:50
+#, fuzzy
+msgid "Winbind Domain Co_ntrollers:"
+msgstr "विंडविंड डोमेन नियंत्रक (_n)"
+
+#: ../authconfig.glade.h:51
+#, fuzzy
+msgid "Winbind _Domain:"
+msgstr "विंडविंड डोमेन (_D)"
+
+#: ../authconfig.glade.h:52
+#, fuzzy
+msgid "_Download CA Certificate..."
+msgstr "CA प्रमाणपत्र डाउनलोड करू"
+
+#: ../authconfig.glade.h:53
+#, fuzzy
+msgid "_Identity & Authentication"
+msgstr "सत्यापन"
+
+#: ../authconfig.glade.h:54
+#, fuzzy
+msgid "_Join Domain..."
+msgstr "डोमेन सँ जुड़ू (_J)"
+
+#: ../authconfig.glade.h:55
+#, fuzzy
+msgid "_KDCs:"
+msgstr "_KDCs"
+
+#: ../authconfig.glade.h:56
+#, fuzzy
+msgid "_Password Hashing Algorithm:"
+msgstr "गुड़किल्ली हैशिंग अलगोरिथम (_P)"
+
+#: ../authconfig.glade.h:57
+#, fuzzy
+msgid "_Password:"
+msgstr "गुड़किल्ली:"
+
+#: ../authconfig.glade.h:58
+#, fuzzy
+msgid "_Security Model:"
+msgstr "सुरक्षा माडल:"
+
+#: ../authconfig.glade.h:59
+msgid "_User Account Database:"
+msgstr ""
+
+#: ../authinfo.py:926 ../authinfo.py:1574 ../authinfo.py:2896
+msgid "Lock"
+msgstr "तालाकित करू"
+
+#: ../authinfo.py:926 ../authinfo.py:1576
+msgid "Ignore"
+msgstr "छोड़ू"
+
+#: ../authinfo.py:3268
+#, python-format
+msgid ""
+"Authentication module %s/pam_%s.so is missing. Authentication process might "
+"not work correctly."
+msgstr ""
+"सत्यापन मौड्यूल %s/pam_%s.so नहि भेट रहल अछि. सत्यापन प्रक्रिया सही रूपेँ काम नहि कए "
+"सकताह."
+
+#: ../authinfo.py:3829
+msgid "Error downloading CA certificate"
+msgstr "CA प्रमाणपत्र डाउनलोड मे त्रुटि"
+
+#, fuzzy
+#~ msgid "Additional options for user information and authentication"
+#~ msgstr "पूर्वनिर्धारित रूपेँ प्रयोक्ता सूचनाक लेल हेसियड केँ निष्क्रिय करू"
+
+#~ msgid "<b>Fingerprint Reader</b>"
+#~ msgstr "<b>फिंगरप्रिंट पाठक</b>"
+
+#~ msgid "<b>Options</b>"
+#~ msgstr "<b>विकल्प</b>"
+
+#~ msgid "<b>Smart Card</b>"
+#~ msgstr "<b>स्मार्ट कार्ड</b>"
+
+#~ msgid "A_uthentication"
+#~ msgstr "सत्यापन (_u)"
+
+#~ msgid "Cache User _Information"
+#~ msgstr "केश प्रयोक्ता सूचना (_I)"
+
+#~ msgid "Check access.conf _during account authorization"
+#~ msgstr "खाता सत्यापनक काले access.conf केँ जाँचू"
+
+#~ msgid "Configure H_esiod..."
+#~ msgstr "हैसीएड विन्यस्त करू (_e)..."
+
+#~ msgid "Configure K_erberos..."
+#~ msgstr "करबरोसक विन्यास करू (_e)..."
+
+#~ msgid "Configure L_DAP..."
+#~ msgstr "L_DAP विन्यास करू..."
+
+#~ msgid "Configure NI_S..."
+#~ msgstr "NI_S क विन्यास..."
+
+#~ msgid "Configure Sm_art Card..."
+#~ msgstr "स्मार्टकार्ड विन्यस्त करू (_r)..."
+
+#~ msgid "Configure Win_bind..."
+#~ msgstr "विंडविंड विन्यस्त करू (_b)..."
+
+#~ msgid "Domain"
+#~ msgstr "डोमेन"
+
+#~ msgid "Domain _Administrator"
+#~ msgstr "डोमेन प्रशासक (_A)"
+
+#~ msgid "Enable _Hesiod Support"
+#~ msgstr "हैसीएड समर्थन केँ सक्रिय करू (_H)"
+
+#~ msgid "Enable _Kerberos Support"
+#~ msgstr "करबरोस समर्थन केँ सक्रिय करू (_K)"
+
+#~ msgid "Enable _LDAP Support"
+#~ msgstr "_LDAP समर्थन केँ सक्रिय करू"
+
+#~ msgid "Enable _NIS Support"
+#~ msgstr "_NIS समर्थन केँ सक्रिय करू"
+
+#~ msgid "Enable _Winbind Support"
+#~ msgstr "विंडविंड समर्थन केँ सक्रिय करू (_W)"
+
+#~ msgid ""
+#~ "For user accounts maintained in local /etc/passwd file system will not "
+#~ "check authorization from network services such as LDAP or Kerberos."
+#~ msgstr ""
+#~ "स्थानीय /etc/passwd फाइल सिस्टम मे रखताह प्रयोक्ता खाताक लेल LDAP अथवा करबरोस "
+#~ "जहिना केँ संजाल सेवा सँ सत्यापन नहि जाँचताह."
+
+#~ msgid "Hesiod _LHS"
+#~ msgstr "हैसीएड _LHS"
+
+#~ msgid "Hesiod _RHS"
+#~ msgstr "हैसीएड _RHS"
+
+#~ msgid ""
+#~ "Hesiod allows a system administrator to publish user and group "
+#~ "information in DNS.  It is sometimes used in very large networks."
+#~ msgstr ""
+#~ "हैसीएड एकटा सिस्टम प्रशासक केँ DNS मे प्रयोक्ता आओर समूह सूचना केँ प्रकाशित करबा अनुमति "
+#~ "देत अछि. एकरा कतेक बेर बहुत पैघ संजालमे प्रयोग होइछ."
+
+#~ msgid ""
+#~ "Kerberos is a trusted third-party authentication system which is commonly "
+#~ "used in medium to large networks."
+#~ msgstr ""
+#~ "करबरोस एकटा अन्य विश्वनीय सत्यापित सिस्टम अछि जे अधिकतर मध्यम सँ  बड़े संजाल मे "
+#~ "प्रयोग कएल जाइछ. "
+
+#~ msgid ""
+#~ "NIS is the Network Information Service.  It is commonly used on small to "
+#~ "medium networks."
+#~ msgstr ""
+#~ "NIS नेटवर्क इनफोरमेशन सर्विस अछि. ई अधिकतर छोटे सँ मध्यम संजाल क बीच प्रयोग होइछ."
+
+#~ msgid "Op_tions"
+#~ msgstr "विकल्प (_t)"
+
+#~ msgid "SMB Settings"
+#~ msgstr "SMB जमावट"
+
+#~ msgid "Smart Card Settings"
+#~ msgstr "स्मार्ट कार्ड जमावट"
+
+#~ msgid ""
+#~ "The Lightweight Directory Access Protocol is a standard way of searching "
+#~ "a directory, which can hold arbitrary data in a structured hierarchy. "
+#~ "LDAP is increasingly being used in small to large networks."
+#~ msgstr ""
+#~ "निर्देशिका खोजने क लेल हल्की डाइरेक्टरी एक्सेस प्रोटोकॉल एकटा मानक रीति अछि, जे स्वेच्छ "
+#~ "आंकडा केँ संरचित पदानुक्रम मे राखि सकैत अछि. LDAP अधिकतर छोट सँ बड़ संजालक बीच प्रयोग "
+#~ "करताह."
+
+#~ msgid "Use _DNS to resolve hosts to realms"
+#~ msgstr "रियलम्स मे मेजबान हल करबाक लेल DNS क प्रयोग करू (_D)"
+
+#~ msgid "Use _Shadow Passwords"
+#~ msgstr "छाया गुड़किल्लीक प्रयोग करू (_S)"
+
+#~ msgid "User Infor_mation"
+#~ msgstr "प्रयोक्ता सूचना (_m)"
+
+#~ msgid ""
+#~ "When enabled allows network services such as LDAP or Kerberos to "
+#~ "authenticate system accounts including root on this machine."
+#~ msgstr ""
+#~ "LDAP अथवा करबरोस जहिना संजाल सेवा केँ अनुमति देत अछि जखन सक्रिय करैत अछि सिस्टम "
+#~ "खाता सत्यापित करबाक लेल ई मशीन पर रूट क संग."
+
+#~ msgid ""
+#~ "Winbind allows a system to retrieve information about users and to "
+#~ "authenticate users by using information stored in an NTDOM or ADS "
+#~ "server.  It is used in small to large networks."
+#~ msgstr ""
+#~ "विंडविंड एकटा सिस्टम केँ सूचना पुनर्प्राप्त करबा आओर NTDOM अथवा ADS सर्वर मे भंडार कएल "
+#~ "गेल सूचनाक द्वारा प्रयोक्ताकेँ सत्यापित करबाक अनुमति देत अछि.  ई छोट सँ बड़ संजाल मे "
+#~ "प्रयुक्त होइछ."
+
+#~ msgid "_Admin Servers"
+#~ msgstr "प्रशासक सर्वर (_A)"
+
+#~ msgid "_Authenticate system accounts by network services"
+#~ msgstr "संजाल सेवा क द्वारा सिस्टम खाता प्रमाणित करैत अछि (_A)"
+
+#~ msgid "_Domain Controllers"
+#~ msgstr "डोमेन नियंत्रक (_D)"
+
+#~ msgid "_Local authorization is sufficient for local users"
+#~ msgstr "स्थानीय दावेदारी स्थानीय प्रयोक्ताक लेल पर्याप्त अछि (_L)"
+
+#~ msgid "_Password"
+#~ msgstr "गुड़किल्ली (_P)"
+
+#~ msgid "_Realm"
+#~ msgstr "रियल्म (_R)"
+
+#~ msgid "_Security Model"
+#~ msgstr "सुरक्षा माडल (_S)"
+
+#~ msgid "_Template Shell"
+#~ msgstr "टेम्प्लेट शैल (_T)"
+
+#~ msgid "_Workgroup"
+#~ msgstr "कार्यसमूह (_W)"
