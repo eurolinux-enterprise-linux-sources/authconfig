@@ -1,7 +1,7 @@
 Summary: Command line tool for setting up authentication from network services
 Name: authconfig
 Version: 6.2.8
-Release: 10%{?dist}
+Release: 14%{?dist}
 License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -15,7 +15,6 @@ Patch5: authconfig-6.2.8-norestart.patch
 Patch6: authconfig-6.2.8-notraceback.patch
 Patch7: authconfig-6.2.8-restorecon.patch
 Patch8: authconfig-6.2.8-sssd-enable.patch
-Patch9: authconfig-6.2.8-translation-updates-2.patch
 Patch10: authconfig-6.2.8-ipav2join.patch
 Patch11: authconfig-6.2.8-ldapbase.patch
 Patch12: authconfig-6.2.8-altfiles.patch
@@ -28,6 +27,13 @@ Patch18: authconfig-6.2.8-localetb.patch
 Patch19: authconfig-6.2.8-sssd-prompting.patch
 Patch20: authconfig-6.2.8-krb5-include.patch
 Patch21: authconfig-6.2.8-joinpassword.patch
+Patch22: authconfig-6.2.8-template-group.patch
+Patch23: authconfig-6.2.8-handle-no-realm.patch
+Patch24: authconfig-6.2.8-shvfile-sort.patch
+Patch25: authconfig-6.2.8-nsswitch-no-update.patch
+Patch26: authconfig-6.2.8-nss-myhostname.patch
+Patch27: authconfig-6.2.8-initgroups.patch
+
 Requires: newt-python, pam >= 0.99.10.0, python, libpwquality > 0.9
 Conflicts: pam_krb5 < 1.49, samba-common < 3.0, samba-client < 3.0
 Conflicts: nss_ldap < 254, sssd < 0.99.1
@@ -65,7 +71,6 @@ authentication schemes.
 %patch6 -p1 -b .notraceback
 %patch7 -p1 -b .restorecon
 %patch8 -p1 -b .sssd-enable
-%patch9 -p1 -b .translations2
 %patch10 -p1 -b .ipav2join
 %patch11 -p1 -b .ldapbase
 %patch12 -p1 -b .altfiles
@@ -78,6 +83,12 @@ authentication schemes.
 %patch19 -p1 -b .sssd-prompting
 %patch20 -p1 -b .krb5-include
 %patch21 -p1 -b .joinpassword
+%patch22 -p1 -b .template-group
+%patch23 -p1 -b .no-realm
+%patch24 -p1 -b .sort
+%patch25 -p1 -b .no-update
+%patch26 -p1 -b .myhostname
+%patch27 -p1 -b .initgroups
 
 %build
 %configure
@@ -104,6 +115,9 @@ fi
 
 %posttrans gtk
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
+
+%triggerin -- oddjob-mkhomedir
+sed -i 's/pam_mkhomedir.so/pam_oddjob_mkhomedir.so/g' /etc/pam.d/*-auth-ac &>/dev/null || :
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
@@ -160,6 +174,26 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_datadir}/icons/hicolor/256x256/apps/system-config-authentication.*
 
 %changelog
+* Thu Sep  1 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-14
+- overwrite nsswitch.conf if inconsistent configuration of initgroups
+  is present in it
+
+* Thu Jun 30 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-13
+- do not overwrite kerberos settings from sssd.conf with empty data
+  from krb5.conf
+
+* Fri Jun 17 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-12
+- updated translations from Zanata
+
+* Thu Jun 16 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-11
+- add trigger to change pam configuration to use pam_oddjob_mkhomedir
+  instead of pam_mkhomedir if oddjob-mkhomedir is installed
+- remove unusable --winbindtemplateprimarygroup option (#1242878)
+- handle inconsistency when missing realm in krb5.conf
+- sort the /etc/sysconfig/authconfig on write (#1320943)
+- avoid unnecessary update of nsswitch.conf
+- add support for myhostname nsswitch module (#1329943)
+
 * Fri Jul  3 2015 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-10
 - fix title of IPA domain join window (#1166119)
 - add --unattended to IPA uninstall command (#1166131)
