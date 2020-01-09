@@ -1,6 +1,6 @@
 diff -up authconfig-6.1.12/authconfig-gtk.py.join-error authconfig-6.1.12/authconfig-gtk.py
---- authconfig-6.1.12/authconfig-gtk.py.join-error	2014-07-08 16:50:45.555240352 +0200
-+++ authconfig-6.1.12/authconfig-gtk.py	2014-07-25 15:11:50.239980588 +0200
+--- authconfig-6.1.12/authconfig-gtk.py.join-error	2015-02-23 16:49:24.483455896 +0100
++++ authconfig-6.1.12/authconfig-gtk.py	2015-02-23 16:49:24.487455989 +0100
 @@ -2,12 +2,13 @@
  # -*- coding: UTF-8 -*-
  #
@@ -110,8 +110,8 @@ diff -up authconfig-6.1.12/authconfig-gtk.py.join-error authconfig-6.1.12/authco
  		msg.run()
  		msg.destroy()
 diff -up authconfig-6.1.12/authconfig.py.join-error authconfig-6.1.12/authconfig.py
---- authconfig-6.1.12/authconfig.py.join-error	2014-07-08 16:50:45.553240305 +0200
-+++ authconfig-6.1.12/authconfig.py	2014-07-08 16:50:45.558240422 +0200
+--- authconfig-6.1.12/authconfig.py.join-error	2015-02-23 16:49:24.482455872 +0100
++++ authconfig-6.1.12/authconfig.py	2015-02-23 16:49:24.487455989 +0100
 @@ -2,12 +2,13 @@
  # -*- coding: UTF-8 -*-
  #
@@ -138,8 +138,8 @@ diff -up authconfig-6.1.12/authconfig.py.join-error authconfig-6.1.12/authconfig
  	def probe(self):
  		info = authinfo.AuthInfo(self.printError)
 diff -up authconfig-6.1.12/authinfo.py.join-error authconfig-6.1.12/authinfo.py
---- authconfig-6.1.12/authinfo.py.join-error	2014-07-08 16:50:45.557240398 +0200
-+++ authconfig-6.1.12/authinfo.py	2014-07-25 13:47:48.908615298 +0200
+--- authconfig-6.1.12/authinfo.py.join-error	2015-02-23 16:49:24.485455942 +0100
++++ authconfig-6.1.12/authinfo.py	2015-02-23 16:49:51.110075019 +0100
 @@ -1,12 +1,13 @@
  # -*- coding: UTF-8 -*-
  #
@@ -212,17 +212,18 @@ diff -up authconfig-6.1.12/authinfo.py.join-error authconfig-6.1.12/authinfo.py
  
  def isEmptyDir(path):
  	try:
-@@ -3773,10 +3793,19 @@ class AuthInfo:
+@@ -3773,10 +3793,20 @@ class AuthInfo:
  			
  			if echo:
  				sys.stderr.write("[%s]\n" % cmd)
 -			if self.joinPassword:
 -				status = feedFork(cmd, echo, "sword:", self.joinPassword)
++			if self.joinPassword or not echo:
++				status, error = feedFork(cmd, echo, "sword:", self.joinPassword)
++			else:
 +				child = Popen([cmd], shell=True)
 +				child.communicate()
 +				status = child.returncode
-+			else:
-+				status, error = feedFork(cmd, echo, "sword:", self.joinPassword)
 +			if echo:
 +				if status != 0:
 +					self.messageCB(_("Winbind domain join was not successful."))
@@ -235,7 +236,7 @@ diff -up authconfig-6.1.12/authinfo.py.join-error authconfig-6.1.12/authinfo.py
  		return status == 0
  
  	def joinIPADomain(self, echo):
-@@ -3797,18 +3826,26 @@ class AuthInfo:
+@@ -3797,18 +3827,26 @@ class AuthInfo:
  				realm and "--realm=" or "", realm,
  				principal and "--principal=" or "", principal,
  				nontp,

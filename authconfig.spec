@@ -1,7 +1,7 @@
 Summary: Command line tool for setting up authentication from network services
 Name: authconfig
 Version: 6.1.12
-Release: 19%{?dist}
+Release: 23%{?dist}
 License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -35,6 +35,7 @@ Patch24: authconfig-6.1.12-restarts.patch
 Patch25: authconfig-6.1.12-join-error.patch
 Patch26: authconfig-6.1.12-res-init.patch
 Patch27: authconfig-6.1.12-man-services.patch
+Patch28: authconfig-6.1.12-multiple-uris.patch
 Requires: newt-python, pam >= 0.99.10.0, python
 Conflicts: pam_krb5 < 1.49, samba-common < 3.0, samba-client < 3.0
 Conflicts: nss_ldap < 254, sssd < 0.99.1
@@ -88,6 +89,7 @@ authentication schemes.
 %patch25 -p1 -b .join-error
 %patch26 -p1 -b .res-init
 %patch27 -p1 -b .man-services
+%patch28 -p1 -b .multiple-uris
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -fPIC"; export CFLAGS
@@ -164,6 +166,12 @@ authconfig --update --nostart >/dev/null 2>&1 || :
 %{_datadir}/icons/hicolor/48x48/apps/system-config-authentication.*
 
 %changelog
+* Tue Feb 24 2015 Tomáš Mráz <tmraz@redhat.com> - 6.1.12-23
+- use joinPassword if set when joining winbind domain
+
+* Thu Feb  5 2015 Tomáš Mráz <tmraz@redhat.com> - 6.1.12-21
+- allow multiple LDAP URIs again
+
 * Fri Jul 25 2014 Tomas Mraz <tmraz@redhat.com> - 6.1.12-19
 - use --unattended option when ipa_client_install is called from GUI
 

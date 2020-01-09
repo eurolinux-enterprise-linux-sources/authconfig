@@ -1,0 +1,53 @@
+diff -up authconfig-6.1.12/authconfig-gtk.py.multiple-uris authconfig-6.1.12/authconfig-gtk.py
+--- authconfig-6.1.12/authconfig-gtk.py.multiple-uris	2015-02-05 16:34:57.895984908 +0100
++++ authconfig-6.1.12/authconfig-gtk.py	2015-02-05 16:34:57.902984940 +0100
+@@ -484,6 +484,7 @@ class Authconfig:
+ 		if not ldapserver:
+ 			return True
+ 		uritovalidate = ldapserver.get_text()
++		uritovalidate = self.info.ldapHostsToURIs(uritovalidate, False)
+ 		return self.info.validateLDAPURI(uritovalidate)
+ 
+ 	def enable_cacert_download(self, active, xml):
+diff -up authconfig-6.1.12/authinfo.py.multiple-uris authconfig-6.1.12/authinfo.py
+--- authconfig-6.1.12/authinfo.py.multiple-uris	2015-02-05 16:34:57.896984912 +0100
++++ authconfig-6.1.12/authinfo.py	2015-02-05 17:57:21.254219548 +0100
+@@ -1452,19 +1452,27 @@ class AuthInfo:
+ 		"""
+ 		Check whether LDAP URI is valid.
+ 		"""
+-		try:
+-			start = s.find('://[')
+-			end = s.find(']')
+-			if start != -1 and end != -1:
+-				socket.inet_pton(socket.AF_INET6, s[start+4:end])
+-				return True
+-			p = urlparse.urlparse(s).port
+-			return True
+-		except (ValueError, socket.error):
+-			return False
++		if ',' in s:
++			uris = s.split(',')
++		else:
++			uris = s.split()
++		for uri in uris:
++			try:
++				start = uri.find('://[')
++				end = uri.find(']')
++				if start != -1 and end != -1:
++					socket.inet_pton(socket.AF_INET6, uri[start+4:end])
++				else:
++					p = urlparse.urlparse(uri).port
++			except (ValueError, socket.error):
++				return False
++		return True
+ 
+ 	def ldapHostsToURIs(self, s, validate):
+-		l = s.split(",")
++		if ',' in s:
++			l = s.split(',')
++		else:
++			l = s.split()
+ 		ret = ""
+ 		for item in l:
+ 			if item:
