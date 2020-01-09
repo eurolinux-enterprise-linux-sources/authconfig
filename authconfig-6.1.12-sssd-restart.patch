@@ -1,0 +1,36 @@
+diff -up authconfig-6.1.12/authinfo.py.sssd-restart authconfig-6.1.12/authinfo.py
+--- authconfig-6.1.12/authinfo.py.sssd-restart	2012-11-02 19:48:17.784327406 +0100
++++ authconfig-6.1.12/authinfo.py	2012-11-16 16:16:06.841122842 +0100
+@@ -2838,6 +2838,9 @@ class AuthInfo:
+ 			return True
+ 
+ 		if not self.sssdDomain:
++			if not self.implicitSSSD:
++				# do not create a domain that would be incomplete anyway
++				return True
+ 			try:
+ 				self.sssdDomain = self.sssdConfig.new_domain(SSSD_AUTHCONFIG_DOMAIN)
+ 			except SSSDConfig.DomainAlreadyExistsError:
+@@ -3481,9 +3481,9 @@ class AuthInfo:
+ 		return True
+ 
+ 	def prewriteUpdate(self):
++		oldimplicit = self.implicitSSSD
++		self.implicitSSSD = self.implicitSSSDAuth = self.sssdSupported()
+ 		if not self.enableSSSD and not self.enableSSSDAuth:
+-			oldimplicit = self.implicitSSSD
+-			self.implicitSSSD = self.implicitSSSDAuth = self.sssdSupported()
+ 			if self.implicitSSSD and not oldimplicit:
+ 				self.inconsistentAttrs.append('forceSSSDUpdate')
+ 		modules = getSmartcardModules()
+@@ -3758,8 +3761,8 @@ class AuthInfo:
+ 		toggleSplatbindService(self.enableWinbind or self.enableWinbindAuth,
+ 			PATH_WINBIND, PATH_WINBIND_PID,
+ 			"winbind", nostart, onlystart)
+-		toggleSplatbindService(self.enableSSSD or self.enableSSSDAuth or
+-			self.implicitSSSD or self.implicitSSSDAuth or self.enableIPAv2,
++		toggleSplatbindService(self.implicitSSSD or self.implicitSSSDAuth or
++			self.enableIPAv2,
+ 			PATH_SSSD, PATH_SSSD_PID,
+ 			"sssd", nostart, onlystart)
+ 		toggleSplatbindService((self.enableLDAP or self.enableLDAPAuth) and

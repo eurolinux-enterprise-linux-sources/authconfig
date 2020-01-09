@@ -1,7 +1,7 @@
 Summary: Command line tool for setting up authentication from network services
 Name: authconfig
 Version: 6.1.12
-Release: 10%{?dist}
+Release: 13%{?dist}
 License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -20,6 +20,8 @@ Patch9: authconfig-6.1.12-krb5-server.patch
 Patch10: authconfig-6.1.12-savebackup.patch
 Patch11: authconfig-6.1.12-services.patch
 Patch12: authconfig-6.1.12-translations-update.patch
+Patch13: authconfig-6.1.12-idmap-range.patch
+Patch14: authconfig-6.1.12-sssd-restart.patch
 Requires: newt-python, pam >= 0.99.10.0, python
 Conflicts: pam_krb5 < 1.49, samba-common < 3.0, samba-client < 3.0
 Conflicts: nss_ldap < 254, sssd < 0.99.1
@@ -58,6 +60,8 @@ authentication schemes.
 %patch10 -p1 -b .savebackup
 %patch11 -p1 -b .services
 %patch12 -p1 -b .tupdate
+%patch13 -p1 -b .idmap
+%patch14 -p1 -b .sssd-restart
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -fPIC"; export CFLAGS
@@ -134,6 +138,12 @@ authconfig --update --nostart >/dev/null 2>&1 || :
 %{_datadir}/icons/hicolor/48x48/apps/system-config-authentication.*
 
 %changelog
+* Wed Dec  5 2012 Tomas Mraz <tmraz@redhat.com> - 6.1.12-13
+- do not start or restart sssd with incomplete domain (#874527)
+
+* Fri Nov  2 2012 Tomas Mraz <tmraz@redhat.com> - 6.1.12-11
+- use the current syntax for idmap range in smb.conf
+
 * Mon May 21 2012 Tomas Mraz <tmraz@redhat.com> - 6.1.12-10
 - updated translations (#818219)
 
