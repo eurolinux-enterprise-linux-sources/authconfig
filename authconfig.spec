@@ -1,7 +1,7 @@
 Summary: Command line tool for setting up authentication from network services
 Name: authconfig
 Version: 6.2.8
-Release: 8%{?dist}
+Release: 9%{?dist}
 License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -16,6 +16,12 @@ Patch6: authconfig-6.2.8-notraceback.patch
 Patch7: authconfig-6.2.8-restorecon.patch
 Patch8: authconfig-6.2.8-sssd-enable.patch
 Patch9: authconfig-6.2.8-translation-updates-2.patch
+Patch10: authconfig-6.2.8-ipav2join.patch
+Patch11: authconfig-6.2.8-ldapbase.patch
+Patch12: authconfig-6.2.8-altfiles.patch
+Patch13: authconfig-6.2.8-winbind-client.patch
+Patch14: authconfig-6.2.8-services.patch
+Patch15: authconfig-6.2.8-multiple-ldap-uris.patch
 Requires: newt-python, pam >= 0.99.10.0, python, libpwquality > 0.9
 Conflicts: pam_krb5 < 1.49, samba-common < 3.0, samba-client < 3.0
 Conflicts: nss_ldap < 254, sssd < 0.99.1
@@ -23,6 +29,7 @@ Conflicts: freeipa-client < 2.2.0, ipa-client < 2.2.0
 BuildRequires: glib2-devel, python >= 2.6, python-devel
 BuildRequires: desktop-file-utils, intltool, gettext, perl-XML-Parser
 Requires: /usr/bin/openssl
+Requires: policycoreutils
 
 %description 
 Authconfig is a command line utility which can configure a workstation
@@ -53,6 +60,12 @@ authentication schemes.
 %patch7 -p1 -b .restorecon
 %patch8 -p1 -b .sssd-enable
 %patch9 -p1 -b .translations2
+%patch10 -p1 -b .ipav2join
+%patch11 -p1 -b .ldapbase
+%patch12 -p1 -b .altfiles
+%patch13 -p1 -b .winbind-client
+%patch14 -p1 -b .services
+%patch15 -p1 -b .ldap-uris
 
 %build
 %configure
@@ -135,6 +148,15 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_datadir}/icons/hicolor/256x256/apps/system-config-authentication.*
 
 %changelog
+* Mon Sep 29 2014 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-9
+- do not overwrite special ldap base values
+- display error message if winbind or IPA domain join fails
+- fix invocation of IPA domain join from GUI
+- keep altfiles in nsswitch.conf if present (#1134084)
+- the winbind client is now in samba-winbind package (#1084997)
+- correct handling of SSSD enablement during IPA domain joins
+- do not bail out if multiple LDAP URIs are specified (#1142830)
+
 * Tue Feb 11 2014 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-8
 - enable/start sssd only when config exists or enabled
   for both pam and nsswitch.conf

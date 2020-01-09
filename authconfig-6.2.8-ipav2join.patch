@@ -1,0 +1,203 @@
+diff -up authconfig-6.2.8/authconfig-gtk.py.ipav2join authconfig-6.2.8/authconfig-gtk.py
+--- authconfig-6.2.8/authconfig-gtk.py.ipav2join	2014-09-29 15:18:58.252487444 +0200
++++ authconfig-6.2.8/authconfig-gtk.py	2014-09-29 15:19:15.077867285 +0200
+@@ -2,12 +2,13 @@
+ # -*- coding: UTF-8 -*-
+ #
+ # Authconfig - client authentication configuration program
+-# Copyright (c) 1999-2008 Red Hat, Inc.
++# Copyright (c) 1999-2014 Red Hat, Inc.
+ #
+ # Authors: Preston Brown <pbrown@redhat.com>
+ #          Nalin Dahyabhai <nalin@redhat.com>
+ #          Matt Wilson <msw@redhat.com>
+ #          Tomas Mraz <tmraz@redhat.com>
++#          Jan Lieskovsky <jlieskov@redhat.com>
+ #
+ # This is free software; you can redistribute it and/or modify it
+ # under the terms of the GNU General Public License as published by
+@@ -236,6 +237,7 @@ class Authconfig:
+ 		self.oldrealm = ""
+ 		self.oldkdc = ""
+ 		self.oldadminserver = ""
++		self.messageParent = None
+ 
+ 	def destroy_widget(self, button, widget):
+ 		widget.destroy()
+@@ -272,7 +274,9 @@ class Authconfig:
+ 		response = self.run_on_button(None, "joinwbdomain",
+ 					      "winbindjoin_map", parent)
+ 		if (response == gtk.RESPONSE_OK):
+-			self.info.joinDomain(True)
++			self.messageParent = parent
++			self.info.joinDomain(False)
++			self.messageParent = None
+ 		self.info.joinUser = None
+ 		self.info.joinPassword = None
+ 
+@@ -287,7 +291,9 @@ class Authconfig:
+ 		response = self.run_on_button(None, "joinipadomain",
+ 					      "ipav2join_map", parent)
+ 		if (response == gtk.RESPONSE_OK):
+-			self.info.joinIPADomain(True)
++			self.messageParent = parent
++			self.info.joinIPADomain(False)
++			self.messageParent = None
+ 
+ 	def info_apply(self, map, xml):
+ 		for entry in map.keys():
+@@ -796,10 +802,12 @@ class Authconfig:
+ 		response = self.run_on_button(None, "ldapcacertdownload",
+ 					      "ldapcacert_map", parent)
+ 		if (response == gtk.RESPONSE_OK):
++			self.messageParent = parent
+ 			self.info.downloadLDAPCACert()
++			self.messageParent = None
+ 
+ 	def message_callback(self, text):
+-		msg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_OK, text)
++		msg = gtk.MessageDialog(self.messageParent, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_OK, text)
+ 		msg.set_title(_("Authentication Configuration"))
+ 		msg.run()
+ 		msg.destroy()
+diff -up authconfig-6.2.8/authinfo.py.ipav2join authconfig-6.2.8/authinfo.py
+--- authconfig-6.2.8/authinfo.py.ipav2join	2014-09-29 15:14:59.000000000 +0200
++++ authconfig-6.2.8/authinfo.py	2014-09-29 15:15:55.776367966 +0200
+@@ -1,7 +1,7 @@
+ # -*- coding: UTF-8 -*-
+ #
+ # Authconfig - client authentication configuration program
+-# Copyright (c) 1999-2011 Red Hat, Inc.
++# Copyright (c) 1999-2014 Red Hat, Inc.
+ #
+ # Authors: Preston Brown <pbrown@redhat.com>
+ #          Nalin Dahyabhai <nalin@redhat.com>
+@@ -10,6 +10,7 @@
+ #          Ray Strode <rstrode@redhat.com>
+ #          Paolo Bonzini <pbonzini@redhat.com>
+ #          Miloslav Trmac <mitr@redhat.com>
++#          Jan Lieskovsky <jlieskov@redhat.com>
+ #
+ # This is free software; you can redistribute it and/or modify it
+ # under the terms of the GNU General Public License as published by
+@@ -879,9 +880,17 @@ def feedFork(command, echo, query, respo
+ 		return 255
+ 	if not pid:
+ 		# child
+-		status = os.system(command)
++		if query:
++			child = Popen([command], shell=True)
++		else:
++			child = Popen([command], stdin=PIPE, shell=True)
++			child.communicate(input=(response or '')+'\n')
++
++		# wait for the child to terminate & set the returncode
++		child.wait()
++		status = child.returncode
+ 		os._exit(status)
+-	output = ""
++	(output, error) = ("","")
+ 	try:
+ 		i = fcntl.fcntl(master, fcntl.F_GETFL)
+ 		fcntl.fcntl(master, fcntl.F_SETFL, i & ~os.O_NONBLOCK)
+@@ -918,13 +927,24 @@ def feedFork(command, echo, query, respo
+ 		if c:
+ 			try:
+ 				output += c
++				error += c
+ 				if echo:
+ 					sys.stderr.write(c)
+-				if query in output:
+-					os.write(master, response)
++				if query and query in output:
++					# Search for password prompt start
++					index = error.rfind("\r\n")
++					os.write(master, response or '')
+ 					os.write(master, "\r\n")
++					if index != -1:
++						# Drop password prompt substring from error
++						error = "\n" + error[:index]
++					else:
++						# Drop whole error content, password prompt
++						# was the first line
++						error = ""
+ 					output = ""
+-					sys.stderr.write("<...>\n")
++					if echo:
++						sys.stderr.write("<...>\n")
+ 			except OSError, (err, text):
+ 				sys.stderr.write("write: " + text + "\n")
+ 				os.close(master)
+@@ -941,7 +961,7 @@ def feedFork(command, echo, query, respo
+ 		(child, status) = os.waitpid(pid, 0)
+ 	except OSError, (err, text):
+ 		sys.stderr.write("waitpid: " + text + "\n")
+-	return status
++	return (status, error)
+ 
+ def isEmptyDir(path):
+ 	try:
+@@ -4227,17 +4247,26 @@ class AuthInfo:
+ 				# Not needed -- "joining" is meaningless for other
+ 				# models.
+ 				return
+-			cmd = "/usr/bin/net join %s%s %s%s -U %s" % (
++			cmd = PATH_WINBIND_NET + " join %s%s %s%s -U %s" % (
+ 				domain and "-w " or "", domain,
+ 				server and "-S " or "", server,
+ 				self.joinUser)
+ 			
+ 			if echo:
+ 				sys.stderr.write("[%s]\n" % cmd)
+-			if self.joinPassword:
+-				status = feedFork(cmd, echo, "sword:", self.joinPassword)
++				child = Popen([cmd], shell=True)
++				child.communicate()
++				status = child.returncode
++			else:
++				status, error = feedFork(cmd, echo, "sword:", self.joinPassword)
++			if echo:
++				if status != 0:
++					self.messageCB(_("Winbind domain join was not successful."))
+ 			else:
+-				status = os.system(cmd)
++				if status != 0:
++					errmsg = _("Winbind domain join was not successful. The net join command failed with the following error:")
++					errmsg += "\n" + error
++					self.messageCB(errmsg)
+ 		return status == 0
+ 
+ 	def joinIPADomain(self, echo):
+@@ -4258,18 +4287,26 @@ class AuthInfo:
+ 				realm and "--realm=" or "", realm,
+ 				principal and "--principal=" or "", principal,
+ 				nontp,
+-				password and "-W" or "")
+-			
++				not echo and "--unattended" or "-W")
++
+ 			if echo:
+ 				sys.stderr.write("[%s]\n" % cmd)
+-			if self.joinPassword:
+-				status = feedFork(cmd, echo, "sword:", self.joinPassword)
++				child = Popen([cmd], shell=True)
++				child.communicate()
++				status = child.returncode
+ 			else:
+-				status = os.system(cmd)
++				status, error = feedFork(cmd, echo, '', password)
++
+ 			if status == 0:
+ 				self.ipaDomainJoined = True
++			if echo:
++				if status != 0:
++					self.messageCB(_("IPAv2 domain join was not successful."))
+ 			else:
+-				self.messageCB(_("IPAv2 domain join was not succesful. The ipa-client-install command failed."))
++				if status != 0:
++					errmsg = _("IPAv2 domain join was not successful. The ipa-client-install command failed with the following error:")
++					errmsg += "\n" + error
++					self.messageCB(errmsg)
+ 		return status == 0
+ 
+ 	def uninstallIPA(self):

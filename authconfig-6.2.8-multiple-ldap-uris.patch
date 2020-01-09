@@ -1,0 +1,104 @@
+diff -up authconfig-6.2.8/authconfig-gtk.py.ldap-uris authconfig-6.2.8/authconfig-gtk.py
+--- authconfig-6.2.8/authconfig-gtk.py.ldap-uris	2014-09-29 15:41:20.000000000 +0200
++++ authconfig-6.2.8/authconfig-gtk.py	2014-09-29 15:49:09.277372121 +0200
+@@ -526,6 +526,7 @@ class Authconfig:
+ 		if not ldapserver:
+ 			return True
+ 		uritovalidate = ldapserver.get_text()
++		uritovalidate = self.info.ldapHostsToURIs(uritovalidate, False)
+ 		return self.info.validateLDAPURI(uritovalidate)
+ 
+ 	def enable_cacert_download(self, active, xml):
+diff -up authconfig-6.2.8/authinfo.py.ldap-uris authconfig-6.2.8/authinfo.py
+--- authconfig-6.2.8/authinfo.py.ldap-uris	2014-09-29 15:44:28.000000000 +0200
++++ authconfig-6.2.8/authinfo.py	2014-09-29 15:49:48.156249829 +0200
+@@ -1588,20 +1588,24 @@ class AuthInfo:
+ 
+ 	def validateLDAPURI(self, s):
+ 		"""
+-		Check LDAP URI provided in the form of literal IPv6 address
+-		for correctness.
+-
+-		Return False if IPv6 valid is invalid or urlparse failed to
+-		obtain integer port value, True otherwise.
++		Check whether LDAP URI is valid.
+ 		"""
+-		try:
+-			p = urlparse.urlparse(s).port
+-			return True
+-		except ValueError:
+-			return False
++		if ',' in s:
++			uris = s.split(',')
++		else:
++			uris = s.split()
++		for uri in uris:
++			try:
++				p = urlparse.urlparse(uri).port
++			except (ValueError, socket.error):
++				return False
++		return True
+ 
+-	def ldapHostsToURIs(self, s):
+-		l = s.split(",")
++	def ldapHostsToURIs(self, s, validate):
++		if ',' in s:
++			l = s.split(',')
++		else:
++			l = s.split()
+ 		ret = ""
+ 		for item in l:
+ 			if item:
+@@ -1611,9 +1615,8 @@ class AuthInfo:
+ 					ret += item
+ 				else:
+ 					ret += "ldap://" + item + "/"
+-		if not self.validateLDAPURI(ret):
++		if validate and not self.validateLDAPURI(ret):
+ 			self.messageCB(_("Invalid LDAP URI."))
+-			return ""
+ 		return ret
+ 
+ 	# Read LDAP setup from /etc/ldap.conf.
+@@ -1669,7 +1672,7 @@ class AuthInfo:
+ 			# We'll pull MD5/DES crypt ("pam_password") from the config
+ 			# file, or from the pam_unix PAM config lines.
+ 
+-		self.ldapServer = self.ldapHostsToURIs(cleanList(self.ldapServer))
++		self.ldapServer = self.ldapHostsToURIs(cleanList(self.ldapServer), False)
+ 		f.close()
+ 		return True
+ 
+@@ -2456,12 +2459,12 @@ class AuthInfo:
+ 	# suggestions we "know".  The second case is when the user has just made a
+ 	# change to one field and we need to update another field to somehow
+ 	# compensate for the change.
+-	def update(self):
++	def update(self, validate=False):
+ 		self.smbServers = cleanList(self.smbServers)
+ 		self.ipav2Server = cleanList(self.ipav2Server)
+ 		self.kerberosKDC = cleanList(self.kerberosKDC)
+ 		self.kerberosAdminServer = cleanList(self.kerberosAdminServer)
+-		self.ldapServer = self.ldapHostsToURIs(self.ldapServer)
++		self.ldapServer = self.ldapHostsToURIs(self.ldapServer, validate)
+ 		if self.smbSecurity == "ads":
+ 			# As of this writing, an ADS implementation always
+ 			# upper-cases the realm name, even if only internally,
+@@ -4024,7 +4027,7 @@ class AuthInfo:
+ 			self.ipaUninstall = True
+ 
+ 	def write(self):
+-		self.update()
++		self.update(True)
+ 		self.prewriteUpdate()
+ 		self.setupBackup(PATH_CONFIG_BACKUPS + "/last")
+ 		try:
+@@ -4064,7 +4067,7 @@ class AuthInfo:
+ 
+ 	def writeChanged(self, ref):
+ 		self.checkPAMLinked()
+-		self.update()
++		self.update(True)
+ 		self.prewriteUpdate()
+ 		self.setupBackup(PATH_CONFIG_BACKUPS + "/last")
+ 		ret = True

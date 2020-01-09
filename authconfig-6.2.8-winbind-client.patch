@@ -1,0 +1,12 @@
+diff -up authconfig-6.2.8/authconfig-gtk.py.winbind-client authconfig-6.2.8/authconfig-gtk.py
+--- authconfig-6.2.8/authconfig-gtk.py.winbind-client	2014-09-29 15:19:15.000000000 +0200
++++ authconfig-6.2.8/authconfig-gtk.py	2014-09-29 15:37:19.586350537 +0200
+@@ -130,7 +130,7 @@ class Authconfig:
+ 			 "nisoptions", "nis_map", authinfo.PATH_LIBNSS_NIS, "ypbind"),
+ 			"Winbind":
+ 			(_("Winbind"), ("WinbindAuth",),
+-			 "winbindoptions", "winbind_map", authinfo.PATH_WINBIND, "samba-winbind-clients"),
++			 "winbindoptions", "winbind_map", authinfo.PATH_WINBIND, "samba-winbind"),
+ 			"IPAv2":
+ 			(_("IPAv2"), ("IPAv2Auth",),
+ 			 "ipav2options", "ipav2_map", authinfo.PATH_IPA_CLIENT_INSTALL, "freeipa-client")
