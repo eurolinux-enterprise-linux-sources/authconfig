@@ -1,7 +1,7 @@
 Summary: Command line tool for setting up authentication from network services
 Name: authconfig
 Version: 6.2.8
-Release: 30%{?dist}
+Release: 8%{?dist}
 License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -15,46 +15,14 @@ Patch5: authconfig-6.2.8-norestart.patch
 Patch6: authconfig-6.2.8-notraceback.patch
 Patch7: authconfig-6.2.8-restorecon.patch
 Patch8: authconfig-6.2.8-sssd-enable.patch
-Patch10: authconfig-6.2.8-ipav2join.patch
-Patch11: authconfig-6.2.8-ldapbase.patch
-Patch12: authconfig-6.2.8-altfiles.patch
-Patch13: authconfig-6.2.8-winbind-client.patch
-Patch14: authconfig-6.2.8-services.patch
-Patch15: authconfig-6.2.8-multiple-ldap-uris.patch
-Patch16: authconfig-6.2.8-jointitle.patch
-Patch17: authconfig-6.2.8-krb5comment.patch
-Patch18: authconfig-6.2.8-localetb.patch
-Patch19: authconfig-6.2.8-sssd-prompting.patch
-Patch20: authconfig-6.2.8-krb5-include.patch
-Patch21: authconfig-6.2.8-joinpassword.patch
-Patch22: authconfig-6.2.8-template-group.patch
-Patch23: authconfig-6.2.8-handle-no-realm.patch
-Patch24: authconfig-6.2.8-shvfile-sort.patch
-Patch25: authconfig-6.2.8-nsswitch-no-update.patch
-Patch26: authconfig-6.2.8-nss-myhostname.patch
-Patch27: authconfig-6.2.8-initgroups.patch
-Patch28: authconfig-6.2.8-usr-lib-location.patch
-Patch29: authconfig-6.2.8-update-all-manpage.patch
-Patch30: authconfig-6.2.8-sssd-auth-for-local-users.patch
-Patch31: authconfig-6.2.8-sssd-smartcard-1.patch
-Patch32: authconfig-6.2.8-sssd-smartcard-2.patch
-Patch33: authconfig-6.2.8-faillock.patch
-Patch34: authconfig-6.2.8-sssd-catch-NoServiceError-exception.patch
-Patch35: authconfig-6.2.8-sssd-do-not-write-PAM-if-no-sssd-conf.patch
-Patch36: authconfig-6.2.8-faillock-preauth.patch
-Patch37: authconfig-6.2.8-faillock-args.patch
-Patch38: authconfig-6.2.8-information-leak.patch
-Patch39: authconfig-6.2.8.pam_succeed_if-can-return-PAM_IGNORE-in-pam_setcred.patch
-Patch40: authconfig-6.2.8-libdir.patch
-
+Patch9: authconfig-6.2.8-translation-updates-2.patch
 Requires: newt-python, pam >= 0.99.10.0, python, libpwquality > 0.9
 Conflicts: pam_krb5 < 1.49, samba-common < 3.0, samba-client < 3.0
-Conflicts: nss_ldap < 254, sssd < 1.15.1
+Conflicts: nss_ldap < 254, sssd < 0.99.1
 Conflicts: freeipa-client < 2.2.0, ipa-client < 2.2.0
 BuildRequires: glib2-devel, python >= 2.6, python-devel
 BuildRequires: desktop-file-utils, intltool, gettext, perl-XML-Parser
 Requires: /usr/bin/openssl
-Requires: policycoreutils
 
 %description 
 Authconfig is a command line utility which can configure a workstation
@@ -84,37 +52,7 @@ authentication schemes.
 %patch6 -p1 -b .notraceback
 %patch7 -p1 -b .restorecon
 %patch8 -p1 -b .sssd-enable
-%patch10 -p1 -b .ipav2join
-%patch11 -p1 -b .ldapbase
-%patch12 -p1 -b .altfiles
-%patch13 -p1 -b .winbind-client
-%patch14 -p1 -b .services
-%patch15 -p1 -b .ldap-uris
-%patch16 -p1 -b .jointitle
-%patch17 -p1 -b .krb5comment
-%patch18 -p1 -b .localetb
-%patch19 -p1 -b .sssd-prompting
-%patch20 -p1 -b .krb5-include
-%patch21 -p1 -b .joinpassword
-%patch22 -p1 -b .template-group
-%patch23 -p1 -b .no-realm
-%patch24 -p1 -b .sort
-%patch25 -p1 -b .no-update
-%patch26 -p1 -b .myhostname
-%patch27 -p1 -b .initgroups
-%patch28 -p1 -b .usr-lib-location.patch
-%patch29 -p1 -b .update-all-manpage.patch
-%patch30 -p1 -b .sssd-auth-for-local-users.patch
-%patch31 -p1 -b .sssd-smartcard-1.patch
-%patch32 -p1 -b .sssd-smartcard-2.patch
-%patch33 -p1 -b .faillock.patch
-%patch34 -p1 -b .sssd-catch-NoServiceError-exception.patch
-%patch35 -p1 -b .sssd-do-not-write-PAM-if-no-sssd-conf.patch
-%patch38 -p1 -b .information-leak.patch
-%patch36 -p1 -b .faillock-preauth.patch
-%patch37 -p1 -b .faillock-args.patch
-%patch39 -p1 -b .pam_succeed_if-can-return-PAM_IGNORE-in-pam_setcred.patch
-%patch40 -p1 -b .libdir.patch
+%patch9 -p1 -b .translations2
 
 %build
 %configure
@@ -142,13 +80,10 @@ fi
 %posttrans gtk
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 
-%triggerin -- oddjob-mkhomedir
-sed -i 's/pam_mkhomedir.so/pam_oddjob_mkhomedir.so/g' /etc/pam.d/*-auth-ac &>/dev/null || :
-
 %files -f %{name}.lang
 %defattr(-,root,root,-)
 %doc COPYING NOTES TODO README.samba3
-%config(noreplace) %{_sysconfdir}/sysconfig/authconfig
+%ghost %config(noreplace) %{_sysconfdir}/sysconfig/authconfig
 %ghost %config(noreplace) %{_sysconfdir}/pam.d/system-auth-ac
 %ghost %config(noreplace) %{_sysconfdir}/pam.d/password-auth-ac
 %ghost %config(noreplace) %{_sysconfdir}/pam.d/fingerprint-auth-ac
@@ -200,91 +135,6 @@ sed -i 's/pam_mkhomedir.so/pam_oddjob_mkhomedir.so/g' /etc/pam.d/*-auth-ac &>/de
 %{_datadir}/icons/hicolor/256x256/apps/system-config-authentication.*
 
 %changelog
-* Thu May 25 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-30
-- do not use /usr and LIBDIR together (#1455233)
-
-* Wed May 24 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-29
-- update translations (#1449625)
-
-* Wed May 17 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-28
-- ignore PAM_IGNORE for pam_succeed_if so application do not fail in pam_setcred() (#1450425)
-
-* Tue May 5 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-27
-- fix typo in the patch for CVE-2017-7488 (#1441604)
-
-* Tue May 5 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-26
-- CVE-2017-7488 authconfig: Information leak when SSSD is used for authentication against remote server (#1441604)
-
-* Tue May 5 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-25
-- faillock: change preauth phase to required and fix arguments handling (#1334449)
-
-* Tue May 4 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-24
-- faillock: add preauth phase so the account is actually blocked (#1334449)
-
-* Tue Apr 25 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-23
-- sssd: do not write SSSD PAM if there is no sssd.conf present (#1443949)
-
-* Tue Apr 25 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-21
-- sssd: do not ask for password with smartcards (#1441374)
-
-* Tue Apr 25 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-20
-- sssd: catch NoServiceError exception (#1441549)
-
-* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-19
-- Add pam_faillock support (#1334449)
-
-* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-18
-- Add SSSD Smartcard support (#1378943)
-
-* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-17
-- Enable SSSD authentication also for local users (#1329598)
-
-* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-16
-- Note that SSSD configuration may change with --updateall (#1339434)
-
-* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-15
-- change pam module location from /lib[64] to /usr/lib[64] (#1414494)
-
-* Thu Sep  1 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-14
-- overwrite nsswitch.conf if inconsistent configuration of initgroups
-  is present in it
-
-* Thu Jun 30 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-13
-- do not overwrite kerberos settings from sssd.conf with empty data
-  from krb5.conf
-
-* Fri Jun 17 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-12
-- updated translations from Zanata
-
-* Thu Jun 16 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-11
-- add trigger to change pam configuration to use pam_oddjob_mkhomedir
-  instead of pam_mkhomedir if oddjob-mkhomedir is installed
-- remove unusable --winbindtemplateprimarygroup option (#1242878)
-- handle inconsistency when missing realm in krb5.conf
-- sort the /etc/sysconfig/authconfig on write (#1320943)
-- avoid unnecessary update of nsswitch.conf
-- add support for myhostname nsswitch module (#1329943)
-
-* Fri Jul  3 2015 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-10
-- fix title of IPA domain join window (#1166119)
-- add --unattended to IPA uninstall command (#1166131)
-- do not mistake comment for krb5 realm name (#1184639)
-- do not traceback with incorrect locales (#1187020)
-- correct the package needed for winbind (#1190226)
-- install empty /etc/sysconfig/authconfig file (#1194698)
-- let SSSD prompt non-local users for passwords (#1204864)
-- add includedir /var/lib/sss/pubconf/krb5.include.d/ to krb5.conf (#1207552)
-- pass the password provided by --winbindjoin to net join (#1225089)
-
-* Mon Sep 29 2014 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-9
-- do not overwrite special ldap base values
-- display error message if winbind or IPA domain join fails
-- fix invocation of IPA domain join from GUI
-- keep altfiles in nsswitch.conf if present (#1134084)
-- the winbind client is now in samba-winbind package (#1084997)
-- correct handling of SSSD enablement during IPA domain joins
-- do not bail out if multiple LDAP URIs are specified (#1142830)
-
 * Tue Feb 11 2014 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-8
 - enable/start sssd only when config exists or enabled
   for both pam and nsswitch.conf
