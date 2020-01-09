@@ -1,0 +1,1267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Dimitris Glezos <glezos@transifex.com>, 2011
+# Hajime Taira <htaira@redhat.com>, 2011, 2012
+# Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2004, 2005, 2006
+# hyuugabaru <hyu_gabaru@yahoo.co.jp>, 2007
+# Kiyoto Hashida <khashida@redhat.com>, 2002
+# Kiyoto Hashida <khashida@redhat.com>, 2008, 2009, 2010, 2011
+# Kiyoto Hashida <khashida@redhat.com>, 2006
+# noriko <noriko@fedoraproject.org>, 2013
+# Noriko Mizumoto <noriko@redhat.com>, 2006, 2008, 2009
+# Tadashi Jokagi <fedora@elf.no-ip.org>, 2004
+# Tomoyuki KATO <tomo@dream.daynight.jp>, 2012
+# 高一人参 @欠陥遺伝子 <www.carrotsoft@gmail.com>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: Authconfig\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-01 15:24+0100\n"
+"PO-Revision-Date: 2013-11-01 14:28+0000\n"
+"Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/fedora/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../authconfig.py:115
+#, python-format
+msgid "usage: %s [options]"
+msgstr "使用方法: %s [オプション]"
+
+#: ../authconfig.py:121
+msgid "show this help message and exit"
+msgstr "このヘルプメッセージを表示して終了"
+
+#: ../authconfig.py:124
+msgid "enable shadowed passwords by default"
+msgstr "シャドウパスワードをデフォルトで有効にする"
+
+#: ../authconfig.py:126
+msgid "disable shadowed passwords by default"
+msgstr "シャドウパスワードをデフォルトで無効にする"
+
+#: ../authconfig.py:128
+msgid "enable MD5 passwords by default"
+msgstr "MD5 パスワードをデフォルトで有効にする"
+
+#: ../authconfig.py:130
+msgid "disable MD5 passwords by default"
+msgstr "MD5 パスワードをデフォルトで無効にする"
+
+#: ../authconfig.py:133
+msgid "hash/crypt algorithm for new passwords"
+msgstr "新しいパスワードのためのハッシュ/暗号化アルゴリズム"
+
+#: ../authconfig.py:136
+msgid "enable NIS for user information by default"
+msgstr "ユーザー情報に関してNISをデフォルトで有効にする"
+
+#: ../authconfig.py:138
+msgid "disable NIS for user information by default"
+msgstr "ユーザー情報に関してNISをデフォルトで無効にする"
+
+#: ../authconfig.py:139 ../authconfig.py:255
+msgid "<domain>"
+msgstr "<ドメイン>"
+
+#: ../authconfig.py:140
+msgid "default NIS domain"
+msgstr "デフォルトの NIS ドメイン"
+
+#: ../authconfig.py:141 ../authconfig.py:152 ../authconfig.py:195
+#: ../authconfig.py:197
+msgid "<server>"
+msgstr "<サーバー>"
+
+#: ../authconfig.py:142
+msgid "default NIS server"
+msgstr "デフォルトのNISサーバー"
+
+#: ../authconfig.py:145
+msgid "enable LDAP for user information by default"
+msgstr "ユーザー情報に関して LDAP をデフォルトで有効にする"
+
+#: ../authconfig.py:147
+msgid "disable LDAP for user information by default"
+msgstr "ユーザー情報に関して LDAP をデフォルトで無効にする"
+
+#: ../authconfig.py:149
+msgid "enable LDAP for authentication by default"
+msgstr "LDAP 認証をデフォルトで有効にする"
+
+#: ../authconfig.py:151
+msgid "disable LDAP for authentication by default"
+msgstr "LDAP 認証をデフォルトで無効にする"
+
+#: ../authconfig.py:153
+msgid "default LDAP server hostname or URI"
+msgstr "デフォルトの LDAP サーバーホスト名またはURI"
+
+#: ../authconfig.py:154
+msgid "<dn>"
+msgstr "<dn>"
+
+#: ../authconfig.py:155
+msgid "default LDAP base DN"
+msgstr "デフォルトの LDAP ベース DN"
+
+#: ../authconfig.py:157
+msgid "enable use of TLS with LDAP (RFC-2830)"
+msgstr "TLS と LDAP の併用を有効にする (RFC-2830)"
+
+#: ../authconfig.py:159
+msgid "disable use of TLS with LDAP (RFC-2830)"
+msgstr "TLS と LDAP の併用を無効にする (RFC-2830)"
+
+#: ../authconfig.py:161
+msgid "enable use of RFC-2307bis schema for LDAP user information lookups"
+msgstr "LDAP ユーザー情報ルックアップ用の RFC-2307 bis schema の使用を有効にする"
+
+#: ../authconfig.py:163
+msgid "disable use of RFC-2307bis schema for LDAP user information lookups"
+msgstr "LDAP ユーザー情報ルックアップ用の RFC-2307 bis schema の使用を無効にする"
+
+#: ../authconfig.py:164
+msgid "<URL>"
+msgstr "<URL>"
+
+#: ../authconfig.py:165
+msgid "load CA certificate from the URL"
+msgstr "URL から CA 証明書をロードする"
+
+#: ../authconfig.py:168
+msgid "enable authentication with smart card by default"
+msgstr "スマートカードによる認証をデフォルトで有効にする"
+
+#: ../authconfig.py:170
+msgid "disable authentication with smart card by default"
+msgstr "スマートカードによる認証をデフォルトで無効にする"
+
+#: ../authconfig.py:172
+msgid "require smart card for authentication by default"
+msgstr "認証用スマートカードをデフォルトで要求する"
+
+#: ../authconfig.py:174
+msgid "do not require smart card for authentication by default"
+msgstr "認証用スマートカードをデフォルトで要求しない"
+
+#: ../authconfig.py:175
+msgid "<module>"
+msgstr "<module>"
+
+#: ../authconfig.py:176
+msgid "default smart card module to use"
+msgstr "デフォルトで使用するスマートカードモジュール"
+
+#: ../authconfig.py:179
+msgid "action to be taken on smart card removal"
+msgstr "スマートカードの取り出し時に行う動作"
+
+#: ../authconfig.py:182
+msgid "enable authentication with fingerprint readers by default"
+msgstr "指紋リーダーによる認証をデフォルトで有効にする"
+
+#: ../authconfig.py:184
+msgid "disable authentication with fingerprint readers by default"
+msgstr "指紋リーダーによる認証をデフォルトで無効にする"
+
+#: ../authconfig.py:187
+msgid "enable automatic per-user ecryptfs"
+msgstr "ユーザー毎の自動 ecryptfs を有効にする"
+
+#: ../authconfig.py:189
+msgid "disable automatic per-user ecryptfs"
+msgstr "ユーザー毎の自動 ecryptfs を無効にする"
+
+#: ../authconfig.py:192
+msgid "enable kerberos authentication by default"
+msgstr "Kerberos 認証をデフォルトで有効にする"
+
+#: ../authconfig.py:194
+msgid "disable kerberos authentication by default"
+msgstr "Kerberos 認証をデフォルトで無効にする"
+
+#: ../authconfig.py:196
+msgid "default kerberos KDC"
+msgstr "デフォルトの Kerberos KDC"
+
+#: ../authconfig.py:198
+msgid "default kerberos admin server"
+msgstr "デフォルトの Kerberos 管理サーバー"
+
+#: ../authconfig.py:199 ../authconfig.py:220 ../authconfig.py:257
+msgid "<realm>"
+msgstr "<レルム>"
+
+#: ../authconfig.py:200
+msgid "default kerberos realm"
+msgstr "デフォルトの Kerberos レルム (realm)"
+
+#: ../authconfig.py:202
+msgid "enable use of DNS to find kerberos KDCs"
+msgstr "kerberos KDC 検索用の DNS 使用を有効にする"
+
+#: ../authconfig.py:204
+msgid "disable use of DNS to find kerberos KDCs"
+msgstr "kerberos KDC 検索用の DNS 使用を無効にする"
+
+#: ../authconfig.py:206
+msgid "enable use of DNS to find kerberos realms"
+msgstr "kerberos レルム検索用の DNS 使用を有効にする"
+
+#: ../authconfig.py:208
+msgid "disable use of DNS to find kerberos realms"
+msgstr "Kerberos レルム (realm) 検索用の DNS 使用を無効にする "
+
+#: ../authconfig.py:211
+msgid "enable winbind for user information by default"
+msgstr "ユーザー情報に関して winbind をデフォルトで有効にする"
+
+#: ../authconfig.py:213
+msgid "disable winbind for user information by default"
+msgstr "ユーザー情報に関して winbind をデフォルトで無効にする"
+
+#: ../authconfig.py:215
+msgid "enable winbind for authentication by default"
+msgstr "認証で winbind をデフォルトで有効にする"
+
+#: ../authconfig.py:217
+msgid "disable winbind for authentication by default"
+msgstr "認証で winbind をデフォルトで無効にする"
+
+#: ../authconfig.py:219
+msgid "security mode to use for samba and winbind"
+msgstr "samba と winbind 用に使用するセキュリティモード"
+
+#: ../authconfig.py:221
+msgid "default realm for samba and winbind when security=ads"
+msgstr "security=adsの時のSambaとwinbind用のデフォルトのレルム(realm)"
+
+#: ../authconfig.py:222 ../authconfig.py:259
+msgid "<servers>"
+msgstr "<サーバー>"
+
+#: ../authconfig.py:223
+msgid "names of servers to authenticate against"
+msgstr "認証する対象のサーバー名"
+
+#: ../authconfig.py:224
+msgid "<workgroup>"
+msgstr "<ワークグループ>"
+
+#: ../authconfig.py:225
+msgid "workgroup authentication servers are in"
+msgstr "ワークグループ認証サーバー"
+
+#: ../authconfig.py:226
+msgid "<lowest-highest>"
+msgstr "<最低-最高>"
+
+#: ../authconfig.py:227
+msgid "uid range winbind will assign to domain or ads users"
+msgstr "winbindがdomainまたはadsユーザーに割り当てるuidの範囲"
+
+#: ../authconfig.py:229
+msgid ""
+"the character which will be used to separate the domain and user part of "
+"winbind-created user names if winbindusedefaultdomain is not enabled"
+msgstr "winbindusedefaultdomainが有効でない場合に、winbind作成のユーザー名内でドメインとユーザーの部分を分離するのに使用する文字"
+
+#: ../authconfig.py:231
+msgid ""
+"the directory which winbind-created users will have as home directories"
+msgstr "ユーザーがホームディレクトリとして持つwinbind作成のディレクトリ"
+
+#: ../authconfig.py:233
+msgid "the group which winbind-created users will have as their primary group"
+msgstr "ユーザーがそのプライマリグループとして持つwinbind作成のグループ"
+
+#: ../authconfig.py:235
+msgid "the shell which winbind-created users will have as their login shell"
+msgstr "ユーザーがそのログインシェルとして持つwinbind作成のシェル"
+
+#: ../authconfig.py:237
+msgid ""
+"configures winbind to assume that users with no domain in their user names "
+"are domain users"
+msgstr "ユーザー名の中にドメインを持たないユーザーをドメインユーザーと想定するようにwinbindを設定する"
+
+#: ../authconfig.py:239
+msgid ""
+"configures winbind to assume that users with no domain in their user names "
+"are not domain users"
+msgstr "ユーザー名の中にドメインを持たないユーザーをドメインユーザーと想定しない様にwinbindを設定する"
+
+#: ../authconfig.py:241
+msgid "configures winbind to allow offline login"
+msgstr "オフラインでログインできるようにwinbindを設定する"
+
+#: ../authconfig.py:243
+msgid "configures winbind to prevent offline login"
+msgstr "オフラインでログインできないようにwinbindを設定する"
+
+#: ../authconfig.py:245
+msgid "winbind will use Kerberos 5 to authenticate"
+msgstr ""
+
+#: ../authconfig.py:247
+msgid "winbind will use the default authentication method"
+msgstr ""
+
+#: ../authconfig.py:249
+msgid "join the winbind domain or ads realm now as this administrator"
+msgstr "管理者としてwinbindドメインかまたはADSレルムに参加する"
+
+#: ../authconfig.py:252
+msgid "enable IPAv2 for user information and authentication by default"
+msgstr "ユーザー情報と認証のために IPAv2 をデフォルトで有効にします"
+
+#: ../authconfig.py:254
+msgid "disable IPAv2 for user information and authentication by default"
+msgstr "ユーザー情報と認証のために IPAv2 をデフォルトで無効にします"
+
+#: ../authconfig.py:256
+msgid "the IPAv2 domain the system should be part of"
+msgstr "システムが参加する IPAv2 ドメイン"
+
+#: ../authconfig.py:258
+msgid "the realm for the IPAv2 domain"
+msgstr "IPAv2 ドメインのレルム"
+
+#: ../authconfig.py:260
+msgid "the server for the IPAv2 domain"
+msgstr "IPAv2 ドメインのサーバー"
+
+#: ../authconfig.py:262
+msgid "do not setup the NTP against the IPAv2 domain"
+msgstr "IPAv2 ドメインに対して NTP をセットアップしません"
+
+#: ../authconfig.py:264
+msgid "setup the NTP against the IPAv2 domain (default)"
+msgstr "IPAv2 ドメインに対して NTP をセットアップします（デフォルト）"
+
+#: ../authconfig.py:266
+msgid "join the IPAv2 domain as this account"
+msgstr "このアカウントで IPAv2 ドメインに参加"
+
+#: ../authconfig.py:269
+msgid "enable wins for hostname resolution"
+msgstr "ホスト名解決用のwinsを有効にする"
+
+#: ../authconfig.py:271
+msgid "disable wins for hostname resolution"
+msgstr "ホスト名解決用のwinsを無効にする"
+
+#: ../authconfig.py:274
+msgid "prefer dns over wins or nis for hostname resolution"
+msgstr "ホスト名解決にwinsまたはnisよりdnsを優先する"
+
+#: ../authconfig.py:276
+msgid "do not prefer dns over wins or nis for hostname resolution"
+msgstr "ホスト名解決にwinsまたはnisよりdnsを優先しない"
+
+#: ../authconfig.py:279
+msgid "enable hesiod for user information by default"
+msgstr "ユーザー情報に関してhesiodをデフォルトで有効にする"
+
+#: ../authconfig.py:281
+msgid "disable hesiod for user information by default"
+msgstr "ユーザー情報に関してhesiodをデフォルトで無効にする"
+
+#: ../authconfig.py:283
+msgid "default hesiod LHS"
+msgstr "デフォルトの hesiod LHS"
+
+#: ../authconfig.py:285
+msgid "default hesiod RHS"
+msgstr "デフォルトの hesiod RHS"
+
+#: ../authconfig.py:288
+msgid ""
+"enable SSSD for user information by default with manually managed "
+"configuration"
+msgstr "ユーザー情報に関して SSSD をデフォルトで有効にする。(手動管理の設定と一緒に)"
+
+#: ../authconfig.py:290
+msgid ""
+"disable SSSD for user information by default (still used for supported "
+"configurations)"
+msgstr "ユーザー情報に関して SSSD をデフォルトで無効にする。(まだサポートされていない設定です)"
+
+#: ../authconfig.py:292
+msgid ""
+"enable SSSD for authentication by default with manually managed "
+"configuration"
+msgstr "認証の SSSD をデフォルトで有効にする。(手動管理の設定と一緒に)"
+
+#: ../authconfig.py:294
+msgid ""
+"disable SSSD for authentication by default (still used for supported "
+"configurations)"
+msgstr "認証用のSSSDはデフォルトでは無効です (設定は現在もサポートされています)"
+
+#: ../authconfig.py:296
+msgid "never use SSSD implicitly even for supported configurations"
+msgstr "もしサポートされている設定であっても、暗黙のうちにSSSDを利用しないでください。"
+
+#: ../authconfig.py:298
+msgid "use SSSD implicitly if it supports the configuration"
+msgstr "もしサポートされている設定であれば、暗黙のうちにSSSDを利用する。"
+
+#: ../authconfig.py:301
+msgid "enable caching of user credentials in SSSD by default"
+msgstr "SSSD 内のユーザー信任情報のキャッシュをデフォルトで有効にする"
+
+#: ../authconfig.py:303
+msgid "disable caching of user credentials in SSSD by default"
+msgstr "SSSD 内のユーザー信任情報のキャッシュをデフォルトで無効にする"
+
+#: ../authconfig.py:306
+msgid ""
+"enable caching of user information by default (automatically disabled when "
+"SSSD is used)"
+msgstr "ユーザー情報のキャッシュをデフォルトで有効にする（SSSD が使用される時に自動的に無効にする）"
+
+#: ../authconfig.py:308
+msgid "disable caching of user information by default"
+msgstr "ユーザー情報のキャッシュをデフォルトで無効にする"
+
+#: ../authconfig.py:311
+msgid "local authorization is sufficient for local users"
+msgstr "ローカル認証はローカルユーザー用として問題ありません"
+
+#: ../authconfig.py:313
+msgid "authorize local users also through remote service"
+msgstr "リモートサービスを通してのローカルユーザーを認証"
+
+#: ../authconfig.py:316
+msgid "check access.conf during account authorization"
+msgstr "アカウント認証中に access.conf をチェックする"
+
+#: ../authconfig.py:318
+msgid "do not check access.conf during account authorization"
+msgstr "アカウント認証中に access.conf をチェックしない"
+
+#: ../authconfig.py:321
+msgid "authenticate system accounts by network services"
+msgstr "ネットワークサービスによる認証システムアカウント"
+
+#: ../authconfig.py:323
+msgid "authenticate system accounts by local files only"
+msgstr "ローカルファイルだけによる認証システムアカウント"
+
+#: ../authconfig.py:326
+msgid "create home directories for users on their first login"
+msgstr "利用者の最初のログイン時にホームディレクトリーを作成する"
+
+#: ../authconfig.py:328
+msgid "do not create home directories for users on their first login"
+msgstr "利用者の最初のログイン時にホームディレクトリーを作成しない"
+
+#: ../authconfig.py:330 ../authconfig.py:332 ../authconfig.py:334
+#: ../authconfig.py:336
+msgid "<number>"
+msgstr "<number>"
+
+#: ../authconfig.py:331
+msgid "minimum length of a password"
+msgstr "パスワードの最小数"
+
+#: ../authconfig.py:333
+msgid "minimum number of character classes in a password"
+msgstr "パスワードの文字クラスの最小数"
+
+#: ../authconfig.py:335
+msgid "maximum number of same consecutive characters in a password"
+msgstr "パスワードにおける同じ文字の最大連続数"
+
+#: ../authconfig.py:337
+msgid "maximum number of consecutive characters of same class in a password"
+msgstr "パスワードにおける同じ文字クラスの文字の最大連続数"
+
+#: ../authconfig.py:339
+msgid "require at least one lowercase character in a password"
+msgstr "パスワードに少なくとも1文字の小文字を必要とする"
+
+#: ../authconfig.py:341
+msgid "do not require lowercase characters in a password"
+msgstr "パスワードに小文字を必要としない"
+
+#: ../authconfig.py:343
+msgid "require at least one uppercase character in a password"
+msgstr "パスワードに少なくとも1文字の大文字を必要とする"
+
+#: ../authconfig.py:345
+msgid "do not require uppercase characters in a password"
+msgstr "パスワードに大文字を必要としない"
+
+#: ../authconfig.py:347
+msgid "require at least one digit in a password"
+msgstr "パスワードに少なくとも1文字の数字を必要とする"
+
+#: ../authconfig.py:349
+msgid "do not require digits in a password"
+msgstr "パスワードに数字を必要としない"
+
+#: ../authconfig.py:351
+msgid "require at least one other character in a password"
+msgstr "パスワードに少なくとも1文字の記号を必要とする"
+
+#: ../authconfig.py:353
+msgid "do not require other characters in a password"
+msgstr "パスワードに記号を必要としない"
+
+#: ../authconfig.py:356
+msgid "do not start/stop portmap, ypbind, and nscd"
+msgstr "portmap、ypbind、nscd を起動/停止しない"
+
+#: ../authconfig.py:359
+msgid "do not update the configuration files, only print new settings"
+msgstr "設定ファイルをアップデートせずに、新しい設定をただ表示する"
+
+#: ../authconfig.py:363
+msgid "display Back instead of Cancel in the main dialog of the TUI"
+msgstr "テキスト UI のメインダイアログの中に「キャンセル」の代わりに「戻る」を表示する"
+
+#: ../authconfig.py:365
+msgid "do not display the deprecated text user interface"
+msgstr "不適切なテキストユーザーインタフェースを表示しない"
+
+#: ../authconfig.py:368
+msgid "opposite of --test, update configuration files with changed settings"
+msgstr "--test の反対、変更された設定に対する設定ファイルのアップデート"
+
+#: ../authconfig.py:371
+msgid "update all configuration files"
+msgstr "すべての設定ファイルのアップデート"
+
+#: ../authconfig.py:374
+msgid "probe network for defaults and print them"
+msgstr "デフォルトのネットワークを検出して表示する"
+
+#: ../authconfig.py:376 ../authconfig.py:379
+msgid "<name>"
+msgstr "<name>"
+
+#: ../authconfig.py:377
+msgid "save a backup of all configuration files"
+msgstr "全ての設定ファイルのバックアップを保存"
+
+#: ../authconfig.py:380
+msgid "restore the backup of configuration files"
+msgstr "設定ファイルのバックアップを復元"
+
+#: ../authconfig.py:383
+msgid ""
+"restore the backup of configuration files saved before the previous "
+"configuration change"
+msgstr "前回の設定変更の前に保存されている設定ファイルのバックアップを復元"
+
+#: ../authconfig.py:388
+msgid "unexpected argument"
+msgstr "予期しない引数"
+
+#: ../authconfig.py:522
+msgid "The passminlen minimum value is 6"
+msgstr ""
+
+#: ../authconfig.py:526
+msgid "The passminlen option value is not an integer"
+msgstr "passminlen オプションの値が整数ではありません"
+
+#: ../authconfig.py:534
+msgid "The passminclass value must not be negative"
+msgstr ""
+
+#: ../authconfig.py:538
+msgid "The passminclass option value is not an integer"
+msgstr "passminclass オプションの値が整数ではありません"
+
+#: ../authconfig.py:546
+msgid "The passmaxrepeat value must not be negative"
+msgstr ""
+
+#: ../authconfig.py:550
+msgid "The passmaxrepeat option value is not an integer"
+msgstr "passmaxrepeat オプションの値が整数ではありません"
+
+#: ../authconfig.py:558
+msgid "The passmaxclassrepeat value must not be negative"
+msgstr ""
+
+#: ../authconfig.py:562
+msgid "The passmaxclassrepeat option value is not an integer"
+msgstr "passmaxclassrepeat オプションの値が整数ではありません"
+
+#: ../authconfig.py:584
+msgid "Bad smart card removal action specified."
+msgstr "不正なスマートカード取り出し動作が指定されました。"
+
+#: ../authconfig.py:593
+msgid "Unknown password hashing algorithm specified, using sha256."
+msgstr "不明なパスワードハッシュアルゴリズムが指定されたので、sha256を使用します。"
+
+#: ../authconfig.py:637
+msgid "can only be run as root"
+msgstr "root としてのみ実行可能"
+
+#: ../authconfig.py:653
+msgid "dialog was cancelled"
+msgstr "ダイアログはキャンセルされました"
+
+#: ../authconfig.py:685 ../authconfig-gtk.py:572
+#, python-format
+msgid ""
+"The %s file was not found, but it is required for %s support to work properly.\n"
+"Install the %s package, which provides this file."
+msgstr "%s ファイルが見つかりませんが、このファイルは %s 用に正しく動作させるのをサポートするため必要です。\nこのファイルを提供している %s パッケージをインストールしてください。"
+
+#: ../authconfig.py:687 ../authconfig.py:1033
+msgid "Warning"
+msgstr "警告"
+
+#: ../authconfig.py:687 ../authconfig.py:904 ../authconfig.py:912
+#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:935
+#: ../authconfig.py:979 ../authconfig.py:1033
+msgid "Ok"
+msgstr "OK"
+
+#: ../authconfig.py:691
+msgid "caching"
+msgstr "キャッシュ化"
+
+#: ../authconfig.py:692
+msgid "Fingerprint reader"
+msgstr "指紋リーダー"
+
+#: ../authconfig.py:693
+msgid "Kerberos"
+msgstr "Kerberos"
+
+#: ../authconfig.py:694
+msgid "LDAP authentication"
+msgstr "LDAP 認証"
+
+#: ../authconfig.py:695 ../authconfig-gtk.py:122
+msgid "LDAP"
+msgstr "LDAP"
+
+#: ../authconfig.py:696 ../authconfig-gtk.py:128
+msgid "NIS"
+msgstr "NIS"
+
+#: ../authconfig.py:697
+msgid "shadow password"
+msgstr "シャドウパスワード"
+
+#: ../authconfig.py:698 ../authconfig.py:700 ../authconfig-gtk.py:131
+msgid "Winbind"
+msgstr "Winbind"
+
+#: ../authconfig.py:699
+msgid "Winbind authentication"
+msgstr "Winbind 認証"
+
+#: ../authconfig.py:705
+msgid "User Information"
+msgstr "ユーザー情報"
+
+#: ../authconfig.py:708
+msgid "Cache Information"
+msgstr "キャッシュ情報"
+
+#: ../authconfig.py:711
+msgid "Use LDAP"
+msgstr "LDAP を使用"
+
+#: ../authconfig.py:714
+msgid "Use NIS"
+msgstr "NIS を使用"
+
+#: ../authconfig.py:717
+msgid "Use IPAv2"
+msgstr "IPAv2 を使用"
+
+#: ../authconfig.py:720
+msgid "Use Winbind"
+msgstr "Winbind を使用"
+
+#: ../authconfig.py:726 ../authconfig.desktop.in.h:1
+msgid "Authentication"
+msgstr "認証"
+
+#: ../authconfig.py:729
+msgid "Use MD5 Passwords"
+msgstr "MD5 パスワードを使用"
+
+#: ../authconfig.py:732
+msgid "Use Shadow Passwords"
+msgstr "シャドウパスワードを使用"
+
+#: ../authconfig.py:735
+msgid "Use LDAP Authentication"
+msgstr "LDAP 認証を使用"
+
+#: ../authconfig.py:738
+msgid "Use Kerberos"
+msgstr "Kerberos 5 を使用"
+
+#: ../authconfig.py:741
+msgid "Use Fingerprint reader"
+msgstr "指紋リーダーを使用"
+
+#: ../authconfig.py:745
+msgid "Use Winbind Authentication"
+msgstr "Winbind 認証を使用"
+
+#: ../authconfig.py:748
+msgid "Local authorization is sufficient"
+msgstr "ローカル認証で十分"
+
+#: ../authconfig.py:758 ../authconfig.py:904 ../authconfig.py:912
+#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:979
+msgid "Back"
+msgstr "戻る"
+
+#: ../authconfig.py:758 ../authconfig.py:935
+msgid "Cancel"
+msgstr "取り消し"
+
+#: ../authconfig.py:759 ../authconfig.py:904 ../authconfig.py:912
+#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:979
+msgid "Next"
+msgstr "次"
+
+#: ../authconfig.py:770 ../authconfig-gtk.py:805 ../authconfig.glade.h:1
+msgid "Authentication Configuration"
+msgstr "認証の設定"
+
+#: ../authconfig.py:900 ../authconfig.py:915 ../authconfig.py:973
+#: ../authconfig.glade.h:40
+msgid "Domain:"
+msgstr "ドメイン:"
+
+#: ../authconfig.py:901 ../authconfig.py:921
+msgid "Realm:"
+msgstr "レルム(Realm):"
+
+#: ../authconfig.py:902 ../authconfig.py:909 ../authconfig.py:916
+msgid "Server:"
+msgstr "サーバー:"
+
+#: ../authconfig.py:903
+msgid "IPAv2 Settings"
+msgstr "IPAv2 の設定"
+
+#: ../authconfig.py:905 ../authconfig.py:980
+msgid "Join Domain"
+msgstr "ドメイン参加"
+
+#: ../authconfig.py:908
+msgid "Use TLS"
+msgstr "TLS を使用"
+
+#: ../authconfig.py:910
+msgid "Base DN:"
+msgstr "ベースDN:"
+
+#: ../authconfig.py:911
+msgid "LDAP Settings"
+msgstr "LDAP設定"
+
+#: ../authconfig.py:917
+msgid "NIS Settings"
+msgstr "NIS設定"
+
+#: ../authconfig.py:922
+msgid "KDC:"
+msgstr "KDC:"
+
+#: ../authconfig.py:923
+msgid "Admin Server:"
+msgstr "管理サーバー:"
+
+#: ../authconfig.py:924
+msgid "Use DNS to resolve hosts to realms"
+msgstr "DNSを使用してレルムのホストを解決する"
+
+#: ../authconfig.py:925
+msgid "Use DNS to locate KDCs for realms"
+msgstr "DNSを使用してレルム用のKDCを見付ける"
+
+#: ../authconfig.py:926
+msgid "Kerberos Settings"
+msgstr "Kerberos設定"
+
+#: ../authconfig.py:930
+msgid "Domain Administrator:"
+msgstr "ドメイン管理者:"
+
+#: ../authconfig.py:931
+msgid "Password:"
+msgstr "パスワード:"
+
+#: ../authconfig.py:934
+msgid "Join Settings"
+msgstr "Join設定"
+
+#: ../authconfig.py:947 ../authconfig.glade.h:44
+msgid ""
+"Some of the configuration changes you've made should be saved to disk before"
+" continuing.  If you do not save them, then your attempt to join the domain "
+"may fail.  Save changes?"
+msgstr "設定変更の内の幾つかは、継続する前にディスクに保存する必要があります。 変更を保存しない場合、ドメインに参加する操作が失敗することがあります。 変更を保存しますか?"
+
+#: ../authconfig.py:954
+msgid "Save Settings"
+msgstr "設定の保存"
+
+#: ../authconfig.py:955
+msgid "No"
+msgstr "いいえ"
+
+#: ../authconfig.py:955
+msgid "Yes"
+msgstr "はい"
+
+#. Why does your favorite shell not show up in the list?  Because it won't
+#. fit, that's why!
+#: ../authconfig.py:972
+msgid "Security Model:"
+msgstr "セキュリティモデル:"
+
+#: ../authconfig.py:974
+msgid "Domain Controllers:"
+msgstr "ドメインコントローラー:"
+
+#: ../authconfig.py:975
+msgid "ADS Realm:"
+msgstr "ADSレルム(Realm):"
+
+#: ../authconfig.py:976
+msgid "Template Shell:"
+msgstr "テンプレートシェル:"
+
+#: ../authconfig.py:978
+msgid "Winbind Settings"
+msgstr "Winbind設定"
+
+#: ../authconfig.py:1028
+#, python-format
+msgid ""
+"To connect to a LDAP server with TLS protocol enabled you need a CA certificate which signed your server's certificate. Copy the certificate in the PEM format to the '%s' directory.\n"
+"Then press OK."
+msgstr "LDAPサーバーにTLSプロトコルを使って接続するには、あなたのサーバー認証の署名があるCA認証が必要です。証明を'%s'ディレクトリにPEMフォーマットの認証をコピーしてください。\nそしてOKを押します。"
+
+#. FIXME - version
+#: ../authconfig.py:1042
+msgid ""
+" <Tab>/<Alt-Tab> between elements   |   <Space> selects   |  <F12> next "
+"screen"
+msgstr "<Tab>/<Alt-Tab> 項目間の移動   |   <Space> 選択   |  <F12> 次の画面"
+
+#: ../authconfig.desktop.in.h:2
+msgid "Control how the system verifies users who attempt to log in"
+msgstr "ログインしようとするユーザーをシステムが確証する方法を制御する"
+
+#: ../authconfig-gtk.py:64
+msgid ""
+"Unable to initialize graphical environment. Most likely cause of failure\n"
+"is that the tool was not run using a graphical environment. Please either\n"
+"start your graphical user interface or set your DISPLAY variable.\n"
+msgstr "グラフィカル環境を初期化できません。最も可能性の高い原因は、グラフィカルモードで起動されていないことです。GUIを起動するか、DISPLAY 値を設定してください。\n"
+
+#: ../authconfig-gtk.py:119
+msgid "Local accounts only"
+msgstr "ローカルアカウント専用"
+
+#: ../authconfig-gtk.py:125
+msgid "FreeIPA"
+msgstr "FreeIPA"
+
+#: ../authconfig-gtk.py:134
+msgid "IPAv2"
+msgstr "IPAv2"
+
+#: ../authconfig-gtk.py:143
+msgid "Password"
+msgstr "パスワード"
+
+#: ../authconfig-gtk.py:146
+msgid "LDAP password"
+msgstr "LDAPパスワード"
+
+#: ../authconfig-gtk.py:149
+msgid "Kerberos password"
+msgstr "Kerberosパスワード"
+
+#: ../authconfig-gtk.py:152
+msgid "NIS password"
+msgstr "NIS パスワード"
+
+#: ../authconfig-gtk.py:155
+msgid "Winbind password"
+msgstr "Winbindパスワード"
+
+#: ../authconfig-gtk.py:158
+msgid "IPAv2 password"
+msgstr "IPAv2 パスワード"
+
+#: ../authconfig-gtk.py:533 ../authinfo.py:1639
+msgid "Invalid LDAP URI."
+msgstr ""
+
+#: ../authconfig-gtk.py:536
+msgid ""
+"You must provide ldaps:// server address or use TLS for LDAP authentication."
+msgstr "ldaps:// サーバーアドレスを記入するか、またはLDAP認証用のTLSを使用しなければなりません。"
+
+#: ../authconfig-gtk.py:543
+msgid "Use the \"Join Domain\" button to join the IPAv2 domain."
+msgstr "IPAv2 ドメインに参加するには \"ドメイン参加\" ボタンを使用します。"
+
+#: ../authconfig.glade.h:2
+msgid ""
+"Restore the configuration files backed up before the previous configuration "
+"change"
+msgstr "前回の設定変更の前にバックアップされている設定ファイルを復元"
+
+#: ../authconfig.glade.h:3
+msgid "<b>User Account Configuration</b>"
+msgstr "<b>ユーザーアカウントの認証</b>"
+
+#: ../authconfig.glade.h:4
+msgid "_User Account Database:"
+msgstr "ユーザーアカウントデータベース(_U):"
+
+#: ../authconfig.glade.h:5
+msgid "*"
+msgstr "*"
+
+#: ../authconfig.glade.h:6
+msgid "<b>Authentication Configuration</b>"
+msgstr "<b>認証の設定</b>"
+
+#: ../authconfig.glade.h:7
+msgid "Aut_hentication Method:"
+msgstr "認証の方法(_H):"
+
+#: ../authconfig.glade.h:8
+msgid "_Identity & Authentication"
+msgstr "識別と認証(_I)"
+
+#: ../authconfig.glade.h:9
+msgid "<b>Local Authentication Options</b>"
+msgstr "<b>ローカル認証のオプション</b>"
+
+#: ../authconfig.glade.h:10
+msgid "Enable _fingerprint reader support"
+msgstr "指紋リーダーサポートを有効にする(_F)"
+
+#: ../authconfig.glade.h:11
+msgid ""
+"Fingerprint authentication allows you to log in by scanning your finger with"
+" the fingerprint reader."
+msgstr "指紋認証を使用すると、指紋読み取りと関連付けられた自分の指のスキャンでログインが可能になります。"
+
+#: ../authconfig.glade.h:12
+msgid "Enable _local access control"
+msgstr "ローカルアクセス制御を有効にする(_L)"
+
+#: ../authconfig.glade.h:13
+msgid ""
+"When enabled /etc/security/access.conf will be consulted for authorization "
+"of users access."
+msgstr "有効ならば、/etc/security/access.conf がユーザーアクセスの許可のために利用されます。"
+
+#: ../authconfig.glade.h:14
+msgid ""
+"<small><b>Tip:</b> This is managed via /etc/security/access.conf.</small>"
+msgstr "<small><b>ヒント:</b> これは /etc/security/access.conf を介して管理されます。</small>"
+
+#: ../authconfig.glade.h:15
+msgid "Hashing or crypto algorithm used for storing passwords of local users"
+msgstr "ローカルユーザーのパスワード保存に使用するハッシュ/暗号化アルゴリズム"
+
+#: ../authconfig.glade.h:16
+msgid "_Password Hashing Algorithm:"
+msgstr "パスワードハッシュアルゴリズム(_P):"
+
+#: ../authconfig.glade.h:17
+msgid "<b>Other Authentication Options</b>"
+msgstr "<b>他の認証のオプション</b>"
+
+#: ../authconfig.glade.h:18
+msgid "Create _home directories on the first login"
+msgstr "利用者の最初のログイン時にホームディレクトリーを作成する(_H)"
+
+#: ../authconfig.glade.h:19
+msgid ""
+"If the home directory of an user doesn't exist yet it will be created "
+"automatically on his first login."
+msgstr "ユーザーのホームディレクトリーがなければ、最初のログイン時に自動的に作成されます。"
+
+#: ../authconfig.glade.h:20
+msgid "<b>Smart Card Authentication Options</b>"
+msgstr "<b>スマートカード認証のオプション</b>"
+
+#: ../authconfig.glade.h:21
+msgid "Enable _smart card support"
+msgstr "スマートカードサポートを有効にする(_S)"
+
+#: ../authconfig.glade.h:22
+msgid ""
+"Smart card authentication allows you to log in using a certificate and key "
+"associated with a smart card."
+msgstr "スマートカード認証を使用すると、スマートカードと関連付けられた証明証及びキーを使用したログインが可能になります。"
+
+#: ../authconfig.glade.h:23
+msgid ""
+"<small><b>Tip:</b> Smart cards support logging into both local and centrally"
+" managed accounts.</small>"
+msgstr "<small><b>ヒント:</b>スマートカードはローカルアカウントと中央管理のアカウントの両方のログインをサポートします。</small>"
+
+#: ../authconfig.glade.h:24
+msgid "Advanced _Options"
+msgstr "高度なオプション(_O)"
+
+#: ../authconfig.glade.h:25
+msgid "<b>Minimal Password Requirements</b>"
+msgstr "<b>最小パスワード要件</b>"
+
+#: ../authconfig.glade.h:26
+msgid "_Length:"
+msgstr "長さ(_L):"
+
+#: ../authconfig.glade.h:27
+msgid "C_haracter Classes:"
+msgstr "文字クラス(_H):"
+
+#: ../authconfig.glade.h:28
+msgid "<b>Required Character Classes</b>"
+msgstr "<b>必要な文字クラス</b>"
+
+#: ../authconfig.glade.h:29
+msgid "Low_ercase"
+msgstr "小文字(_E)"
+
+#: ../authconfig.glade.h:30
+msgid "_Uppercase"
+msgstr "大文字(_U)"
+
+#: ../authconfig.glade.h:31
+msgid "_Digits"
+msgstr "数字(_D)"
+
+#: ../authconfig.glade.h:32
+msgid "O_ther characters"
+msgstr "他の文字(_T)"
+
+#: ../authconfig.glade.h:33
+msgid "<b>Maximal Consecutive Character Repetition</b>"
+msgstr "<b>最大連続文字数</b>"
+
+#: ../authconfig.glade.h:34
+msgid "_Same Character:"
+msgstr "同じ文字(_S):"
+
+#: ../authconfig.glade.h:35
+msgid "Sa_me Class:"
+msgstr "同じクラス(_M):"
+
+#: ../authconfig.glade.h:36
+msgid ""
+"<small><b>Tip:</b> These checks are disabled if the value is 0.</small>"
+msgstr "<small><b>ヒント:</b> これらのチェックは値が0ならば無効になります。</small>"
+
+#: ../authconfig.glade.h:37
+msgid "Pass_word Options"
+msgstr "パスワードオプション(_W)"
+
+#: ../authconfig.glade.h:38
+msgid "Joining Winbind Domain"
+msgstr "Winbindドメインに参加"
+
+#: ../authconfig.glade.h:39
+msgid "Domain _administrator:"
+msgstr "ドメイン管理者(_A):"
+
+#: ../authconfig.glade.h:41
+msgid "_Password:"
+msgstr "パスワード(_P):"
+
+#: ../authconfig.glade.h:42
+msgid "Alert"
+msgstr "警告"
+
+#: ../authconfig.glade.h:43
+msgid "Do_n't Save"
+msgstr "保存しない(_N)"
+
+#: ../authconfig.glade.h:45
+msgid "Download CA Certificate"
+msgstr "CA証明書をダウンロードする"
+
+#: ../authconfig.glade.h:46
+msgid "Certificate _URL:"
+msgstr "証明書URL(_U):"
+
+#: ../authconfig.glade.h:47
+msgid ""
+"To verify the LDAP server with TLS protocol enabled you need a CA "
+"certificate which signed the server's certificate. Please fill in the URL "
+"where the CA certificate in the PEM format can be downloaded from."
+msgstr "LDAP サーバーに TLS プロトコルを使って接続するには、あなたのサーバー認証の署名がある CA 認証が必要です。PEM フォーマットの CA 認証をダウンロードできる URL を記入してください。"
+
+#: ../authconfig.glade.h:48
+msgid "NIS _Server:"
+msgstr "NISサーバー(_S):"
+
+#: ../authconfig.glade.h:49
+msgid "NIS _Domain:"
+msgstr "NISドメイン(_D):"
+
+#: ../authconfig.glade.h:50
+msgid "Ad_min Servers:"
+msgstr "管理サーバー(_M):"
+
+#: ../authconfig.glade.h:51
+msgid "R_ealm:"
+msgstr "レルム(_E):"
+
+#: ../authconfig.glade.h:52
+msgid "_KDCs:"
+msgstr "KDCs(_K):"
+
+#: ../authconfig.glade.h:53
+msgid "Use D_NS to resolve hosts to realms"
+msgstr "DNSを使用してレルムのホストを解決する(_N)"
+
+#: ../authconfig.glade.h:54
+msgid "Use DNS to _locate KDCs for realms"
+msgstr "DNSを使用してレルム用の KDC を見付ける(_I)"
+
+#: ../authconfig.glade.h:55
+msgid "Hostname or ldap:// or ldaps:// URI pointing to the LDAP server."
+msgstr "ホスト名または ldap:// または ldaps:// のLDAPサーバーを指定するURI"
+
+#: ../authconfig.glade.h:56
+msgid "LDAP Search _Base DN:"
+msgstr "LDAP検索ベースDN(_B):"
+
+#: ../authconfig.glade.h:57
+msgid "Use _TLS to encrypt connections"
+msgstr "TLSを使用して接続を暗号化する(_T)"
+
+#: ../authconfig.glade.h:58
+msgid ""
+"Use Transport Layer Security extension for LDAP as defined by RFC-2830. It "
+"must not be ticked with ldaps server URI."
+msgstr "RFC-2830で定義されているようにLDAPにTLS拡張を使用する。 ldapsサーバーURIで印を付けてはいけない。"
+
+#: ../authconfig.glade.h:59
+msgid ""
+"Click this button if you did not download a CA certificate yet or you have "
+"not set the CA certificate up by other means."
+msgstr "CA証明書をまだダウンロードしていない場合や、他の方法でCA証明書を設定していない場合は、このボタンをクリックします。"
+
+#: ../authconfig.glade.h:60
+msgid "_Download CA Certificate..."
+msgstr "CA証明書をダウンロードする...(_D)"
+
+#: ../authconfig.glade.h:61
+msgid "LDAP _Server:"
+msgstr "LDAPサーバー(_S):"
+
+#: ../authconfig.glade.h:62
+msgid "_Security Model:"
+msgstr "セキュリティモデル(_S):"
+
+#: ../authconfig.glade.h:63
+msgid "Winbind _Domain:"
+msgstr "Winbindドメイン(_D):"
+
+#: ../authconfig.glade.h:64
+msgid "Winbind Domain Co_ntrollers:"
+msgstr "Winbindドメインコントローラ(_N):"
+
+#: ../authconfig.glade.h:65
+msgid "Te_mplate Shell:"
+msgstr "テンプレートシェル(_M):"
+
+#: ../authconfig.glade.h:66
+msgid "Winbind ADS R_ealm:"
+msgstr "Winbind ADSレルム(_E)"
+
+#: ../authconfig.glade.h:67
+msgid "Allow offline _login"
+msgstr "オフラインログインを許可(_L)"
+
+#: ../authconfig.glade.h:68
+msgid "_Join Domain..."
+msgstr "ドメインへ参加...(_J)"
+
+#: ../authconfig.glade.h:69
+msgid "IPA _Domain:"
+msgstr "IPA ドメイン(_D):"
+
+#: ../authconfig.glade.h:70
+msgid "IPA _Server:"
+msgstr "IPA サーバー(_S):"
+
+#: ../authconfig.glade.h:71
+msgid "IPA R_ealm:"
+msgstr "IPA レルム(_E):"
+
+#: ../authconfig.glade.h:72
+msgid "Do not configure _NTP"
+msgstr "NTP を設定しない(_N)"
+
+#: ../authconfig.glade.h:73
+msgid "Card Re_moval Action:"
+msgstr "カード削除のアクション(_M):"
+
+#: ../authconfig.glade.h:74
+msgid "Require smart car_d for login"
+msgstr "ログインにスマートカードを必要とする(_D)"
+
+#: ../authconfig.glade.h:75
+msgid "Revert"
+msgstr "戻す"
+
+#: ../authconfig.glade.h:76
+msgid ""
+"All configuration files which were modified by the previous authentication "
+"configuration change will be restored from backup. Revert the changes?"
+msgstr "前回の認証設定変更により修正された全ての設定ファイルはバックアップから以前の設定に復元できます。変更を戻しますか ？"
+
+#: ../authinfo.py:1050 ../authinfo.py:1943 ../authinfo.py:3343
+#: ../authinfo.py:3396
+msgid "Lock"
+msgstr "ロック"
+
+#: ../authinfo.py:1050 ../authinfo.py:1945
+msgid "Ignore"
+msgstr "無視"
+
+#: ../authinfo.py:3824
+#, python-format
+msgid ""
+"Authentication module %s/pam_%s.so is missing. Authentication process might "
+"not work correctly."
+msgstr "認証モジュール %s/pam_%s.so がありません。認証プロセスが正常に動作しないかも知れません。"
+
+#: ../authinfo.py:4322
+msgid ""
+"IPAv2 domain join was not succesful. The ipa-client-install command failed."
+msgstr "IPAv2 ドメインの参加が成功しませんでした。ipa-client-install コマンドに失敗しました。"
+
+#: ../authinfo.py:4397
+msgid "Error downloading CA certificate"
+msgstr "CA証明書のダウンロードでエラー"

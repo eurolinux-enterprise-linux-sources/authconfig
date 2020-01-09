@@ -1,0 +1,78 @@
+AC_INIT(authconfig, 6.2.8)
+AM_INIT_AUTOMAKE([dist-bzip2 no-dist-gzip])
+AC_PREFIX_DEFAULT(/usr)
+AC_PROG_CC
+AM_GLIB_GNU_GETTEXT
+AM_PROG_LIBTOOL
+AC_PROG_INTLTOOL
+
+GETTEXT_PACKAGE='$(PACKAGE)'
+AC_SUBST(GETTEXT_PACKAGE)
+
+libs="$LIBS"
+AC_CHECK_FUNC(poptGetContext,,[AC_CHECK_LIB(popt,poptGetContext)])
+if test "$LIBS" != "$libs" ; then
+	POPT_LIBS="$LIBS"
+else
+	POPT_LIBS=
+fi
+LIBS="$libs"
+AC_SUBST(POPT_LIBS)
+
+libs="$LIBS"
+AC_CHECK_FUNC(newtCls,,[AC_CHECK_LIB(newt,newtCls)])
+if test "$LIBS" != "$libs" ; then
+	NEWT_LIBS="$LIBS"
+else
+	NEWT_LIBS=
+fi
+LIBS="$libs"
+AC_SUBST(NEWT_LIBS)
+
+AC_CHECK_HEADERS(netinet/in.h arpa/nameser.h resolv.h,,)
+
+AC_CHECK_FUNC(res_init,,[AC_CHECK_LIB(resolv,res_init,,[
+ AC_CHECK_LIB(resolv,__res_init,,)])])
+
+AC_ARG_WITH(python-rev,
+            [  --with-pythonrev=2.2    version of python for which modules should be built],
+            PYTHONREV=$withval,[
+	    AC_MSG_CHECKING([python version])
+	    [PYTHONREV=`python -c 'import sys;print "%s.%s" % (sys.version_info[0], sys.version_info[1])'`]
+	    AC_MSG_RESULT($PYTHONREV)
+	    ])
+AC_SUBST(PYTHONREV)
+
+AC_MSG_CHECKING(python includes)
+PYTHONPREFIX=`python -c 'import sys;print sys.prefix'`
+AC_MSG_RESULT($PYTHONPREFIX/include/python$PYTHONREV)
+PYTHON_CFLAGS=-I$PYTHONPREFIX/include/python$PYTHONREV
+AC_SUBST(PYTHON_CFLAGS)
+
+if test x$GCC = xyes ; then
+	CFLAGS="${CFLAGS} -Wall"
+	CFLAGS="${CFLAGS} -Wunused"
+	CFLAGS="${CFLAGS} -Wuninitialized"
+	CFLAGS="${CFLAGS} -Wimplicit"
+	CFLAGS="${CFLAGS} -Wstrict-prototypes"
+	CFLAGS="${CFLAGS} -Wmissing-prototypes"
+	CFLAGS="${CFLAGS} -Wmissing-declarations"
+	CFLAGS="${CFLAGS} -Wcast-align"
+fi
+
+AM_CONFIG_HEADER(config.h)
+
+AC_OUTPUT([
+Makefile
+man/Makefile
+man/en/Makefile
+icons/Makefile
+icons/16x16/Makefile
+icons/22x22/Makefile
+icons/24x24/Makefile
+icons/32x32/Makefile
+icons/48x48/Makefile
+icons/256x256/Makefile
+po/Makefile.in
+authconfig.spec
+])

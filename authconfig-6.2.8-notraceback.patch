@@ -1,0 +1,12 @@
+diff -up authconfig-6.2.8/authconfig-gtk.py.notraceback authconfig-6.2.8/authconfig-gtk.py
+--- authconfig-6.2.8/authconfig-gtk.py.notraceback	2014-01-17 15:35:09.000000000 +0100
++++ authconfig-6.2.8/authconfig-gtk.py	2014-01-17 15:38:57.205408031 +0100
+@@ -511,6 +511,8 @@ class Authconfig:
+ 
+ 	def is_ldap_URI_valid(self, xml):
+ 		ldapserver = xml.get_widget('ldapserver')
++		if not ldapserver:
++			return True
+ 		uritovalidate = ldapserver.get_text()
+ 		return self.info.validateLDAPURI(uritovalidate)
+ 

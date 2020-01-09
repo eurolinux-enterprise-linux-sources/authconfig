@@ -1,0 +1,29 @@
+# HG changeset patch
+# User Tomas Mraz <tmraz@redhat.com>
+# Date 1386249032 -3600
+#      Thu Dec 05 14:10:32 2013 +0100
+# Node ID 176ccd738059dd6a7e568cbd8e15c44e9e87c287
+# Parent  920abcd85bbd520dcadff72ee8aed0c8355a9df8
+First parameter is ignored by some pam_pkcs11 versions
+
+- we use harmless parameter at this place
+
+diff -r 920abcd85bbd -r 176ccd738059 authinfo.py
+--- a/authinfo.py	Thu Dec 05 13:57:03 2013 +0100
++++ b/authinfo.py	Thu Dec 05 14:10:32 2013 +0100
+@@ -320,12 +320,12 @@
+ ]
+ 
+ argv_pkcs11_auth = [
+-	"card_only"
++	"nodebug"
+ ]
+ 
+ argv_force_pkcs11_auth = [
+-	"wait_for_card",
+-	"card_only"
++	"nodebug",
++	"wait_for_card"
+ ]
+ 
+ argv_krb5_auth = [

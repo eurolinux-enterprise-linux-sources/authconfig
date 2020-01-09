@@ -1,0 +1,3999 @@
+# HG changeset patch
+# User Tomas Mraz <tmraz@redhat.com>
+# Date 1386248223 -3600
+#      Thu Dec 05 13:57:03 2013 +0100
+# Node ID 920abcd85bbd520dcadff72ee8aed0c8355a9df8
+# Parent  f19bc25f603f4622ff7efd65dcbcf15e6c31085b
+Updated translations from Transifex and Zanata.
+
+diff -r f19bc25f603f -r 920abcd85bbd po/ar.po
+--- a/po/ar.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ar.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Arabic (http://www.transifex.com/projects/p/fedora/language/ar/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/as.po
+--- a/po/as.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/as.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -7,14 +7,14 @@
+ # Amitakhya Phukan <aphukan@fedoraproject.org>, 2007-2009
+ # Amitakhya Phukan <aphukan@redhat.com>, 2007,2010
+ # Dimitris Glezos <glezos@indifex.com>, 2011
+-# ngoswami <ngoswami@redhat.com>, 2011
++# ngoswami <ngoswami@redhat.com>, 2011-2012
+ # ngoswami <ngoswami@redhat.com>, 2012
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:53+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Assamese (http://www.transifex.com/projects/p/fedora/language/as/)\n"
+ "MIME-Version: 1.0\n"
+@@ -302,11 +302,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind  এ প্ৰমাণীত কৰিবলৈ Kerberos 5 ব্যৱহাৰ কৰিব"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind এ অবিকল্পিত প্ৰমাণীকৰণ পদ্ধতি ব্যৱহাৰ কৰিব"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -563,7 +563,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen নূন্যতম মান হল 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -571,7 +571,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass মান ঋণাত্মক হব নোৱাৰিব"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -579,7 +579,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat মান ঋণাত্মক হব নোৱাৰিব"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -587,7 +587,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat মান ঋণাত্মক হব নোৱাৰিব"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -909,7 +909,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "অবৈধ LDAP URI।"
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/ast.po
+--- a/po/ast.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ast.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -8,7 +8,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Asturian (http://www.transifex.com/projects/p/fedora/language/ast/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/bal.po
+--- a/po/bal.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/bal.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Balochi (http://www.transifex.com/projects/p/fedora/language/bal/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/bg.po
+--- a/po/bg.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/bg.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Bulgarian (http://www.transifex.com/projects/p/fedora/language/bg/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/bn.po
+--- a/po/bn.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/bn.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -16,7 +16,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Bengali (http://www.transifex.com/projects/p/fedora/language/bn/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/bn_IN.po
+--- a/po/bn_IN.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/bn_IN.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -4,15 +4,18 @@
+ # 
+ # Translators:
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Runa Bhattacharjee <runab@fedoraproject.org>, 2008
+ # runab <runab@redhat.com>, 2004, 2005, 2006, 2007, 2008, 2009, 2010
+ # runa <runabh@gmail.com>, 2012
++# runab <runab@redhat.com>, 2004-2010
++# runa <runabh@gmail.com>, 2012
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:53+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Bengali (India) (http://www.transifex.com/projects/p/fedora/language/bn_IN/)\n"
+ "MIME-Version: 1.0\n"
+@@ -300,11 +303,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind প্রমাণীকরণের জন্য Kerberos 5 ব্যবহার করবে"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind ডিফল্ট প্রমাণীকরণ পদ্ধতি ব্যবহার করবে"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -561,7 +564,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen ন্যুনতম মান হল 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -569,7 +572,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass মান অবশ্যই ঋণাত্মক হতে হবে"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -577,7 +580,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat মান ঋণাত্মক হলে চলবে না"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -585,7 +588,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat মান ঋণাত্মক হলে চলবে না"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -907,7 +910,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "অবৈধ LDAP URI।"
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/bs.po
+--- a/po/bs.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/bs.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Bosnian (http://www.transifex.com/projects/p/fedora/language/bs/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/ca.po
+--- a/po/ca.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ca.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -12,7 +12,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Catalan (http://www.transifex.com/projects/p/fedora/language/ca/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/cs.po
+--- a/po/cs.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/cs.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -1,24 +1,23 @@
+ # SOME DESCRIPTIVE TITLE.
+ # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+ # This file is distributed under the same license as the PACKAGE package.
+-#
++# 
+ # Translators:
+-# Dimitris Glezos <glezos@indifex.com>, 2011.
+-# Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004.
++# Dimitris Glezos <glezos@indifex.com>, 2011
++# Miloslav Trmač <mitr@volny.cz>, 2002-2004
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2012-05-02 18:54+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+-"Language-Team: Czech (http://www.transifex.com/projects/p/fedora/language/"
+-"cs/)\n"
+-"Language: cs\n"
++"Language-Team: Czech (http://www.transifex.com/projects/p/fedora/language/cs/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
++"Language: cs\n"
++"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+ 
+ #: ../authconfig.py:115
+ #, python-format
+@@ -112,14 +111,11 @@
+ 
+ #: ../authconfig.py:161
+ msgid "enable use of RFC-2307bis schema for LDAP user information lookups"
+-msgstr ""
+-"použít schéma RFC-2307bis pro hledání informací o uživatelích v LDAP serveru"
++msgstr "použít schéma RFC-2307bis pro hledání informací o uživatelích v LDAP serveru"
+ 
+ #: ../authconfig.py:163
+ msgid "disable use of RFC-2307bis schema for LDAP user information lookups"
+-msgstr ""
+-"nepoužít schéma RFC-2307bis pro hledání informací o uživatelích v LDAP "
+-"serveru"
++msgstr "nepoužít schéma RFC-2307bis pro hledání informací o uživatelích v LDAP serveru"
+ 
+ #: ../authconfig.py:164
+ msgid "<URL>"
+@@ -265,14 +261,12 @@
+ msgid ""
+ "the character which will be used to separate the domain and user part of "
+ "winbind-created user names if winbindusedefaultdomain is not enabled"
+-msgstr ""
+-"znak, který se bude používat pro oddělení domény a uživatele v jménech "
+-"uživatelů vytvářených winbindem, pokud není povoleno winbindusedefaultdomain"
++msgstr "znak, který se bude používat pro oddělení domény a uživatele v jménech uživatelů vytvářených winbindem, pokud není povoleno winbindusedefaultdomain"
+ 
+ #: ../authconfig.py:231
+-msgid "the directory which winbind-created users will have as home directories"
+-msgstr ""
+-"adresář, který budou mít uživatelé vytvoření winbindem jako domovský adresář"
++msgid ""
++"the directory which winbind-created users will have as home directories"
++msgstr "adresář, který budou mít uživatelé vytvoření winbindem jako domovský adresář"
+ 
+ #: ../authconfig.py:233
+ msgid "the group which winbind-created users will have as their primary group"
+@@ -286,17 +280,13 @@
+ msgid ""
+ "configures winbind to assume that users with no domain in their user names "
+ "are domain users"
+-msgstr ""
+-"nastaví winbind, aby předpokládal, že uživatelé bez domény ve jménu "
+-"uživatele jsou uživatelé domény"
++msgstr "nastaví winbind, aby předpokládal, že uživatelé bez domény ve jménu uživatele jsou uživatelé domény"
+ 
+ #: ../authconfig.py:239
+ msgid ""
+ "configures winbind to assume that users with no domain in their user names "
+ "are not domain users"
+-msgstr ""
+-"nastaví winbind, aby předpokládal, že uživatelé bez domény ve jménu "
+-"uživatele nejsou uživatelé domény"
++msgstr "nastaví winbind, aby předpokládal, že uživatelé bez domény ve jménu uživatele nejsou uživatelé domény"
+ 
+ #: ../authconfig.py:241
+ msgid "configures winbind to allow offline login"
+@@ -316,8 +306,7 @@
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+-msgstr ""
+-"připojit se nyní do domény winbind nebo realmu ads jako tento administrátor"
++msgstr "připojit se nyní do domény winbind nebo realmu ads jako tento administrátor"
+ 
+ #: ../authconfig.py:252
+ msgid "enable IPAv2 for user information and authentication by default"
+@@ -387,29 +376,25 @@
+ msgid ""
+ "enable SSSD for user information by default with manually managed "
+ "configuration"
+-msgstr ""
+-"povolit SSSD s manuálním nastavením konfigurace pro informace o uživatelích"
++msgstr "povolit SSSD s manuálním nastavením konfigurace pro informace o uživatelích"
+ 
+ #: ../authconfig.py:290
+ msgid ""
+ "disable SSSD for user information by default (still used for supported "
+ "configurations)"
+-msgstr ""
+-"zakázat SSSD pro informace o uživatelích (bude používáno pouze pro "
+-"podporované konfigurace)"
++msgstr "zakázat SSSD pro informace o uživatelích (bude používáno pouze pro podporované konfigurace)"
+ 
+ #: ../authconfig.py:292
+ msgid ""
+-"enable SSSD for authentication by default with manually managed configuration"
++"enable SSSD for authentication by default with manually managed "
++"configuration"
+ msgstr "povolit SSSD s manuálním nastavením konfigurace pro autentizaci"
+ 
+ #: ../authconfig.py:294
+ msgid ""
+ "disable SSSD for authentication by default (still used for supported "
+ "configurations)"
+-msgstr ""
+-"zakázat SSSD pro autentizaci (bude používáno pouze pro podporované "
+-"konfigurace)"
++msgstr "zakázat SSSD pro autentizaci (bude používáno pouze pro podporované konfigurace)"
+ 
+ #: ../authconfig.py:296
+ msgid "never use SSSD implicitly even for supported configurations"
+@@ -431,9 +416,7 @@
+ msgid ""
+ "enable caching of user information by default (automatically disabled when "
+ "SSSD is used)"
+-msgstr ""
+-"povolit kešování informací o uživatelích (automaticky vypnuto pokud se "
+-"používá SSSD)"
++msgstr "povolit kešování informací o uživatelích (automaticky vypnuto pokud se používá SSSD)"
+ 
+ #: ../authconfig.py:308
+ msgid "disable caching of user information by default"
+@@ -542,8 +525,7 @@
+ 
+ #: ../authconfig.py:368
+ msgid "opposite of --test, update configuration files with changed settings"
+-msgstr ""
+-"opak volby --test, přepsat konfigurační soubory se změněnými nastaveními"
++msgstr "opak volby --test, přepsat konfigurační soubory se změněnými nastaveními"
+ 
+ #: ../authconfig.py:371
+ msgid "update all configuration files"
+@@ -569,9 +551,7 @@
+ msgid ""
+ "restore the backup of configuration files saved before the previous "
+ "configuration change"
+-msgstr ""
+-"obnovit konfigurační soubory ze zálohy uložené před předchozízměnou "
+-"konfigurace"
++msgstr "obnovit konfigurační soubory ze zálohy uložené před předchozízměnou konfigurace"
+ 
+ #: ../authconfig.py:388
+ msgid "unexpected argument"
+@@ -628,12 +608,9 @@
+ #: ../authconfig.py:685 ../authconfig-gtk.py:572
+ #, python-format
+ msgid ""
+-"The %s file was not found, but it is required for %s support to work "
+-"properly.\n"
++"The %s file was not found, but it is required for %s support to work properly.\n"
+ "Install the %s package, which provides this file."
+-msgstr ""
+-"Soubor %s nebyl nalezen, avšak je potřeba pro správnou funkci %s.\n"
+-"Nainstalujte správně balíček %s, který poskytuje tento soubor."
++msgstr "Soubor %s nebyl nalezen, avšak je potřeba pro správnou funkci %s.\nNainstalujte správně balíček %s, který poskytuje tento soubor."
+ 
+ #: ../authconfig.py:687 ../authconfig.py:1033
+ msgid "Warning"
+@@ -826,13 +803,10 @@
+ 
+ #: ../authconfig.py:947 ../authconfig.glade.h:44
+ msgid ""
+-"Some of the configuration changes you've made should be saved to disk before "
+-"continuing.  If you do not save them, then your attempt to join the domain "
++"Some of the configuration changes you've made should be saved to disk before"
++" continuing.  If you do not save them, then your attempt to join the domain "
+ "may fail.  Save changes?"
+-msgstr ""
+-"Některé ze změn konfigurace, které jste provedli, by měly být před "
+-"pokračováním uloženy na disk. Pokud je neuložíte, váš pokus připojit se k "
+-"doméně možná selže. Uložit změny?"
++msgstr "Některé ze změn konfigurace, které jste provedli, by měly být před pokračováním uloženy na disk. Pokud je neuložíte, váš pokus připojit se k doméně možná selže. Uložit změny?"
+ 
+ #: ../authconfig.py:954
+ msgid "Save Settings"
+@@ -871,23 +845,16 @@
+ #: ../authconfig.py:1028
+ #, python-format
+ msgid ""
+-"To connect to a LDAP server with TLS protocol enabled you need a CA "
+-"certificate which signed your server's certificate. Copy the certificate in "
+-"the PEM format to the '%s' directory.\n"
++"To connect to a LDAP server with TLS protocol enabled you need a CA certificate which signed your server's certificate. Copy the certificate in the PEM format to the '%s' directory.\n"
+ "Then press OK."
+-msgstr ""
+-"Pro připojení k serveru LDAP pomocí TLS protokolu potřebujete certifikát CA, "
+-"která podepsala certifikát vašeho serveru. Zkopírujte certifikát CA v PEM "
+-"formátu do adresáře '%s'.\n"
+-"Pak stiskněte OK."
++msgstr "Pro připojení k serveru LDAP pomocí TLS protokolu potřebujete certifikát CA, která podepsala certifikát vašeho serveru. Zkopírujte certifikát CA v PEM formátu do adresáře '%s'.\nPak stiskněte OK."
+ 
+ #. FIXME - version
+ #: ../authconfig.py:1042
+ msgid ""
+ " <Tab>/<Alt-Tab> between elements   |   <Space> selects   |  <F12> next "
+ "screen"
+-msgstr ""
+-" <Tab>/<Alt-Tab> přepíná mezi položkami | <Mezera> výběr | <F12> pokračovat "
++msgstr " <Tab>/<Alt-Tab> přepíná mezi položkami | <Mezera> výběr | <F12> pokračovat "
+ 
+ #: ../authconfig.desktop.in.h:2
+ msgid "Control how the system verifies users who attempt to log in"
+@@ -898,12 +865,7 @@
+ "Unable to initialize graphical environment. Most likely cause of failure\n"
+ "is that the tool was not run using a graphical environment. Please either\n"
+ "start your graphical user interface or set your DISPLAY variable.\n"
+-msgstr ""
+-"Není možné inicializovat grafické rozhraní. Nejpravděpodobnější důvod "
+-"selhání\n"
+-"je, že aplikace nebyla spuštěna v prostředí s grafickým rozhraním. Prosím "
+-"nastartujte\n"
+-"grafické rozhraní nebo správně nastavte proměnnou prostředí DISPLAY.\n"
++msgstr "Není možné inicializovat grafické rozhraní. Nejpravděpodobnější důvod selhání\nje, že aplikace nebyla spuštěna v prostředí s grafickým rozhraním. Prosím nastartujte\ngrafické rozhraní nebo správně nastavte proměnnou prostředí DISPLAY.\n"
+ 
+ #: ../authconfig-gtk.py:119
+ msgid "Local accounts only"
+@@ -948,21 +910,17 @@
+ #: ../authconfig-gtk.py:536
+ msgid ""
+ "You must provide ldaps:// server address or use TLS for LDAP authentication."
+-msgstr ""
+-"Musíte zadat adresu serveru ldaps:// nebo použít TLS pro LDAP autentizaci."
++msgstr "Musíte zadat adresu serveru ldaps:// nebo použít TLS pro LDAP autentizaci."
+ 
+ #: ../authconfig-gtk.py:543
+ msgid "Use the \"Join Domain\" button to join the IPAv2 domain."
+-msgstr ""
+-"Použijte tlačítko \"Připojit se k doméně\" pro přiojení k IPAv2 doméně."
++msgstr "Použijte tlačítko \"Připojit se k doméně\" pro přiojení k IPAv2 doméně."
+ 
+ #: ../authconfig.glade.h:2
+ msgid ""
+ "Restore the configuration files backed up before the previous configuration "
+ "change"
+-msgstr ""
+-"Obnovit konfigurační soubory ze zálohy provedené před předchozí změnou "
+-"konfigurace"
++msgstr "Obnovit konfigurační soubory ze zálohy provedené před předchozí změnou konfigurace"
+ 
+ #: ../authconfig.glade.h:3
+ msgid "<b>User Account Configuration</b>"
+@@ -998,11 +956,9 @@
+ 
+ #: ../authconfig.glade.h:11
+ msgid ""
+-"Fingerprint authentication allows you to log in by scanning your finger with "
+-"the fingerprint reader."
+-msgstr ""
+-"Autentizace pomocí otisků prstů umožňuje přihlášení sejmutím otisku prstu "
+-"čtečkou otisků."
++"Fingerprint authentication allows you to log in by scanning your finger with"
++" the fingerprint reader."
++msgstr "Autentizace pomocí otisků prstů umožňuje přihlášení sejmutím otisku prstu čtečkou otisků."
+ 
+ #: ../authconfig.glade.h:12
+ msgid "Enable _local access control"
+@@ -1012,21 +968,16 @@
+ msgid ""
+ "When enabled /etc/security/access.conf will be consulted for authorization "
+ "of users access."
+-msgstr ""
+-"Povolí ověřování autorizace přístupu uživatele podle obsahu souboru /etc/"
+-"security/access.conf."
++msgstr "Povolí ověřování autorizace přístupu uživatele podle obsahu souboru /etc/security/access.conf."
+ 
+ #: ../authconfig.glade.h:14
+ msgid ""
+ "<small><b>Tip:</b> This is managed via /etc/security/access.conf.</small>"
+-msgstr ""
+-"<small><b>Poznámka:</b> Toto je řízeno souborem /etc/security/access.conf.</"
+-"small>"
++msgstr "<small><b>Poznámka:</b> Toto je řízeno souborem /etc/security/access.conf.</small>"
+ 
+ #: ../authconfig.glade.h:15
+ msgid "Hashing or crypto algorithm used for storing passwords of local users"
+-msgstr ""
+-"Hašovací/šifrovací algoritmus použitý pro ukládání hesel lokálních uživatelů"
++msgstr "Hašovací/šifrovací algoritmus použitý pro ukládání hesel lokálních uživatelů"
+ 
+ #: ../authconfig.glade.h:16
+ msgid "_Password Hashing Algorithm:"
+@@ -1044,9 +995,7 @@
+ msgid ""
+ "If the home directory of an user doesn't exist yet it will be created "
+ "automatically on his first login."
+-msgstr ""
+-"Pokud domovský adresář uživatele neexistuje, bude při jeho prvním přihlášení "
+-"automaticky vytvořen."
++msgstr "Pokud domovský adresář uživatele neexistuje, bude při jeho prvním přihlášení automaticky vytvořen."
+ 
+ #: ../authconfig.glade.h:20
+ msgid "<b>Smart Card Authentication Options</b>"
+@@ -1060,17 +1009,13 @@
+ msgid ""
+ "Smart card authentication allows you to log in using a certificate and key "
+ "associated with a smart card."
+-msgstr ""
+-"Autentizace pomocí čipových karet umožňuje přihlášení pomocí certifikátu a "
+-"klíče uloženého na čipové kartě."
++msgstr "Autentizace pomocí čipových karet umožňuje přihlášení pomocí certifikátu a klíče uloženého na čipové kartě."
+ 
+ #: ../authconfig.glade.h:23
+ msgid ""
+-"<small><b>Tip:</b> Smart cards support logging into both local and centrally "
+-"managed accounts.</small>"
+-msgstr ""
+-"<small><b>Poznámka:</b> Čipové karty podporují přihlášení k lokálně i "
+-"centrálně spravovaným účtům.</small>"
++"<small><b>Tip:</b> Smart cards support logging into both local and centrally"
++" managed accounts.</small>"
++msgstr "<small><b>Poznámka:</b> Čipové karty podporují přihlášení k lokálně i centrálně spravovaným účtům.</small>"
+ 
+ #: ../authconfig.glade.h:24
+ msgid "Advanced _Options"
+@@ -1121,9 +1066,9 @@
+ msgstr "Stejná _třída:"
+ 
+ #: ../authconfig.glade.h:36
+-msgid "<small><b>Tip:</b> These checks are disabled if the value is 0.</small>"
+-msgstr ""
+-"<small><b>Tip:</b> Tyto kontroly jsou vypnuty pokud mají hodnotu 0.</small>"
++msgid ""
++"<small><b>Tip:</b> These checks are disabled if the value is 0.</small>"
++msgstr "<small><b>Tip:</b> Tyto kontroly jsou vypnuty pokud mají hodnotu 0.</small>"
+ 
+ #: ../authconfig.glade.h:37
+ msgid "Pass_word Options"
+@@ -1162,10 +1107,7 @@
+ "To verify the LDAP server with TLS protocol enabled you need a CA "
+ "certificate which signed the server's certificate. Please fill in the URL "
+ "where the CA certificate in the PEM format can be downloaded from."
+-msgstr ""
+-"Pro ověření LDAP serveru se zapnutým TLS protokolem potřebujete certifikát "
+-"CA, která podepsala certifikát tohoto serveru. Prosím, vyplňte URL, odkud "
+-"může být tento certifikát ve formátu PEM stažen."
++msgstr "Pro ověření LDAP serveru se zapnutým TLS protokolem potřebujete certifikát CA, která podepsala certifikát tohoto serveru. Prosím, vyplňte URL, odkud může být tento certifikát ve formátu PEM stažen."
+ 
+ #: ../authconfig.glade.h:48
+ msgid "NIS _Server:"
+@@ -1197,8 +1139,7 @@
+ 
+ #: ../authconfig.glade.h:55
+ msgid "Hostname or ldap:// or ldaps:// URI pointing to the LDAP server."
+-msgstr ""
+-"Jméno počítače, případně ldap:// nebo ldaps:// URI ukazující na server LDAP."
++msgstr "Jméno počítače, případně ldap:// nebo ldaps:// URI ukazující na server LDAP."
+ 
+ #: ../authconfig.glade.h:56
+ msgid "LDAP Search _Base DN:"
+@@ -1212,17 +1153,13 @@
+ msgid ""
+ "Use Transport Layer Security extension for LDAP as defined by RFC-2830. It "
+ "must not be ticked with ldaps server URI."
+-msgstr ""
+-"Použít rozšíření Transport Layer Security pro LDAP jak je definováno v "
+-"RFC-2830. Nesmí být zaškrtnuto u ldaps URI serveru."
++msgstr "Použít rozšíření Transport Layer Security pro LDAP jak je definováno v RFC-2830. Nesmí být zaškrtnuto u ldaps URI serveru."
+ 
+ #: ../authconfig.glade.h:59
+ msgid ""
+ "Click this button if you did not download a CA certificate yet or you have "
+ "not set the CA certificate up by other means."
+-msgstr ""
+-"Stiskněte toto tlačítko, pokud jste dosud nestáhli certifikát CA, nebo "
+-"nenastavili certifikát CA jiným způsobem."
++msgstr "Stiskněte toto tlačítko, pokud jste dosud nestáhli certifikát CA, nebo nenastavili certifikát CA jiným způsobem."
+ 
+ #: ../authconfig.glade.h:60
+ msgid "_Download CA Certificate..."
+@@ -1292,9 +1229,7 @@
+ msgid ""
+ "All configuration files which were modified by the previous authentication "
+ "configuration change will be restored from backup. Revert the changes?"
+-msgstr ""
+-"Všechny konfigurační soubory, které byly změněny při předchozí změně "
+-"konfigurace autentizace, budou obnoveny ze zálohy. Vrátit stav před změnami?"
++msgstr "Všechny konfigurační soubory, které byly změněny při předchozí změně konfigurace autentizace, budou obnoveny ze zálohy. Vrátit stav před změnami?"
+ 
+ #: ../authinfo.py:1050 ../authinfo.py:1943 ../authinfo.py:3343
+ #: ../authinfo.py:3396
+@@ -1310,14 +1245,12 @@
+ msgid ""
+ "Authentication module %s/pam_%s.so is missing. Authentication process might "
+ "not work correctly."
+-msgstr ""
+-"Autentizační modul %s/pam_%s.so chybí. Autentizace nemusí správně fungovat."
++msgstr "Autentizační modul %s/pam_%s.so chybí. Autentizace nemusí správně fungovat."
+ 
+ #: ../authinfo.py:4322
+ msgid ""
+ "IPAv2 domain join was not succesful. The ipa-client-install command failed."
+-msgstr ""
+-"Připojení k IPAv2 doméně se nezdařilo. Příkaz ipa-client-install selhal."
++msgstr "Připojení k IPAv2 doméně se nezdařilo. Příkaz ipa-client-install selhal."
+ 
+ #: ../authinfo.py:4397
+ msgid "Error downloading CA certificate"
+diff -r f19bc25f603f -r 920abcd85bbd po/cy.po
+--- a/po/cy.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/cy.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Welsh (http://www.transifex.com/projects/p/fedora/language/cy/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/da.po
+--- a/po/da.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/da.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -13,7 +13,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Danish (http://www.transifex.com/projects/p/fedora/language/da/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/de.po
+--- a/po/de.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/de.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -3,16 +3,19 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ # 
+ # Translators:
+-# Bernd Groh <bgroh@redhat.com>, 2003, 2004
++# Bernd Groh <bgroh@redhat.com>, 2003-2004
+ # Claudia Krug <fhonig@redhat.it>, 2001
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Dominik Sandjaja <dominiksandjaja@fedoraproject.org>, 2009
+ # Fabian Affolter <fab@fedoraproject.org>, 2008
+ # hpeters <hpeters@redhat.com>, 2009
++# hpeters <hpeters@redhat.com>, 2009
+ # Mario Blättermann <mario.blaettermann@gmail.com>, 2011
+-# Roman Spirgi <bigant@fedoraproject.org>, 2012
++# Mario Blättermann <mario.blaettermann@gmail.com>, 2011
++# Roman Spirgi <bigant@fedoraproject.org>, 2012-2013
+ # Roman Spirgi <rspirgi@gmail.com>, 2011
+-# Ronny Buchmann <ronny-vlug@vlugnet.org>, 2004, 2005, 2006
++# Ronny Buchmann <ronny-vlug@vlugnet.org>, 2004-2006
+ # Severin Heiniger <severinheiniger@gmail.com>, 2005
+ # sknirT omiT <moc.tahder@sknirtt>, 2010
+ msgid ""
+@@ -20,7 +23,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: German (http://www.transifex.com/projects/p/fedora/language/de/)\n"
+ "MIME-Version: 1.0\n"
+@@ -308,11 +311,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind wird Kerberos 5 zur Legitimation verwenden"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind wird die Standard Legitimations-Methode verwenden"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -569,7 +572,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "Der passminlen minimale Wert ist 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -577,7 +580,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "Der passminclass Wert darf nicht negativ sein"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -585,7 +588,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "Der passmaxrepeat Wert darf nicht negativ sein"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -593,7 +596,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "Der passmaxclassrepeat Wert darf nicht negativ sein"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -915,7 +918,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "Ungültige LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/el.po
+--- a/po/el.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/el.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -15,7 +15,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Greek (http://www.transifex.com/projects/p/fedora/language/el/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/en_GB.po
+--- a/po/en_GB.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/en_GB.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/fedora/language/en_GB/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/es.po
+--- a/po/es.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/es.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -3,20 +3,22 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ # 
+ # Translators:
++# Claudio Rodrigo Pereyra Diaz <elsupergomez@gmail.com>, 2013
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+-# Domingo Becker <domingobecker@gmail.com>, 2008
++# Dimitris Glezos <glezos@transifex.com>, 2011
++# Domingo Becker <domingobecker@gmail.com>, 2008,2011
+ # Domingo Becker <domingobecker@gmail.com>, 2011
+ # Gladys Guerrero <gguerrer@redhat.com>, 2010,2012-2013
+ # Hernan Fernandez <uk@mitierra.cl>, 2004
+-# Manuel Ospina <mospina@redhat.com>, 2005, 2006
++# Manuel Ospina <mospina@redhat.com>, 2005-2006
+ # Nuria Soriano <nsoriano@redhat.es>, 2001
+-# Yelitza Louze <ylouze@redhat.com>, 2003, 2004
++# Yelitza Louze <ylouze@redhat.com>, 2003-2004
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:53+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Spanish (http://www.transifex.com/projects/p/fedora/language/es/)\n"
+ "MIME-Version: 1.0\n"
+@@ -52,7 +54,7 @@
+ 
+ #: ../authconfig.py:133
+ msgid "hash/crypt algorithm for new passwords"
+-msgstr "hash/algoritmo de encriptado para las nuevas contraseñas"
++msgstr "algoritmo de hash/cifrado para las nuevas contraseñas"
+ 
+ #: ../authconfig.py:136
+ msgid "enable NIS for user information by default"
+@@ -173,7 +175,7 @@
+ 
+ #: ../authconfig.py:189
+ msgid "disable automatic per-user ecryptfs"
+-msgstr "deshabilitar ecrypfs automático por usuario"
++msgstr "Inhabilitar ecrypfs automático por usuario"
+ 
+ #: ../authconfig.py:192
+ msgid "enable kerberos authentication by default"
+@@ -304,11 +306,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "Winbind usará Kerberos 5 para autenticación"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "Winbind usará el método de autenticación predeterminado"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -475,7 +477,7 @@
+ 
+ #: ../authconfig.py:335
+ msgid "maximum number of same consecutive characters in a password"
+-msgstr "Número mázimo de los mismos caracteres consecutivos en una contraseña"
++msgstr "Número máximo de los mismos caracteres consecutivos en una contraseña"
+ 
+ #: ../authconfig.py:337
+ msgid "maximum number of consecutive characters of same class in a password"
+@@ -565,7 +567,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "El valor mínimo de passminlen es 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -573,7 +575,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "El valor de passminclass no debe ser negativo"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -581,7 +583,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "El valor de passmaxrepeat no debe ser negativo"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -589,7 +591,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "El valor de passmaxclassrepeat no debe ser negativo"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -911,7 +913,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "URI LDAP no es válido"
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+@@ -1153,7 +1155,7 @@
+ 
+ #: ../authconfig.glade.h:57
+ msgid "Use _TLS to encrypt connections"
+-msgstr "Utilizar _TLS para encriptar conexiones"
++msgstr "Utilizar _TLS para cifrar conexiones"
+ 
+ #: ../authconfig.glade.h:58
+ msgid ""
+@@ -1197,7 +1199,7 @@
+ 
+ #: ../authconfig.glade.h:67
+ msgid "Allow offline _login"
+-msgstr "Permitir ingreso (login) fuera de _línea"
++msgstr "Permitir ingreso fuera de _línea"
+ 
+ #: ../authconfig.glade.h:68
+ msgid "_Join Domain..."
+diff -r f19bc25f603f -r 920abcd85bbd po/et.po
+--- a/po/et.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/et.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Estonian (http://www.transifex.com/projects/p/fedora/language/et/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/eu.po
+--- a/po/eu.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/eu.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -9,7 +9,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Basque (http://www.transifex.com/projects/p/fedora/language/eu/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/fa.po
+--- a/po/fa.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/fa.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -12,7 +12,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Persian (http://www.transifex.com/projects/p/fedora/language/fa/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/fi.po
+--- a/po/fi.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/fi.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -15,7 +15,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Finnish (http://www.transifex.com/projects/p/fedora/language/fi/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/fr.po
+--- a/po/fr.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/fr.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -4,24 +4,25 @@
+ # 
+ # Translators:
+ # Alain PORTAL <aportal@univ-montp2.fr>, 2006
+-# Audrey Simons <asimons@redhat.com>, 2003, 2005
++# Audrey Simons <asimons@redhat.com>, 2003,2005
+ # Bettina De Monti <bdemonti@redhat.it>, 2001
+ # Boris BARNIER <b.barnier@gmail.com>, 2011
+ # Damien Durand <splinux@fedoraproject.org>, 2006
+ # Decroux Fabien <fdecroux@redhat.com>, 2006
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Gauthier Ancelin <gauthier.ancelin@laposte.net>, 2008
+-# Jérôme Fenal <jfenal@gmail.com>, 2012
++# Jérôme Fenal <jfenal@gmail.com>, 2012-2013
+ # Kévin Raymond <shaiton@fedoraproject.org>, 2011
+ # Mathieu Schopfer <mat.schopfer@bluewin.ch>, 2008
+-# Thomas Canniot <mrtom@fedoraproject.org>, 2006, 2007, 2008, 2009, 2010
++# Thomas Canniot <mrtom@fedoraproject.org>, 2006-2010
+ # Vincent Herber <vincent.herber@gmail.com>, 2011
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: French (http://www.transifex.com/projects/p/fedora/language/fr/)\n"
+ "MIME-Version: 1.0\n"
+@@ -309,11 +310,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind utilisera Kerberos 5 pour s'authentifier"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind utilisera la méthode d'authentification par défaut"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -570,7 +571,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "La valeur minimale de passminlen est de 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -578,23 +579,23 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "La valeur passminclass doit ne pas être négative"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+-msgstr "La valeur de l'option passminclass n'est pas entière"
++msgstr "La valeur de l'option passminclass n'est pas un entier"
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "La valeur passmaxrepeat doit ne pas être négative"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+-msgstr "La valeur de l'option passmaxrepeat n'est pas entière"
++msgstr "La valeur de l'option passmaxrepeat n'est pas un entier"
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "La valeur passmaxclassrepeat doit ne pas être négative"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -916,7 +917,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "URI LDAP invalide."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/gl.po
+--- a/po/gl.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/gl.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Galician (http://www.transifex.com/projects/p/fedora/language/gl/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/gu.po
+--- a/po/gu.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/gu.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -3,17 +3,19 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ # 
+ # Translators:
+-# Ankit Patel <ankit@redhat.com>, 2005, 2006, 2007, 2008, 2009
++# Ankit Patel <ankit@redhat.com>, 2005-2009
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+ # Sweta Kothari <sweta2782@yahoo.co.in>, 2008
+ # sweta <swkothar@redhat.com>, 2009, 2010, 2012
++# sweta <swkothar@redhat.com>, 2009-2010,2012
+ # sweta <swkothar@redhat.com>, 2012
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:53+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Gujarati (http://www.transifex.com/projects/p/fedora/language/gu/)\n"
+ "MIME-Version: 1.0\n"
+@@ -301,11 +303,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "વિન્ડો એ સત્તાધિકરણ માટે કર્બોસ 5 ને વાપરશે"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "વિન્ડો એ મૂળભૂત સત્તાધિકરણ પદ્દતિને વાપરશે"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -562,7 +564,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen ન્યૂનત્તમ કિંમત એ 6 છે"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -570,7 +572,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass કિંમત નકારાત્મક હોવી જોઇએ નહિં"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -578,7 +580,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat કિંમત નકારાત્મક હોવી જોઇએ નહિં"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -586,7 +588,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat કિંમત નકારાત્મક હોવી જોઇએ નહિં"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -908,7 +910,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "અયોગ્ય LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/he.po
+--- a/po/he.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/he.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -9,7 +9,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Hebrew (http://www.transifex.com/projects/p/fedora/language/he/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/hi.po
+--- a/po/hi.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/hi.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -3,16 +3,18 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ # 
+ # Translators:
++# Chandan kumar <chandankumar.093047@gmail.com>, 2012
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+ # Rajesh Ranjan <rajesh672@gmail.com>, 2009
+-# Rajesh Ranjan <rranjan@redhat.com>, 2004, 2005, 2006, 2007, 2008, 2009, 2010
++# Rajesh Ranjan <rranjan@redhat.com>, 2004-2010
+ # Chandan kumar <chandankumar.093047@gmail.com>, 2012
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Hindi (http://www.transifex.com/projects/p/fedora/language/hi/)\n"
+ "MIME-Version: 1.0\n"
+@@ -300,11 +302,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind करबरोस 5 को सत्यापित करने के लिए प्रयोग करेगा"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind तयशुदा सत्यापन विधि का प्रयोग करेगा"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -561,7 +563,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen न्यूनतम मान 6 है"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -569,7 +571,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass मान ऋणात्मक नहीं होना चाहिए"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -577,7 +579,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat मान ऋणात्मक नहीं होना चाहिए"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -585,7 +587,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat मान ऋणात्मक नहीं होना चाहिए"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -907,7 +909,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "अमान्य LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/hr.po
+--- a/po/hr.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/hr.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -9,7 +9,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Croatian (http://www.transifex.com/projects/p/fedora/language/hr/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/hu.po
+--- a/po/hu.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/hu.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -12,8 +12,8 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
+-"Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
++"PO-Revision-Date: 2013-11-20 12:16+0000\n"
++"Last-Translator: Zoltan Hoppár <hopparz@gmail.com>\n"
+ "Language-Team: Hungarian (http://www.transifex.com/projects/p/fedora/language/hu/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -300,11 +300,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind a Kerberos 5-öst fogja azonosításra használni"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind az alapértelmezett azonosítási módot fogja használni"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -561,7 +561,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "A passminlen minimum értéke 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -569,7 +569,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "A passminclass értéke nem lehet negatív"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -577,7 +577,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "A passmaxrepeat értéke nem lehet negatív"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -585,7 +585,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "A passmaxclassrepeat értéke nem lehet negatív"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -907,7 +907,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "Helytelen LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/id.po
+--- a/po/id.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/id.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -12,7 +12,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Indonesian (http://www.transifex.com/projects/p/fedora/language/id/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/is.po
+--- a/po/is.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/is.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Icelandic (http://www.transifex.com/projects/p/fedora/language/is/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/it.po
+--- a/po/it.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/it.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -6,22 +6,24 @@
+ # Bettina De Monti <bdemonti@redhat.it>, 2000
+ # Daniele Catanesi <translate@ccielogs.com>, 2009
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Francesco D'Aluisio <fdaluisio@fedoraproject.org>, 2011
+-# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007, 2008, 2010
++# Francesco Tombolini <tombo@adamantio.net>, 2005-2008,2010
++# fvalen <fvalen@redhat.com>, 2004
+ # fvalen <fvalen@redhat.com>, 2004
+ # Guido Grazioli <guido.grazioli@gmail.com>, 2009
+ # lewis41 <>, 2011
+-# Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004, 2005
++# Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004-2005
+ # mario_santagiuliana <mario@marionline.it>, 2009
+ # Mauro Gaggiotti <mauro.gaggiotti@gmail.com>, 2012
+ # Silvio Pierro <perplesso82@gmail.com>, 2012
+-# Silvio Pierro <perplesso82@gmail.com>, 2011
++# Silvio Pierro <perplesso82@gmail.com>, 2011-2012
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:53+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Italian (http://www.transifex.com/projects/p/fedora/language/it/)\n"
+ "MIME-Version: 1.0\n"
+@@ -309,11 +311,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind utilizzerà Kerberos 5 per l'autenticazione"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind utilizzerà il metodo di autenticazione predefinito"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -570,7 +572,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "Il valore minimo di passminlen è 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -578,7 +580,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "Il valore di passminclass non deve essere negativo"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -586,7 +588,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "Il valore di passmaxrepeat non deve essere negativo"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -594,7 +596,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "Il valore di passmaxclassrepeat non deve essere negativo"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -916,7 +918,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "LDAP URI non valido."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/ja.po
+--- a/po/ja.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ja.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -4,23 +4,27 @@
+ # 
+ # Translators:
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+-# Hajime Taira <htaira@redhat.com>, 2011, 2012
+-# Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2004, 2005, 2006
++# Dimitris Glezos <glezos@transifex.com>, 2011
++# Hajime Taira <htaira@redhat.com>, 2011-2012
++# Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2004-2006
++# hyuugabaru <hyu_gabaru@yahoo.co.jp>, 2007
+ # hyuugabaru <hyu_gabaru@yahoo.co.jp>, 2007
+ # Kiyoto Hashida <khashida@redhat.com>, 2002
+-# Kiyoto Hashida <khashida@redhat.com>, 2008, 2009, 2010, 2011
++# Kiyoto Hashida <khashida@redhat.com>, 2002,2006,2008-2011
+ # Kiyoto Hashida <khashida@redhat.com>, 2006
+ # noriko <noriko@fedoraproject.org>, 2013
+-# Noriko Mizumoto <noriko@redhat.com>, 2006, 2008, 2009
++# Noriko Mizumoto <noriko@redhat.com>, 2006,2008-2009
++# noriko <noriko@fedoraproject.org>, 2013
+ # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004
+-# Tomoyuki KATO <tomo@dream.daynight.jp>, 2012
++# Tomoyuki KATO <tomo@dream.daynight.jp>, 2012-2013
++# 高一人参 @欠陥遺伝子 <www.carrotsoft@gmail.com>, 2011
+ # 高一人参 @欠陥遺伝子 <www.carrotsoft@gmail.com>, 2011
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Japanese (http://www.transifex.com/projects/p/fedora/language/ja/)\n"
+ "MIME-Version: 1.0\n"
+@@ -308,11 +312,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind では認証に Kerberos 5 が使用されます。"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind ではデフォルトの認証方法が使用されます。"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -569,7 +573,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen の最小値は 6 です"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -577,7 +581,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass オプションの値は負の数にしないでください"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -585,7 +589,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat の値を負の数にしないでください"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -593,7 +597,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat の値を負の数にしないでください"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -915,7 +919,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "無効な LDAP URI です。"
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/ka.po
+--- a/po/ka.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ka.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Georgian (http://www.transifex.com/projects/p/fedora/language/ka/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/kn.po
+--- a/po/kn.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/kn.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -4,14 +4,16 @@
+ # 
+ # Translators:
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # shankar <svenkate@redhat.com>, 2007, 2008, 2009, 2010
+-# shanky <prasad.mvs@gmail.com>, 2011, 2012
++# shankar <svenkate@redhat.com>, 2007-2010
++# shanky <prasad.mvs@gmail.com>, 2011-2012
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:53+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Kannada (http://www.transifex.com/projects/p/fedora/language/kn/)\n"
+ "MIME-Version: 1.0\n"
+@@ -299,11 +301,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind ದೃಢೀಕರಣಕ್ಕಾಗಿ Kerberos 5 ಅನ್ನು ಬಳಸುತ್ತದೆ"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "Winbind ಪೂರ್ವನಿಯೋಜಿತ ದೃಢೀಕರಣ ವಿಧಾನವನ್ನು ಬಳಸುತ್ತದೆ"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -560,7 +562,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen ಕನಿಷ್ಟ ಮೌಲ್ಯವು 6 ಆಗಿದೆ"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -568,7 +570,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass ಮೌಲ್ಯವು ಋಣವಾಗಿರುವಂತಿಲ್ಲ"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -576,7 +578,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat ಮೌಲ್ಯವು ಋಣವಾಗಿರುವಂತಿಲ್ಲ"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -584,7 +586,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat ಮೌಲ್ಯವು ಋಣವಾಗಿರುವಂತಿಲ್ಲ"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -906,7 +908,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "ಅಮಾನ್ಯ LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/ko.po
+--- a/po/ko.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ko.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -4,12 +4,13 @@
+ # 
+ # Translators:
+ # Dimitris Glezos <glezos@indifex.com>, 2011
++# eukim <eukim@redhat.com>, 2006-2009,2012
+ # eukim <eukim@redhat.com>, 2006, 2007, 2008, 2009
+ # eukim <eukim@redhat.com>, 2012
+ # Hyunsok Oh <hoh@redhat.com>, 2010
+ # Jinseok Seo <jsseo@postech.ac.kr>, 2004
+-# Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006
+-# Michelle J Kim <mkim@redhat.com>, 2003, 2004, 2005
++# Michelle Ji Yeen Kim <mkim@redhat.com>, 2005-2006
++# Michelle J Kim <mkim@redhat.com>, 2003-2005
+ # Michelle Kim <mkim33@gmail.com>, 2011
+ # Michelle Kim <mkim@brisbane.redhat.com>, 2002
+ msgid ""
+@@ -17,7 +18,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Korean (http://www.transifex.com/projects/p/fedora/language/ko/)\n"
+ "MIME-Version: 1.0\n"
+@@ -305,11 +306,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind는 인증에 Kerberos 5를 사용합니다 "
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind는 기본 인증 방법을 사용합니다"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -566,7 +567,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen의 최소값은 6입니다 "
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -574,7 +575,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass 값은 음수가 아니여야 합니다 "
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -582,7 +583,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat 값은 음수가 아니여야 합니다 "
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -590,7 +591,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat 값은 음수가 아니여야 합니다 "
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -912,7 +913,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "잘못된 LDAP URI입니다. "
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/lv.po
+--- a/po/lv.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/lv.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Latvian (http://www.transifex.com/projects/p/fedora/language/lv/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/mai.po
+--- a/po/mai.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/mai.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Maithili (http://www.transifex.com/projects/p/fedora/language/mai/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/mk.po
+--- a/po/mk.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/mk.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -12,7 +12,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Macedonian (http://www.transifex.com/projects/p/fedora/language/mk/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/ml.po
+--- a/po/ml.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ml.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -3,14 +3,15 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ # 
+ # Translators:
+-# Ani Peter <apeter@redhat.com>, 2006, 2007, 2009, 2012
++# Ani Peter <apeter@redhat.com>, 2006-2007,2009,2012
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Malayalam (http://www.transifex.com/projects/p/fedora/language/ml/)\n"
+ "MIME-Version: 1.0\n"
+@@ -298,11 +299,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "ആധികാരികത ഉറപ്പാക്കുന്നതിനു് winbind കര്‍ബറോസ് 5 ഉപയോഗിയ്ക്കുന്നു"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind സ്വതവേയുള്ള ആധികാരികത ഉറപ്പാക്കല്‍ സംവിധാനം ഉപയോഗിയ്ക്കുന്നു"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -559,7 +560,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen കുറഞ്ഞ മൂല്ല്യം 6 ആണു്"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -567,7 +568,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass മൂല്ല്യം നെഗറ്റീവ് ആകുവാന്‍ പാടില്ല."
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -575,7 +576,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat മൂല്ല്യം നെഗറ്റീവ് ആകുവാന്‍ പാടില്ല."
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -583,7 +584,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat മൂല്ല്യം നെഗറ്റീവ് ആകുവാന്‍ പാടില്ല."
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -905,7 +906,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "തെറ്റായ എല്‍ഡിഎപി യുആര്‍ഐ."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/mr.po
+--- a/po/mr.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/mr.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,19 +11,28 @@
+ # sandeeps <sshedmak@redhat.com>, 2009, 2010, 2012
+ # sandeeps <sshedmak@redhat.com>, 2011
+ # sandeeps <sshedmak@redhat.com>, 2012
++# Dimitris Glezos <glezos@transifex.com>, 2011.
++# Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
++# Rahul Bhalerao <rbhalera@redhat.com>, 2006.
++# sandeep shedmake <sandeep.shedmake@gmail.com>, 2007.
++# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
++# sandeeps <sshedmak@redhat.com>, 2009, 2010, 2012.
++# sandeeps <sshedmak@redhat.com>, 2011.
++# sandeeps <sshedmak@redhat.com>, 2012, 2013.
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: Authconfig\n"
++"Project-Id-Version: PACKAGE VERSION\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
+-"Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+-"Language-Team: Marathi (http://www.transifex.com/projects/p/fedora/language/mr/)\n"
++"POT-Creation-Date: 2013-11-13 15:20+0530\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
++"PO-Revision-Date: 2013-11-19 12:58-0500\n"
++"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
++"Language-Team: Marathi <sshedmak@redhat.com>\n"
+ "Language: mr\n"
+-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
++"Plural-Forms: nplurals=2; plural=(n!=1);\n"
++"X-Generator: Zanata 3.1.2\n"
+ 
+ #: ../authconfig.py:115
+ #, python-format
+@@ -85,7 +94,8 @@
+ 
+ #: ../authconfig.py:147
+ msgid "disable LDAP for user information by default"
+-msgstr "उपयोगकर्त्याच्या माहितीसाठी LDAP पूर्वनिर्धारीतरित्या अकार्यान्वीत करा"
++msgstr ""
++"उपयोगकर्त्याच्या माहितीसाठी LDAP पूर्वनिर्धारीतरित्या अकार्यान्वीत करा"
+ 
+ #: ../authconfig.py:149
+ msgid "enable LDAP for authentication by default"
+@@ -117,7 +127,8 @@
+ 
+ #: ../authconfig.py:161
+ msgid "enable use of RFC-2307bis schema for LDAP user information lookups"
+-msgstr "LDAP वापरकर्ता माहिती लुकअप्स् करीता RFC-2307bis योजनाचा वापर करणे सुरू करा"
++msgstr ""
++"LDAP वापरकर्ता माहिती लुकअप्स् करीता RFC-2307bis योजनाचा वापर करणे सुरू करा"
+ 
+ #: ../authconfig.py:163
+ msgid "disable use of RFC-2307bis schema for LDAP user information lookups"
+@@ -217,11 +228,13 @@
+ 
+ #: ../authconfig.py:211
+ msgid "enable winbind for user information by default"
+-msgstr "उपयोगकर्त्याच्या माहितीसाठी Winbind पूर्वनिर्धारीतरित्या कार्यान्वीत करा"
++msgstr ""
++"उपयोगकर्त्याच्या माहितीसाठी Winbind पूर्वनिर्धारीतरित्या कार्यान्वीत करा"
+ 
+ #: ../authconfig.py:213
+ msgid "disable winbind for user information by default"
+-msgstr "उपयोगकर्त्याच्या माहितीसाठी Winbind पूर्वनिर्धारीतरित्या अकार्यान्वीत करा"
++msgstr ""
++"उपयोगकर्त्याच्या माहितीसाठी Winbind पूर्वनिर्धारीतरित्या अकार्यान्वीत करा"
+ 
+ #: ../authconfig.py:215
+ msgid "enable winbind for authentication by default"
+@@ -237,7 +250,8 @@
+ 
+ #: ../authconfig.py:221
+ msgid "default realm for samba and winbind when security=ads"
+-msgstr "जेव्हा security=ads असेल तेव्हा सांबा आणि Winbindसाठी पूर्वनिर्धारीत रिअल्म"
++msgstr ""
++"जेव्हा security=ads असेल तेव्हा सांबा आणि Winbindसाठी पूर्वनिर्धारीत रिअल्म"
+ 
+ #: ../authconfig.py:222 ../authconfig.py:259
+ msgid "<servers>"
+@@ -267,12 +281,16 @@
+ msgid ""
+ "the character which will be used to separate the domain and user part of "
+ "winbind-created user names if winbindusedefaultdomain is not enabled"
+-msgstr "Winbind निर्मित वापरकर्ता नामांच्या डोमेन आणि वापरकर्ता भागांस वेगळे करण्यासाठी वापरले जाणारे अक्षर जर winbindusedefaultdomain सक्रीय केलेले नसेल "
++msgstr ""
++"Winbind निर्मित वापरकर्ता नामांच्या डोमेन आणि वापरकर्ता भागांस वेगळे "
++"करण्यासाठी वापरले जाणारे अक्षर जर winbindusedefaultdomain सक्रीय केलेले नसेल "
++""
+ 
+ #: ../authconfig.py:231
+ msgid ""
+ "the directory which winbind-created users will have as home directories"
+-msgstr "निर्देशिका जी Winbind निर्मित उपयोक्त्यांची गृह निर्देशिका म्हणून असेल"
++msgstr ""
++"निर्देशिका जी Winbind निर्मित उपयोक्त्यांची गृह निर्देशिका म्हणून असेल"
+ 
+ #: ../authconfig.py:233
+ msgid "the group which winbind-created users will have as their primary group"
+@@ -286,13 +304,17 @@
+ msgid ""
+ "configures winbind to assume that users with no domain in their user names "
+ "are domain users"
+-msgstr "वापरकर्ता नामात डोमेन नसलेले उपयोक्ते डोमेन उपयोक्ते आहेत असे गृहीत धरण्यासाठी Winbindची संरचना करतो"
++msgstr ""
++"वापरकर्ता नामात डोमेन नसलेले उपयोक्ते डोमेन उपयोक्ते आहेत असे गृहीत "
++"धरण्यासाठी Winbindची संरचना करतो"
+ 
+ #: ../authconfig.py:239
+ msgid ""
+ "configures winbind to assume that users with no domain in their user names "
+ "are not domain users"
+-msgstr "वापरकर्ता नामात डोमेन नसलेले उपयोक्ते डोमेन उपयोक्ते नाहित असे गृहीत धरण्यासाठी Winbindची संरचना करतो"
++msgstr ""
++"वापरकर्ता नामात डोमेन नसलेले उपयोक्ते डोमेन उपयोक्ते नाहित असे गृहीत "
++"धरण्यासाठी Winbindची संरचना करतो"
+ 
+ #: ../authconfig.py:241
+ msgid "configures winbind to allow offline login"
+@@ -304,15 +326,16 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "ओळख पटवण्याकरिता winbind कर्बेरोस ५ चा वापर करेल"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind पूर्वनिर्धारित ओळख पटवण्याच्या पद्धतीचा वापर करेल"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+-msgstr "Winbind डोमेन किंवा ads रिअल्ममध्ये आता या प्रशासकाच्या रूपात दाखल व्हा"
++msgstr ""
++"Winbind डोमेन किंवा ads रिअल्ममध्ये आता या प्रशासकाच्या रूपात दाखल व्हा"
+ 
+ #: ../authconfig.py:252
+ msgid "enable IPAv2 for user information and authentication by default"
+@@ -364,11 +387,13 @@
+ 
+ #: ../authconfig.py:279
+ msgid "enable hesiod for user information by default"
+-msgstr "वापरकर्त्याच्या माहितीसाठी hesiod पूर्वनिर्धारीतरित्या कार्यान्वीत करा"
++msgstr ""
++"वापरकर्त्याच्या माहितीसाठी hesiod पूर्वनिर्धारीतरित्या कार्यान्वीत करा"
+ 
+ #: ../authconfig.py:281
+ msgid "disable hesiod for user information by default"
+-msgstr "वापरकर्त्याच्या माहितीसाठी hesiod पूर्वनिर्धारीतरित्या अकार्यान्वीत करा"
++msgstr ""
++"वापरकर्त्याच्या माहितीसाठी hesiod पूर्वनिर्धारीतरित्या अकार्यान्वीत करा"
+ 
+ #: ../authconfig.py:283
+ msgid "default hesiod LHS"
+@@ -382,25 +407,32 @@
+ msgid ""
+ "enable SSSD for user information by default with manually managed "
+ "configuration"
+-msgstr "स्वतः ठरवलेल्या संरचनासह पूर्वनिर्धारीतरित्या वापरकर्ता माहितीसाठी SSSD सुरू करा"
++msgstr ""
++"स्वतः ठरवलेल्या संरचनासह पूर्वनिर्धारीतरित्या वापरकर्ता माहितीसाठी SSSD सुरू "
++"करा"
+ 
+ #: ../authconfig.py:290
+ msgid ""
+ "disable SSSD for user information by default (still used for supported "
+ "configurations)"
+-msgstr "पूर्वनिर्धारीतरित्या (समर्थीत संरचनांकरीता वापरले जाते) वापरकर्ता माहितीसाठी SSSD बंद करा"
++msgstr ""
++"पूर्वनिर्धारीतरित्या (समर्थीत संरचनांकरीता वापरले जाते) वापरकर्ता माहितीसाठी "
++"SSSD बंद करा"
+ 
+ #: ../authconfig.py:292
+ msgid ""
+ "enable SSSD for authentication by default with manually managed "
+ "configuration"
+-msgstr "स्वतः ठरवलेल्या संरचनासह पूर्वनिर्धारीतरित्या ओळख पटवण्यासाठी SSSD सुरू करा"
++msgstr ""
++"स्वतः ठरवलेल्या संरचनासह पूर्वनिर्धारीतरित्या ओळख पटवण्यासाठी SSSD सुरू करा"
+ 
+ #: ../authconfig.py:294
+ msgid ""
+ "disable SSSD for authentication by default (still used for supported "
+ "configurations)"
+-msgstr "पूर्वनिर्धारितपणे ओळख पटवण्यासाठी SSSD बंद करा (समर्थीत संरचनाकरीता अजूनही वापरले जाते)"
++msgstr ""
++"पूर्वनिर्धारितपणे ओळख पटवण्यासाठी SSSD बंद करा (समर्थीत संरचनाकरीता अजूनही "
++"वापरले जाते)"
+ 
+ #: ../authconfig.py:296
+ msgid "never use SSSD implicitly even for supported configurations"
+@@ -422,7 +454,9 @@
+ msgid ""
+ "enable caching of user information by default (automatically disabled when "
+ "SSSD is used)"
+-msgstr "पूर्वनिर्धारीतपणे वापरकर्त्याची माहिती कॅशे करणे सुरू करा (SSSD चा वापर केल्यास स्वयंपणे बंद केले जाते)"
++msgstr ""
++"पूर्वनिर्धारीतपणे वापरकर्त्याची माहिती कॅशे करणे सुरू करा (SSSD चा वापर "
++"केल्यास स्वयंपणे बंद केले जाते)"
+ 
+ #: ../authconfig.py:308
+ msgid "disable caching of user information by default"
+@@ -557,7 +591,9 @@
+ msgid ""
+ "restore the backup of configuration files saved before the previous "
+ "configuration change"
+-msgstr "पूर्वीच्या संरचना फाइलमधील बदल साठवण्यापूर्वी संरचना फाइल्स्चे बॅकअप पुनःस्थापीत करा"
++msgstr ""
++"पूर्वीच्या संरचना फाइलमधील बदल साठवण्यापूर्वी संरचना फाइल्स्चे बॅकअप "
++"पुनःस्थापीत करा"
+ 
+ #: ../authconfig.py:388
+ msgid "unexpected argument"
+@@ -565,7 +601,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen किमान मूल्य ६ आहे"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -573,305 +609,328 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass मूल्य नकारात्मक नाही पाहिजे"
+ 
+ #: ../authconfig.py:538
++msgid "The passminclass value must not be higher than 4"
++msgstr "passminclass मूल्य ४ पेक्षा जास्त नाही पाहिजे"
++
++#: ../authconfig.py:542
+ msgid "The passminclass option value is not an integer"
+ msgstr "passminclass पर्याय मूल्य इंटिजर नाही"
+ 
+-#: ../authconfig.py:546
++#: ../authconfig.py:550
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat मूल्य नकारात्मक नाही पाहिजे"
+ 
+-#: ../authconfig.py:550
++#: ../authconfig.py:554
+ msgid "The passmaxrepeat option value is not an integer"
+ msgstr "passmaxrepeat पर्याय मूल्य इंटिजर नाही"
+ 
+-#: ../authconfig.py:558
++#: ../authconfig.py:562
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat मूल्य नकारात्मक नाही पाहिजे"
+ 
+-#: ../authconfig.py:562
++#: ../authconfig.py:566
+ msgid "The passmaxclassrepeat option value is not an integer"
+ msgstr "passmaxclassrepeat पर्याय मूल्य इंटिजर नाही"
+ 
+-#: ../authconfig.py:584
++#: ../authconfig.py:588
+ msgid "Bad smart card removal action specified."
+ msgstr "स्मार्ट कार्ड काढायची वाइट पद्धती दर्शवली."
+ 
+-#: ../authconfig.py:593
++#: ../authconfig.py:597
+ msgid "Unknown password hashing algorithm specified, using sha256."
+-msgstr "अपरिचीत पासवर्ड हॅश अल्गोरीदम निर्देशीत केले गेले, sha256 चा वापर करीत आहे."
++msgstr ""
++"अपरिचीत पासवर्ड हॅश अल्गोरीदम निर्देशीत केले गेले, sha256 चा वापर करीत आहे."
+ 
+-#: ../authconfig.py:637
++#: ../authconfig.py:641
+ msgid "can only be run as root"
+ msgstr "फक्त रूट प्रमाणेच चालवू शकतो"
+ 
+-#: ../authconfig.py:653
++#: ../authconfig.py:657
+ msgid "dialog was cancelled"
+ msgstr "संवाद रद्द केले होते"
+ 
+-#: ../authconfig.py:685 ../authconfig-gtk.py:572
++#: ../authconfig.py:689 ../authconfig-gtk.py:572
+ #, python-format
+ msgid ""
+-"The %s file was not found, but it is required for %s support to work properly.\n"
++"The %s file was not found, but it is required for %s support to work "
++"properly.\n"
+ "Install the %s package, which provides this file."
+-msgstr "%s फाइल सापडली नाही, पण %s आधार व्यवस्थित काम करण्यासाठी तीची गरज आहे.\n%s संकुल प्रतिष्ठापित करा, जे ही फाइल पुरवते."
++msgstr ""
++"%s फाइल सापडली नाही, पण %s आधार व्यवस्थित काम करण्यासाठी तीची गरज आहे.\n"
++"%s संकुल प्रतिष्ठापित करा, जे ही फाइल पुरवते."
+ 
+-#: ../authconfig.py:687 ../authconfig.py:1033
++#: ../authconfig.py:691 ../authconfig.py:1037
+ msgid "Warning"
+ msgstr "ताकीद"
+ 
+-#: ../authconfig.py:687 ../authconfig.py:904 ../authconfig.py:912
+-#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:935
+-#: ../authconfig.py:979 ../authconfig.py:1033
++#: ../authconfig.py:691 ../authconfig.py:908 ../authconfig.py:916
++#: ../authconfig.py:922 ../authconfig.py:931 ../authconfig.py:939
++#: ../authconfig.py:983 ../authconfig.py:1037
+ msgid "Ok"
+ msgstr "ठिक आहे"
+ 
+-#: ../authconfig.py:691
++#: ../authconfig.py:695
+ msgid "caching"
+ msgstr "कॅशींग"
+ 
+-#: ../authconfig.py:692
++#: ../authconfig.py:696
+ msgid "Fingerprint reader"
+ msgstr "Fingerprint रिडर"
+ 
+-#: ../authconfig.py:693
++#: ../authconfig.py:697
+ msgid "Kerberos"
+ msgstr "कर्बेरोज्"
+ 
+-#: ../authconfig.py:694
++#: ../authconfig.py:698
+ msgid "LDAP authentication"
+ msgstr "LDAP ओळख पटवा"
+ 
+-#: ../authconfig.py:695 ../authconfig-gtk.py:122
++#: ../authconfig.py:699 ../authconfig-gtk.py:122
+ msgid "LDAP"
+ msgstr "LDAP"
+ 
+-#: ../authconfig.py:696 ../authconfig-gtk.py:128
++#: ../authconfig.py:700 ../authconfig-gtk.py:128
+ msgid "NIS"
+ msgstr "NIS"
+ 
+-#: ../authconfig.py:697
++#: ../authconfig.py:701
+ msgid "shadow password"
+ msgstr "शॅडो पासवर्ड"
+ 
+-#: ../authconfig.py:698 ../authconfig.py:700 ../authconfig-gtk.py:131
++#: ../authconfig.py:702 ../authconfig.py:704 ../authconfig-gtk.py:131
+ msgid "Winbind"
+ msgstr "Winbind"
+ 
+-#: ../authconfig.py:699
++#: ../authconfig.py:703
+ msgid "Winbind authentication"
+ msgstr "Winbind ओळख पटवा"
+ 
+-#: ../authconfig.py:705
++#: ../authconfig.py:709
+ msgid "User Information"
+ msgstr "वापरकर्ता माहिती"
+ 
+-#: ../authconfig.py:708
++#: ../authconfig.py:712
+ msgid "Cache Information"
+ msgstr "कॅशे माहिती"
+ 
+-#: ../authconfig.py:711
++#: ../authconfig.py:715
+ msgid "Use LDAP"
+ msgstr "LDAP वापरा"
+ 
+-#: ../authconfig.py:714
++#: ../authconfig.py:718
+ msgid "Use NIS"
+ msgstr "NIS वापरा"
+ 
+-#: ../authconfig.py:717
++#: ../authconfig.py:721
+ msgid "Use IPAv2"
+ msgstr "IPAv2 याचा वापर करा"
+ 
+-#: ../authconfig.py:720
++#: ../authconfig.py:724
+ msgid "Use Winbind"
+ msgstr "Winbind वापरा"
+ 
+-#: ../authconfig.py:726 ../authconfig.desktop.in.h:1
++#: ../authconfig.py:730 ../authconfig.desktop.in.h:1
+ msgid "Authentication"
+ msgstr "ओळख पटवा"
+ 
+-#: ../authconfig.py:729
++#: ../authconfig.py:733
+ msgid "Use MD5 Passwords"
+ msgstr "MD5 पासवर्ड वापरा"
+ 
+-#: ../authconfig.py:732
++#: ../authconfig.py:736
+ msgid "Use Shadow Passwords"
+ msgstr "शॅडो पासवर्ड वापरा"
+ 
+-#: ../authconfig.py:735
++#: ../authconfig.py:739
+ msgid "Use LDAP Authentication"
+ msgstr "LDAP ऑथेंटीकेशन वापरा"
+ 
+-#: ../authconfig.py:738
++#: ../authconfig.py:742
+ msgid "Use Kerberos"
+ msgstr "कर्बेरोस वापरा"
+ 
+-#: ../authconfig.py:741
++#: ../authconfig.py:745
+ msgid "Use Fingerprint reader"
+ msgstr "Fingerprint रिडरचा वापर करा"
+ 
+-#: ../authconfig.py:745
++#: ../authconfig.py:749
+ msgid "Use Winbind Authentication"
+ msgstr "Winbind ऑथेंटीकेशन वापरा"
+ 
+-#: ../authconfig.py:748
++#: ../authconfig.py:752
+ msgid "Local authorization is sufficient"
+ msgstr "स्थानिक मुखत्यारी पुरेशी आहे"
+ 
+-#: ../authconfig.py:758 ../authconfig.py:904 ../authconfig.py:912
+-#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:979
++#: ../authconfig.py:762 ../authconfig.py:908 ../authconfig.py:916
++#: ../authconfig.py:922 ../authconfig.py:931 ../authconfig.py:983
+ msgid "Back"
+ msgstr "मागे"
+ 
+-#: ../authconfig.py:758 ../authconfig.py:935
++#: ../authconfig.py:762 ../authconfig.py:939
+ msgid "Cancel"
+ msgstr "रद्द"
+ 
+-#: ../authconfig.py:759 ../authconfig.py:904 ../authconfig.py:912
+-#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:979
++#: ../authconfig.py:763 ../authconfig.py:908 ../authconfig.py:916
++#: ../authconfig.py:922 ../authconfig.py:931 ../authconfig.py:983
+ msgid "Next"
+ msgstr "पुढे"
+ 
+-#: ../authconfig.py:770 ../authconfig-gtk.py:805 ../authconfig.glade.h:1
++#: ../authconfig.py:774 ../authconfig-gtk.py:805 ../authconfig.glade.h:1
+ msgid "Authentication Configuration"
+ msgstr "ओळख पटवा संरचना"
+ 
+-#: ../authconfig.py:900 ../authconfig.py:915 ../authconfig.py:973
++#: ../authconfig.py:904 ../authconfig.py:919 ../authconfig.py:977
+ #: ../authconfig.glade.h:40
+ msgid "Domain:"
+ msgstr "क्षेत्र(डोमेन):"
+ 
+-#: ../authconfig.py:901 ../authconfig.py:921
++#: ../authconfig.py:905 ../authconfig.py:925
+ msgid "Realm:"
+ msgstr "रिअल्म:"
+ 
+-#: ../authconfig.py:902 ../authconfig.py:909 ../authconfig.py:916
++#: ../authconfig.py:906 ../authconfig.py:913 ../authconfig.py:920
+ msgid "Server:"
+ msgstr "सर्व्हर:"
+ 
+-#: ../authconfig.py:903
++#: ../authconfig.py:907
+ msgid "IPAv2 Settings"
+ msgstr "IPAv2 सेटिंग्स्"
+ 
+-#: ../authconfig.py:905 ../authconfig.py:980
++#: ../authconfig.py:909 ../authconfig.py:984
+ msgid "Join Domain"
+ msgstr "डोमेनमध्ये सहभागी व्हा"
+ 
+-#: ../authconfig.py:908
++#: ../authconfig.py:912
+ msgid "Use TLS"
+ msgstr "TLS वापरा"
+ 
+-#: ../authconfig.py:910
++#: ../authconfig.py:914
+ msgid "Base DN:"
+ msgstr "आधार DN:"
+ 
+-#: ../authconfig.py:911
++#: ../authconfig.py:915
+ msgid "LDAP Settings"
+ msgstr "LDAP रचना"
+ 
+-#: ../authconfig.py:917
++#: ../authconfig.py:921
+ msgid "NIS Settings"
+ msgstr "NIS रचना"
+ 
+-#: ../authconfig.py:922
++#: ../authconfig.py:926
+ msgid "KDC:"
+ msgstr "KDC:"
+ 
+-#: ../authconfig.py:923
++#: ../authconfig.py:927
+ msgid "Admin Server:"
+ msgstr "प्रशासक सर्व्हर:"
+ 
+-#: ../authconfig.py:924
++#: ../authconfig.py:928
+ msgid "Use DNS to resolve hosts to realms"
+ msgstr "यजमानांपासून रिअल्म काढण्यासाठी DNS वापरा"
+ 
+-#: ../authconfig.py:925
++#: ../authconfig.py:929
+ msgid "Use DNS to locate KDCs for realms"
+ msgstr "रिअल्म्ससाठी KDCs शोधण्यासाठी DNS वापरा"
+ 
+-#: ../authconfig.py:926
++#: ../authconfig.py:930
+ msgid "Kerberos Settings"
+ msgstr "कर्बेरोस रचना"
+ 
+-#: ../authconfig.py:930
++#: ../authconfig.py:934
+ msgid "Domain Administrator:"
+ msgstr "डोमेन प्रशासक:"
+ 
+-#: ../authconfig.py:931
++#: ../authconfig.py:935
+ msgid "Password:"
+ msgstr "पासवर्ड:"
+ 
+-#: ../authconfig.py:934
++#: ../authconfig.py:938
+ msgid "Join Settings"
+ msgstr "रचनांशी जुळा"
+ 
+-#: ../authconfig.py:947 ../authconfig.glade.h:44
++#: ../authconfig.py:951 ../authconfig.glade.h:44
+ msgid ""
+-"Some of the configuration changes you've made should be saved to disk before"
+-" continuing.  If you do not save them, then your attempt to join the domain "
++"Some of the configuration changes you've made should be saved to disk before "
++"continuing.  If you do not save them, then your attempt to join the domain "
+ "may fail.  Save changes?"
+-msgstr "तुम्ही केलेले व्यूहरचनेतील काही बदल पुढे जाण्याआधी डिस्कवर सुरक्षित करायला हवेत. तसे न केल्यास, डोमेनमध्ये सहभागी होण्याचा तुमचा प्रयत्न असफल होइल. बदल सुरक्षित करावे?"
++msgstr ""
++"तुम्ही केलेले व्यूहरचनेतील काही बदल पुढे जाण्याआधी डिस्कवर सुरक्षित करायला "
++"हवेत. तसे न केल्यास, डोमेनमध्ये सहभागी होण्याचा तुमचा प्रयत्न असफल होइल. बदल "
++"सुरक्षित करावे?"
+ 
+-#: ../authconfig.py:954
++#: ../authconfig.py:958
+ msgid "Save Settings"
+ msgstr "रचना सुरक्षित करा"
+ 
+-#: ../authconfig.py:955
++#: ../authconfig.py:959
+ msgid "No"
+ msgstr "नाही"
+ 
+-#: ../authconfig.py:955
++#: ../authconfig.py:959
+ msgid "Yes"
+ msgstr "होय"
+ 
+ #. Why does your favorite shell not show up in the list?  Because it won't
+ #. fit, that's why!
+-#: ../authconfig.py:972
++#: ../authconfig.py:976
+ msgid "Security Model:"
+ msgstr "सुरक्षा नमुना:"
+ 
+-#: ../authconfig.py:974
++#: ../authconfig.py:978
+ msgid "Domain Controllers:"
+ msgstr "डोमेन नियंत्रक:"
+ 
+-#: ../authconfig.py:975
++#: ../authconfig.py:979
+ msgid "ADS Realm:"
+ msgstr "ADS रिअल्म:"
+ 
+-#: ../authconfig.py:976
++#: ../authconfig.py:980
+ msgid "Template Shell:"
+ msgstr "साचा शेल:"
+ 
+-#: ../authconfig.py:978
++#: ../authconfig.py:982
+ msgid "Winbind Settings"
+ msgstr "Winbind रचना"
+ 
+-#: ../authconfig.py:1028
++#: ../authconfig.py:1032
+ #, python-format
+ msgid ""
+-"To connect to a LDAP server with TLS protocol enabled you need a CA certificate which signed your server's certificate. Copy the certificate in the PEM format to the '%s' directory.\n"
++"To connect to a LDAP server with TLS protocol enabled you need a CA "
++"certificate which signed your server's certificate. Copy the certificate in "
++"the PEM format to the '%s' directory.\n"
+ "Then press OK."
+-msgstr "TLS प्रोटोकॉल कार्यान्वित असलेल्या LDAP सर्वरास जोडण्यासाठी तुम्हास CA प्रमाणपत्राची गरज आहे ज्याने तुमच्या सर्व्हर प्रमाणपत्रावर स्वाक्षरी केली असेल. प्रमाणपत्र PEM स्वरूपात %s या निर्देशिकेत प्रतिलिपी करा.\nनंतर ठीक दाबा."
++msgstr ""
++"TLS प्रोटोकॉल कार्यान्वित असलेल्या LDAP सर्वरास जोडण्यासाठी तुम्हास CA "
++"प्रमाणपत्राची गरज आहे ज्याने तुमच्या सर्व्हर प्रमाणपत्रावर स्वाक्षरी केली "
++"असेल. प्रमाणपत्र PEM स्वरूपात %s या निर्देशिकेत प्रतिलिपी करा.\n"
++"नंतर ठीक दाबा."
+ 
+ #. FIXME - version
+-#: ../authconfig.py:1042
++#: ../authconfig.py:1046
+ msgid ""
+ " <Tab>/<Alt-Tab> between elements   |   <Space> selects   |  <F12> next "
+ "screen"
+-msgstr " <Tab>/<Alt-Tab> घटकां दरम्यान   |   <Space> निवडतो   |  <F12> पुढील पटल "
++msgstr ""
++" <Tab>/<Alt-Tab> घटकां दरम्यान   |   <Space> निवडतो   |  <F12> पुढील पटल "
+ 
+ #: ../authconfig.desktop.in.h:2
+ msgid "Control how the system verifies users who attempt to log in"
+-msgstr "लॉगीन करण्याचा प्रयत्न करणाऱ्या उपयोक्त्यांस प्रणाली कशा प्रकारे पडताळते यावर नियंत्रण ठेवा"
++msgstr ""
++"लॉगीन करण्याचा प्रयत्न करणाऱ्या उपयोक्त्यांस प्रणाली कशा प्रकारे पडताळते "
++"यावर नियंत्रण ठेवा"
+ 
+ #: ../authconfig-gtk.py:64
+ msgid ""
+ "Unable to initialize graphical environment. Most likely cause of failure\n"
+ "is that the tool was not run using a graphical environment. Please either\n"
+ "start your graphical user interface or set your DISPLAY variable.\n"
+-msgstr "ग्राफिकल वातावरण सुरू करणे अशक्य. ग्राफिकल वातातवरणाचा वापर न करता साधन चालवण्यामुळे अपयशी ठरले असावे. कृपया ग्राफिकल वापरकर्ता संवाद सुरू करा किंवा DISPLAY वेरियेबल ठरवा.\n"
++msgstr ""
++"ग्राफिकल वातावरण सुरू करणे अशक्य. ग्राफिकल वातातवरणाचा वापर न करता साधन "
++"चालवण्यामुळे अपयशी ठरले असावे. कृपया ग्राफिकल वापरकर्ता संवाद सुरू करा किंवा "
++"DISPLAY वेरियेबल ठरवा.\n"
+ 
+ #: ../authconfig-gtk.py:119
+ msgid "Local accounts only"
+@@ -911,12 +970,13 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "अवैध LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+ "You must provide ldaps:// server address or use TLS for LDAP authentication."
+-msgstr "ldaps:// सर्व्हरचा पत्ता पुरवा किंवा LDAP ओळख पटवण्यासाठी TLS चा वापर करा."
++msgstr ""
++"ldaps:// सर्व्हरचा पत्ता पुरवा किंवा LDAP ओळख पटवण्यासाठी TLS चा वापर करा."
+ 
+ #: ../authconfig-gtk.py:543
+ msgid "Use the \"Join Domain\" button to join the IPAv2 domain."
+@@ -926,7 +986,8 @@
+ msgid ""
+ "Restore the configuration files backed up before the previous configuration "
+ "change"
+-msgstr "पूर्वीची संयोजना बदल प्रतिकृत करण्यापूर्वी संयोजना फाइल पुन्हास्थापीत करा"
++msgstr ""
++"पूर्वीची संयोजना बदल प्रतिकृत करण्यापूर्वी संयोजना फाइल पुन्हास्थापीत करा"
+ 
+ #: ../authconfig.glade.h:3
+ msgid "<b>User Account Configuration</b>"
+@@ -962,9 +1023,10 @@
+ 
+ #: ../authconfig.glade.h:11
+ msgid ""
+-"Fingerprint authentication allows you to log in by scanning your finger with"
+-" the fingerprint reader."
+-msgstr "Fingerprint ओळख पटवणे आपले बोट फिंगरप्रिन्ट रिडरसह स्कॅन करण्यास सहमती देतो."
++"Fingerprint authentication allows you to log in by scanning your finger with "
++"the fingerprint reader."
++msgstr ""
++"Fingerprint ओळख पटवणे आपले बोट फिंगरप्रिन्ट रिडरसह स्कॅन करण्यास सहमती देतो."
+ 
+ #: ../authconfig.glade.h:12
+ msgid "Enable _local access control"
+@@ -974,16 +1036,22 @@
+ msgid ""
+ "When enabled /etc/security/access.conf will be consulted for authorization "
+ "of users access."
+-msgstr "कार्यान्वीत असल्यास /etc/security/access.conf वापरकर्त्याच्या प्रवेशसाठी अधिप्रमाणन करीता तपसाले जाईल."
++msgstr ""
++"कार्यान्वीत असल्यास /etc/security/access.conf वापरकर्त्याच्या प्रवेशसाठी "
++"अधिप्रमाणन करीता तपसाले जाईल."
+ 
+ #: ../authconfig.glade.h:14
+ msgid ""
+ "<small><b>Tip:</b> This is managed via /etc/security/access.conf.</small>"
+-msgstr "<small><b>टिप:</b> यांस /etc/security/access.conf द्वारे व्यवस्थापीत केले जाते.</small>"
++msgstr ""
++"<small><b>टिप:</b> यांस /etc/security/access.conf द्वारे व्यवस्थापीत केले "
++"जाते.</small>"
+ 
+ #: ../authconfig.glade.h:15
+ msgid "Hashing or crypto algorithm used for storing passwords of local users"
+-msgstr "स्थानीय वापरकर्त्यांचे पासवर्ड्स् साठवण्यासाठी हॅशींग किंवा क्रिप्टो अल्गोरिदम"
++msgstr ""
++"स्थानीय वापरकर्त्यांचे पासवर्ड्स् साठवण्यासाठी हॅशींग किंवा क्रिप्टो "
++"अल्गोरिदम"
+ 
+ #: ../authconfig.glade.h:16
+ msgid "_Password Hashing Algorithm:"
+@@ -1001,7 +1069,9 @@
+ msgid ""
+ "If the home directory of an user doesn't exist yet it will be created "
+ "automatically on his first login."
+-msgstr "वापरकर्त्याची मुख्य संचयीका अस्तित्वात नसल्यास त्यास आपोआप प्रारंभीकीय दाखलनवेळी बनविले जाईल."
++msgstr ""
++"वापरकर्त्याची मुख्य संचयीका अस्तित्वात नसल्यास त्यास आपोआप प्रारंभीकीय "
++"दाखलनवेळी बनविले जाईल."
+ 
+ #: ../authconfig.glade.h:20
+ msgid "<b>Smart Card Authentication Options</b>"
+@@ -1015,13 +1085,17 @@
+ msgid ""
+ "Smart card authentication allows you to log in using a certificate and key "
+ "associated with a smart card."
+-msgstr "स्मार्ट कार्ड अधिप्रमाणन तुम्हास प्रमाणपत्र आणि स्मार्ट कार्डशी संबंधित कळ वापरून लॉगीन करण्यास परवानगी देते."
++msgstr ""
++"स्मार्ट कार्ड अधिप्रमाणन तुम्हास प्रमाणपत्र आणि स्मार्ट कार्डशी संबंधित कळ "
++"वापरून लॉगीन करण्यास परवानगी देते."
+ 
+ #: ../authconfig.glade.h:23
+ msgid ""
+-"<small><b>Tip:</b> Smart cards support logging into both local and centrally"
+-" managed accounts.</small>"
+-msgstr "<small><b>टिप:</b> स्मार्ट कार्ड्स् दोन्ही स्थानीय व केंद्रीयपणे व्यवस्थापीत खात्यांकरीता प्रवेश करण्यासाठी समर्थन पुरवतो.</small>"
++"<small><b>Tip:</b> Smart cards support logging into both local and centrally "
++"managed accounts.</small>"
++msgstr ""
++"<small><b>टिप:</b> स्मार्ट कार्ड्स् दोन्ही स्थानीय व केंद्रीयपणे व्यवस्थापीत "
++"खात्यांकरीता प्रवेश करण्यासाठी समर्थन पुरवतो.</small>"
+ 
+ #: ../authconfig.glade.h:24
+ msgid "Advanced _Options"
+@@ -1074,7 +1148,8 @@
+ #: ../authconfig.glade.h:36
+ msgid ""
+ "<small><b>Tip:</b> These checks are disabled if the value is 0.</small>"
+-msgstr "<small><b>टिप:</b> मूल्य 0 असल्यास ह्या तपासणी बंद केले जातात.</small>"
++msgstr ""
++"<small><b>टिप:</b> मूल्य 0 असल्यास ह्या तपासणी बंद केले जातात.</small>"
+ 
+ #: ../authconfig.glade.h:37
+ msgid "Pass_word Options"
+@@ -1113,7 +1188,11 @@
+ "To verify the LDAP server with TLS protocol enabled you need a CA "
+ "certificate which signed the server's certificate. Please fill in the URL "
+ "where the CA certificate in the PEM format can be downloaded from."
+-msgstr "TLS प्रोटोकॉल कार्यान्वित असलेल्या LDAP सर्वरास जोडण्यासाठी तुम्हास CA प्रमाणपत्राची गरज आहे ज्याने तुमच्या सर्व्हर प्रमाणपत्रावर स्वाक्षरी केली असेल. कृपया URL मध्ये भरा जेथून CA प्रमाणपत्र PEM स्वरूपात डाउनलोड करण्याजोगी उपलब्ध राहील."
++msgstr ""
++"TLS प्रोटोकॉल कार्यान्वित असलेल्या LDAP सर्वरास जोडण्यासाठी तुम्हास CA "
++"प्रमाणपत्राची गरज आहे ज्याने तुमच्या सर्व्हर प्रमाणपत्रावर स्वाक्षरी केली "
++"असेल. कृपया URL मध्ये भरा जेथून CA प्रमाणपत्र PEM स्वरूपात डाउनलोड "
++"करण्याजोगी उपलब्ध राहील."
+ 
+ #: ../authconfig.glade.h:48
+ msgid "NIS _Server:"
+@@ -1159,13 +1238,17 @@
+ msgid ""
+ "Use Transport Layer Security extension for LDAP as defined by RFC-2830. It "
+ "must not be ticked with ldaps server URI."
+-msgstr "LDAP करीता RFC-2830 नुरूप Transport Layer Security विस्तारणचा वापर करा. त्यास ldaps सर्वर URI शी समजुळवणी करू नका."
++msgstr ""
++"LDAP करीता RFC-2830 नुरूप Transport Layer Security विस्तारणचा वापर करा. "
++"त्यास ldaps सर्वर URI शी समजुळवणी करू नका."
+ 
+ #: ../authconfig.glade.h:59
+ msgid ""
+ "Click this button if you did not download a CA certificate yet or you have "
+ "not set the CA certificate up by other means."
+-msgstr "अजूनही CA प्रमाणपत्र डाऊनलोड केले नसल्यास किंवा इतर पर्याय द्वारे CA प्रमाणपत्र सेट केले नसल्यास या बटणावर क्लिक करा."
++msgstr ""
++"अजूनही CA प्रमाणपत्र डाऊनलोड केले नसल्यास किंवा इतर पर्याय द्वारे CA "
++"प्रमाणपत्र सेट केले नसल्यास या बटणावर क्लिक करा."
+ 
+ #: ../authconfig.glade.h:60
+ msgid "_Download CA Certificate..."
+@@ -1235,7 +1318,9 @@
+ msgid ""
+ "All configuration files which were modified by the previous authentication "
+ "configuration change will be restored from backup. Revert the changes?"
+-msgstr "सर्व संयोजना फाइल जे पूर्वीचे ऑथेंटीकेशन संयोजना बदलशी संपादीत केले गेले प्रतिकृती पासून पुन्ह प्राप्त केले जातील. बदल पूर्वीच्या स्थीतीत न्यायचे?"
++msgstr ""
++"सर्व संयोजना फाइल जे पूर्वीचे ऑथेंटीकेशन संयोजना बदलशी संपादीत केले गेले "
++"प्रतिकृती पासून पुन्ह प्राप्त केले जातील. बदल पूर्वीच्या स्थीतीत न्यायचे?"
+ 
+ #: ../authinfo.py:1050 ../authinfo.py:1943 ../authinfo.py:3343
+ #: ../authinfo.py:3396
+@@ -1251,7 +1336,9 @@
+ msgid ""
+ "Authentication module %s/pam_%s.so is missing. Authentication process might "
+ "not work correctly."
+-msgstr "ऑथेंटीकेशन विभाग %s/pam_%s.so आढळले नाही. ऑथेंटीकेशन क्रिया योग्य प्रकारे चालणार नाही."
++msgstr ""
++"ऑथेंटीकेशन विभाग %s/pam_%s.so आढळले नाही. ऑथेंटीकेशन क्रिया योग्य प्रकारे "
++"चालणार नाही."
+ 
+ #: ../authinfo.py:4322
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/ms.po
+--- a/po/ms.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ms.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Malay (http://www.transifex.com/projects/p/fedora/language/ms/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/nb.po
+--- a/po/nb.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/nb.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/fedora/language/nb/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/nds.po
+--- a/po/nds.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/nds.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -9,7 +9,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Low German (http://www.transifex.com/projects/p/fedora/language/nds/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/nl.po
+--- a/po/nl.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/nl.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -4,7 +4,7 @@
+ # 
+ # Translators:
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+-# Geert Warrink <geert.warrink@onsnet.nu>, 2009, 2010, 2011
++# Geert Warrink <geert.warrink@onsnet.nu>, 2009-2011,2013
+ # Peter van Egdom <p.van.egdom@gmail.com>, 2003, 2004, 2005, 2006, 2007, 2008
+ # Richard E. van der Luit <nippur@fedoraproject.org>, 2012
+ # Tino Meinen <a.t.meinen@chello.nl>, 2003
+@@ -13,8 +13,8 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
+-"Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
++"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
+ "Language-Team: Dutch (http://www.transifex.com/projects/p/fedora/language/nl/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -301,11 +301,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind zal Kerberos 5 gebruiken voor authenticatie"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind zal de standaard authenticatie methode gebruiken"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -562,7 +562,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "De passminlen minimum waarde is 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -570,7 +570,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "De passminclass waarde mag niet negatief zijn"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -578,7 +578,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "De passmaxrepeat waarde mag niet negatief zijn"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -586,7 +586,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "De passmaxclassrepeat waarde mag niet negatief zijn"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -908,7 +908,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "Ongeldige LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/nn.po
+--- a/po/nn.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/nn.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Norwegian Nynorsk (http://www.transifex.com/projects/p/fedora/language/nn/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/or.po
+--- a/po/or.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/or.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -4,8 +4,9 @@
+ # 
+ # Translators:
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Manoj Kumar Giri <giri.manojkr@gmail.com>, 2008
+-# Manoj Kumar Giri <mgiri@redhat.com>, 2008, 2009, 2010, 2011, 2012
++# Manoj Kumar Giri <mgiri@redhat.com>, 2008-2012
+ # Subhransu Behera <arya_subhransu@yahoo.co.in>, 2007
+ # Subhransu Behera <sbehera@redhat.com>, 2006
+ msgid ""
+@@ -13,7 +14,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Oriya (http://www.transifex.com/projects/p/fedora/language/or/)\n"
+ "MIME-Version: 1.0\n"
+@@ -301,11 +302,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind ବୈଧିକରଣ କରିବା ପାଇଁ Kerberos 5 କୁ ବ୍ୟବହାର କରିବ"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind ପୂର୍ବନିର୍ଦ୍ଧାରିତ ବୈଧିକରଣ ପଦ୍ଧତିକୁ ବ୍ୟବହାର କରିବ"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -562,7 +563,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen ର ସର୍ବନିମ୍ନ ମୂଲ୍ୟ ହେଉଛି 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -570,7 +571,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass ର ମୂଲ୍ୟ ଋଣାତ୍ମକ ହେବା ଉଚିତ ନୁହଁ"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -578,7 +579,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat ର ମୂଲ୍ୟ ଋଣାତ୍ମକ ହେବା ଉଚିତ ନୁହଁ"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -586,7 +587,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat ର ମୂଲ୍ୟ ଋଣାତ୍ମକ ହେବା ଉଚିତ ନୁହଁ"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -908,7 +909,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "ଅବୈଧ LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/pa.po
+--- a/po/pa.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/pa.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -3,21 +3,22 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ # 
+ # Translators:
+-# Amanpreet Singh Alam <aalam@redhat.com>, 2004, 2005, 2006
++# Amanpreet Singh Alam <aalam@redhat.com>, 2004-2006
+ # Amanpreet Singh Alam <aalam@redhat.cpm>, 2004
+ # Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005
+ # A S Alam <apbrar@gmail.com>, 2006
+ # Automatically generated <punjablinux@netscape.net>, 2004
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Harmeet Singh Phulewala <harmeetphulewala@yahoo.com>, 2005
+-# Jaswinder Singh <jsingh@redhat.com>, 2007, 2008, 2009, 2010
+-# Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2005, 2006, 2012
++# Jaswinder Singh <jsingh@redhat.com>, 2007-2010
++# Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2005-2006,2012
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:53+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Panjabi (Punjabi) (http://www.transifex.com/projects/p/fedora/language/pa/)\n"
+ "MIME-Version: 1.0\n"
+@@ -29,31 +30,31 @@
+ #: ../authconfig.py:115
+ #, python-format
+ msgid "usage: %s [options]"
+-msgstr "ਸਹੂਲਤ: %s [ਚੋਣ]"
++msgstr "ਵਰਤੋਂ: %s [ਚੋਣਾਂ]"
+ 
+ #: ../authconfig.py:121
+ msgid "show this help message and exit"
+-msgstr "ਇਹ ਸਹਾਇਤਾ ਸੁਨੇਹਾ ਵੇਖਾਓ ਅਤੇ ਬੰਦ ਕਰੋ"
++msgstr "ਇਹ ਸਹਾਇਤਾ ਸੁਨੇਹਾ ਵਿਖਾਓ ਅਤੇ ਬੰਦ ਕਰੋ"
+ 
+ #: ../authconfig.py:124
+ msgid "enable shadowed passwords by default"
+-msgstr "ਮੂਲ ਹੀ ਪਰਛਾਵਾਂ ਪਾਸਵਰਡ ਯੋਗ ਕਰੋ"
++msgstr "ਮੂਲ ਹੀ ਪਰਛਾਵਾਂ ਗੁਪਤ-ਸ਼ਬਦ ਯੋਗ ਕਰੋ"
+ 
+ #: ../authconfig.py:126
+ msgid "disable shadowed passwords by default"
+-msgstr "ਮੂਲ ਪਰਛਾਵਾਂ ਪਾਸਵਰਡ ਅਯੋਗ ਕਰੋ"
++msgstr "ਮੂਲ ਪਰਛਾਵਾਂ ਗੁਪਤ-ਸ਼ਬਦ ਅਯੋਗ ਕਰੋ"
+ 
+ #: ../authconfig.py:128
+ msgid "enable MD5 passwords by default"
+-msgstr "ਮੂਲ ਹੀ MD5 ਪਾਸਵਰਡ ਯੋਗ ਕਰੋ"
++msgstr "ਮੂਲ ਹੀ MD5 ਗੁਪਤ-ਸ਼ਬਦ ਯੋਗ ਕਰੋ"
+ 
+ #: ../authconfig.py:130
+ msgid "disable MD5 passwords by default"
+-msgstr "ਮੂਲ ਹੀ MD5 ਪਾਸਵਰਡ ਅਯੋਗ ਕਰੋ"
++msgstr "ਮੂਲ ਹੀ MD5 ਗੁਪਤ-ਸ਼ਬਦ ਅਯੋਗ ਕਰੋ"
+ 
+ #: ../authconfig.py:133
+ msgid "hash/crypt algorithm for new passwords"
+-msgstr "ਨਵੇਂ ਪਾਸਵਰਡਾਂ ਲਈ hash/crypt ਕਲਨ-ਵਿਧੀ"
++msgstr "ਨਵੇਂ ਗੁਪਤ-ਸ਼ਬਦਾਂ ਲਈ hash/crypt ਕਲਨ-ਵਿਧੀ"
+ 
+ #: ../authconfig.py:136
+ msgid "enable NIS for user information by default"
+@@ -305,11 +306,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind ਕਰਬੋਰਸ 5 ਨੂੰ ਪ੍ਰਮਾਣਿਕ ਕਰਨ ਲਈ ਵਰਤੇਗਾ"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind ਮੂਲ ਪ੍ਰਮਾਣਿਕਤਾ ਢੰਗ ਵਰਤੇਗਾ"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -566,7 +567,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen ਘੱਟ ਤੋਂ ਘੱਟ ਮੁੱਲ 6 ਹੈ"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -574,7 +575,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass ਮੁੱਲ ਰਿਣਾਤਮਕ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -582,7 +583,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat ਮੁੱਲ ਰਿਣਾਤਮਕ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -590,7 +591,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat ਮੁੱਲ ਰਿਣਾਤਮਕ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -908,11 +909,11 @@
+ 
+ #: ../authconfig-gtk.py:158
+ msgid "IPAv2 password"
+-msgstr "IPAv2 ਪਾਸਵਰਡ"
++msgstr "IPAv2 ਗੁਪਤ-ਸ਼ਬਦ"
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "LDAP URI ਅਢੁਕਵਾਂ।"
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+@@ -965,11 +966,11 @@
+ msgid ""
+ "Fingerprint authentication allows you to log in by scanning your finger with"
+ " the fingerprint reader."
+-msgstr "ਫਿੰਗਰਪ੍ਰਿੰਟ ਪ੍ਰਮਾਣਿਕਤਾ ਤੁਹਾਨੂੰ ਇੱਕ ਸਰਟੀਫਿਕੇਟ ਅਤੇ ਸਮਾਰਟ ਕਾਰਡ ਨਾਲ ਸਬੰਧਿਤ ਕੁੰਜੀ ਨਾਲ ਨਾਲ ਲਾਗਇਨ ਕਰਨ ਦਿੰਦਾ ਹੈ।"
++msgstr "ਫਿੰਗਰਪ੍ਰਿੰਟ ਪ੍ਰਮਾਣਿਕਤਾ ਤੁਹਾਨੂੰ ਇੱਕ ਪ੍ਰਮਾਣ-ਪੱਤਰ ਅਤੇ ਸਮਾਰਟ ਕਾਰਡ ਨਾਲ ਸਬੰਧਿਤ ਕੁੰਜੀ ਨਾਲ ਨਾਲ ਲਾਗਇਨ ਕਰਨ ਦਿੰਦਾ ਹੈ।"
+ 
+ #: ../authconfig.glade.h:12
+ msgid "Enable _local access control"
+-msgstr "ਲੋਕਲ ਐਕਸੈੱਸ ਕੰਟਰੋਲ ਯੋਗ ਕਰੋ(_L)"
++msgstr "ਸਥਾਨਕ ਐਕਸੈੱਸ ਕੰਟਰੋਲ ਯੋਗ ਕਰੋ(_L)"
+ 
+ #: ../authconfig.glade.h:13
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/pl.po
+--- a/po/pl.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/pl.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -5,7 +5,7 @@
+ # Translators:
+ # Bartosz Sapijaszko <bartosz@sapek.net>, 2002
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+-# Piotr Drąg <piotrdrag@gmail.com>, 2011, 2012
++# Piotr Drąg <piotrdrag@gmail.com>, 2011-2013
+ # Tomasz Chrzczonowicz <chrzczonowicz@gmail.com>, 2009
+ # Tom Berner <tom@lodz.pl>, 2005
+ # Tom Berner <tom@man.lodz.pl>, 2004
+@@ -14,8 +14,8 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
+-"Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
++"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+ "Language-Team: Polish (http://www.transifex.com/projects/p/fedora/language/pl/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -302,11 +302,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind użyje Kerberos 5 do uwierzytelniania"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind użyje domyślnej metody uwierzytelniania"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -563,7 +563,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "Minimalna wartość opcji passminlen wynosi 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -571,7 +571,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "Wartość opcji passminclass nie może być liczbą ujemną"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -579,7 +579,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "Wartość opcji passmaxrepeat nie może być liczbą ujemną"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -587,7 +587,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "Wartość opcji passmaxclassrepeat nie może być liczbą ujemną"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -909,7 +909,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "Nieprawidłowy adres URI LDAP."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/pt.po
+--- a/po/pt.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/pt.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Portuguese (http://www.transifex.com/projects/p/fedora/language/pt/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/pt_BR.po
+--- a/po/pt_BR.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/pt_BR.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -5,22 +5,29 @@
+ # Translators:
+ # Andre Nazario de Souza <samoied@softwarelivre.sc.gov.br>, 2004
+ # Cleiton cleitonlima <cleitoncfl@yahoo.com.br>, 2011
++# Cleiton cleitonlima <cleitonlima@lavabit.com>, 2011
+ # cristiano furtado <jasonfedora@gmail.com>, 2006
+ # Daniel Brooke Peig <daniel@brookepeig.com>, 2003
+-# David Barzilay <barzilay@redhat.com>, 2003, 2004
++# David Barzilay <barzilay@redhat.com>, 2003-2004
++# diegobz1 <diegobz@gmail.com>, 2006
++# Diego Búrigo Zacarão <diegobz@projetofedora.org>, 2008
++# Dimitris Glezos <glezos@indifex.com>, 2011
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+ # Fabio Viero <fviero@gmail.com>, 2005
+-# Glaucia Cintra <gcintra@redhat.com>, 2010
++# Glaucia Freitas <gcintra@redhat.com>, 2010
+ # Glaucia Freitas <gcintra@redhat.com>, 2012
+-# Igor Pires Soares <igor@projetofedora.org>, 2006, 2007, 2008
+-# Rodrigo Padula de Oliveira <rodrigopadula@gmail.com>, 2005, 2006
+-# Taylon Silmer <taylonsilva@gmail.com>, 2008, 2009
++# Igor Pires Soares <igor@projetofedora.org>, 2006-2008
++# Marcelo Barbosa <mr.marcelo.barbosa@gmail.com>, 2013
++# Rodrigo Padula de Oliveira <rodrigopadula@gmail.com>, 2005-2006
++# Taylon Silmer <taylonsilva@gmail.com>, 2008-2009
++# Taylon Silmer <taylon@taylon.eti.br>, 2008-2010
++# Valnir Ferreira Jr. <vferreir@redhat.com>, 2006
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/fedora/language/pt_BR/)\n"
+ "MIME-Version: 1.0\n"
+@@ -308,11 +315,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind usará o Kerberos 5 para autenticar"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind usará o método de autenticação padrão"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -569,7 +576,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "O valor mínimo do passminlen é 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -577,7 +584,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "O valor do passminclass não pode ser negativo"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -585,7 +592,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "O valor do passmaxrepeat não pode ser negativo"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -593,7 +600,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "O valor do passmaxclassrepeat não pode ser negativo"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -915,7 +922,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "URI do LDAP inválida"
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/ro.po
+--- a/po/ro.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ro.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -9,7 +9,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Romanian (http://www.transifex.com/projects/p/fedora/language/ro/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/ru.po
+--- a/po/ru.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ru.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -3,13 +3,15 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ # 
+ # Translators:
+-# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008
++# Andrew Martynov <andrewm@inventa.ru>, 2004-2006,2008
+ # Andrey Gushchin <neogan74@gmail.com>, 2012
+ # Artyom Kunyov <artkun@guitarplayer.ru>, 2012
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+-# Leonid Kanter <leon@asplinux.ru>, 2003, 2004
++# Dimitris Glezos <glezos@transifex.com>, 2011
++# Leonid Kanter <leon@asplinux.ru>, 2003-2004
+ # Leonid Kanter <leon@geon.donetsk.ua>, 2003
+-# Yulia <ypoyarko@redhat.com>, 2006, 2008, 2010
++# Yulia <ypoyarko@redhat.com>, 2006,2008,2010
++# Yulia <yulia.poyarkova@redhat.com>, 2012
+ # Yulia <yulia.poyarkova@redhat.com>, 2012
+ # Игорь Горбунов <igor.gorbounov@gmail.com>, 2011
+ msgid ""
+@@ -17,7 +19,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:53+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Russian (http://www.transifex.com/projects/p/fedora/language/ru/)\n"
+ "MIME-Version: 1.0\n"
+@@ -305,11 +307,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind использует Kerberos 5"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind использует стандартный метод аутентификации"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -566,7 +568,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "Минимальное значение passminlen равно 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -574,7 +576,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "Значение passminclass  не может быть отрицательным"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -582,7 +584,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "Значение passmaxrepeat  не может быть отрицательным"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -590,7 +592,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "Значение passmaxclassrepeat  не может быть отрицательным"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -912,7 +914,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "Неверный URI LDAP."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+@@ -921,7 +923,7 @@
+ 
+ #: ../authconfig-gtk.py:543
+ msgid "Use the \"Join Domain\" button to join the IPAv2 domain."
+-msgstr "Используйте кнопку \"Подключить домен\" для подключения к домену  IPAv2."
++msgstr "Для подключения домена к IPAv2 нажмите «Войти в домен»."
+ 
+ #: ../authconfig.glade.h:2
+ msgid ""
+@@ -1206,11 +1208,11 @@
+ 
+ #: ../authconfig.glade.h:69
+ msgid "IPA _Domain:"
+-msgstr "IPA_Домен:"
++msgstr "_Домен IPA:"
+ 
+ #: ../authconfig.glade.h:70
+ msgid "IPA _Server:"
+-msgstr "IPA_Сервер:"
++msgstr "_Сервер IPA:"
+ 
+ #: ../authconfig.glade.h:71
+ msgid "IPA R_ealm:"
+@@ -1218,7 +1220,7 @@
+ 
+ #: ../authconfig.glade.h:72
+ msgid "Do not configure _NTP"
+-msgstr "Не конфигурировать _NTP"
++msgstr "Не нас_траивать NTP"
+ 
+ #: ../authconfig.glade.h:73
+ msgid "Card Re_moval Action:"
+@@ -1236,7 +1238,7 @@
+ msgid ""
+ "All configuration files which were modified by the previous authentication "
+ "configuration change will be restored from backup. Revert the changes?"
+-msgstr "Будут восстановлены все файлы конфигурации, которые были модифицированы предыдущими изменениями настроек. Восстановить файлы?"
++msgstr "Будут восстановлены файлы конфигурации, которые были модифицированы предыдущими изменениями настроек. Восстановить файлы?"
+ 
+ #: ../authinfo.py:1050 ../authinfo.py:1943 ../authinfo.py:3343
+ #: ../authinfo.py:3396
+diff -r f19bc25f603f -r 920abcd85bbd po/si.po
+--- a/po/si.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/si.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Sinhala (http://www.transifex.com/projects/p/fedora/language/si/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/sk.po
+--- a/po/sk.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/sk.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -12,7 +12,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Slovak (http://www.transifex.com/projects/p/fedora/language/sk/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/sl.po
+--- a/po/sl.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/sl.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Slovenian (http://www.transifex.com/projects/p/fedora/language/sl/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/sq.po
+--- a/po/sq.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/sq.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Albanian (http://www.transifex.com/projects/p/fedora/language/sq/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/sr.po
+--- a/po/sr.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/sr.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Serbian (http://www.transifex.com/projects/p/fedora/language/sr/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/sr@latin.po
+--- a/po/sr@latin.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/sr@latin.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Serbian (Latin) (http://www.transifex.com/projects/p/fedora/language/sr@latin/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/sv.po
+--- a/po/sv.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/sv.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -6,14 +6,14 @@
+ # Christian Rose <menthos@menthos.com>, 2000
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+ # Göran Uddeborg <goeran@uddeborg.se>, 2011
+-# Magnus Larsson <fedoratrans@gmail.com>, 2006, 2007, 2009
++# fedoratrans <fedoratrans@gmail.com>, 2006-2007,2009
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
+-"Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
++"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
+ "Language-Team: Swedish (http://www.transifex.com/projects/p/fedora/language/sv/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -300,11 +300,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "windbind kommer använda Kerberos 5 för att autentisera"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind kommer använda standardautenticeringsmetoden"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -561,7 +561,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "Minsta värdet på passminlen är 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -569,7 +569,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "Värdet på passminclass får inte vara negativt"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -577,7 +577,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "Värdet på passmaxrepeat får inte vara negativt"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -585,7 +585,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "Värdet på passmaxclassrepeat får inte vara negativt"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -907,7 +907,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "Felaktig LDAP-URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/ta.po
+--- a/po/ta.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ta.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,13 +11,13 @@
+ # Hariram Aatreya <hari@localhost.localdomain>, 2003
+ # Jayaradha N <jaya@pune.redhat.com>, 2004,2006
+ # shkumar <shkumar@redhat.com>, 2012
+-# shkumar <shkumar@redhat.com>, 2012
++# shkumar <shkumar@redhat.com>, 2012-2013
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Tamil (http://www.transifex.com/projects/p/fedora/language/ta/)\n"
+ "MIME-Version: 1.0\n"
+@@ -305,11 +305,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind அங்கீகரிப்புக்கு கெர்பரோஸ் 5 ஐப் பயன்படுத்தும்"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind முன்னிருப்பு அங்கீகரிப்பு முறையைப் பயன்படுத்தும்"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -566,7 +566,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen குறைந்தபட்ச மதிப்பு 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -574,7 +574,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass மதிப்பு எதிர்க்குறி எண்ணாக இருக்கக்கூடாது"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -582,7 +582,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat மதிப்பு எதிர்க்குறி எண்ணாக இருக்கக்கூடாது"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -590,7 +590,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat மதிப்பு எதிர்க்குறி எண்ணாக இருக்கக்கூடாது"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -912,7 +912,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "செல்லுபடியாகாத LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/te.po
+--- a/po/te.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/te.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -4,15 +4,17 @@
+ # 
+ # Translators:
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Krishnababu Krothapalli <kkrothap@redhat.com>, 2007, 2008, 2009, 2010
+-# Krishnababu Krothapalli <krisnababu@gmail.com>, 2011, 2012
++# Krishnababu Krothapalli <kkrothap@redhat.com>, 2007-2010
++# Krishnababu Krothapalli <krisnababu@gmail.com>, 2011-2012
+ # Sree Ganesh <sthottem@redhat.com>, 2006
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Telugu (http://www.transifex.com/projects/p/fedora/language/te/)\n"
+ "MIME-Version: 1.0\n"
+@@ -300,11 +302,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "ధృవీకరించుటకు విన్‌బైండ్ కేర్బరోస్ 5 వుపయోగించును"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "విన్‌బైండ్ అప్రమేయ ధృవీకరణ పద్దతి వుపయోగించును"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -561,7 +563,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen కనిష్ట విలువ 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -569,7 +571,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass విలువ తప్పకుండా ఋణవిలువ కాకూడదు"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -577,7 +579,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat విలువ తప్పకుండా ఋణవిలువ కాకూడదు"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -585,7 +587,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat విలువ తప్పకుండా ఋణవిలువ కాకూడదు"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -907,7 +909,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "చెల్లని LDAP URI."
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/tg.po
+--- a/po/tg.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/tg.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -9,7 +9,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Tajik (http://www.transifex.com/projects/p/fedora/language/tg/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/tr.po
+--- a/po/tr.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/tr.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -5,6 +5,7 @@
+ # Translators:
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+ # Egemen Metin Turan <mturan@aegee-ankara.org>, 2007
++# Quaghan <erdemaydogann@gmail.com>, 2013
+ # Ismail ASCI <ismail.asci@fedora-tr.org>, 2006
+ # Onur Baysan <onurbaysan@gmail.com>, 2011
+ msgid ""
+@@ -12,8 +13,8 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
+-"Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
++"Last-Translator: Quaghan <erdemaydogann@gmail.com>\n"
+ "Language-Team: Turkish (http://www.transifex.com/projects/p/fedora/language/tr/)\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+@@ -113,11 +114,11 @@
+ 
+ #: ../authconfig.py:161
+ msgid "enable use of RFC-2307bis schema for LDAP user information lookups"
+-msgstr ""
++msgstr "RFC-2307bis şemasının kullanımını LDAP kullanıcı bilgi sorgulamaları için aktifleştir."
+ 
+ #: ../authconfig.py:163
+ msgid "disable use of RFC-2307bis schema for LDAP user information lookups"
+-msgstr ""
++msgstr "RFC-2307bis şemasının kullanımını LDAP kullanıcı bilgi sorgulamaları için devre dışı bırak."
+ 
+ #: ../authconfig.py:164
+ msgid "<URL>"
+@@ -129,11 +130,11 @@
+ 
+ #: ../authconfig.py:168
+ msgid "enable authentication with smart card by default"
+-msgstr "kimlik denetimi öntanımlı olarak Akıllıkart ile yapılsın"
++msgstr "Varsayılan yetkilendirmeyi akıllı kart ile yapmayı etkinleştir"
+ 
+ #: ../authconfig.py:170
+ msgid "disable authentication with smart card by default"
+-msgstr "kimlik denetimleri öntanımlı olarak Akıllıkart ile yapılmasın"
++msgstr "Varsayılan yetkilendirmeyi akıllı kart ile yapmayı devre dışı bırak"
+ 
+ #: ../authconfig.py:172
+ msgid "require smart card for authentication by default"
+@@ -157,19 +158,19 @@
+ 
+ #: ../authconfig.py:182
+ msgid "enable authentication with fingerprint readers by default"
+-msgstr ""
++msgstr "varsayılan yetkilendirmeyi parmak izi okuyucu ile yapmayı etkinleştir"
+ 
+ #: ../authconfig.py:184
+ msgid "disable authentication with fingerprint readers by default"
+-msgstr ""
++msgstr "varsayılan yetkilendirmeyi parmak izi okuyucu ile yapmayı devre dışı bırak"
+ 
+ #: ../authconfig.py:187
+ msgid "enable automatic per-user ecryptfs"
+-msgstr ""
++msgstr "Her kullanıcı için otomatik ecryptfs etkinleştir"
+ 
+ #: ../authconfig.py:189
+ msgid "disable automatic per-user ecryptfs"
+-msgstr ""
++msgstr "Her kullanıcı için otomatik ecryptfs devre dışı bırak"
+ 
+ #: ../authconfig.py:192
+ msgid "enable kerberos authentication by default"
+diff -r f19bc25f603f -r 920abcd85bbd po/uk.po
+--- a/po/uk.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/uk.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -11,7 +11,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:33+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+ "Language-Team: Ukrainian (http://www.transifex.com/projects/p/fedora/language/uk/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/ur.po
+--- a/po/ur.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/ur.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -9,7 +9,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Urdu (http://www.transifex.com/projects/p/fedora/language/ur/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/vi.po
+--- a/po/vi.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/vi.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -10,7 +10,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Vietnamese (http://www.transifex.com/projects/p/fedora/language/vi/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/zh_CN.po
+--- a/po/zh_CN.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/zh_CN.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -5,12 +5,15 @@
+ # Translators:
+ # CyrusHMH <cyrushmh@vip.qq.com>, 2009
+ # Dimitris Glezos <glezos@transifex.com>, 2011
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Huan Chen <chenhuan126@126.com>, 2011
+-# Leah Liu <lliu@redhat.com>, 2007, 2008, 2009, 2010
+-# Leah Liu <weliu@redhat.com>, 2005, 2006
++# Leah Liu <lliu@redhat.com>, 2007-2010
++# Leah Liu <weliu@redhat.com>, 2005-2006
+ # Tommy He <lovenemesis@gmail.com>, 2011
+ # Mike Manilone <zhtx10@gmail.com>, 2011
+-# Sarah Wang <sarahs@redhat.com>, 2003, 2004, 2005
++# Mike Manilone <zhtx10@gmail.com>, 2011
++# Sarah Wang <sarahs@redhat.com>, 2003-2005
++# Tommy He <lovenemesis@gmail.com>, 2011
+ # Wei Liu <LLIU@REDHAT.COM>, 2012
+ # Xi Huang <xhuang@redhat.com>, 2006
+ msgid ""
+@@ -18,7 +21,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/fedora/language/zh_CN/)\n"
+ "MIME-Version: 1.0\n"
+@@ -306,11 +309,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind 将采用 Kerberos 5 进行认证"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind 将采用默认的认证方法"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -567,7 +570,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen 的最小值为 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -575,7 +578,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass 值不得为负数"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -583,7 +586,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat 值不得为负数"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -591,7 +594,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat 值不得为负数"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -913,7 +916,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "无效 LDAP URI。"
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""
+diff -r f19bc25f603f -r 920abcd85bbd po/zh_HK.po
+--- a/po/zh_HK.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/zh_HK.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -8,7 +8,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-11-20 11:01+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Chinese (Hong Kong) (http://www.transifex.com/projects/p/fedora/language/zh_HK/)\n"
+ "MIME-Version: 1.0\n"
+diff -r f19bc25f603f -r 920abcd85bbd po/zh_TW.po
+--- a/po/zh_TW.po	Mon Nov 25 15:03:15 2013 +0100
++++ b/po/zh_TW.po	Thu Dec 05 13:57:03 2013 +0100
+@@ -3,12 +3,13 @@
+ # This file is distributed under the same license as the PACKAGE package.
+ # 
+ # Translators:
+-# Ben Wu <hpwu@redhat.com>, 2002, 2003, 2004
+-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2011, 2012
+-# Chester Cheng <ccheng@redhat.com>, 2004, 2005, 2006
++# Ben Wu <hpwu@redhat.com>, 2002-2004
++# Cheng-Chia Tseng <pswo10680@gmail.com>, 2011-2012
++# Chester Cheng <ccheng@redhat.com>, 2004-2006
++# Dimitris Glezos <glezos@transifex.com>, 2011
+ # Dimitris Glezos <glezos@transifex.com>, 2011
+ # Terry Chuang <tchuang at redhat>, 2010
+-# Terry Chuang <tchuang@redhat.com>, 2008, 2009, 2012
++# Terry Chuang <tchuang@redhat.com>, 2008-2009,2012
+ # Waika Liu <wliu@redhat.com>, 2005
+ # Walter Cheuk <wwycheuk@netvigator.com>, 2005
+ msgid ""
+@@ -16,7 +17,7 @@
+ "Project-Id-Version: Authconfig\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2013-11-01 15:24+0100\n"
+-"PO-Revision-Date: 2013-11-01 14:28+0000\n"
++"PO-Revision-Date: 2013-12-05 12:54+0000\n"
+ "Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
+ "Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/fedora/language/zh_TW/)\n"
+ "MIME-Version: 1.0\n"
+@@ -304,11 +305,11 @@
+ 
+ #: ../authconfig.py:245
+ msgid "winbind will use Kerberos 5 to authenticate"
+-msgstr ""
++msgstr "winbind 會使用 Kerberos 5 作為身份認證方法"
+ 
+ #: ../authconfig.py:247
+ msgid "winbind will use the default authentication method"
+-msgstr ""
++msgstr "winbind 會使用預設的身份認證方法"
+ 
+ #: ../authconfig.py:249
+ msgid "join the winbind domain or ads realm now as this administrator"
+@@ -565,7 +566,7 @@
+ 
+ #: ../authconfig.py:522
+ msgid "The passminlen minimum value is 6"
+-msgstr ""
++msgstr "passminlen 的最小值為 6"
+ 
+ #: ../authconfig.py:526
+ msgid "The passminlen option value is not an integer"
+@@ -573,7 +574,7 @@
+ 
+ #: ../authconfig.py:534
+ msgid "The passminclass value must not be negative"
+-msgstr ""
++msgstr "passminclass 必須為負值"
+ 
+ #: ../authconfig.py:538
+ msgid "The passminclass option value is not an integer"
+@@ -581,7 +582,7 @@
+ 
+ #: ../authconfig.py:546
+ msgid "The passmaxrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxrepeat 的值必須為正數"
+ 
+ #: ../authconfig.py:550
+ msgid "The passmaxrepeat option value is not an integer"
+@@ -589,7 +590,7 @@
+ 
+ #: ../authconfig.py:558
+ msgid "The passmaxclassrepeat value must not be negative"
+-msgstr ""
++msgstr "passmaxclassrepeat 的值必須為正數"
+ 
+ #: ../authconfig.py:562
+ msgid "The passmaxclassrepeat option value is not an integer"
+@@ -911,7 +912,7 @@
+ 
+ #: ../authconfig-gtk.py:533 ../authinfo.py:1639
+ msgid "Invalid LDAP URI."
+-msgstr ""
++msgstr "不合乎規定的 LDAP URI。"
+ 
+ #: ../authconfig-gtk.py:536
+ msgid ""

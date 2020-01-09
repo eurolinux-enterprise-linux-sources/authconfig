@@ -1,0 +1,19 @@
+Probing:
+  * Probing DNS for Kerberos and LDAP configuration.  To be added as a button
+    for one-time use.
+    - Use SRV RRs for LDAP, a la nss_ldap:
+      _ldap._tcp.<DOMAIN> = priority weight port server (see RFC 2782)
+      Convert <DOMAIN> to base DN using DC components in the way just
+      about everything does (example.com -> "dc=example,dc=com")
+    - Use SRV RRs for Kerberos realms, a la locate_kdc.c:
+      _kerberos._udp.<REALM> = priority weight port server (see RFC 2782)
+      We have the realm, a server name, and the port number.  Use all of them.
+      _kerberos-master._udp.<REALM> = priority weight port server (see RFC 2782)
+      We have the realm, the admin server name, and the port number.
+  * Probing for NIS servers and domains using broadcast RPC (servers can be done
+    by calling the NULL function for the ypserv program, and we've only got
+    YPPROC_DOMAIN for checking if a server supports a given domain).  To be
+    added as a button for one-time use.
+  * An easy-to-parse way to dump what we think the current configuration is (for
+    anaconda to use if we want to add probing for default options at
+    install-time).

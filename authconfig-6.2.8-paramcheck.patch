@@ -1,0 +1,26 @@
+diff -up authconfig-6.2.8/authconfig.glade.paramcheck authconfig-6.2.8/authconfig.glade
+--- authconfig-6.2.8/authconfig.glade.paramcheck	2013-11-01 16:08:01.000000000 +0100
++++ authconfig-6.2.8/authconfig.glade	2013-11-01 16:48:44.384106338 +0100
+@@ -638,7 +638,7 @@
+                                         <property name="secondary_icon_activatable">False</property>
+                                         <property name="primary_icon_sensitive">True</property>
+                                         <property name="secondary_icon_sensitive">True</property>
+-                                        <property name="adjustment">9 5 30 1 10 0</property>
++                                        <property name="adjustment">9 6 30 1 10 0</property>
+                                         <property name="snap_to_ticks">True</property>
+                                         <property name="numeric">True</property>
+                                       </widget>
+diff -up authconfig-6.2.8/authconfig.py.paramcheck authconfig-6.2.8/authconfig.py
+--- authconfig-6.2.8/authconfig.py.paramcheck	2013-11-01 16:08:01.000000000 +0100
++++ authconfig-6.2.8/authconfig.py	2013-11-01 16:47:30.468477475 +0100
+@@ -534,6 +534,10 @@ class Authconfig:
+             				self.printError(_("The passminclass value must not be negative"))
+             				self.options.passminclass = None
+             				self.retval = 3
++            			if val > 4:
++            				self.printError(_("The passminclass value must not be higher than 4"))
++            				self.options.passminclass = None
++            				self.retval = 3
+                 except ValueError:
+                         self.printError(_("The passminclass option value is not an integer"))
+                         self.options.passminclass = None

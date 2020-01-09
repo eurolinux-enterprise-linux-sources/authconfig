@@ -1,0 +1,44 @@
+diff -up authconfig-6.2.8/authinfo.py.krb5-include authconfig-6.2.8/authinfo.py
+--- authconfig-6.2.8/authinfo.py.krb5-include	2015-07-03 11:52:58.000000000 +0200
++++ authconfig-6.2.8/authinfo.py	2015-07-03 12:47:44.993864700 +0200
+@@ -109,6 +109,8 @@ PATH_PAM_SSS = AUTH_MODULE_DIR + "/pam_s
+ 
+ PATH_LIBSSS_AUTOFS = "/usr" + LIBDIR + "/sssd/modules/libsss_autofs.so"
+ 
++PATH_KRB5_INCLUDEDIR = "/var/lib/sss/pubconf/krb5.include.d/"
++
+ PATH_WINBIND_NET = "/usr/bin/net"
+ PATH_IPA_CLIENT_INSTALL = "/usr/sbin/ipa-client-install"
+ 
+@@ -3022,6 +3024,8 @@ class AuthInfo:
+ 		wroteourdomrealm = False
+ 		wrotedomrealm = False
+ 		wrotedomrealm2 = False
++		# No dir -> no incdir line, set as if already written
++		wroteincdir = not os.access(PATH_KRB5_INCLUDEDIR, os.R_OK)		
+ 		section = ""
+ 		subsection = ""
+ 		f = None
+@@ -3043,6 +3047,12 @@ class AuthInfo:
+ 			for line in f.file:
+ 				ls = line.strip()
+ 
++				if matchLine(ls, "includedir " + PATH_KRB5_INCLUDEDIR):
++					if not wroteincdir:
++						wroteincdir = True
++					else:
++						# already written or should be removed
++						continue
+ 				# If this is the "kdc" in our realm, replace it with
+ 				# the values we now have.
+ 				if (section == "realms" and subsection and subsection == self.kerberosRealm
+@@ -3132,6 +3142,9 @@ class AuthInfo:
+ 					continue
+ 				# If it's the beginning of a section, record its name.
+ 				if matchLine(ls, "["):
++					if not wroteincdir:
++						output += "includedir " + PATH_KRB5_INCLUDEDIR + "\n"
++						wroteincdir = True
+ 					# If the previous section was "realms", and we didn't
+ 					# see ours, write our realm out.
+ 					if (section == "realms" and self.kerberosRealm
