@@ -1,0 +1,19 @@
+# HG changeset patch
+# User Tomas Mraz <tmraz@redhat.com>
+# Date 1298279046 -3600
+# Node ID b68a7900a700f4ede28965f4e309f4377199b6d0
+# Parent  7b4ce1cf235ef4b0b132c86253bc76cb96777130
+krb5_kdcip is deprecated for krb5_server
+
+diff -r 7b4ce1cf235e -r b68a7900a700 authinfo.py
+--- a/authinfo.py	Mon Feb 21 10:00:50 2011 +0100
++++ b/authinfo.py	Mon Feb 21 10:04:06 2011 +0100
+@@ -1167,7 +1167,7 @@
+ 	'enableLDAPS': 'ldap_id_use_start_tls',
+ 	'ldapSchema': 'ldap_schema',
+ 	'ldapCacertDir': 'ldap_tls_cacertdir',
+-	'kerberosKDC': 'krb5_kdcip',
++	'kerberosKDC': 'krb5_server',
+ 	'kerberosAdminServer': 'krb5_kpasswd',
+ 	'kerberosRealm': 'krb5_realm',
+ 	'enableCacheCreds': 'cache_credentials'}

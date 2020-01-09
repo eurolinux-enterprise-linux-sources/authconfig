@@ -1,7 +1,7 @@
 Summary: Command line tool for setting up authentication from network services
 Name: authconfig
 Version: 6.1.12
-Release: 5%{?dist}
+Release: 10%{?dist}
 License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -13,6 +13,13 @@ Patch2: authconfig-6.1.12-translations.patch
 Patch3: authconfig-6.1.12-rhel6.patch
 Patch4: authconfig-6.1.12-cachecreds.patch
 Patch5: authconfig-6.1.12-nox.patch
+Patch6: authconfig-6.1.12-ipav2join.patch
+Patch7: authconfig-6.1.12-exceptions.patch
+Patch8: authconfig-6.1.12-manpage-obsolete.patch
+Patch9: authconfig-6.1.12-krb5-server.patch
+Patch10: authconfig-6.1.12-savebackup.patch
+Patch11: authconfig-6.1.12-services.patch
+Patch12: authconfig-6.1.12-translations-update.patch
 Requires: newt-python, pam >= 0.99.10.0, python
 Conflicts: pam_krb5 < 1.49, samba-common < 3.0, samba-client < 3.0
 Conflicts: nss_ldap < 254, sssd < 0.99.1
@@ -44,6 +51,13 @@ authentication schemes.
 %patch3 -p1 -b .rhel6
 %patch4 -p1 -b .cachecreds
 %patch5 -p1 -b .nox
+%patch6 -p1 -b .ipav2join
+%patch7 -p1 -b .exceptions
+%patch8 -p1 -b .obsolete
+%patch9 -p1 -b .krb5-server
+%patch10 -p1 -b .savebackup
+%patch11 -p1 -b .services
+%patch12 -p1 -b .tupdate
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -fPIC"; export CFLAGS
@@ -120,6 +134,21 @@ authconfig --update --nostart >/dev/null 2>&1 || :
 %{_datadir}/icons/hicolor/48x48/apps/system-config-authentication.*
 
 %changelog
+* Mon May 21 2012 Tomas Mraz <tmraz@redhat.com> - 6.1.12-10
+- updated translations (#818219)
+
+* Tue Mar 27 2012 Tomas Mraz <tmraz@redhat.com> - 6.1.12-7
+- detect error exit value from ipa-client-install
+- use --noac option with ipa-client-install
+- add sss to the services entry in nsswitch.conf (#804615)
+
+* Mon Mar  5 2012 Tomas Mraz <tmraz@redhat.com> - 6.1.12-6
+- add support for joining IPAv2 domains
+- fix exception handling (#689717)
+- drop obsolete configuration files from manual page
+- use krb5_server instead of obsolete krb5_kdcip (#749700)
+- do not signal error on saving backups for missing config files (#755975)
+
 * Fri Mar 25 2011 Tomas Mraz <tmraz@redhat.com> - 6.1.12-5
 - prevent the traceback also when std file descriptors are not
   tty, print out an error message instead of executing authconfig

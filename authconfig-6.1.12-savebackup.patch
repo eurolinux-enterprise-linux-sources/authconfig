@@ -1,0 +1,27 @@
+# HG changeset patch
+# User Tomas Mraz <tmraz@redhat.com>
+# Date 1321977445 -3600
+# Node ID 112846b1fb13e6433eb3c318b3ccdee02171a595
+# Parent  ad8ac2ee62d2d9e821de91f5bc4bd2195ef166c4
+Do not signal error on missing configuration files during backup save.
+
+diff -r ad8ac2ee62d2 -r 112846b1fb13 authinfo.py
+--- a/authinfo.py	Tue Nov 15 10:31:59 2011 +0100
++++ b/authinfo.py	Tue Nov 22 16:57:25 2011 +0100
+@@ -1051,10 +1051,15 @@
+ 		rv = True
+ 		srcfd = None
+ 		destfile = None
++
++		try:
++			srcfd = openfdLocked(src, os.O_RDONLY, 0)
++		except IOError:
++			return True
++
+ 		try:
+ 			destfile = SafeFile(dest, 0644)
+ 			destfile.rewind()
+-			srcfd = openfdLocked(src, os.O_RDONLY, 0)
+ 		except IOError:
+ 			rv = False
+ 		try:

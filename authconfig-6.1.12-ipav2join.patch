@@ -1,0 +1,3360 @@
+diff -up authconfig-6.1.12/authconfig.glade.ipav2join authconfig-6.1.12/authconfig.glade
+--- authconfig-6.1.12/authconfig.glade.ipav2join	2010-12-23 17:38:53.000000000 +0100
++++ authconfig-6.1.12/authconfig.glade	2012-03-27 13:48:25.970060290 +0200
+@@ -1,139 +1,60 @@
+-<?xml version="1.0"?>
++<?xml version="1.0" encoding="UTF-8"?>
+ <glade-interface>
+   <!-- interface-requires gtk+ 2.16 -->
+   <!-- interface-naming-policy toplevel-contextual -->
+-  <widget class="GtkDialog" id="joinwbdomain">
++  <widget class="GtkDialog" id="authconfig">
+     <property name="visible">True</property>
+-    <property name="title" translatable="yes">Joining Winbind Domain</property>
++    <property name="can_focus">False</property>
++    <property name="title" translatable="yes">Authentication Configuration</property>
+     <property name="resizable">False</property>
+-    <property name="modal">True</property>
+     <property name="icon_name">system-config-authentication</property>
+     <property name="type_hint">dialog</property>
+     <child internal-child="vbox">
+-      <widget class="GtkVBox" id="vbox6">
++      <widget class="GtkVBox" id="dialog-vbox9">
+         <property name="visible">True</property>
+-        <child>
+-          <widget class="GtkTable" id="table19">
++        <property name="can_focus">False</property>
++        <child internal-child="action_area">
++          <widget class="GtkHButtonBox" id="dialog-action_area9">
+             <property name="visible">True</property>
+-            <property name="border_width">12</property>
+-            <property name="n_rows">3</property>
+-            <property name="n_columns">2</property>
+-            <property name="column_spacing">12</property>
+-            <property name="row_spacing">12</property>
+-            <child>
+-              <widget class="GtkEntry" id="joinuser">
+-                <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-              </widget>
+-              <packing>
+-                <property name="left_attach">1</property>
+-                <property name="right_attach">2</property>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
+-                <property name="y_options"></property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkLabel" id="label31">
+-                <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">Domain _administrator:</property>
+-                <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">joinuser</property>
+-              </widget>
+-              <packing>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkLabel" id="domain2">
+-                <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">Domain:</property>
+-                <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-              </widget>
+-              <packing>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkLabel" id="label33">
+-                <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">_Password:</property>
+-                <property name="use_underline">True</property>
+-                <property name="mnemonic_widget">joinpassword</property>
+-              </widget>
+-              <packing>
+-                <property name="top_attach">2</property>
+-                <property name="bottom_attach">3</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
+-              </packing>
+-            </child>
++            <property name="can_focus">False</property>
++            <property name="layout_style">end</property>
+             <child>
+-              <widget class="GtkEntry" id="joinpassword">
++              <widget class="GtkButton" id="revert">
++                <property name="label">gtk-revert-to-saved</property>
++                <property name="response_id">1</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="visibility">False</property>
+-              </widget>
+-              <packing>
+-                <property name="left_attach">1</property>
+-                <property name="right_attach">2</property>
+-                <property name="top_attach">2</property>
+-                <property name="bottom_attach">3</property>
+-                <property name="y_options"></property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkLabel" id="domain">
+-                <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label">EXAMPLE.COM</property>
+-                <property name="wrap">True</property>
++                <property name="receives_default">True</property>
++                <property name="has_tooltip">True</property>
++                <property name="tooltip" translatable="yes">Restore the configuration files backed up before the previous configuration change</property>
++                <property name="use_stock">True</property>
+               </widget>
+               <packing>
+-                <property name="left_attach">1</property>
+-                <property name="right_attach">2</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">0</property>
++                <property name="secondary">True</property>
+               </packing>
+             </child>
+-          </widget>
+-          <packing>
+-            <property name="position">2</property>
+-          </packing>
+-        </child>
+-        <child internal-child="action_area">
+-          <widget class="GtkHButtonBox" id="hbuttonbox1">
+-            <property name="visible">True</property>
+-            <property name="layout_style">end</property>
+             <child>
+-              <widget class="GtkButton" id="button1">
++              <widget class="GtkButton" id="button9">
+                 <property name="label">gtk-cancel</property>
+                 <property name="response_id">-6</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+                 <property name="can_default">True</property>
+-                <property name="has_default">True</property>
+                 <property name="receives_default">False</property>
+                 <property name="use_stock">True</property>
+               </widget>
+               <packing>
+                 <property name="expand">False</property>
+                 <property name="fill">False</property>
+-                <property name="position">0</property>
++                <property name="position">1</property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkButton" id="button2">
+-                <property name="label">gtk-ok</property>
++              <widget class="GtkButton" id="apply">
++                <property name="label">gtk-apply</property>
+                 <property name="response_id">-5</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+@@ -145,315 +66,56 @@
+               <packing>
+                 <property name="expand">False</property>
+                 <property name="fill">False</property>
+-                <property name="position">1</property>
++                <property name="position">2</property>
+               </packing>
+             </child>
+           </widget>
+           <packing>
+             <property name="expand">False</property>
++            <property name="fill">True</property>
+             <property name="pack_type">end</property>
+             <property name="position">0</property>
+           </packing>
+         </child>
+-      </widget>
+-    </child>
+-  </widget>
+-  <widget class="GtkDialog" id="joinsave">
+-    <property name="visible">True</property>
+-    <property name="title" translatable="yes">Alert</property>
+-    <property name="modal">True</property>
+-    <property name="type_hint">dialog</property>
+-    <child internal-child="vbox">
+-      <widget class="GtkVBox" id="dialog-vbox7">
+-        <property name="visible">True</property>
+         <child>
+-          <widget class="GtkHBox" id="hbox1">
+-            <property name="visible">True</property>
+-            <property name="spacing">12</property>
+-            <child>
+-              <widget class="GtkImage" id="image2">
+-                <property name="visible">True</property>
+-                <property name="stock">gtk-dialog-question</property>
+-                <property name="icon-size">6</property>
+-              </widget>
+-              <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">0</property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkLabel" id="label35">
+-                <property name="visible">True</property>
+-                <property name="label" translatable="yes">Some of the configuration changes you've made should be saved to disk before continuing.  If you do not save them, then your attempt to join the domain may fail.  Save changes?</property>
+-                <property name="wrap">True</property>
+-              </widget>
+-              <packing>
+-                <property name="padding">12</property>
+-                <property name="position">1</property>
+-              </packing>
+-            </child>
+-          </widget>
+-          <packing>
+-            <property name="padding">12</property>
+-            <property name="position">2</property>
+-          </packing>
+-        </child>
+-        <child internal-child="action_area">
+-          <widget class="GtkHButtonBox" id="dialog-action_area7">
++          <widget class="GtkNotebook" id="vbox">
+             <property name="visible">True</property>
+-            <property name="layout_style">end</property>
+-            <child>
+-              <widget class="GtkButton" id="cancelbutton7">
+-                <property name="label">gtk-cancel</property>
+-                <property name="response_id">-6</property>
+-                <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_stock">True</property>
+-              </widget>
+-              <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">0</property>
+-              </packing>
+-            </child>
++            <property name="can_focus">True</property>
++            <property name="border_width">8</property>
+             <child>
+-              <widget class="GtkButton" id="don'tsave">
++              <widget class="GtkVBox" id="idauthpage">
+                 <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="receives_default">False</property>
++                <property name="can_focus">False</property>
+                 <child>
+-                  <widget class="GtkAlignment" id="alignment2">
++                  <placeholder/>
++                </child>
++                <child>
++                  <widget class="GtkTable" id="table1">
+                     <property name="visible">True</property>
+-                    <property name="xscale">0</property>
+-                    <property name="yscale">0</property>
++                    <property name="can_focus">False</property>
++                    <property name="border_width">12</property>
++                    <property name="n_rows">6</property>
++                    <property name="n_columns">2</property>
++                    <property name="column_spacing">12</property>
++                    <property name="row_spacing">6</property>
+                     <child>
+-                      <widget class="GtkHBox" id="hbox2">
++                      <widget class="GtkLabel" id="topidentitylabel">
+                         <property name="visible">True</property>
+-                        <property name="spacing">2</property>
+-                        <child>
+-                          <widget class="GtkImage" id="image1">
+-                            <property name="visible">True</property>
+-                            <property name="stock">gtk-cancel</property>
+-                            <property name="icon-size">4</property>
+-                          </widget>
+-                          <packing>
+-                            <property name="expand">False</property>
+-                            <property name="fill">False</property>
+-                            <property name="position">0</property>
+-                          </packing>
+-                        </child>
+-                        <child>
+-                          <widget class="GtkLabel" id="label36">
+-                            <property name="visible">True</property>
+-                            <property name="label" translatable="yes">Do_n't Save</property>
+-                            <property name="use_underline">True</property>
+-                          </widget>
+-                          <packing>
+-                            <property name="expand">False</property>
+-                            <property name="fill">False</property>
+-                            <property name="position">1</property>
+-                          </packing>
+-                        </child>
++                        <property name="can_focus">False</property>
++                        <property name="xalign">0</property>
++                        <property name="label" translatable="yes">&lt;b&gt;User Account Configuration&lt;/b&gt;</property>
++                        <property name="use_markup">True</property>
+                       </widget>
+-                    </child>
+-                  </widget>
+-                </child>
+-              </widget>
+-              <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">1</property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkButton" id="okbutton7">
+-                <property name="label">gtk-save</property>
+-                <property name="response_id">1</property>
+-                <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="has_default">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_stock">True</property>
+-              </widget>
+-              <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">2</property>
+-              </packing>
+-            </child>
+-          </widget>
+-          <packing>
+-            <property name="expand">False</property>
+-            <property name="pack_type">end</property>
+-            <property name="position">0</property>
+-          </packing>
+-        </child>
+-      </widget>
+-    </child>
+-  </widget>
+-  <widget class="GtkDialog" id="ldapcacertdownload">
+-    <property name="visible">True</property>
+-    <property name="title" translatable="yes">Download CA Certificate</property>
+-    <property name="resizable">False</property>
+-    <property name="modal">True</property>
+-    <property name="type_hint">dialog</property>
+-    <child internal-child="vbox">
+-      <widget class="GtkVBox" id="vbox26">
+-        <property name="visible">True</property>
+-        <child>
+-          <widget class="GtkTable" id="table21">
+-            <property name="visible">True</property>
+-            <property name="border_width">12</property>
+-            <property name="n_rows">2</property>
+-            <property name="n_columns">2</property>
+-            <property name="column_spacing">12</property>
+-            <property name="row_spacing">12</property>
+-            <child>
+-              <widget class="GtkLabel" id="label44">
+-                <property name="visible">True</property>
+-                <property name="xalign">1</property>
+-                <property name="label" translatable="yes">Certificate _URL:</property>
+-                <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">cacerturl</property>
+-              </widget>
+-              <packing>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkEntry" id="cacerturl">
+-                <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="width_chars">40</property>
+-              </widget>
+-              <packing>
+-                <property name="left_attach">1</property>
+-                <property name="right_attach">2</property>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
+-                <property name="y_options"></property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkLabel" id="label46">
+-                <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">To verify the LDAP server with TLS protocol enabled you need a CA certificate which signed the server's certificate. Please fill in the URL where the CA certificate in the PEM format can be downloaded from.</property>
+-                <property name="wrap">True</property>
+-              </widget>
+-              <packing>
+-                <property name="right_attach">2</property>
+-                <property name="x_options"></property>
+-                <property name="y_options"></property>
+-              </packing>
+-            </child>
+-          </widget>
+-          <packing>
+-            <property name="position">2</property>
+-          </packing>
+-        </child>
+-        <child internal-child="action_area">
+-          <widget class="GtkHButtonBox" id="hbuttonbox2">
+-            <property name="visible">True</property>
+-            <property name="layout_style">end</property>
+-            <child>
+-              <widget class="GtkButton" id="cancelbutton4">
+-                <property name="label">gtk-cancel</property>
+-                <property name="response_id">-6</property>
+-                <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_stock">True</property>
+-              </widget>
+-              <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">0</property>
+-              </packing>
+-            </child>
+-            <child>
+-              <widget class="GtkButton" id="okbutton4">
+-                <property name="label">gtk-ok</property>
+-                <property name="response_id">-5</property>
+-                <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="has_default">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_stock">True</property>
+-              </widget>
+-              <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">1</property>
+-              </packing>
+-            </child>
+-          </widget>
+-          <packing>
+-            <property name="expand">False</property>
+-            <property name="pack_type">end</property>
+-            <property name="position">0</property>
+-          </packing>
+-        </child>
+-      </widget>
+-    </child>
+-  </widget>
+-  <widget class="GtkDialog" id="authconfig">
+-    <property name="visible">True</property>
+-    <property name="title" translatable="yes">Authentication Configuration</property>
+-    <property name="resizable">False</property>
+-    <property name="icon_name">system-config-authentication</property>
+-    <property name="type_hint">dialog</property>
+-    <property name="has_separator">False</property>
+-    <child internal-child="vbox">
+-      <widget class="GtkVBox" id="dialog-vbox9">
+-        <property name="visible">True</property>
+-        <child>
+-          <widget class="GtkNotebook" id="vbox">
+-            <property name="visible">True</property>
+-            <property name="can_focus">True</property>
+-            <property name="border_width">8</property>
+-            <child>
+-              <widget class="GtkVBox" id="idauthpage">
+-                <property name="visible">True</property>
+-                <property name="orientation">vertical</property>
+-                <child>
+-                  <placeholder/>
+-                </child>
+-                <child>
+-                  <widget class="GtkTable" id="table1">
+-                    <property name="visible">True</property>
+-                    <property name="border_width">12</property>
+-                    <property name="n_rows">6</property>
+-                    <property name="n_columns">2</property>
+-                    <property name="column_spacing">12</property>
+-                    <property name="row_spacing">6</property>
+-                    <child>
+-                      <widget class="GtkLabel" id="topidentitylabel">
+-                        <property name="visible">True</property>
+-                        <property name="xalign">0</property>
+-                        <property name="label" translatable="yes">&lt;b&gt;User Account Configuration&lt;/b&gt;</property>
+-                        <property name="use_markup">True</property>
+-                      </widget>
+-                      <packing>
+-                        <property name="right_attach">2</property>
+-                        <property name="x_options">GTK_FILL</property>
+-                        <property name="y_options"></property>
+-                      </packing>
++                      <packing>
++                        <property name="right_attach">2</property>
++                        <property name="x_options">GTK_FILL</property>
++                        <property name="y_options"></property>
++                      </packing>
+                     </child>
+                     <child>
+                       <widget class="GtkLabel" id="label1">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="label" translatable="yes">_User Account Database:</property>
+                         <property name="use_underline">True</property>
+@@ -473,6 +135,7 @@
+                     <child>
+                       <widget class="GtkComboBox" id="identitytype">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="items" translatable="yes">*</property>
+                       </widget>
+                       <packing>
+@@ -486,12 +149,14 @@
+                     <child>
+                       <widget class="GtkAlignment" id="identitysite">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="bottom_padding">12</property>
+                         <property name="left_padding">24</property>
+                         <child>
+                           <widget class="GtkLabel" id="identitylabel">
+                             <property name="visible">True</property>
++                            <property name="can_focus">False</property>
+                           </widget>
+                         </child>
+                       </widget>
+@@ -504,6 +169,7 @@
+                     <child>
+                       <widget class="GtkLabel" id="topauthlabel">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="label" translatable="yes">&lt;b&gt;Authentication Configuration&lt;/b&gt;</property>
+                         <property name="use_markup">True</property>
+@@ -518,6 +184,7 @@
+                     <child>
+                       <widget class="GtkLabel" id="label2">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="label" translatable="yes">Aut_hentication Method:</property>
+                         <property name="use_underline">True</property>
+@@ -537,6 +204,7 @@
+                     <child>
+                       <widget class="GtkComboBox" id="authtype">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="items" translatable="yes">*</property>
+                       </widget>
+                       <packing>
+@@ -550,12 +218,14 @@
+                     <child>
+                       <widget class="GtkAlignment" id="authsite">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="bottom_padding">12</property>
+                         <property name="left_padding">24</property>
+                         <child>
+                           <widget class="GtkLabel" id="authlabel">
+                             <property name="visible">True</property>
++                            <property name="can_focus">False</property>
+                           </widget>
+                         </child>
+                       </widget>
+@@ -567,6 +237,8 @@
+                     </child>
+                   </widget>
+                   <packing>
++                    <property name="expand">True</property>
++                    <property name="fill">True</property>
+                     <property name="position">1</property>
+                   </packing>
+                 </child>
+@@ -575,6 +247,7 @@
+             <child>
+               <widget class="GtkLabel" id="label4">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="label" translatable="yes">_Identity &amp; Authentication</property>
+                 <property name="use_underline">True</property>
+                 <property name="justify">center</property>
+@@ -587,15 +260,18 @@
+             <child>
+               <widget class="GtkVBox" id="advoptpage">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="border_width">12</property>
+                 <property name="spacing">18</property>
+                 <child>
+                   <widget class="GtkVBox" id="vbox33">
+                     <property name="visible">True</property>
++                    <property name="can_focus">False</property>
+                     <property name="spacing">6</property>
+                     <child>
+                       <widget class="GtkLabel" id="labellocopt">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="label" translatable="yes">&lt;b&gt;Local Authentication Options&lt;/b&gt;</property>
+                         <property name="use_markup">True</property>
+@@ -609,11 +285,13 @@
+                     <child>
+                       <widget class="GtkAlignment" id="alignment37">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="left_padding">12</property>
+                         <child>
+                           <widget class="GtkHBox" id="hbox24">
+                             <property name="visible">True</property>
++                            <property name="can_focus">False</property>
+                             <property name="spacing">12</property>
+                             <child>
+                               <widget class="GtkCheckButton" id="enablefprintd">
+@@ -644,6 +322,7 @@
+                     <child>
+                       <widget class="GtkAlignment" id="alignment33">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="left_padding">12</property>
+                         <child>
+                           <widget class="GtkCheckButton" id="enablepamaccess">
+@@ -667,11 +346,13 @@
+                     <child>
+                       <widget class="GtkAlignment" id="alignment29">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="left_padding">48</property>
+                         <child>
+                           <widget class="GtkLabel" id="label3">
+                             <property name="visible">True</property>
++                            <property name="can_focus">False</property>
+                             <property name="xalign">0</property>
+                             <property name="label" translatable="yes">&lt;small&gt;&lt;b&gt;Tip:&lt;/b&gt; This is managed via /etc/security/access.conf.&lt;/small&gt;</property>
+                             <property name="use_markup">True</property>
+@@ -687,19 +368,23 @@
+                     <child>
+                       <widget class="GtkAlignment" id="alignment30">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="bottom_padding">12</property>
+                         <property name="left_padding">12</property>
+                         <child>
+                           <widget class="GtkHBox" id="hbox20">
+                             <property name="visible">True</property>
++                            <property name="can_focus">False</property>
+                             <child>
+                               <widget class="GtkEventBox" id="eventbox4">
+                                 <property name="visible">True</property>
++                                <property name="can_focus">False</property>
+                                 <property name="tooltip" translatable="yes">Hashing or crypto algorithm used for storing passwords of local users</property>
+                                 <child>
+                                   <widget class="GtkLabel" id="labelpasswordalgo">
+                                     <property name="visible">True</property>
++                                    <property name="can_focus">False</property>
+                                     <property name="label" translatable="yes">_Password Hashing Algorithm:</property>
+                                     <property name="use_underline">True</property>
+                                     <property name="mnemonic_widget">passwordalgo</property>
+@@ -722,6 +407,8 @@
+                                 <property name="items">*</property>
+                               </widget>
+                               <packing>
++                                <property name="expand">True</property>
++                                <property name="fill">True</property>
+                                 <property name="padding">12</property>
+                                 <property name="position">1</property>
+                               </packing>
+@@ -730,23 +417,29 @@
+                         </child>
+                       </widget>
+                       <packing>
++                        <property name="expand">True</property>
++                        <property name="fill">True</property>
+                         <property name="position">4</property>
+                       </packing>
+                     </child>
+                     <child>
+                       <widget class="GtkLabel" id="label5">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="label" translatable="yes">&lt;b&gt;Other Authentication Options&lt;/b&gt;</property>
+                         <property name="use_markup">True</property>
+                       </widget>
+                       <packing>
++                        <property name="expand">True</property>
++                        <property name="fill">True</property>
+                         <property name="position">5</property>
+                       </packing>
+                     </child>
+                     <child>
+                       <widget class="GtkAlignment" id="alignment32">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="bottom_padding">12</property>
+                         <property name="left_padding">12</property>
+                         <child>
+@@ -763,23 +456,29 @@
+                         </child>
+                       </widget>
+                       <packing>
++                        <property name="expand">True</property>
++                        <property name="fill">True</property>
+                         <property name="position">6</property>
+                       </packing>
+                     </child>
+                     <child>
+                       <widget class="GtkLabel" id="label6">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="label" translatable="yes">&lt;b&gt;Smart Card Authentication Options&lt;/b&gt;</property>
+                         <property name="use_markup">True</property>
+                       </widget>
+                       <packing>
++                        <property name="expand">True</property>
++                        <property name="fill">True</property>
+                         <property name="position">7</property>
+                       </packing>
+                     </child>
+                     <child>
+                       <widget class="GtkAlignment" id="alignment34">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="left_padding">12</property>
+                         <child>
+                           <widget class="GtkCheckButton" id="enablesmartcard">
+@@ -803,11 +502,13 @@
+                     <child>
+                       <widget class="GtkAlignment" id="alignment1">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="left_padding">48</property>
+                         <child>
+                           <widget class="GtkLabel" id="label7">
+                             <property name="visible">True</property>
++                            <property name="can_focus">False</property>
+                             <property name="xalign">0</property>
+                             <property name="label" translatable="yes">&lt;small&gt;&lt;b&gt;Tip:&lt;/b&gt; Smart cards support logging into both local and centrally managed accounts.&lt;/small&gt;</property>
+                             <property name="use_markup">True</property>
+@@ -824,15 +525,19 @@
+                     <child>
+                       <widget class="GtkAlignment" id="scauthsite">
+                         <property name="visible">True</property>
++                        <property name="can_focus">False</property>
+                         <property name="xalign">0</property>
+                         <property name="left_padding">24</property>
+                         <child>
+                           <widget class="GtkLabel" id="scauthlabel">
+                             <property name="visible">True</property>
++                            <property name="can_focus">False</property>
+                           </widget>
+                         </child>
+                       </widget>
+                       <packing>
++                        <property name="expand">True</property>
++                        <property name="fill">True</property>
+                         <property name="position">10</property>
+                       </packing>
+                     </child>
+@@ -851,6 +556,7 @@
+             <child>
+               <widget class="GtkLabel" id="optionstab">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="label" translatable="yes">Advanced _Options</property>
+                 <property name="use_underline">True</property>
+               </widget>
+@@ -862,323 +568,788 @@
+             </child>
+           </widget>
+           <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
+             <property name="position">1</property>
+           </packing>
+         </child>
+-        <child internal-child="action_area">
+-          <widget class="GtkHButtonBox" id="dialog-action_area9">
++      </widget>
++    </child>
++  </widget>
++  <widget class="GtkWindow" id="allsettings">
++    <property name="can_focus">False</property>
++    <child>
++      <widget class="GtkVBox" id="vbox1">
++        <property name="visible">True</property>
++        <property name="can_focus">False</property>
++        <child>
++          <widget class="GtkTable" id="nisoptions">
+             <property name="visible">True</property>
+-            <property name="layout_style">end</property>
++            <property name="can_focus">False</property>
++            <property name="border_width">12</property>
++            <property name="n_rows">2</property>
++            <property name="n_columns">2</property>
++            <property name="column_spacing">12</property>
++            <property name="row_spacing">12</property>
+             <child>
+-              <widget class="GtkButton" id="revert">
+-                <property name="label">gtk-revert-to-saved</property>
+-                <property name="response_id">1</property>
++              <widget class="GtkEntry" id="nisserver">
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="receives_default">True</property>
+-                <property name="has_tooltip">True</property>
+-                <property name="tooltip" translatable="yes">Restore the configuration files backed up before the previous configuration change</property>
+-                <property name="use_stock">True</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">0</property>
+-                <property name="secondary">True</property>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkButton" id="button9">
+-                <property name="label">gtk-cancel</property>
+-                <property name="response_id">-6</property>
++              <widget class="GtkLabel" id="label12">
+                 <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_stock">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">NIS _Server:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">nisserver</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="nisserver"/>
++                </accessibility>
+               </widget>
+               <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">1</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkButton" id="apply">
+-                <property name="label">gtk-apply</property>
+-                <property name="response_id">-5</property>
++              <widget class="GtkLabel" id="label11">
+                 <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="has_default">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_stock">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">NIS _Domain:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">nisdomain</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="nisdomain"/>
++                </accessibility>
+               </widget>
+               <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">2</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+-          </widget>
+-          <packing>
+-            <property name="expand">False</property>
+-            <property name="pack_type">end</property>
++            <child>
++              <widget class="GtkEntry" id="nisdomain">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++          </widget>
++          <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
+             <property name="position">0</property>
+           </packing>
+         </child>
+-      </widget>
+-    </child>
+-  </widget>
+-  <widget class="GtkDialog" id="revertsettings">
+-    <property name="visible">True</property>
+-    <property name="title" translatable="yes">Revert</property>
+-    <property name="resizable">False</property>
+-    <property name="icon_name">system-config-authentication</property>
+-    <property name="type_hint">dialog</property>
+-    <child internal-child="vbox">
+-      <widget class="GtkVBox" id="dialog-vbox10">
+-        <property name="visible">True</property>
+         <child>
+-          <widget class="GtkHBox" id="hbox23">
++          <widget class="GtkTable" id="kerberosoptions">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="border_width">12</property>
++            <property name="n_rows">5</property>
++            <property name="n_columns">2</property>
++            <property name="column_spacing">12</property>
++            <property name="row_spacing">12</property>
++            <child>
++              <widget class="GtkEntry" id="adminserver">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="label15">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">Ad_min Servers:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">adminserver</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="adminserver"/>
++                </accessibility>
++              </widget>
++              <packing>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="label16">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">R_ealm:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">krbrealm</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="krbrealm"/>
++                </accessibility>
++              </widget>
++              <packing>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkEntry" id="krbrealm">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="label17">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">_KDCs:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">kdc</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="kdc"/>
++                </accessibility>
++              </widget>
++              <packing>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkEntry" id="kdc">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkCheckButton" id="dnsrealm">
++                <property name="label" translatable="yes">Use D_NS to resolve hosts to realms</property>
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_underline">True</property>
++                <property name="draw_indicator">True</property>
++              </widget>
++              <packing>
++                <property name="right_attach">2</property>
++                <property name="top_attach">3</property>
++                <property name="bottom_attach">4</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkCheckButton" id="dnskdc">
++                <property name="label" translatable="yes">Use DNS to _locate KDCs for realms</property>
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_underline">True</property>
++                <property name="draw_indicator">True</property>
++              </widget>
++              <packing>
++                <property name="right_attach">2</property>
++                <property name="top_attach">4</property>
++                <property name="bottom_attach">5</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++          </widget>
++          <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="position">1</property>
++          </packing>
++        </child>
++        <child>
++          <widget class="GtkTable" id="ldapoptions">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="border_width">12</property>
++            <property name="n_rows">4</property>
++            <property name="n_columns">2</property>
++            <property name="column_spacing">12</property>
++            <property name="row_spacing">12</property>
++            <child>
++              <widget class="GtkEntry" id="ldapserver">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="tooltip" translatable="yes">Hostname or ldap:// or ldaps:// URI pointing to the LDAP server.</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="label21">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">LDAP Search _Base DN:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">ldapbasedn</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="ldapbasedn"/>
++                </accessibility>
++              </widget>
++              <packing>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkEntry" id="ldapbasedn">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkCheckButton" id="ldaptls">
++                <property name="label" translatable="yes">Use _TLS to encrypt connections</property>
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="receives_default">False</property>
++                <property name="has_tooltip">True</property>
++                <property name="tooltip" translatable="yes">Use Transport Layer Security extension for LDAP as defined by RFC-2830. It must not be ticked with ldaps server URI.</property>
++                <property name="use_underline">True</property>
++                <property name="draw_indicator">True</property>
++              </widget>
++              <packing>
++                <property name="right_attach">2</property>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
++                <property name="x_options">GTK_FILL</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkButton" id="downloadcacert">
++                <property name="visible">True</property>
++                <property name="sensitive">False</property>
++                <property name="can_focus">True</property>
++                <property name="receives_default">True</property>
++                <property name="tooltip" translatable="yes">Click this button if you did not download a CA certificate yet or you have not set the CA certificate up by other means.</property>
++                <child>
++                  <widget class="GtkAlignment" id="alignment1">
++                    <property name="visible">True</property>
++                    <property name="can_focus">False</property>
++                    <property name="xscale">0</property>
++                    <property name="yscale">0</property>
++                    <property name="left_padding">2</property>
++                    <property name="right_padding">2</property>
++                    <child>
++                      <widget class="GtkHBox" id="hbox1">
++                        <property name="visible">True</property>
++                        <property name="can_focus">False</property>
++                        <property name="spacing">4</property>
++                        <child>
++                          <widget class="GtkImage" id="image1">
++                            <property name="visible">True</property>
++                            <property name="can_focus">False</property>
++                            <property name="stock">gtk-network</property>
++                          </widget>
++                          <packing>
++                            <property name="expand">False</property>
++                            <property name="fill">False</property>
++                            <property name="position">0</property>
++                          </packing>
++                        </child>
++                        <child>
++                          <widget class="GtkLabel" id="label1">
++                            <property name="visible">True</property>
++                            <property name="can_focus">False</property>
++                            <property name="label" translatable="yes">_Download CA Certificate...</property>
++                            <property name="use_underline">True</property>
++                          </widget>
++                          <packing>
++                            <property name="expand">False</property>
++                            <property name="fill">False</property>
++                            <property name="position">1</property>
++                          </packing>
++                        </child>
++                      </widget>
++                    </child>
++                  </widget>
++                </child>
++              </widget>
++              <packing>
++                <property name="right_attach">2</property>
++                <property name="top_attach">3</property>
++                <property name="bottom_attach">4</property>
++                <property name="x_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="label20">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">LDAP _Server:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">ldapserver</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="ldapserver"/>
++                </accessibility>
++              </widget>
++              <packing>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++          </widget>
++          <packing>
++            <property name="expand">False</property>
++            <property name="fill">False</property>
++            <property name="position">2</property>
++          </packing>
++        </child>
++        <child>
++          <widget class="GtkTable" id="winbindoptions">
+             <property name="visible">True</property>
+-            <property name="spacing">12</property>
++            <property name="can_focus">False</property>
++            <property name="border_width">12</property>
++            <property name="n_rows">7</property>
++            <property name="n_columns">2</property>
++            <property name="column_spacing">12</property>
++            <property name="row_spacing">12</property>
+             <child>
+-              <widget class="GtkImage" id="image5">
++              <widget class="GtkLabel" id="label26">
+                 <property name="visible">True</property>
+-                <property name="stock">gtk-dialog-question</property>
+-                <property name="icon-size">6</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">_Security Model:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">winbindsecurity</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="winbindsecurity"/>
++                </accessibility>
+               </widget>
+               <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">0</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label49">
++              <widget class="GtkLabel" id="label27">
+                 <property name="visible">True</property>
+-                <property name="label" translatable="yes">All configuration files which were modified by the previous authentication configuration change will be restored from backup. Revert the changes?</property>
+-                <property name="wrap">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">Winbind _Domain:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">winbinddomain</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="winbinddomain"/>
++                </accessibility>
+               </widget>
+               <packing>
+-                <property name="padding">12</property>
+-                <property name="position">1</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+-          </widget>
+-          <packing>
+-            <property name="padding">12</property>
+-            <property name="position">2</property>
+-          </packing>
+-        </child>
+-        <child internal-child="action_area">
+-          <widget class="GtkHButtonBox" id="dialog-action_area10">
+-            <property name="visible">True</property>
+-            <property name="layout_style">end</property>
+             <child>
+-              <widget class="GtkButton" id="cancelbutton9">
+-                <property name="label">gtk-cancel</property>
+-                <property name="response_id">-6</property>
++              <widget class="GtkEntry" id="winbinddomain">
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_stock">True</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">0</property>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkButton" id="okbutton9">
+-                <property name="label">gtk-revert-to-saved</property>
+-                <property name="response_id">-5</property>
++              <widget class="GtkLabel" id="label28">
+                 <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="can_default">True</property>
+-                <property name="has_default">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_stock">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">Winbind Domain Co_ntrollers:</property>
++                <property name="use_underline">True</property>
++                <property name="mnemonic_widget">winbindservers</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="winbindservers"/>
++                </accessibility>
+               </widget>
+               <packing>
+-                <property name="expand">False</property>
+-                <property name="fill">False</property>
+-                <property name="position">1</property>
++                <property name="top_attach">3</property>
++                <property name="bottom_attach">4</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+-          </widget>
+-          <packing>
+-            <property name="expand">False</property>
+-            <property name="pack_type">end</property>
+-            <property name="position">0</property>
+-          </packing>
+-        </child>
+-      </widget>
+-    </child>
+-  </widget>
+-  <widget class="GtkWindow" id="allsettings">
+-    <child>
+-      <widget class="GtkVBox" id="vbox1">
+-        <property name="visible">True</property>
+-        <property name="orientation">vertical</property>
+-        <child>
+-          <widget class="GtkTable" id="nisoptions">
+-            <property name="visible">True</property>
+-            <property name="border_width">12</property>
+-            <property name="n_rows">2</property>
+-            <property name="n_columns">2</property>
+-            <property name="column_spacing">12</property>
+-            <property name="row_spacing">12</property>
+             <child>
+-              <widget class="GtkEntry" id="nisserver">
++              <widget class="GtkEntry" id="winbindservers">
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
++                <property name="top_attach">3</property>
++                <property name="bottom_attach">4</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label12">
++              <widget class="GtkLabel" id="label29">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="xalign">0</property>
+-                <property name="label" translatable="yes">NIS _Server:</property>
++                <property name="label" translatable="yes">Te_mplate Shell:</property>
+                 <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">nisserver</property>
++                <property name="mnemonic_widget">winbindshell</property>
+                 <accessibility>
+-                  <atkrelation type="label-for" target="nisserver"/>
++                  <atkrelation type="label-for" target="winbindshell"/>
+                 </accessibility>
+               </widget>
+               <packing>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
++                <property name="top_attach">4</property>
++                <property name="bottom_attach">5</property>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label11">
++              <widget class="GtkLabel" id="label30">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="xalign">0</property>
+-                <property name="label" translatable="yes">NIS _Domain:</property>
++                <property name="label" translatable="yes">Winbind ADS R_ealm:</property>
+                 <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">nisdomain</property>
++                <property name="mnemonic_widget">winbindrealm</property>
+                 <accessibility>
+-                  <atkrelation type="label-for" target="nisdomain"/>
++                  <atkrelation type="label-for" target="winbindrealm"/>
+                 </accessibility>
+               </widget>
+               <packing>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkEntry" id="nisdomain">
++              <widget class="GtkEntry" id="winbindrealm">
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="invisible_char">•</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+-          </widget>
+-          <packing>
+-            <property name="position">0</property>
+-          </packing>
+-        </child>
+-        <child>
+-          <widget class="GtkTable" id="kerberosoptions">
+-            <property name="visible">True</property>
+-            <property name="border_width">12</property>
+-            <property name="n_rows">5</property>
+-            <property name="n_columns">2</property>
+-            <property name="column_spacing">12</property>
+-            <property name="row_spacing">12</property>
+             <child>
+-              <widget class="GtkEntry" id="adminserver">
++              <widget class="GtkComboBox" id="winbindshell">
+                 <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="can_focus">False</property>
++                <property name="items" translatable="yes">*</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
+-                <property name="top_attach">2</property>
+-                <property name="bottom_attach">3</property>
+-                <property name="y_options"></property>
++                <property name="top_attach">4</property>
++                <property name="bottom_attach">5</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options">GTK_FILL</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkComboBox" id="winbindsecurity">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="items" translatable="yes">*</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options">GTK_FILL</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkCheckButton" id="winbindoffline">
++                <property name="label" translatable="yes">Allow offline _login</property>
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_underline">True</property>
++                <property name="draw_indicator">True</property>
++              </widget>
++              <packing>
++                <property name="right_attach">2</property>
++                <property name="top_attach">5</property>
++                <property name="bottom_attach">6</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkButton" id="winbindjoin">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="receives_default">True</property>
++                <child>
++                  <widget class="GtkAlignment" id="alignment35">
++                    <property name="visible">True</property>
++                    <property name="can_focus">False</property>
++                    <property name="xscale">0</property>
++                    <property name="yscale">0</property>
++                    <property name="left_padding">2</property>
++                    <property name="right_padding">2</property>
++                    <child>
++                      <widget class="GtkHBox" id="hbox21">
++                        <property name="visible">True</property>
++                        <property name="can_focus">False</property>
++                        <property name="spacing">4</property>
++                        <child>
++                          <widget class="GtkImage" id="image3">
++                            <property name="visible">True</property>
++                            <property name="can_focus">False</property>
++                            <property name="stock">gtk-network</property>
++                          </widget>
++                          <packing>
++                            <property name="expand">False</property>
++                            <property name="fill">False</property>
++                            <property name="position">0</property>
++                          </packing>
++                        </child>
++                        <child>
++                          <widget class="GtkLabel" id="label47">
++                            <property name="visible">True</property>
++                            <property name="can_focus">False</property>
++                            <property name="label" translatable="yes">_Join Domain...</property>
++                            <property name="use_underline">True</property>
++                          </widget>
++                          <packing>
++                            <property name="expand">False</property>
++                            <property name="fill">False</property>
++                            <property name="position">1</property>
++                          </packing>
++                        </child>
++                      </widget>
++                    </child>
++                  </widget>
++                </child>
++              </widget>
++              <packing>
++                <property name="right_attach">2</property>
++                <property name="top_attach">6</property>
++                <property name="bottom_attach">7</property>
++                <property name="x_options"></property>
+               </packing>
+             </child>
++          </widget>
++          <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="position">3</property>
++          </packing>
++        </child>
++        <child>
++          <widget class="GtkTable" id="ipav2options">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="border_width">12</property>
++            <property name="n_rows">5</property>
++            <property name="n_columns">2</property>
++            <property name="column_spacing">12</property>
++            <property name="row_spacing">12</property>
+             <child>
+-              <widget class="GtkLabel" id="label15">
++              <widget class="GtkLabel" id="label3">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="xalign">0</property>
+-                <property name="label" translatable="yes">Ad_min Servers:</property>
++                <property name="label" translatable="yes">IPA _Domain:</property>
+                 <property name="use_underline">True</property>
+                 <property name="justify">center</property>
+-                <property name="mnemonic_widget">adminserver</property>
++                <property name="mnemonic_widget">ipav2domain</property>
+                 <accessibility>
+-                  <atkrelation type="label-for" target="adminserver"/>
++                  <atkrelation type="label-for" target="winbinddomain"/>
+                 </accessibility>
+               </widget>
+               <packing>
+-                <property name="top_attach">2</property>
+-                <property name="bottom_attach">3</property>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label16">
++              <widget class="GtkEntry" id="ipav2domain">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="invisible_char">•</property>
++                <property name="invisible_char_set">True</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="label4">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="xalign">0</property>
+-                <property name="label" translatable="yes">R_ealm:</property>
++                <property name="label" translatable="yes">IPA _Server:</property>
+                 <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">krbrealm</property>
++                <property name="mnemonic_widget">ipav2server</property>
+                 <accessibility>
+-                  <atkrelation type="label-for" target="krbrealm"/>
++                  <atkrelation type="label-for" target="winbindservers"/>
+                 </accessibility>
+               </widget>
+               <packing>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkEntry" id="krbrealm">
++              <widget class="GtkEntry" id="ipav2server">
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="invisible_char">•</property>
++                <property name="invisible_char_set">True</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label17">
++              <widget class="GtkLabel" id="label6">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="xalign">0</property>
+-                <property name="label" translatable="yes">_KDCs:</property>
++                <property name="label" translatable="yes">IPA R_ealm:</property>
+                 <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">kdc</property>
++                <property name="mnemonic_widget">ipav2realm</property>
+                 <accessibility>
+-                  <atkrelation type="label-for" target="kdc"/>
++                  <atkrelation type="label-for" target="winbindrealm"/>
+                 </accessibility>
+               </widget>
+               <packing>
+@@ -1189,10 +1360,15 @@
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkEntry" id="kdc">
++              <widget class="GtkEntry" id="ipav2realm">
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="invisible_char">•</property>
++                <property name="invisible_char_set">True</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+@@ -1203,8 +1379,8 @@
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkCheckButton" id="dnsrealm">
+-                <property name="label" translatable="yes">Use D_NS to resolve hosts to realms</property>
++              <widget class="GtkCheckButton" id="ipav2nontp">
++                <property name="label" translatable="yes">Do not configure _NTP</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+                 <property name="receives_default">False</property>
+@@ -1215,13 +1391,112 @@
+                 <property name="right_attach">2</property>
+                 <property name="top_attach">3</property>
+                 <property name="bottom_attach">4</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkButton" id="ipav2join">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="receives_default">True</property>
++                <child>
++                  <widget class="GtkAlignment" id="alignment2">
++                    <property name="visible">True</property>
++                    <property name="can_focus">False</property>
++                    <property name="xscale">0</property>
++                    <property name="yscale">0</property>
++                    <property name="left_padding">2</property>
++                    <property name="right_padding">2</property>
++                    <child>
++                      <widget class="GtkHBox" id="hbox2">
++                        <property name="visible">True</property>
++                        <property name="can_focus">False</property>
++                        <property name="spacing">4</property>
++                        <child>
++                          <widget class="GtkImage" id="image2">
++                            <property name="visible">True</property>
++                            <property name="can_focus">False</property>
++                            <property name="stock">gtk-network</property>
++                          </widget>
++                          <packing>
++                            <property name="expand">False</property>
++                            <property name="fill">False</property>
++                            <property name="position">0</property>
++                          </packing>
++                        </child>
++                        <child>
++                          <widget class="GtkLabel" id="label7">
++                            <property name="visible">True</property>
++                            <property name="can_focus">False</property>
++                            <property name="label" translatable="yes">_Join Domain...</property>
++                            <property name="use_underline">True</property>
++                          </widget>
++                          <packing>
++                            <property name="expand">False</property>
++                            <property name="fill">False</property>
++                            <property name="position">1</property>
++                          </packing>
++                        </child>
++                      </widget>
++                    </child>
++                  </widget>
++                </child>
++              </widget>
++              <packing>
++                <property name="right_attach">2</property>
++                <property name="top_attach">4</property>
++                <property name="bottom_attach">5</property>
++                <property name="x_options"></property>
++              </packing>
++            </child>
++          </widget>
++          <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="position">4</property>
++          </packing>
++        </child>
++        <child>
++          <widget class="GtkTable" id="smartcardoptions">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="border_width">12</property>
++            <property name="n_rows">2</property>
++            <property name="n_columns">2</property>
++            <property name="column_spacing">12</property>
++            <property name="row_spacing">12</property>
++            <child>
++              <widget class="GtkLabel" id="label43">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">Card Re_moval Action:</property>
++                <property name="use_underline">True</property>
++                <accessibility>
++                  <atkrelation type="label-for" target="scaction"/>
++                </accessibility>
++              </widget>
++              <packing>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkCheckButton" id="dnskdc">
+-                <property name="label" translatable="yes">Use DNS to _locate KDCs for realms</property>
++              <widget class="GtkComboBox" id="scaction">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="items" translatable="yes">*</property>
++              </widget>
++              <packing>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options">GTK_FILL</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkCheckButton" id="forcesmartcard">
++                <property name="label" translatable="yes">Require smart car_d for login</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+                 <property name="receives_default">False</property>
+@@ -1230,31 +1505,100 @@
+               </widget>
+               <packing>
+                 <property name="right_attach">2</property>
+-                <property name="top_attach">4</property>
+-                <property name="bottom_attach">5</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+           </widget>
+           <packing>
+-            <property name="position">1</property>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="position">5</property>
++          </packing>
++        </child>
++      </widget>
++    </child>
++  </widget>
++  <widget class="GtkDialog" id="joinipadomain">
++    <property name="visible">True</property>
++    <property name="can_focus">False</property>
++    <property name="title" translatable="yes">Joining Winbind Domain</property>
++    <property name="resizable">False</property>
++    <property name="modal">True</property>
++    <property name="icon_name">system-config-authentication</property>
++    <property name="type_hint">dialog</property>
++    <child internal-child="vbox">
++      <widget class="GtkVBox" id="dialog-vbox7">
++        <property name="visible">True</property>
++        <property name="can_focus">False</property>
++        <child internal-child="action_area">
++          <widget class="GtkHButtonBox" id="dialog-action_area7">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="layout_style">end</property>
++            <child>
++              <widget class="GtkButton" id="button1">
++                <property name="label">gtk-cancel</property>
++                <property name="response_id">-6</property>
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="has_default">True</property>
++                <property name="receives_default">True</property>
++                <property name="use_stock">True</property>
++              </widget>
++              <packing>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">0</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkButton" id="button2">
++                <property name="label">gtk-ok</property>
++                <property name="response_id">-5</property>
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="has_default">True</property>
++                <property name="receives_default">True</property>
++                <property name="use_stock">True</property>
++              </widget>
++              <packing>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">1</property>
++              </packing>
++            </child>
++          </widget>
++          <packing>
++            <property name="expand">False</property>
++            <property name="fill">True</property>
++            <property name="pack_type">end</property>
++            <property name="position">0</property>
+           </packing>
+         </child>
+         <child>
+-          <widget class="GtkTable" id="ldapoptions">
++          <widget class="GtkTable" id="table19">
+             <property name="visible">True</property>
++            <property name="can_focus">False</property>
+             <property name="border_width">12</property>
+-            <property name="n_rows">4</property>
++            <property name="n_rows">3</property>
+             <property name="n_columns">2</property>
+             <property name="column_spacing">12</property>
+             <property name="row_spacing">12</property>
+             <child>
+-              <widget class="GtkEntry" id="ldapserver">
++              <widget class="GtkEntry" id="joinuser">
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="tooltip" translatable="yes">Hostname or ldap:// or ldaps:// URI pointing to the LDAP server.</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="invisible_char">●</property>
++                <property name="invisible_char_set">True</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+@@ -1265,75 +1609,150 @@
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label21">
++              <widget class="GtkLabel" id="label31">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="xalign">0</property>
+-                <property name="label" translatable="yes">LDAP Search _Base DN:</property>
++                <property name="label" translatable="yes">Domain _administrator:</property>
+                 <property name="use_underline">True</property>
+                 <property name="justify">center</property>
+-                <property name="mnemonic_widget">ldapbasedn</property>
+-                <accessibility>
+-                  <atkrelation type="label-for" target="ldapbasedn"/>
+-                </accessibility>
++                <property name="mnemonic_widget">joinuser</property>
++              </widget>
++              <packing>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="domain2">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">Domain:</property>
++                <property name="use_underline">True</property>
++                <property name="justify">center</property>
++              </widget>
++              <packing>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="label33">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">_Password:</property>
++                <property name="use_underline">True</property>
++                <property name="mnemonic_widget">joinpassword</property>
++              </widget>
++              <packing>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
++                <property name="x_options">GTK_FILL</property>
++                <property name="y_options"></property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkEntry" id="joinpassword">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="visibility">False</property>
++                <property name="invisible_char">●</property>
++                <property name="invisible_char_set">True</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+-                <property name="x_options">GTK_FILL</property>
++                <property name="left_attach">1</property>
++                <property name="right_attach">2</property>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkEntry" id="ldapbasedn">
++              <widget class="GtkLabel" id="domain">
+                 <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label">EXAMPLE.COM</property>
++                <property name="wrap">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
++                <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
++          </widget>
++          <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="position">2</property>
++          </packing>
++        </child>
++      </widget>
++    </child>
++  </widget>
++  <widget class="GtkDialog" id="joinsave">
++    <property name="visible">True</property>
++    <property name="can_focus">False</property>
++    <property name="title" translatable="yes">Alert</property>
++    <property name="modal">True</property>
++    <property name="type_hint">dialog</property>
++    <child internal-child="vbox">
++      <widget class="GtkVBox" id="dialog-vbox7">
++        <property name="visible">True</property>
++        <property name="can_focus">False</property>
++        <child internal-child="action_area">
++          <widget class="GtkHButtonBox" id="dialog-action_area7">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="layout_style">end</property>
+             <child>
+-              <widget class="GtkCheckButton" id="ldaptls">
+-                <property name="label" translatable="yes">Use _TLS to encrypt connections</property>
++              <widget class="GtkButton" id="cancelbutton7">
++                <property name="label">gtk-cancel</property>
++                <property name="response_id">-6</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
++                <property name="can_default">True</property>
+                 <property name="receives_default">False</property>
+-                <property name="has_tooltip">True</property>
+-                <property name="tooltip" translatable="yes">Use Transport Layer Security extension for LDAP as defined by RFC-2830. It must not be ticked with ldaps server URI.</property>
+-                <property name="use_underline">True</property>
+-                <property name="draw_indicator">True</property>
++                <property name="use_stock">True</property>
+               </widget>
+               <packing>
+-                <property name="right_attach">2</property>
+-                <property name="top_attach">2</property>
+-                <property name="bottom_attach">3</property>
+-                <property name="x_options">GTK_FILL</property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">0</property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkButton" id="downloadcacert">
++              <widget class="GtkButton" id="don'tsave">
+                 <property name="visible">True</property>
+-                <property name="sensitive">False</property>
+                 <property name="can_focus">True</property>
+-                <property name="receives_default">True</property>
+-                <property name="tooltip" translatable="yes">Click this button if you did not download a CA certificate yet or you have not set the CA certificate up by other means.</property>
++                <property name="can_default">True</property>
++                <property name="receives_default">False</property>
+                 <child>
+-                  <widget class="GtkAlignment" id="alignment1">
++                  <widget class="GtkAlignment" id="alignment2">
+                     <property name="visible">True</property>
++                    <property name="can_focus">False</property>
+                     <property name="xscale">0</property>
+                     <property name="yscale">0</property>
+-                    <property name="left_padding">2</property>
+-                    <property name="right_padding">2</property>
+                     <child>
+-                      <widget class="GtkHBox" id="hbox1">
++                      <widget class="GtkHBox" id="hbox2">
+                         <property name="visible">True</property>
+-                        <property name="spacing">4</property>
++                        <property name="can_focus">False</property>
++                        <property name="spacing">2</property>
+                         <child>
+                           <widget class="GtkImage" id="image1">
+                             <property name="visible">True</property>
+-                            <property name="stock">gtk-network</property>
+-                            <property name="icon-size">4</property>
++                            <property name="can_focus">False</property>
++                            <property name="stock">gtk-cancel</property>
+                           </widget>
+                           <packing>
+                             <property name="expand">False</property>
+@@ -1342,9 +1761,10 @@
+                           </packing>
+                         </child>
+                         <child>
+-                          <widget class="GtkLabel" id="label1">
++                          <widget class="GtkLabel" id="label36">
+                             <property name="visible">True</property>
+-                            <property name="label" translatable="yes">_Download CA Certificate...</property>
++                            <property name="can_focus">False</property>
++                            <property name="label" translatable="yes">Do_n't Save</property>
+                             <property name="use_underline">True</property>
+                           </widget>
+                           <packing>
+@@ -1359,332 +1779,474 @@
+                 </child>
+               </widget>
+               <packing>
+-                <property name="right_attach">2</property>
+-                <property name="top_attach">3</property>
+-                <property name="bottom_attach">4</property>
+-                <property name="x_options"></property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">1</property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label20">
++              <widget class="GtkButton" id="okbutton7">
++                <property name="label">gtk-save</property>
++                <property name="response_id">1</property>
+                 <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">LDAP _Server:</property>
+-                <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">ldapserver</property>
+-                <accessibility>
+-                  <atkrelation type="label-for" target="ldapserver"/>
+-                </accessibility>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="has_default">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_stock">True</property>
+               </widget>
+               <packing>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">2</property>
+               </packing>
+             </child>
+           </widget>
+           <packing>
+             <property name="expand">False</property>
+-            <property name="fill">False</property>
+-            <property name="position">2</property>
++            <property name="fill">True</property>
++            <property name="pack_type">end</property>
++            <property name="position">0</property>
+           </packing>
+         </child>
+         <child>
+-          <widget class="GtkTable" id="winbindoptions">
++          <widget class="GtkHBox" id="hbox1">
+             <property name="visible">True</property>
+-            <property name="border_width">12</property>
+-            <property name="n_rows">7</property>
+-            <property name="n_columns">2</property>
+-            <property name="column_spacing">12</property>
+-            <property name="row_spacing">12</property>
++            <property name="can_focus">False</property>
++            <property name="spacing">12</property>
+             <child>
+-              <widget class="GtkLabel" id="label26">
++              <widget class="GtkImage" id="image2">
+                 <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">_Security Model:</property>
+-                <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">winbindsecurity</property>
+-                <accessibility>
+-                  <atkrelation type="label-for" target="winbindsecurity"/>
+-                </accessibility>
++                <property name="can_focus">False</property>
++                <property name="stock">gtk-dialog-question</property>
++                <property name="icon-size">6</property>
+               </widget>
+               <packing>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">0</property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label27">
++              <widget class="GtkLabel" id="label35">
+                 <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">Winbind _Domain:</property>
+-                <property name="use_underline">True</property>
+-                <property name="justify">center</property>
+-                <property name="mnemonic_widget">winbinddomain</property>
+-                <accessibility>
+-                  <atkrelation type="label-for" target="winbinddomain"/>
+-                </accessibility>
++                <property name="can_focus">False</property>
++                <property name="label" translatable="yes">Some of the configuration changes you've made should be saved to disk before continuing.  If you do not save them, then your attempt to join the domain may fail.  Save changes?</property>
++                <property name="wrap">True</property>
+               </widget>
+               <packing>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
++                <property name="expand">True</property>
++                <property name="fill">True</property>
++                <property name="padding">12</property>
++                <property name="position">1</property>
+               </packing>
+             </child>
++          </widget>
++          <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="padding">12</property>
++            <property name="position">2</property>
++          </packing>
++        </child>
++      </widget>
++    </child>
++  </widget>
++  <widget class="GtkDialog" id="joinwbdomain">
++    <property name="visible">True</property>
++    <property name="can_focus">False</property>
++    <property name="title" translatable="yes">Joining Winbind Domain</property>
++    <property name="resizable">False</property>
++    <property name="modal">True</property>
++    <property name="icon_name">system-config-authentication</property>
++    <property name="type_hint">dialog</property>
++    <child internal-child="vbox">
++      <widget class="GtkVBox" id="vbox6">
++        <property name="visible">True</property>
++        <property name="can_focus">False</property>
++        <child internal-child="action_area">
++          <widget class="GtkHButtonBox" id="hbuttonbox1">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="layout_style">end</property>
+             <child>
+-              <widget class="GtkEntry" id="winbinddomain">
++              <widget class="GtkButton" id="button1">
++                <property name="label">gtk-cancel</property>
++                <property name="response_id">-6</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="can_default">True</property>
++                <property name="has_default">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_stock">True</property>
+               </widget>
+               <packing>
+-                <property name="left_attach">1</property>
+-                <property name="right_attach">2</property>
+-                <property name="y_options"></property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">0</property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label28">
++              <widget class="GtkButton" id="button2">
++                <property name="label">gtk-ok</property>
++                <property name="response_id">-5</property>
+                 <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">Winbind Domain Co_ntrollers:</property>
+-                <property name="use_underline">True</property>
+-                <property name="mnemonic_widget">winbindservers</property>
+-                <accessibility>
+-                  <atkrelation type="label-for" target="winbindservers"/>
+-                </accessibility>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="has_default">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_stock">True</property>
+               </widget>
+               <packing>
+-                <property name="top_attach">3</property>
+-                <property name="bottom_attach">4</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options"></property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">1</property>
+               </packing>
+             </child>
++          </widget>
++          <packing>
++            <property name="expand">False</property>
++            <property name="fill">True</property>
++            <property name="pack_type">end</property>
++            <property name="position">0</property>
++          </packing>
++        </child>
++        <child>
++          <widget class="GtkTable" id="table19">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="border_width">12</property>
++            <property name="n_rows">3</property>
++            <property name="n_columns">2</property>
++            <property name="column_spacing">12</property>
++            <property name="row_spacing">12</property>
+             <child>
+-              <widget class="GtkEntry" id="winbindservers">
++              <widget class="GtkEntry" id="joinuser">
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
+-                <property name="top_attach">3</property>
+-                <property name="bottom_attach">4</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label29">
++              <widget class="GtkLabel" id="label31">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="xalign">0</property>
+-                <property name="label" translatable="yes">Te_mplate Shell:</property>
++                <property name="label" translatable="yes">Domain _administrator:</property>
+                 <property name="use_underline">True</property>
+-                <property name="mnemonic_widget">winbindshell</property>
+-                <accessibility>
+-                  <atkrelation type="label-for" target="winbindshell"/>
+-                </accessibility>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">joinuser</property>
+               </widget>
+               <packing>
+-                <property name="top_attach">4</property>
+-                <property name="bottom_attach">5</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkLabel" id="label30">
++              <widget class="GtkLabel" id="domain2">
+                 <property name="visible">True</property>
++                <property name="can_focus">False</property>
+                 <property name="xalign">0</property>
+-                <property name="label" translatable="yes">Winbind ADS R_ealm:</property>
++                <property name="label" translatable="yes">Domain:</property>
+                 <property name="use_underline">True</property>
+-                <property name="mnemonic_widget">winbindrealm</property>
+-                <accessibility>
+-                  <atkrelation type="label-for" target="winbindrealm"/>
+-                </accessibility>
++                <property name="justify">center</property>
+               </widget>
+-              <packing>
+-                <property name="top_attach">2</property>
+-                <property name="bottom_attach">3</property>
++              <packing>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkEntry" id="winbindrealm">
++              <widget class="GtkLabel" id="label33">
+                 <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="invisible_char">&#x2022;</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">_Password:</property>
++                <property name="use_underline">True</property>
++                <property name="mnemonic_widget">joinpassword</property>
+               </widget>
+               <packing>
+-                <property name="left_attach">1</property>
+-                <property name="right_attach">2</property>
+                 <property name="top_attach">2</property>
+                 <property name="bottom_attach">3</property>
++                <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkComboBox" id="winbindshell">
++              <widget class="GtkEntry" id="joinpassword">
+                 <property name="visible">True</property>
+-                <property name="items" translatable="yes">*</property>
++                <property name="can_focus">True</property>
++                <property name="visibility">False</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
+-                <property name="top_attach">4</property>
+-                <property name="bottom_attach">5</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options">GTK_FILL</property>
++                <property name="top_attach">2</property>
++                <property name="bottom_attach">3</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkComboBox" id="winbindsecurity">
++              <widget class="GtkLabel" id="domain">
+                 <property name="visible">True</property>
+-                <property name="items" translatable="yes">*</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label">EXAMPLE.COM</property>
++                <property name="wrap">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
+                 <property name="x_options">GTK_FILL</property>
+-                <property name="y_options">GTK_FILL</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
++          </widget>
++          <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="position">2</property>
++          </packing>
++        </child>
++      </widget>
++    </child>
++  </widget>
++  <widget class="GtkDialog" id="ldapcacertdownload">
++    <property name="visible">True</property>
++    <property name="can_focus">False</property>
++    <property name="title" translatable="yes">Download CA Certificate</property>
++    <property name="resizable">False</property>
++    <property name="modal">True</property>
++    <property name="type_hint">dialog</property>
++    <child internal-child="vbox">
++      <widget class="GtkVBox" id="vbox26">
++        <property name="visible">True</property>
++        <property name="can_focus">False</property>
++        <child internal-child="action_area">
++          <widget class="GtkHButtonBox" id="hbuttonbox2">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="layout_style">end</property>
+             <child>
+-              <widget class="GtkCheckButton" id="winbindoffline">
+-                <property name="label" translatable="yes">Allow offline _login</property>
++              <widget class="GtkButton" id="cancelbutton4">
++                <property name="label">gtk-cancel</property>
++                <property name="response_id">-6</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
++                <property name="can_default">True</property>
+                 <property name="receives_default">False</property>
+-                <property name="use_underline">True</property>
+-                <property name="draw_indicator">True</property>
++                <property name="use_stock">True</property>
+               </widget>
+               <packing>
+-                <property name="right_attach">2</property>
+-                <property name="top_attach">5</property>
+-                <property name="bottom_attach">6</property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">0</property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkButton" id="winbindjoin">
++              <widget class="GtkButton" id="okbutton4">
++                <property name="label">gtk-ok</property>
++                <property name="response_id">-5</property>
+                 <property name="visible">True</property>
+                 <property name="can_focus">True</property>
+                 <property name="can_default">True</property>
+-                <property name="receives_default">True</property>
+-                <child>
+-                  <widget class="GtkAlignment" id="alignment35">
+-                    <property name="visible">True</property>
+-                    <property name="xscale">0</property>
+-                    <property name="yscale">0</property>
+-                    <property name="left_padding">2</property>
+-                    <property name="right_padding">2</property>
+-                    <child>
+-                      <widget class="GtkHBox" id="hbox21">
+-                        <property name="visible">True</property>
+-                        <property name="spacing">4</property>
+-                        <child>
+-                          <widget class="GtkImage" id="image3">
+-                            <property name="visible">True</property>
+-                            <property name="stock">gtk-network</property>
+-                            <property name="icon-size">4</property>
+-                          </widget>
+-                          <packing>
+-                            <property name="expand">False</property>
+-                            <property name="fill">False</property>
+-                            <property name="position">0</property>
+-                          </packing>
+-                        </child>
+-                        <child>
+-                          <widget class="GtkLabel" id="label47">
+-                            <property name="visible">True</property>
+-                            <property name="label" translatable="yes">_Join Domain...</property>
+-                            <property name="use_underline">True</property>
+-                          </widget>
+-                          <packing>
+-                            <property name="expand">False</property>
+-                            <property name="fill">False</property>
+-                            <property name="position">1</property>
+-                          </packing>
+-                        </child>
+-                      </widget>
+-                    </child>
+-                  </widget>
+-                </child>
++                <property name="has_default">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_stock">True</property>
+               </widget>
+               <packing>
+-                <property name="right_attach">2</property>
+-                <property name="top_attach">6</property>
+-                <property name="bottom_attach">7</property>
+-                <property name="x_options"></property>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">1</property>
+               </packing>
+             </child>
+           </widget>
+           <packing>
+-            <property name="position">3</property>
++            <property name="expand">False</property>
++            <property name="fill">True</property>
++            <property name="pack_type">end</property>
++            <property name="position">0</property>
+           </packing>
+         </child>
+         <child>
+-          <widget class="GtkTable" id="smartcardoptions">
++          <widget class="GtkTable" id="table21">
+             <property name="visible">True</property>
++            <property name="can_focus">False</property>
+             <property name="border_width">12</property>
+             <property name="n_rows">2</property>
+             <property name="n_columns">2</property>
+             <property name="column_spacing">12</property>
+             <property name="row_spacing">12</property>
+             <child>
+-              <widget class="GtkLabel" id="label43">
++              <widget class="GtkLabel" id="label44">
+                 <property name="visible">True</property>
+-                <property name="xalign">0</property>
+-                <property name="label" translatable="yes">Card Re_moval Action:</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">1</property>
++                <property name="label" translatable="yes">Certificate _URL:</property>
+                 <property name="use_underline">True</property>
+-                <accessibility>
+-                  <atkrelation type="label-for" target="scaction"/>
+-                </accessibility>
++                <property name="justify">center</property>
++                <property name="mnemonic_widget">cacerturl</property>
+               </widget>
+               <packing>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
+                 <property name="x_options">GTK_FILL</property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkComboBox" id="scaction">
++              <widget class="GtkEntry" id="cacerturl">
+                 <property name="visible">True</property>
+-                <property name="items" translatable="yes">*</property>
++                <property name="can_focus">True</property>
++                <property name="width_chars">40</property>
++                <property name="primary_icon_activatable">False</property>
++                <property name="secondary_icon_activatable">False</property>
++                <property name="primary_icon_sensitive">True</property>
++                <property name="secondary_icon_sensitive">True</property>
+               </widget>
+               <packing>
+                 <property name="left_attach">1</property>
+                 <property name="right_attach">2</property>
+-                <property name="x_options">GTK_FILL</property>
+-                <property name="y_options">GTK_FILL</property>
++                <property name="top_attach">1</property>
++                <property name="bottom_attach">2</property>
++                <property name="y_options"></property>
+               </packing>
+             </child>
+             <child>
+-              <widget class="GtkCheckButton" id="forcesmartcard">
+-                <property name="label" translatable="yes">Require smart car_d for login</property>
++              <widget class="GtkLabel" id="label46">
+                 <property name="visible">True</property>
+-                <property name="can_focus">True</property>
+-                <property name="receives_default">False</property>
+-                <property name="use_underline">True</property>
+-                <property name="draw_indicator">True</property>
++                <property name="can_focus">False</property>
++                <property name="xalign">0</property>
++                <property name="label" translatable="yes">To verify the LDAP server with TLS protocol enabled you need a CA certificate which signed the server's certificate. Please fill in the URL where the CA certificate in the PEM format can be downloaded from.</property>
++                <property name="wrap">True</property>
+               </widget>
+               <packing>
+                 <property name="right_attach">2</property>
+-                <property name="top_attach">1</property>
+-                <property name="bottom_attach">2</property>
+-                <property name="x_options">GTK_FILL</property>
++                <property name="x_options"></property>
+                 <property name="y_options"></property>
+               </packing>
+             </child>
+           </widget>
+           <packing>
+-            <property name="position">4</property>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="position">2</property>
++          </packing>
++        </child>
++      </widget>
++    </child>
++  </widget>
++  <widget class="GtkDialog" id="revertsettings">
++    <property name="visible">True</property>
++    <property name="can_focus">False</property>
++    <property name="title" translatable="yes">Revert</property>
++    <property name="resizable">False</property>
++    <property name="icon_name">system-config-authentication</property>
++    <property name="type_hint">dialog</property>
++    <child internal-child="vbox">
++      <widget class="GtkVBox" id="dialog-vbox10">
++        <property name="visible">True</property>
++        <property name="can_focus">False</property>
++        <child internal-child="action_area">
++          <widget class="GtkHButtonBox" id="dialog-action_area10">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="layout_style">end</property>
++            <child>
++              <widget class="GtkButton" id="cancelbutton9">
++                <property name="label">gtk-cancel</property>
++                <property name="response_id">-6</property>
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_stock">True</property>
++              </widget>
++              <packing>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">0</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkButton" id="okbutton9">
++                <property name="label">gtk-revert-to-saved</property>
++                <property name="response_id">-5</property>
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="has_default">True</property>
++                <property name="receives_default">False</property>
++                <property name="use_stock">True</property>
++              </widget>
++              <packing>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">1</property>
++              </packing>
++            </child>
++          </widget>
++          <packing>
++            <property name="expand">False</property>
++            <property name="fill">True</property>
++            <property name="pack_type">end</property>
++            <property name="position">0</property>
++          </packing>
++        </child>
++        <child>
++          <widget class="GtkHBox" id="hbox23">
++            <property name="visible">True</property>
++            <property name="can_focus">False</property>
++            <property name="spacing">12</property>
++            <child>
++              <widget class="GtkImage" id="image5">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="stock">gtk-dialog-question</property>
++                <property name="icon-size">6</property>
++              </widget>
++              <packing>
++                <property name="expand">False</property>
++                <property name="fill">False</property>
++                <property name="position">0</property>
++              </packing>
++            </child>
++            <child>
++              <widget class="GtkLabel" id="label49">
++                <property name="visible">True</property>
++                <property name="can_focus">False</property>
++                <property name="label" translatable="yes">All configuration files which were modified by the previous authentication configuration change will be restored from backup. Revert the changes?</property>
++                <property name="wrap">True</property>
++              </widget>
++              <packing>
++                <property name="expand">True</property>
++                <property name="fill">True</property>
++                <property name="padding">12</property>
++                <property name="position">1</property>
++              </packing>
++            </child>
++          </widget>
++          <packing>
++            <property name="expand">True</property>
++            <property name="fill">True</property>
++            <property name="padding">12</property>
++            <property name="position">2</property>
+           </packing>
+         </child>
+       </widget>
+diff -up authconfig-6.1.12/authconfig-gtk.py.ipav2join authconfig-6.1.12/authconfig-gtk.py
+--- authconfig-6.1.12/authconfig-gtk.py.ipav2join	2012-03-27 13:48:25.964060164 +0200
++++ authconfig-6.1.12/authconfig-gtk.py	2012-03-27 13:48:25.971060310 +0200
+@@ -105,10 +105,13 @@ class Authconfig:
+ 			 "nisoptions", "nis_map", authinfo.PATH_LIBNSS_NIS, "ypbind"),
+ 			"Winbind":
+ 			(_("Winbind"), ("WinbindAuth",),
+-			 "winbindoptions", "winbind_map", authinfo.PATH_WINBIND, "samba-winbind")
++			 "winbindoptions", "winbind_map", authinfo.PATH_WINBIND, "samba-winbind"),
++			"IPAv2":
++			(_("IPAv2"), ("IPAv2Auth",),
++			 "ipav2options", "ipav2_map", authinfo.PATH_IPA_CLIENT_INSTALL, "freeipa-client")
+ 		}
+ 		# to keep the order we need a tuple
+-		self.id_keys = ("local", "LDAP",# "FreeIPA",
++		self.id_keys = ("local", "LDAP", "IPAv2",# "FreeIPA",
+ 				"NIS", "Winbind")
+ 		# "auth type": localized name,
+ 		# option widget, option map name, file, package
+@@ -128,6 +131,9 @@ class Authconfig:
+ 			"WinbindAuth":
+ 			(_("Winbind password"),
+ 			 "authlabel", "empty_map", "", ""),
++			"IPAv2Auth":
++			(_("IPAv2 password"),
++			 "authlabel", "empty_map", "", ""),
+ 		}
+ 		# entry or label / button / checkbox / option menu :
+ 		# entry (or label): authInfo field
+@@ -181,6 +187,18 @@ class Authconfig:
+ 			"winbindoffline" : ("winbindOffline", ""),
+ 			"winbindjoin" : ("winbindjoin_maybe_launch", "")
+ 		}
++		self.ipav2join_map = {
++			"domain" : ("ipav2Domain", ""),
++			"joinuser" : ("joinUser", ""),
++			"joinpassword" : ("joinPassword", ""),
++		}
++		self.ipav2_map = {
++			"ipav2domain" : ("ipav2Domain", "", "", "", self.ipa_need_join),
++			"ipav2realm" : ("ipav2Realm", "", "", "", self.ipa_need_join),
++			"ipav2server" : ("ipav2Server", "", "", "", self.ipa_need_join),
++			"ipav2nontp" : ("ipav2NoNTP", ""),
++			"ipav2join" : ("ipav2join_maybe_launch", "")
++		}
+ 		self.info = authinfo.read(self.message_callback)
+ 		self.pristineinfo = self.info.copy()
+ 		if self.info.enableLocAuthorize == None:
+@@ -199,7 +217,7 @@ class Authconfig:
+ 	def destroy_widget(self, button, widget):
+ 		widget.destroy()
+ 
+-	def winbindjoin_maybe_launch(self, button, map, xml, parent):
++	def apply_settings(self, map, xml, parent):
+ 		backup = self.info.copy()
+ 		pristine = authinfo.read(self.message_callback)
+ 		self.info_apply(map, xml)
+@@ -208,7 +226,7 @@ class Authconfig:
+ 						      "empty_map", parent,
+ 						      (0, 1))
+ 			if (response == gtk.RESPONSE_CANCEL):
+-				return
++				return None
+ 			# Don't save.
+ 			if (response == 0):
+ 				self.info = backup
+@@ -216,6 +234,12 @@ class Authconfig:
+ 			if (response == 1):
+ 				self.apply()
+ 				backup = self.info
++		return backup
++
++	def winbindjoin_maybe_launch(self, button, map, xml, parent):
++		backup = self.apply_settings(map, xml, parent)
++		if not backup:
++			return
+ 		self.winbindjoin_launch(button, map, xml, parent)
+ 		self.info = backup
+ 
+@@ -229,6 +253,19 @@ class Authconfig:
+ 		self.info.joinUser = None
+ 		self.info.joinPassword = None
+ 
++	def ipav2join_maybe_launch(self, button, map, xml, parent):
++		backup = self.apply_settings(map, xml, parent)
++		if not backup:
++			return
++		self.ipav2join_launch(button, map, xml, parent)
++		self.info = backup
++
++	def ipav2join_launch(self, button, map, xml, parent):
++		response = self.run_on_button(None, "joinipadomain",
++					      "ipav2join_map", parent)
++		if (response == gtk.RESPONSE_OK):
++			self.info.joinIPADomain(True)
++
+ 	def info_apply(self, map, xml):
+ 		for entry in map.keys():
+ 			widget = xml.get_widget(entry)
+@@ -444,6 +481,13 @@ class Authconfig:
+ 			text = _("You must provide ldaps:// server address or use TLS for LDAP authentication.")
+ 			self.display_msgctrl(text)
+ 
++	def ipa_need_join(self, active, xml):
++		if self.currid != "IPAv2" or self.info.ipaDomainJoined:
++			self.clear_msgctrl()
++		else:
++			text = _("Use the \"Join Domain\" button to join the IPAv2 domain.")
++			self.display_msgctrl(text)
++
+ 	def missing_package(self, path, service, package):
+ 		if type(path) == tuple:
+ 			if self.info.sssdSupported():
+@@ -560,6 +604,7 @@ class Authconfig:
+ 		self.update_type(self.auth_map, self.currauth)
+ 		if not self.missing_packages():
+ 			self.enable_cacert_download(None, self.idxml)
++			self.ipa_need_join(None, self.idxml)
+ 
+ 	def display_authopts(self, topparent):
+ 		self.authxml = self.display_opts(self.auth_map[self.currauth][1], 'authsite',
+@@ -574,6 +619,7 @@ class Authconfig:
+ 		self.update_type(self.auth_map, self.currauth)
+ 		if not self.missing_packages():
+ 			self.enable_cacert_download(None, self.idxml)
++			self.ipa_need_join(None, self.idxml)
+ 
+ 	# Create a vbox with the right controls and return the vbox.
+ 	def get_main_widget(self, xml):
+diff -up authconfig-6.1.12/authconfig.py.ipav2join authconfig-6.1.12/authconfig.py
+--- authconfig-6.1.12/authconfig.py.ipav2join	2010-12-23 17:38:53.000000000 +0100
++++ authconfig-6.1.12/authconfig.py	2012-03-27 13:48:25.971060310 +0200
+@@ -204,6 +204,23 @@ class Authconfig:
+ 		parser.add_option("--winbindjoin", metavar="<Administrator>",
+ 			help=_("join the winbind domain or ads realm now as this administrator"))
+ 
++		parser.add_option("--enableipav2", action="store_true",
++			help=_("enable IPAv2 for user information and authentication by default"))
++		parser.add_option("--disableipav2", action="store_true",
++			help=_("disable IPAv2 for user information and authentication by default"))
++		parser.add_option("--ipav2domain", metavar=_("<domain>"),
++			help=_("the IPAv2 domain the system should be part of"))
++		parser.add_option("--ipav2realm", metavar=_("<realm>"),
++			help=_("the realm for the IPAv2 domain"))
++		parser.add_option("--ipav2server", metavar=_("<servers>"),
++			help=_("the server for the IPAv2 domain"))
++		parser.add_option("--enableipav2nontp", action="store_true",
++			help=_("do not setup the NTP against the IPAv2 domain"))
++		parser.add_option("--disableipav2nontp", action="store_true",
++			help=_("setup the NTP against the IPAv2 domain (default)"))
++		parser.add_option("--ipav2join", metavar="<account>",
++			help=_("join the IPAv2 domain as this account"))
++
+ 		parser.add_option("--enablewins", action="store_true",
+ 			help=_("enable wins for hostname resolution"))
+ 		parser.add_option("--disablewins", action="store_true",
+@@ -364,6 +381,8 @@ class Authconfig:
+ 			"winbindauth":"enableWinbindAuth",
+ 			"winbindusedefaultdomain":"winbindUseDefaultDomain",
+ 			"winbindoffline":"winbindOffline",
++			"ipav2":"enableIPAv2",
++			"ipav2nontp":"ipav2NoNTP",
+ 			"wins":"enableWINS",
+ 			"sssd":"enableSSSD",
+ 			"sssdauth":"enableSSSDAuth",
+@@ -393,7 +412,10 @@ class Authconfig:
+ 			"winbindseparator":"winbindSeparator",
+ 			"winbindtemplatehomedir":"winbindTemplateHomedir",
+ 			"winbindtemplateprimarygroup":"winbindTemplatePrimaryGroup",
+-			"winbindtemplateshell":"winbindTemplateShell"}
++			"winbindtemplateshell":"winbindTemplateShell",
++			"ipav2domain":"ipav2Domain",
++			"ipav2realm":"ipav2Realm",
++			"ipav2server":"ipav2Server"}
+ 
+ 		for opt, aival in bool_settings.iteritems():
+ 			if getattr(self.options, "enable"+opt):
+@@ -423,6 +445,9 @@ class Authconfig:
+ 			if len(lst) > 1:
+ 				self.info.joinPassword = lst[1]
+ 
++		if self.options.ipav2join != None:
++			self.info.joinUser = self.options.ipav2join
++
+ 		if self.options.smartcardaction:
+ 			try:
+ 				idx = int(self.options.smartcardaction)
+@@ -447,6 +472,8 @@ class Authconfig:
+ 	def joinDomain(self):
+ 		if self.options.winbindjoin:
+ 			self.info.joinDomain(True)
++		if self.options.ipav2join != None:
++			self.info.joinIPADomain(True)
+ 
+ 	def writeAuthInfo(self):
+ 		self.info.testLDAPCACerts()
+@@ -544,13 +571,13 @@ class AuthconfigTUI(Authconfig):
+ 		cache = cb = snack.Checkbox(_("Cache Information"), bool(self.info.enableCache))
+ 		infoGrid.setField(cb, 0, 1, anchorLeft=1, growx=1)
+ 
+-		hesiod = cb =	snack.Checkbox(_("Use Hesiod"), bool(self.info.enableHesiod))
++		ldap = cb = snack.Checkbox(_("Use LDAP"), bool(self.info.enableLDAP))
+ 		infoGrid.setField(cb, 0, 2, anchorLeft=1, growx=1)
+ 
+-		ldap = cb = snack.Checkbox(_("Use LDAP"), bool(self.info.enableLDAP))
++		nis = cb = snack.Checkbox(_("Use NIS"), bool(self.info.enableNIS))
+ 		infoGrid.setField(cb, 0, 3, anchorLeft=1, growx=1)
+ 
+-		nis = cb = snack.Checkbox(_("Use NIS"), bool(self.info.enableNIS))
++		ipav2 = cb = snack.Checkbox(_("Use IPAv2"), bool(self.info.enableIPAv2))
+ 		infoGrid.setField(cb, 0, 4, anchorLeft=1, growx=1)
+ 
+ 		winbind = cb = snack.Checkbox(_("Use Winbind"), bool(self.info.enableWinbind))
+@@ -611,7 +638,7 @@ class AuthconfigTUI(Authconfig):
+ 
+ 		if comp != cancel:
+ 			self.info.enableCache = cache.selected()
+-			self.info.enableHesiod = hesiod.selected()
++			self.info.enableIPAv2 = ipav2.selected()
+ 			self.info.enableLDAP = ldap.selected()
+ 			self.info.enableNIS = nis.selected()
+ 			self.info.enableWinbind = winbind.selected()
+@@ -732,11 +759,13 @@ class AuthconfigTUI(Authconfig):
+ 		self.screen.popWindow()
+ 		return comp != cancel
+ 
+-	def getHesiodSettings(self, next):
+-		questions = [("svalue", _("LHS:"), "hesiodLHS", 0),
+-			("svalue", _("RHS:"), "hesiodRHS", 0)]
+-		return self.getGenericChoices(_("Hesiod Settings"),
+-			questions, _("Back"), next and _("Next") or _("Ok"))
++	def getIPAv2Settings(self, next):
++		questions = [("svalue", _("Domain:"), "ipav2Domain", 0),
++			("svalue", _("Realm:"), "ipav2Realm", 0),
++			("svalue", _("Server:"), "ipav2Server", 0)]
++		return self.getGenericChoices(_("IPAv2 Settings"),
++			questions, _("Back"), next and _("Next") or _("Ok"),
++			anothertxt=_("Join Domain"), anothercb=self.maybeGetJoinSettings)
+ 
+ 	def getLDAPSettings(self, next):
+ 		questions = [("tfvalue", _("Use TLS"), "enableLDAPS", None),
+@@ -769,7 +798,10 @@ class AuthconfigTUI(Authconfig):
+ 			questions, _("Cancel"), _("Ok")):
+ 			self.screen.suspend()
+ 			self.info.update()
+-			self.info.joinDomain(True)
++			if self.info.enableWinbind:
++				self.info.joinDomain(True)
++			elif self.info.enableIPAv2:
++				self.info.joinIPADomain(True)
+ 			self.screen.resume()
+ 		return True
+ 
+@@ -818,14 +850,14 @@ class AuthconfigTUI(Authconfig):
+ 			if next == 1:
+ 				rc = self.getMainChoices()
+ 			elif next == 2:
+-				if self.info.enableHesiod:
++				if self.info.enableIPAv2:
+ 					more = (self.info.enableLDAP or
+ 						self.info.enableLDAPAuth or
+ 						self.info.enableKerberos or
+ 						self.info.enableNIS or
+ 						self.info.enableWinbind or
+ 						self.info.enableWinbindAuth)
+-					rc = self.getHesiodSettings(more)
++					rc = self.getIPAv2Settings(more)
+ 			elif next == 3:
+ 				if self.info.enableLDAP or self.info.enableLDAPAuth:
+ 					more = (self.info.enableKerberos or
+diff -up authconfig-6.1.12/authinfo.py.ipav2join authconfig-6.1.12/authinfo.py
+--- authconfig-6.1.12/authinfo.py.ipav2join	2012-03-27 13:48:25.961060102 +0200
++++ authconfig-6.1.12/authinfo.py	2012-03-27 13:51:01.464295370 +0200
+@@ -117,6 +117,7 @@ PATH_PAM_FPRINTD = AUTH_MODULE_DIR + "/p
+ PATH_PAM_SSS = AUTH_MODULE_DIR + "/pam_sss.so"
+ 
+ PATH_WINBIND_NET = "/usr/bin/net"
++PATH_IPA_CLIENT_INSTALL = "/usr/sbin/ipa-client-install"
+ 
+ PATH_LDAP_CACERTS = "/etc/openldap/cacerts"
+ LDAP_CACERT_DOWNLOADED = "authconfig_downloaded.pem"
+@@ -144,6 +145,8 @@ def snipString(s):
+ 
+ # Make a list presentable.
+ def cleanList(lst):
++	if not lst:
++		return lst
+ 	s = lst.replace("\t"," ")
+ 	return ",".join(filter(None, s.split(" ")))
+ 
+@@ -809,11 +812,11 @@ def feedFork(command, echo, query, respo
+ 	try:
+ 		(pid, master) = os.forkpty()
+ 	except OSError:
+-		return
++		return 255
+ 	if not pid:
+ 		# child
+-		os.system(command)
+-		os._exit(0)
++		status = os.system(command)
++		os._exit(status)
+ 	output = ""
+ 	try:
+ 		i = fcntl.fcntl(master, fcntl.F_GETFL)
+@@ -869,10 +872,12 @@ def feedFork(command, echo, query, respo
+ 		os.kill(pid, signal.SIGTERM)
+ 	except OSError:
+ 		pass
++	status = 255
+ 	try:
+ 		(child, status) = os.waitpid(pid, 0)
+ 	except OSError, (err, text):
+ 		sys.stderr.write("waitpid: " + text + "\n")
++	return status
+ 
+ def isEmptyDir(path):
+ 	try:
+@@ -1175,7 +1180,13 @@ class AuthInfo:
+ 		self.winbindTemplateShell = ""
+ 		self.winbindUseDefaultDomain = None
+ 		self.winbindOffline = None
+-		
++
++		self.ipav2Server = None
++		self.ipav2Domain = None
++		self.ipav2Realm = None
++		self.ipav2NoNTP = None
++		self.ipaDomainJoined = False
++
+ 		self.smartcardModule = ""
+ 		self.smartcardAction = ""
+ 
+@@ -1199,6 +1210,7 @@ class AuthInfo:
+ 		self.enableMDNS = None
+ 		self.preferDNSinHosts = None
+ 		self.enableSSSD = None
++		self.enableIPAv2 = None
+ 
+ 		# Authentication setup.
+ 		self.enableAFS = None
+@@ -1270,7 +1282,7 @@ class AuthInfo:
+ 		("ldapSchema", "c"), ("ldapCacertDir", "c"), ("enableCacheCreds", "b"),
+ 		("kerberosRealm", "c"), ("kerberosKDC", "i"), ("kerberosAdminServer", "i"),
+ 		("forceSSSDUpdate", "b"), ("enableLDAP", "b"), ("enableKerberos", "b"),
+-		("enableLDAPAuth", "b")]),
++		("enableLDAPAuth", "b"), ("enableIPAv2", "b")]),
+ 	SaveGroup(self.writeSmartcard, [("smartcardAction", "i"), ("smartcardModule", "c")]),
+ 	SaveGroup(self.writeWinbind, [("smbWorkgroup", "i"), ("smbServers", "i"),
+ 		("smbRealm", "c"), ("smbSecurity", "i"), ("smbIdmapUid", "i"),
+@@ -1282,7 +1294,7 @@ class AuthInfo:
+ 		("enableLDAPbind", "b"), ("enableLDAP", "b"), ("enableHesiodbind", "b"),
+ 		("enableHesiod", "b"), ("enableDBIbind", "b"), ("enableDBbind", "b"),
+ 		("enableCompat", "b"), ("enableWINS", "b"), ("enableMDNS", "b"),
+-		("enableNIS3", "b"), ("enableNIS", "b"),
++		("enableNIS3", "b"), ("enableNIS", "b"), ("enableIPAv2", "b"),
+ 		("enableSSSD", "b"), ("preferDNSinHosts", "b"), ("implicitSSSD", "b")]),
+ 	SaveGroup(self.writePAM, [("cracklibArgs", "c"), ("passwdqcArgs", "c"),
+ 		("localuserArgs", "c"), ("pamAccessArgs", "c"), ("enablePAMAccess", "b"),
+@@ -1295,7 +1307,7 @@ class AuthInfo:
+ 		("enableOTP", "b"), ("enablePasswdQC", "b"),
+ 		("enableLocAuthorize", "b"), ("enableSysNetAuth", "b"), ("winbindOffline", "b"),
+ 		("enableSSSDAuth", "b"), ("enableFprintd", "b"), ("pamLinked", "b"),
+-		("implicitSSSDAuth", "b")]),
++		("implicitSSSDAuth", "b"), ("enableIPAv2", "b")]),
+ 	SaveGroup(self.writeSysconfig, [("passwordAlgorithm", "i"), ("enableShadow", "b"), ("enableNIS", "b"),
+ 		("enableLDAP", "b"), ("enableLDAPAuth", "b"), ("enableKerberos", "b"),
+ 		("enableSmartcard", "b"), ("forceSmartcard", "b"),
+@@ -1303,7 +1315,9 @@ class AuthInfo:
+ 		("enableHesiod", "b"), ("enableCracklib", "b"), ("enablePasswdQC", "b"),
+ 		("enableLocAuthorize", "b"), ("enablePAMAccess", "b"), ("enableCacheCreds", "b"),
+ 		("enableMkHomeDir", "b"), ("enableSysNetAuth", "b"), ("enableFprintd", "b"),
+-		("enableSSSD", "b"), ("enableSSSDAuth", "b"), ("enableForceLegacy", "b")]),
++		("enableSSSD", "b"), ("enableSSSDAuth", "b"), ("enableForceLegacy", "b"),
++		("ipav2Server", "i"), ("ipav2Domain", "i"), ("ipav2Realm", "c"),
++		("enableIPAv2", "b"), ("ipaDomainJoined", "b"), ("ipav2NoNTP", "b")]),
+ 	SaveGroup(self.writeNetwork, [("nisDomain", "c")])]
+ 
+ 	def setParam(self, attr, value, ref):
+@@ -1317,7 +1331,7 @@ class AuthInfo:
+ 		if self.enableForceLegacy or not self.sssdConfig:
+ 			return False
+ 		# we just ignore things which have no support on command line
+-		nssall = ('NIS', 'LDAP', 'Winbind', 'Hesiod')
++		nssall = ('NIS', 'LDAP', 'Winbind', 'Hesiod', 'IPAv2')
+ 		pamall = ('Kerberos', 'LDAPAuth', 'WinbindAuth', 'Smartcard')
+ 		idsupported = ('LDAP')
+ 		authsupported = ('Kerberos', 'LDAPAuth')
+@@ -2102,6 +2116,21 @@ class AuthInfo:
+ 				self.enableCacheCreds = shv.getBoolValue("CACHECREDENTIALS")
+ 			except ValueError:
+ 				pass
++			try:
++				self.enableIPAv2 = shv.getBoolValue("USEIPAV2")
++			except ValueError:
++				pass
++			try:
++				self.ipaDomainJoined = shv.getBoolValue("IPADOMAINJOINED")
++			except ValueError:
++				pass
++			try:
++				self.ipav2NoNTP = shv.getBoolValue("IPAV2NONTP")
++			except ValueError:
++				pass
++			self.ipav2Server = shv.getValue("IPAV2SERVER")
++			self.ipav2Domain = shv.getValue("IPAV2DOMAIN")
++			self.ipav2Realm = shv.getValue("IPAV2REALM")
+ 			algo = shv.getValue("PASSWDALGORITHM")
+ 			if algo in password_algorithms:
+ 				self.passwordAlgorithm = algo
+@@ -2152,6 +2181,7 @@ class AuthInfo:
+ 	# compensate for the change.
+ 	def update(self):
+ 		self.smbServers = cleanList(self.smbServers)
++		self.ipav2Server = cleanList(self.ipav2Server)
+ 		self.kerberosKDC = cleanList(self.kerberosKDC)
+ 		self.kerberosAdminServer = cleanList(self.kerberosAdminServer)
+ 		self.ldapServer = self.ldapHostsToURIs(self.ldapServer)
+@@ -2806,6 +2836,10 @@ class AuthInfo:
+ 
+ 		all_configs[CFG_SSSD].backup(self.backupDir)
+ 
++		if self.enableIPAv2:
++			# just save the backup
++			return True
++
+ 		if not self.sssdDomain:
+ 			try:
+ 				self.sssdDomain = self.sssdConfig.new_domain(SSSD_AUTHCONFIG_DOMAIN)
+@@ -3060,7 +3094,7 @@ class AuthInfo:
+ 				normal += " nisplus"
+ 			if self.enableNIS:
+ 				normal += " nis"
+-			if self.enableSSSD or self.implicitSSSD:
++			if self.enableSSSD or self.implicitSSSD or self.enableIPAv2:
+ 				normal += " sss"
+ 			if self.enableLDAPbind:
+ 				normal += " ldapbind"
+@@ -3346,7 +3380,7 @@ class AuthInfo:
+ 					(self.enableOTP and module[NAME] == "otp") or
+ 					(self.enablePasswdQC and module[NAME] == "passwdqc") or
+ 					(self.enableWinbindAuth and module[NAME] == "winbind") or
+-					((self.enableSSSDAuth or self.implicitSSSDAuth) and module[NAME] == "sss") or
++					((self.enableSSSDAuth or self.implicitSSSDAuth or self.enableIPAv2) and module[NAME] == "sss") or
+ 					(self.enableLocAuthorize and module[NAME] == "localuser") or
+ 					(self.enablePAMAccess and module[NAME] == "access") or
+ 					(self.enableMkHomeDir and module[NAME] == "mkhomedir") or
+@@ -3409,6 +3443,12 @@ class AuthInfo:
+ 		shv.setBoolValue("USESYSNETAUTH", self.enableSysNetAuth)
+ 		shv.setBoolValue("FORCELEGACY", self.enableForceLegacy)
+ 		shv.setBoolValue("CACHECREDENTIALS", self.enableCacheCreds)
++		shv.setBoolValue("USEIPAV2", self.enableIPAv2)
++		shv.setBoolValue("IPADOMAINJOINED", self.ipaDomainJoined)
++		shv.setBoolValue("IPAV2NONTP", self.ipav2NoNTP)
++		shv.setValue("IPAV2SERVER", self.ipav2Server)
++		shv.setValue("IPAV2DOMAIN", self.ipav2Domain)
++		shv.setValue("IPAV2REALM", self.ipav2Realm)
+ 
+ 		shv.write(0644)
+ 		shv.close()
+@@ -3626,6 +3666,11 @@ class AuthInfo:
+ 		print "pam_sss is %s by default" % formatBool(self.enableSSSDAuth)
+ 		print " credential caching in SSSD is %s" % formatBool(self.enableCacheCreds)
+ 		print " SSSD use instead of legacy services if possible is %s" % formatBool(not self.enableForceLegacy)
++		print "IPAv2 is %s" % formatBool(self.enableIPAv2)
++		print "IPAv2 domain was %sjoined" % (not self.ipaDomainJoined and "not " or "")
++		print " IPAv2 server = \"%s\"" % self.ipav2Server
++		print " IPAv2 realm = \"%s\"" % self.ipav2Realm
++		print " IPAv2 domain = \"%s\"" % self.ipav2Domain
+ 		print "pam_cracklib is %s (%s)" % (formatBool(self.enableCracklib),
+ 			self.cracklibArgs)
+ 		print "pam_passwdqc is %s (%s)" % (formatBool(self.enablePasswdQC),
+@@ -3671,6 +3716,36 @@ class AuthInfo:
+ 			else:
+ 				os.system(cmd)
+ 
++	def joinIPADomain(self, echo):
++		if self.enableIPAv2:
++			server = self.ipav2Server
++			domain = self.ipav2Domain
++			realm = self.ipav2Realm
++			principal = self.joinUser
++			password = self.joinPassword
++			if self.ipav2NoNTP:
++				nontp = "-N"
++			else:
++				nontp = ""
++			cmd = PATH_IPA_CLIENT_INSTALL + " --noac %s%s %s%s %s%s %s%s %s %s" % (
++				domain and "--domain=" or "", domain,
++				server and "--server=" or "", server,
++				realm and "--realm=" or "", realm,
++				principal and "--principal=" or "", principal,
++				nontp,
++				password and "-W" or "")
++			
++			if echo:
++				sys.stderr.write("[%s]\n" % cmd)
++			if self.joinPassword:
++				status = feedFork(cmd, echo, "sword:", self.joinPassword)
++			else:
++				status = os.system(cmd)
++			if status == 0:
++				self.ipaDomainJoined = True
++			else:
++				self.messageCB(_("IPAv2 domain join was not succesful. The ipa-client-install command failed."))
++
+ 	def post(self, nostart):
+ 		self.toggleShadow()
+ 		onlystart = not self.confChanged
+@@ -3679,7 +3754,7 @@ class AuthInfo:
+ 			PATH_WINBIND, PATH_WINBIND_PID,
+ 			"winbind", nostart, onlystart)
+ 		toggleSplatbindService(self.enableSSSD or self.enableSSSDAuth or
+-			self.implicitSSSD or self.implicitSSSDAuth,
++			self.implicitSSSD or self.implicitSSSDAuth or self.enableIPAv2,
+ 			PATH_SSSD, PATH_SSSD_PID,
+ 			"sssd", nostart, onlystart)
+ 		toggleSplatbindService((self.enableLDAP or self.enableLDAPAuth) and

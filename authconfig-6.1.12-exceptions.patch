@@ -1,0 +1,112 @@
+# HG changeset patch
+# User Tomas Mraz <tmraz@redhat.com>
+# Date 1322134967 -3600
+# Node ID 7bb9c7b188a7398c3721bdce258e1bdf970ca3e2
+# Parent  ca6c4d2e2501c10e1cc8df17c2c7106d5572822e
+Fix mistakes in multiple exception handlings. Use the as syntax.
+
+diff -r ca6c4d2e2501 -r 7bb9c7b188a7 authconfig-gtk.py
+--- a/authconfig-gtk.py	Thu Nov 24 12:41:27 2011 +0100
++++ b/authconfig-gtk.py	Thu Nov 24 12:42:47 2011 +0100
+@@ -59,7 +59,7 @@
+ 
+ try:
+ 	import gtk, gtk.glade
+-except RuntimeError, e:
++except RuntimeError:
+ 	sys.stderr.write(_("Unable to initialize graphical environment. Most likely cause of failure\n"
+ 		"is that the tool was not run using a graphical environment. Please either\n"
+ 		"start your graphical user interface or set your DISPLAY variable.\n"))
+diff -r ca6c4d2e2501 -r 7bb9c7b188a7 authinfo.py
+--- a/authinfo.py	Thu Nov 24 12:41:27 2011 +0100
++++ b/authinfo.py	Thu Nov 24 12:42:47 2011 +0100
+@@ -205,7 +205,7 @@
+ 			fcntl.lockf(fd, fcntl.LOCK_SH)
+ 		else:
+ 			fcntl.lockf(fd, fcntl.LOCK_EX)
+-	except OSError, (errno, strerr):
++	except OSError as (errno, strerr):
+ 		if fd != -1:
+ 			try:
+ 				os.close(fd)
+@@ -913,7 +913,7 @@
+ 		c = ""
+ 		try:
+ 			c = os.read(master, 1)
+-		except OSError, (err, text):
++		except OSError as (err, text):
+ 			if err == errno.EINTR or err == errno.EAGAIN:
+ 				pass
+ 			elif err == errno.EIO:
+@@ -1089,7 +1089,7 @@
+ 		try:
+ 			if not os.path.isdir(destdir):
+ 				os.mkdir(destdir)
+-		except OSError, IOError:
++		except (OSError, IOError):
+ 			rv = False
+ 
+ 		backuppath = destdir+"/"+self.backupName
+@@ -1104,7 +1104,7 @@
+ 		try:
+ 			if not os.path.isdir(backupdir):
+ 				return False
+-		except IOError, OSError:
++		except (IOError, OSError):
+ 			rv = False
+ 
+ 		backuppath = backupdir+"/"+self.backupName
+@@ -1133,7 +1133,7 @@
+ 		try:
+ 			if not os.path.isdir(destdir):
+ 				os.mkdir(destdir)
+-		except OSError, IOError:
++		except (OSError, IOError):
+ 			rv = False
+ 
+ 		backuppath = destdir+"/"+self.backupName
+@@ -1161,7 +1161,7 @@
+ 		try:
+ 			if not os.path.isdir(backupdir):
+ 				return False
+-		except IOError, OSError:
++		except (IOError, OSError):
+ 			rv = False
+ 
+ 		backuppath = backupdir+"/"+self.backupName
+@@ -1700,7 +1700,7 @@
+ 			return True
+ 		try:
+ 			self.sssdConfig.import_config(all_configs[CFG_SSSD].origPath)
+-		except IOError, SSSDConfig.ParsingError:
++		except (IOError, SSSDConfig.ParsingError):
+ 			self.sssdConfig.new_config()
+ 		try:
+ 			domain = self.sssdDomain = self.sssdConfig.get_domain(SSSD_AUTHCONFIG_DOMAIN)
+@@ -3630,7 +3630,7 @@
+ 			ret = ret and self.writePAM()
+ 			ret = ret and self.writeSysconfig()
+ 			ret = ret and self.writeNetwork()
+-		except OSError, IOError:
++		except (OSError, IOError):
+ 			return False
+ 		return ret
+ 
+@@ -3645,7 +3645,7 @@
+ 				if group.attrsDiffer(self, ref):
+ 					self.confChanged = True
+ 					ret = ret and group.saveFunction()
+-		except OSError, IOError:
++		except (OSError, IOError):
+ 			return False
+ 		return ret
+ 
+@@ -3875,7 +3875,7 @@
+ 		if self.enableLDAP or self.enableLDAPAuth:
+ 			try:
+ 				os.stat(self.ldapCacertDir)
+-			except OSError, (err, text):
++			except OSError as (err, text):
+ 				if err == errno.ENOENT:
+ 					os.mkdir(self.ldapCacertDir, 0755)
+ 
