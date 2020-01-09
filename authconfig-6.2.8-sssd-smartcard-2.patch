@@ -1,0 +1,28 @@
+From 14f70ded1115f82d689b2fb08accf572f52c52ed Mon Sep 17 00:00:00 2001
+From: Sumit Bose <sbose@redhat.com>
+Date: Sun, 5 Mar 2017 15:07:23 +0100
+Subject: [PATCH 6/7]  Show a warning if --enablerequiresmartcard is used with
+ --smartcardmodule=sssd
+
+---
+ authconfig.py | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/authconfig.py b/authconfig.py
+index 35b29997c2a004d786d66a0c52f6fd4fc9edd08d..ca7cfe5d51fb3483f6822b4ca24c49072d5f9adf 100755
+--- a/authconfig.py
++++ b/authconfig.py
+@@ -538,6 +538,10 @@ class Authconfig:
+ 				self.printError(_("Bad smart card removal action specified."))
+ 				self.info.smartcardAction = ""
+ 
++		if self.options.enablerequiresmartcard and self.options.smartcardmodule == "sssd":
++			self.printError(_("--enablerequiresmartcard is not supported for module 'sssd', option is ignored."))
++			self.options.enablerequiresmartcard = False
++
+ 		if not self.options.passalgo:
+ 			if self.options.enablemd5:
+ 				self.info.passwordAlgorithm = "md5"
+-- 
+2.9.3
+

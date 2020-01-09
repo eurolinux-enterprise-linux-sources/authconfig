@@ -1,0 +1,27 @@
+From 747e404e3716cbe3a4daf69b5408c69de4a5966a Mon Sep 17 00:00:00 2001
+From: Tomas Mraz <tmraz@fedoraproject.org>
+Date: Mon, 15 May 2017 15:49:34 +0200
+Subject: [PATCH 1/2] pam_succeed_if can return PAM_IGNORE in pam_setcred() we
+ must ignore it.
+
+This fixes rhbz#1450425.
+---
+ authinfo.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/authinfo.py b/authinfo.py
+index 51f66046b11b500a6c16832f43f94850a9800cf1..2d133803e79deb1a022bb0982fc982608160cc9a 100644
+--- a/authinfo.py
++++ b/authinfo.py
+@@ -131,7 +131,7 @@ LOGIC_FORCE_PKCS11_KRB5 = "[success=ok ignore=2 default=die]"
+ LOGIC_SKIPNEXT = "[success=1 default=ignore]"
+ LOGIC_SKIPNEXT3 = "[success=3 default=ignore]"
+ LOGIC_ALWAYS_SKIP = "[default=1]"
+-LOGIC_SKIPNEXT_ON_FAILURE = "[default=1 success=ok]"
++LOGIC_SKIPNEXT_ON_FAILURE = "[default=1 ignore=ignore success=ok]"
+ 
+ # Snip off line terminators and final whitespace from a passed-in string.
+ def snipString(s):
+-- 
+2.9.3
+

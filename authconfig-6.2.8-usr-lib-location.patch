@@ -1,0 +1,28 @@
+From 6e72ebe31d0357b2dac0168ec87c65471cfe7f08 Mon Sep 17 00:00:00 2001
+From: Tomas Mraz <tmraz@fedoraproject.org>
+Date: Wed, 1 Mar 2017 13:57:36 +0100
+Subject: [PATCH 1/7] PAM modules are located in /usr/lib[64]/security
+
+---
+ authinfo.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/authinfo.py b/authinfo.py
+index 1203a71114d0b700ff57802ece89b4a3e5351572..071514d7a2e3c3b9f85e0eb3bf7b099df942a186 100644
+--- a/authinfo.py
++++ b/authinfo.py
+@@ -75,9 +75,9 @@ SMARTCARD_AUTH_PAM_SERVICE_AC = "smartcard-auth-ac"
+ SSSD_AUTHCONFIG_DOMAIN = "default"
+ 
+ if "lib64" in str(globals()["acutil"]):
+-	LIBDIR = "/lib64"
++	LIBDIR = "/usr/lib64"
+ else:
+-	LIBDIR = "/lib"	
++	LIBDIR = "/usr/lib"
+ 
+ AUTH_MODULE_DIR = LIBDIR + "/security"
+ 
+-- 
+2.9.3
+

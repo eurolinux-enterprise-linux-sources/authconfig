@@ -1,6 +1,6 @@
-diff -up authconfig-6.2.8/po/ar.po.translations authconfig-6.2.8/po/ar.po
---- authconfig-6.2.8/po/ar.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ar.po	2016-06-17 13:55:20.084341703 +0200
+diff -up new/po/ar.po.translations new/po/ar.po
+--- new/po/ar.po.translations	2017-05-24 11:35:13.612265716 +0200
++++ new/po/ar.po	2017-05-24 11:35:13.613265686 +0200
 @@ -1,919 +1,940 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -1458,9 +1458,9 @@ diff -up authconfig-6.2.8/po/ar.po.translations authconfig-6.2.8/po/ar.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "المجموعة التي سيُضمّ إليها المستخدمون الذين أنشأهم winbind كمجوعة أوّليّة"
-diff -up authconfig-6.2.8/po/as.po.translations authconfig-6.2.8/po/as.po
---- authconfig-6.2.8/po/as.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/as.po	2016-06-17 13:55:20.085341726 +0200
+diff -up new/po/as.po.translations new/po/as.po
+--- new/po/as.po.translations	2017-05-24 11:35:13.612265716 +0200
++++ new/po/as.po	2017-05-24 11:35:13.613265686 +0200
 @@ -1,922 +1,965 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -3078,9 +3078,9 @@ diff -up authconfig-6.2.8/po/as.po.translations authconfig-6.2.8/po/as.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind ৰ দ্বাৰা নিৰ্মিত ব্যৱহাৰকাৰীৰ ক্ষেত্ৰত প্ৰধান দল ৰূপে ব্যৱহৃত দল"
-diff -up authconfig-6.2.8/po/ast.po.translations authconfig-6.2.8/po/ast.po
---- authconfig-6.2.8/po/ast.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ast.po	2016-06-17 13:55:20.086341749 +0200
+diff -up new/po/ast.po.translations new/po/ast.po
+--- new/po/ast.po.translations	2017-05-24 11:35:13.612265716 +0200
++++ new/po/ast.po	2017-05-24 11:35:13.613265686 +0200
 @@ -1,854 +1,856 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -4494,9 +4494,9 @@ diff -up authconfig-6.2.8/po/ast.po.translations authconfig-6.2.8/po/ast.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/bal.po.translations authconfig-6.2.8/po/bal.po
---- authconfig-6.2.8/po/bal.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/bal.po	2016-06-17 13:55:20.086341749 +0200
+diff -up new/po/bal.po.translations new/po/bal.po
+--- new/po/bal.po.translations	2017-05-24 11:35:13.612265716 +0200
++++ new/po/bal.po	2017-05-24 11:35:13.613265686 +0200
 @@ -1,856 +1,874 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -5992,9 +5992,9 @@ diff -up authconfig-6.2.8/po/bal.po.translations authconfig-6.2.8/po/bal.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "گروهی که گون winbind شر بیتگن گروه اصلیش کار دارنت"
-diff -up authconfig-6.2.8/po/bg.po.translations authconfig-6.2.8/po/bg.po
---- authconfig-6.2.8/po/bg.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/bg.po	2016-06-17 13:55:20.087341772 +0200
+diff -up new/po/bg.po.translations new/po/bg.po
+--- new/po/bg.po.translations	2017-05-24 11:35:13.612265716 +0200
++++ new/po/bg.po	2017-05-24 11:35:13.613265686 +0200
 @@ -1,927 +1,991 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -7613,9 +7613,9 @@ diff -up authconfig-6.2.8/po/bg.po.translations authconfig-6.2.8/po/bg.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "групата, която ще бъде основна за създадените от Winbind потребители"
-diff -up authconfig-6.2.8/po/bn_IN.po.translations authconfig-6.2.8/po/bn_IN.po
---- authconfig-6.2.8/po/bn_IN.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/bn_IN.po	2016-06-17 13:55:20.088341795 +0200
+diff -up new/po/bn_IN.po.translations new/po/bn_IN.po
+--- new/po/bn_IN.po.translations	2017-05-24 11:35:13.611265745 +0200
++++ new/po/bn_IN.po	2017-05-24 11:35:13.613265686 +0200
 @@ -1,920 +1,976 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -9204,9 +9204,9 @@ diff -up authconfig-6.2.8/po/bn_IN.po.translations authconfig-6.2.8/po/bn_IN.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind-র দ্বারা নির্মিত ব্যবহারকারীদের ক্ষেত্রে প্রধান দল রূপে ব্যবহৃত দল"
-diff -up authconfig-6.2.8/po/bn.po.translations authconfig-6.2.8/po/bn.po
---- authconfig-6.2.8/po/bn.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/bn.po	2016-06-17 13:55:20.089341818 +0200
+diff -up new/po/bn.po.translations new/po/bn.po
+--- new/po/bn.po.translations	2017-05-24 11:35:13.612265716 +0200
++++ new/po/bn.po	2017-05-24 11:35:13.613265686 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -10788,9 +10788,9 @@ diff -up authconfig-6.2.8/po/bn.po.translations authconfig-6.2.8/po/bn.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind-র দ্বারা নির্মিত ব্যবহারকারীদের ক্ষেত্রে প্রধান দল রূপে ব্যবহৃত দল"
-diff -up authconfig-6.2.8/po/bs.po.translations authconfig-6.2.8/po/bs.po
---- authconfig-6.2.8/po/bs.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/bs.po	2016-06-17 13:55:20.090341841 +0200
+diff -up new/po/bs.po.translations new/po/bs.po
+--- new/po/bs.po.translations	2017-05-24 11:35:13.611265745 +0200
++++ new/po/bs.po	2017-05-24 11:35:13.614265657 +0200
 @@ -1,918 +1,949 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -12268,9 +12268,9 @@ diff -up authconfig-6.2.8/po/bs.po.translations authconfig-6.2.8/po/bs.po
 +#~ msgstr ""
 +#~ "Grupa koju će korisnici, izrađeni pomoću winbind-a, upotrebljavati kao "
 +#~ "svoju osnovnu grupu"
-diff -up authconfig-6.2.8/po/ca.po.translations authconfig-6.2.8/po/ca.po
---- authconfig-6.2.8/po/ca.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ca.po	2016-06-17 13:55:20.091341864 +0200
+diff -up new/po/ca.po.translations new/po/ca.po
+--- new/po/ca.po.translations	2017-05-24 11:35:13.611265745 +0200
++++ new/po/ca.po	2017-05-24 11:35:13.614265657 +0200
 @@ -1,928 +1,1005 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -13991,9 +13991,9 @@ diff -up authconfig-6.2.8/po/ca.po.translations authconfig-6.2.8/po/ca.po
 +#~ msgstr ""
 +#~ "el grup amb el qual els usuaris creats amb Winbind el tindran com a grup "
 +#~ "primari"
-diff -up authconfig-6.2.8/po/cs.po.translations authconfig-6.2.8/po/cs.po
---- authconfig-6.2.8/po/cs.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/cs.po	2016-06-17 13:55:20.091341864 +0200
+diff -up new/po/cs.po.translations new/po/cs.po
+--- new/po/cs.po.translations	2017-05-24 11:35:13.611265745 +0200
++++ new/po/cs.po	2017-05-24 11:35:13.614265657 +0200
 @@ -3,14 +3,15 @@
  # This file is distributed under the same license as the PACKAGE package.
  #
@@ -15415,9 +15415,9 @@ diff -up authconfig-6.2.8/po/cs.po.translations authconfig-6.2.8/po/cs.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "skupina, kterou budou mít uživatelé vytvoření winbindem jako primární"
-diff -up authconfig-6.2.8/po/cy.po.translations authconfig-6.2.8/po/cy.po
---- authconfig-6.2.8/po/cy.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/cy.po	2016-06-17 13:55:20.092341886 +0200
+diff -up new/po/cy.po.translations new/po/cy.po
+--- new/po/cy.po.translations	2017-05-24 11:35:13.611265745 +0200
++++ new/po/cy.po	2017-05-24 11:35:13.614265657 +0200
 @@ -1,918 +1,940 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -16874,9 +16874,9 @@ diff -up authconfig-6.2.8/po/cy.po.translations authconfig-6.2.8/po/cy.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "y grŵp y bydd gan ddefnyddwyr a grëwyd gan winbind fel eu grŵp cynradd"
-diff -up authconfig-6.2.8/po/da.po.translations authconfig-6.2.8/po/da.po
---- authconfig-6.2.8/po/da.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/da.po	2016-06-17 13:55:20.093341910 +0200
+diff -up new/po/da.po.translations new/po/da.po
+--- new/po/da.po.translations	2017-05-24 11:35:13.610265775 +0200
++++ new/po/da.po	2017-05-24 11:35:13.614265657 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -18438,9 +18438,9 @@ diff -up authconfig-6.2.8/po/da.po.translations authconfig-6.2.8/po/da.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "den gruppe som winbind-oprettede brugere vil have som deres primære gruppe"
-diff -up authconfig-6.2.8/po/de.po.translations authconfig-6.2.8/po/de.po
---- authconfig-6.2.8/po/de.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/de.po	2016-06-17 13:55:20.094341932 +0200
+diff -up new/po/de.po.translations new/po/de.po
+--- new/po/de.po.translations	2017-05-24 11:35:13.610265775 +0200
++++ new/po/de.po	2017-05-24 11:35:13.614265657 +0200
 @@ -1,936 +1,1016 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -20089,9 +20089,9 @@ diff -up authconfig-6.2.8/po/de.po.translations authconfig-6.2.8/po/de.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "Die Gruppe, die von Winbind erzeugte Benutzer als primäre Gruppe haben"
-diff -up authconfig-6.2.8/po/el.po.translations authconfig-6.2.8/po/el.po
---- authconfig-6.2.8/po/el.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/el.po	2016-06-17 13:55:20.094341932 +0200
+diff -up new/po/el.po.translations new/po/el.po
+--- new/po/el.po.translations	2017-05-24 11:35:13.610265775 +0200
++++ new/po/el.po	2017-05-24 11:35:13.614265657 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -21712,9 +21712,9 @@ diff -up authconfig-6.2.8/po/el.po.translations authconfig-6.2.8/po/el.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "η ομάδα την οποία οι winbind χρήστες θα έχουν ως πρωτεύουσα ομάδα τυος"
-diff -up authconfig-6.2.8/po/en_GB.po.translations authconfig-6.2.8/po/en_GB.po
---- authconfig-6.2.8/po/en_GB.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/en_GB.po	2016-06-17 13:55:20.095341955 +0200
+diff -up new/po/en_GB.po.translations new/po/en_GB.po
+--- new/po/en_GB.po.translations	2017-05-24 11:35:13.610265775 +0200
++++ new/po/en_GB.po	2017-05-24 11:35:13.615265628 +0200
 @@ -1,918 +1,940 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -23175,9 +23175,9 @@ diff -up authconfig-6.2.8/po/en_GB.po.translations authconfig-6.2.8/po/en_GB.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "the group which winbind-created users will have as their primary group"
-diff -up authconfig-6.2.8/po/es.po.translations authconfig-6.2.8/po/es.po
---- authconfig-6.2.8/po/es.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/es.po	2016-06-17 13:55:20.096341978 +0200
+diff -up new/po/es.po.translations new/po/es.po
+--- new/po/es.po.translations	2017-05-24 11:35:13.610265775 +0200
++++ new/po/es.po	2017-05-24 11:35:13.615265628 +0200
 @@ -1,924 +1,993 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -24814,9 +24814,9 @@ diff -up authconfig-6.2.8/po/es.po.translations authconfig-6.2.8/po/es.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "el grupo que los usuarios creados por winbind tendrán como grupo primario"
-diff -up authconfig-6.2.8/po/et.po.translations authconfig-6.2.8/po/et.po
---- authconfig-6.2.8/po/et.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/et.po	2016-06-17 13:55:20.097342001 +0200
+diff -up new/po/et.po.translations new/po/et.po
+--- new/po/et.po.translations	2017-05-24 11:35:13.609265804 +0200
++++ new/po/et.po	2017-05-24 11:35:13.615265628 +0200
 @@ -1,919 +1,941 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -26286,9 +26286,9 @@ diff -up authconfig-6.2.8/po/et.po.translations authconfig-6.2.8/po/et.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind loodud kasutajate grupp on nende esmane grupp"
-diff -up authconfig-6.2.8/po/eu.po.translations authconfig-6.2.8/po/eu.po
---- authconfig-6.2.8/po/eu.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/eu.po	2016-06-17 13:55:20.097342001 +0200
+diff -up new/po/eu.po.translations new/po/eu.po
+--- new/po/eu.po.translations	2017-05-24 11:35:13.609265804 +0200
++++ new/po/eu.po	2017-05-24 11:35:13.615265628 +0200
 @@ -1,855 +1,858 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -27705,9 +27705,9 @@ diff -up authconfig-6.2.8/po/eu.po.translations authconfig-6.2.8/po/eu.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/fa.po.translations authconfig-6.2.8/po/fa.po
---- authconfig-6.2.8/po/fa.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/fa.po	2016-06-17 13:55:20.098342024 +0200
+diff -up new/po/fa.po.translations new/po/fa.po
+--- new/po/fa.po.translations	2017-05-24 11:35:13.609265804 +0200
++++ new/po/fa.po	2017-05-24 11:35:13.615265628 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -29151,9 +29151,9 @@ diff -up authconfig-6.2.8/po/fa.po.translations authconfig-6.2.8/po/fa.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "گروه اصلی کاربرهای ایجاد شده توسط winbind"
-diff -up authconfig-6.2.8/po/fi.po.translations authconfig-6.2.8/po/fi.po
---- authconfig-6.2.8/po/fi.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/fi.po	2016-06-17 13:55:20.099342047 +0200
+diff -up new/po/fi.po.translations new/po/fi.po
+--- new/po/fi.po.translations	2017-05-24 11:35:13.609265804 +0200
++++ new/po/fi.po	2017-05-24 11:35:13.615265628 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -30748,9 +30748,9 @@ diff -up authconfig-6.2.8/po/fi.po.translations authconfig-6.2.8/po/fi.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "ryhmä, joka tulee olemaan pääryhmä winbindillä luoduille käyttäjille"
-diff -up authconfig-6.2.8/po/fr.po.translations authconfig-6.2.8/po/fr.po
---- authconfig-6.2.8/po/fr.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/fr.po	2016-06-17 13:55:20.099342047 +0200
+diff -up new/po/fr.po.translations new/po/fr.po
+--- new/po/fr.po.translations	2017-05-24 11:35:13.609265804 +0200
++++ new/po/fr.po	2017-05-24 11:35:13.615265628 +0200
 @@ -1,937 +1,1027 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -32418,9 +32418,9 @@ diff -up authconfig-6.2.8/po/fr.po.translations authconfig-6.2.8/po/fr.po
 +#~ msgstr ""
 +#~ "le groupe que les utilisateurs créeront avec winbind sera utilisé comme "
 +#~ "groupe principal"
-diff -up authconfig-6.2.8/po/gl.po.translations authconfig-6.2.8/po/gl.po
---- authconfig-6.2.8/po/gl.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/gl.po	2016-06-17 13:55:20.100342070 +0200
+diff -up new/po/gl.po.translations new/po/gl.po
+--- new/po/gl.po.translations	2017-05-24 11:35:13.609265804 +0200
++++ new/po/gl.po	2017-05-24 11:35:13.616265598 +0200
 @@ -1,919 +1,934 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -33863,9 +33863,9 @@ diff -up authconfig-6.2.8/po/gl.po.translations authconfig-6.2.8/po/gl.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/gu.po.translations authconfig-6.2.8/po/gu.po
---- authconfig-6.2.8/po/gu.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/gu.po	2016-06-17 13:55:20.101342093 +0200
+diff -up new/po/gu.po.translations new/po/gu.po
+--- new/po/gu.po.translations	2017-05-24 11:35:13.608265834 +0200
++++ new/po/gu.po	2017-05-24 11:35:13.616265598 +0200
 @@ -1,921 +1,956 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -35418,9 +35418,9 @@ diff -up authconfig-6.2.8/po/gu.po.translations authconfig-6.2.8/po/gu.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "જૂથ કે જે winbind દ્વારા બનાવાયેલ વપરાશકર્તાઓ પાસે હોય તે પ્રાથમિક જૂથ તરીકે જ હોય છે"
-diff -up authconfig-6.2.8/po/he.po.translations authconfig-6.2.8/po/he.po
---- authconfig-6.2.8/po/he.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/he.po	2016-06-17 13:55:20.102342116 +0200
+diff -up new/po/he.po.translations new/po/he.po
+--- new/po/he.po.translations	2017-05-24 11:35:13.608265834 +0200
++++ new/po/he.po	2017-05-24 11:35:13.616265598 +0200
 @@ -1,855 +1,857 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -36835,9 +36835,9 @@ diff -up authconfig-6.2.8/po/he.po.translations authconfig-6.2.8/po/he.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/hi.po.translations authconfig-6.2.8/po/hi.po
---- authconfig-6.2.8/po/hi.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/hi.po	2016-06-17 13:55:20.103342139 +0200
+diff -up new/po/hi.po.translations new/po/hi.po
+--- new/po/hi.po.translations	2017-05-24 11:35:13.608265834 +0200
++++ new/po/hi.po	2017-05-24 11:35:13.616265598 +0200
 @@ -1,858 +1,883 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -38374,9 +38374,9 @@ diff -up authconfig-6.2.8/po/hi.po.translations authconfig-6.2.8/po/hi.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "समूह जिसे विंडबिंड-निर्मित उपयोक्ता प्राथमिक समूह के रूप में रखेगा"
-diff -up authconfig-6.2.8/po/hr.po.translations authconfig-6.2.8/po/hr.po
---- authconfig-6.2.8/po/hr.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/hr.po	2016-06-17 13:55:20.103342139 +0200
+diff -up new/po/hr.po.translations new/po/hr.po
+--- new/po/hr.po.translations	2017-05-24 11:35:13.607265863 +0200
++++ new/po/hr.po	2017-05-24 11:35:13.617265569 +0200
 @@ -1,917 +1,948 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -39853,9 +39853,9 @@ diff -up authconfig-6.2.8/po/hr.po.translations authconfig-6.2.8/po/hr.po
 +#~ msgstr ""
 +#~ "Grupa koju će korisnici, izrađeni pomoću winbind-a, upotrebljavati kao "
 +#~ "svoju osnovnu grupu"
-diff -up authconfig-6.2.8/po/hu.po.translations authconfig-6.2.8/po/hu.po
---- authconfig-6.2.8/po/hu.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/hu.po	2016-06-17 13:55:20.104342162 +0200
+diff -up new/po/hu.po.translations new/po/hu.po
+--- new/po/hu.po.translations	2017-05-24 11:35:13.607265863 +0200
++++ new/po/hu.po	2017-05-24 11:35:13.617265569 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -41506,9 +41506,9 @@ diff -up authconfig-6.2.8/po/hu.po.translations authconfig-6.2.8/po/hu.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "a Winbind által létrehozott felhasználók elsődleges csoportja"
-diff -up authconfig-6.2.8/po/hy.po.translations authconfig-6.2.8/po/hy.po
---- authconfig-6.2.8/po/hy.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/hy.po	2016-06-17 13:55:20.105342185 +0200
+diff -up new/po/hy.po.translations new/po/hy.po
+--- new/po/hy.po.translations	2017-05-24 11:35:13.607265863 +0200
++++ new/po/hy.po	2017-05-24 11:35:13.618265540 +0200
 @@ -1,854 +1,856 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -42921,9 +42921,9 @@ diff -up authconfig-6.2.8/po/hy.po.translations authconfig-6.2.8/po/hy.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/id.po.translations authconfig-6.2.8/po/id.po
---- authconfig-6.2.8/po/id.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/id.po	2016-06-17 13:55:20.105342185 +0200
+diff -up new/po/id.po.translations new/po/id.po
+--- new/po/id.po.translations	2017-05-24 11:35:13.606265892 +0200
++++ new/po/id.po	2017-05-24 11:35:13.618265540 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -44454,9 +44454,9 @@ diff -up authconfig-6.2.8/po/id.po.translations authconfig-6.2.8/po/id.po
 +#~ msgstr ""
 +#~ "Kelompok yang oleh pengguna hasil kreasi winbind akan digunakan sebagai "
 +#~ "kelompok utama"
-diff -up authconfig-6.2.8/po/is.po.translations authconfig-6.2.8/po/is.po
---- authconfig-6.2.8/po/is.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/is.po	2016-06-17 13:55:20.106342208 +0200
+diff -up new/po/is.po.translations new/po/is.po
+--- new/po/is.po.translations	2017-05-24 11:35:13.606265892 +0200
++++ new/po/is.po	2017-05-24 11:35:13.618265540 +0200
 @@ -1,919 +1,943 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -45952,9 +45952,9 @@ diff -up authconfig-6.2.8/po/is.po.translations authconfig-6.2.8/po/is.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "aðalhópurinn sem winbind notendur eru í"
-diff -up authconfig-6.2.8/po/it.po.translations authconfig-6.2.8/po/it.po
---- authconfig-6.2.8/po/it.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/it.po	2016-06-17 13:55:20.107342231 +0200
+diff -up new/po/it.po.translations new/po/it.po
+--- new/po/it.po.translations	2017-05-24 11:35:13.606265892 +0200
++++ new/po/it.po	2017-05-24 11:35:13.618265540 +0200
 @@ -1,929 +1,1016 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -47616,15 +47616,11 @@ diff -up authconfig-6.2.8/po/it.po.translations authconfig-6.2.8/po/it.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "gruppo primario degli utenti creati da winbind"
-diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
---- authconfig-6.2.8/po/ja.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ja.po	2016-06-17 13:55:20.108342254 +0200
-@@ -1,866 +1,907 @@
- # SOME DESCRIPTIVE TITLE.
- # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
- # This file is distributed under the same license as the PACKAGE package.
--# 
-+#
+diff -up new/po/ja.po.translations new/po/ja.po
+--- new/po/ja.po.translations	2017-05-24 11:35:13.605265922 +0200
++++ new/po/ja.po	2017-05-23 11:17:30.000000000 +0200
+@@ -4,863 +4,909 @@
+ # 
  # Translators:
  # Dimitris Glezos <glezos@transifex.com>, 2011
 -# Hajime Taira <htaira@redhat.com>, 2011, 2012
@@ -47645,12 +47641,13 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004
 -# Tomoyuki KATO <tomo@dream.daynight.jp>, 2012
 +# Tomoyuki KATO <tomo@dream.daynight.jp>, 2012-2013
-+# 高一人参 @欠陥遺伝子 <www.carrotsoft@gmail.com>, 2011
  # 高一人参 @欠陥遺伝子 <www.carrotsoft@gmail.com>, 2011
++# 高一人参 @欠陥遺伝子 <www.carrotsoft@gmail.com>, 2011
 +# noriko <noriko@fedoraproject.org>, 2013-2014
 +# carrotsoft <www.carrotsoft@gmail.com>, 2011
 +# carrotsoft <www.carrotsoft@gmail.com>, 2011
-+# Noriko Mizumoto <noriko@redhat.com>, 2016. #zanata
++# kmoriguc <kmoriguc@redhat.com>, 2017. #zanata
++# ljanda <ljanda@redhat.com>, 2017. #zanata
  msgid ""
  msgstr ""
 -"Project-Id-Version: Authconfig\n"
@@ -47660,696 +47657,691 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
 -"PO-Revision-Date: 2013-11-01 14:28+0000\n"
 -"Last-Translator: Tomáš Mráz <tmraz@fedoraproject.org>\n"
 -"Language-Team: Japanese (http://www.transifex.com/projects/p/fedora/language/ja/)\n"
-+"POT-Creation-Date: 2016-06-17 11:35+0200\n"
-+"PO-Revision-Date: 2016-03-29 10:04-0400\n"
-+"Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
-+"Language-Team: Japanese (http://www.transifex.com/projects/p/authconfig/"
-+"language/ja/)\n"
-+"Language: ja\n"
++"POT-Creation-Date: 2017-05-17 11:21+0200\n"
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
  "Content-Transfer-Encoding: 8bit\n"
--"Language: ja\n"
++"PO-Revision-Date: 2017-05-22 02:15+0000\n"
++"Last-Translator: kmoriguc <kmoriguc@redhat.com>\n"
++"Language-Team: Japanese (http://www.transifex.com/projects/p/authconfig/"
++"language/ja/)\n"
+ "Language: ja\n"
  "Plural-Forms: nplurals=1; plural=0;\n"
-+"X-Generator: Zanata 3.8.4\n"
++"X-Generator: Zanata 4.1.1\n"
  
 -#: ../authconfig.py:115
-+#: ../authconfig.py:126
++#: ../authconfig.py:119
  #, python-format
  msgid "usage: %s [options]"
  msgstr "使用方法: %s [オプション]"
  
 -#: ../authconfig.py:121
-+#: ../authconfig.py:132
++#: ../authconfig.py:125
  msgid "show this help message and exit"
  msgstr "このヘルプメッセージを表示して終了"
  
 -#: ../authconfig.py:124
-+#: ../authconfig.py:135
++#: ../authconfig.py:128
  msgid "enable shadowed passwords by default"
  msgstr "シャドウパスワードをデフォルトで有効にする"
  
 -#: ../authconfig.py:126
-+#: ../authconfig.py:137
++#: ../authconfig.py:130
  msgid "disable shadowed passwords by default"
  msgstr "シャドウパスワードをデフォルトで無効にする"
  
 -#: ../authconfig.py:128
-+#: ../authconfig.py:139
++#: ../authconfig.py:132
  msgid "enable MD5 passwords by default"
 -msgstr "MD5 パスワードをデフォルトで有効にする"
 +msgstr "MD5パスワードをデフォルトで有効にする"
  
 -#: ../authconfig.py:130
-+#: ../authconfig.py:141
++#: ../authconfig.py:134
  msgid "disable MD5 passwords by default"
 -msgstr "MD5 パスワードをデフォルトで無効にする"
 +msgstr "MD5パスワードをデフォルトで無効にする"
  
 -#: ../authconfig.py:133
-+#: ../authconfig.py:144
++#: ../authconfig.py:137
  msgid "hash/crypt algorithm for new passwords"
 -msgstr "新しいパスワードのためのハッシュ/暗号化アルゴリズム"
 +msgstr "新しいパスワードのハッシュ/暗号化アルゴリズム"
  
 -#: ../authconfig.py:136
-+#: ../authconfig.py:147
++#: ../authconfig.py:140
  msgid "enable NIS for user information by default"
  msgstr "ユーザー情報に関してNISをデフォルトで有効にする"
  
 -#: ../authconfig.py:138
-+#: ../authconfig.py:149
++#: ../authconfig.py:142
  msgid "disable NIS for user information by default"
  msgstr "ユーザー情報に関してNISをデフォルトで無効にする"
  
 -#: ../authconfig.py:139 ../authconfig.py:255
-+#: ../authconfig.py:150 ../authconfig.py:264
++#: ../authconfig.py:143 ../authconfig.py:257
  msgid "<domain>"
 -msgstr "<ドメイン>"
 +msgstr "<domain>"
  
 -#: ../authconfig.py:140
-+#: ../authconfig.py:151
++#: ../authconfig.py:144
  msgid "default NIS domain"
 -msgstr "デフォルトの NIS ドメイン"
 +msgstr "デフォルトのNISドメイン"
  
 -#: ../authconfig.py:141 ../authconfig.py:152 ../authconfig.py:195
 -#: ../authconfig.py:197
-+#: ../authconfig.py:152 ../authconfig.py:163 ../authconfig.py:206
-+#: ../authconfig.py:208
++#: ../authconfig.py:145 ../authconfig.py:156 ../authconfig.py:199
++#: ../authconfig.py:201
  msgid "<server>"
 -msgstr "<サーバー>"
 +msgstr "<server>"
  
 -#: ../authconfig.py:142
-+#: ../authconfig.py:153
++#: ../authconfig.py:146
  msgid "default NIS server"
  msgstr "デフォルトのNISサーバー"
  
 -#: ../authconfig.py:145
-+#: ../authconfig.py:156
++#: ../authconfig.py:149
  msgid "enable LDAP for user information by default"
 -msgstr "ユーザー情報に関して LDAP をデフォルトで有効にする"
 +msgstr "ユーザー情報に関してLDAPをデフォルトで有効にする"
  
 -#: ../authconfig.py:147
-+#: ../authconfig.py:158
++#: ../authconfig.py:151
  msgid "disable LDAP for user information by default"
 -msgstr "ユーザー情報に関して LDAP をデフォルトで無効にする"
 +msgstr "ユーザー情報に関してLDAPをデフォルトで無効にする"
  
 -#: ../authconfig.py:149
-+#: ../authconfig.py:160
++#: ../authconfig.py:153
  msgid "enable LDAP for authentication by default"
 -msgstr "LDAP 認証をデフォルトで有効にする"
 +msgstr "LDAP認証をデフォルトで有効にする"
  
 -#: ../authconfig.py:151
-+#: ../authconfig.py:162
++#: ../authconfig.py:155
  msgid "disable LDAP for authentication by default"
 -msgstr "LDAP 認証をデフォルトで無効にする"
 +msgstr "LDAP認証をデフォルトで無効にする"
  
 -#: ../authconfig.py:153
-+#: ../authconfig.py:164
++#: ../authconfig.py:157
  msgid "default LDAP server hostname or URI"
 -msgstr "デフォルトの LDAP サーバーホスト名またはURI"
 +msgstr "デフォルトのLDAPサーバーホスト名またはURI"
  
 -#: ../authconfig.py:154
-+#: ../authconfig.py:165
++#: ../authconfig.py:158
  msgid "<dn>"
  msgstr "<dn>"
  
 -#: ../authconfig.py:155
-+#: ../authconfig.py:166
++#: ../authconfig.py:159
  msgid "default LDAP base DN"
 -msgstr "デフォルトの LDAP ベース DN"
 +msgstr "デフォルトのLDAPベースDN"
  
 -#: ../authconfig.py:157
-+#: ../authconfig.py:168
++#: ../authconfig.py:161
  msgid "enable use of TLS with LDAP (RFC-2830)"
 -msgstr "TLS と LDAP の併用を有効にする (RFC-2830)"
 +msgstr "TLSとLDAPの併用を有効にする(RFC-2830)"
  
 -#: ../authconfig.py:159
-+#: ../authconfig.py:170
++#: ../authconfig.py:163
  msgid "disable use of TLS with LDAP (RFC-2830)"
 -msgstr "TLS と LDAP の併用を無効にする (RFC-2830)"
 +msgstr "TLSとLDAPの併用を無効にする(RFC-2830)"
  
 -#: ../authconfig.py:161
-+#: ../authconfig.py:172
++#: ../authconfig.py:165
  msgid "enable use of RFC-2307bis schema for LDAP user information lookups"
 -msgstr "LDAP ユーザー情報ルックアップ用の RFC-2307 bis schema の使用を有効にする"
 +msgstr "LDAPユーザー情報の検索にRFC-2307 bisスキーマを使用可能にする"
  
 -#: ../authconfig.py:163
-+#: ../authconfig.py:174
++#: ../authconfig.py:167
  msgid "disable use of RFC-2307bis schema for LDAP user information lookups"
 -msgstr "LDAP ユーザー情報ルックアップ用の RFC-2307 bis schema の使用を無効にする"
 +msgstr "LDAPユーザー情報の検索にRFC-2307 bisスキーマを使用不可にする"
  
 -#: ../authconfig.py:164
-+#: ../authconfig.py:175
++#: ../authconfig.py:168
  msgid "<URL>"
  msgstr "<URL>"
  
 -#: ../authconfig.py:165
-+#: ../authconfig.py:176
++#: ../authconfig.py:169
  msgid "load CA certificate from the URL"
 -msgstr "URL から CA 証明書をロードする"
 +msgstr "URLからCA証明書をロードする"
  
 -#: ../authconfig.py:168
-+#: ../authconfig.py:179
++#: ../authconfig.py:172
  msgid "enable authentication with smart card by default"
  msgstr "スマートカードによる認証をデフォルトで有効にする"
  
 -#: ../authconfig.py:170
-+#: ../authconfig.py:181
++#: ../authconfig.py:174
  msgid "disable authentication with smart card by default"
  msgstr "スマートカードによる認証をデフォルトで無効にする"
  
 -#: ../authconfig.py:172
-+#: ../authconfig.py:183
++#: ../authconfig.py:176
  msgid "require smart card for authentication by default"
  msgstr "認証用スマートカードをデフォルトで要求する"
  
 -#: ../authconfig.py:174
-+#: ../authconfig.py:185
++#: ../authconfig.py:178
  msgid "do not require smart card for authentication by default"
  msgstr "認証用スマートカードをデフォルトで要求しない"
  
 -#: ../authconfig.py:175
-+#: ../authconfig.py:186
++#: ../authconfig.py:179
  msgid "<module>"
  msgstr "<module>"
  
 -#: ../authconfig.py:176
-+#: ../authconfig.py:187
++#: ../authconfig.py:180
  msgid "default smart card module to use"
  msgstr "デフォルトで使用するスマートカードモジュール"
  
 -#: ../authconfig.py:179
-+#: ../authconfig.py:190
++#: ../authconfig.py:183
  msgid "action to be taken on smart card removal"
  msgstr "スマートカードの取り出し時に行う動作"
  
 -#: ../authconfig.py:182
-+#: ../authconfig.py:193
++#: ../authconfig.py:186
  msgid "enable authentication with fingerprint readers by default"
  msgstr "指紋リーダーによる認証をデフォルトで有効にする"
  
 -#: ../authconfig.py:184
-+#: ../authconfig.py:195
++#: ../authconfig.py:188
  msgid "disable authentication with fingerprint readers by default"
  msgstr "指紋リーダーによる認証をデフォルトで無効にする"
  
 -#: ../authconfig.py:187
-+#: ../authconfig.py:198
++#: ../authconfig.py:191
  msgid "enable automatic per-user ecryptfs"
 -msgstr "ユーザー毎の自動 ecryptfs を有効にする"
 +msgstr "ユーザー毎の自動ecryptfsを有効にする"
  
 -#: ../authconfig.py:189
-+#: ../authconfig.py:200
++#: ../authconfig.py:193
  msgid "disable automatic per-user ecryptfs"
 -msgstr "ユーザー毎の自動 ecryptfs を無効にする"
 +msgstr "ユーザー毎の自動ecryptfsを無効にする"
  
 -#: ../authconfig.py:192
-+#: ../authconfig.py:203
++#: ../authconfig.py:196
  msgid "enable kerberos authentication by default"
 -msgstr "Kerberos 認証をデフォルトで有効にする"
 +msgstr "Kerberos認証をデフォルトで有効にする"
  
 -#: ../authconfig.py:194
-+#: ../authconfig.py:205
++#: ../authconfig.py:198
  msgid "disable kerberos authentication by default"
 -msgstr "Kerberos 認証をデフォルトで無効にする"
 +msgstr "Kerberos認証をデフォルトで無効にする"
  
 -#: ../authconfig.py:196
-+#: ../authconfig.py:207
++#: ../authconfig.py:200
  msgid "default kerberos KDC"
 -msgstr "デフォルトの Kerberos KDC"
 +msgstr "デフォルトのKerberos KDC"
  
 -#: ../authconfig.py:198
-+#: ../authconfig.py:209
++#: ../authconfig.py:202
  msgid "default kerberos admin server"
 -msgstr "デフォルトの Kerberos 管理サーバー"
 +msgstr "デフォルトのKerberos管理サーバー"
  
 -#: ../authconfig.py:199 ../authconfig.py:220 ../authconfig.py:257
-+#: ../authconfig.py:210 ../authconfig.py:231 ../authconfig.py:266
++#: ../authconfig.py:203 ../authconfig.py:224 ../authconfig.py:259
  msgid "<realm>"
 -msgstr "<レルム>"
 +msgstr "<realm>"
  
 -#: ../authconfig.py:200
-+#: ../authconfig.py:211
++#: ../authconfig.py:204
  msgid "default kerberos realm"
 -msgstr "デフォルトの Kerberos レルム (realm)"
 +msgstr "デフォルトのKerberosレルム"
  
 -#: ../authconfig.py:202
-+#: ../authconfig.py:213
++#: ../authconfig.py:206
  msgid "enable use of DNS to find kerberos KDCs"
 -msgstr "kerberos KDC 検索用の DNS 使用を有効にする"
 +msgstr "kerberos KDCの検索時にDNSを使用できるようにする"
  
 -#: ../authconfig.py:204
-+#: ../authconfig.py:215
++#: ../authconfig.py:208
  msgid "disable use of DNS to find kerberos KDCs"
 -msgstr "kerberos KDC 検索用の DNS 使用を無効にする"
 +msgstr "kerberos KDCの検索時にDNSを使用できないようにする"
  
 -#: ../authconfig.py:206
-+#: ../authconfig.py:217
++#: ../authconfig.py:210
  msgid "enable use of DNS to find kerberos realms"
 -msgstr "kerberos レルム検索用の DNS 使用を有効にする"
 +msgstr "kerberosレルムの検索時にDNSを使用できるようにする"
  
 -#: ../authconfig.py:208
-+#: ../authconfig.py:219
++#: ../authconfig.py:212
  msgid "disable use of DNS to find kerberos realms"
 -msgstr "Kerberos レルム (realm) 検索用の DNS 使用を無効にする "
 +msgstr "Kerberosレルムの検索時にDNSを使用できないようにする "
  
 -#: ../authconfig.py:211
-+#: ../authconfig.py:222
++#: ../authconfig.py:215
  msgid "enable winbind for user information by default"
 -msgstr "ユーザー情報に関して winbind をデフォルトで有効にする"
 +msgstr "ユーザー情報に関してwinbindをデフォルトで有効にする"
  
 -#: ../authconfig.py:213
-+#: ../authconfig.py:224
++#: ../authconfig.py:217
  msgid "disable winbind for user information by default"
 -msgstr "ユーザー情報に関して winbind をデフォルトで無効にする"
 +msgstr "ユーザー情報に関してwinbindをデフォルトで無効にする"
  
 -#: ../authconfig.py:215
-+#: ../authconfig.py:226
++#: ../authconfig.py:219
  msgid "enable winbind for authentication by default"
 -msgstr "認証で winbind をデフォルトで有効にする"
 +msgstr "認証でwinbindをデフォルトで有効にする"
  
 -#: ../authconfig.py:217
-+#: ../authconfig.py:228
++#: ../authconfig.py:221
  msgid "disable winbind for authentication by default"
  msgstr "認証で winbind をデフォルトで無効にする"
  
 -#: ../authconfig.py:219
-+#: ../authconfig.py:230
++#: ../authconfig.py:223
  msgid "security mode to use for samba and winbind"
  msgstr "samba と winbind 用に使用するセキュリティモード"
  
 -#: ../authconfig.py:221
-+#: ../authconfig.py:232
++#: ../authconfig.py:225
  msgid "default realm for samba and winbind when security=ads"
  msgstr "security=adsの時のSambaとwinbind用のデフォルトのレルム(realm)"
  
 -#: ../authconfig.py:222 ../authconfig.py:259
-+#: ../authconfig.py:233 ../authconfig.py:268
++#: ../authconfig.py:226 ../authconfig.py:261
  msgid "<servers>"
 -msgstr "<サーバー>"
 +msgstr "<servers>"
  
 -#: ../authconfig.py:223
-+#: ../authconfig.py:234
++#: ../authconfig.py:227
  msgid "names of servers to authenticate against"
  msgstr "認証する対象のサーバー名"
  
 -#: ../authconfig.py:224
-+#: ../authconfig.py:235
++#: ../authconfig.py:228
  msgid "<workgroup>"
 -msgstr "<ワークグループ>"
 +msgstr "<workgroup>"
  
 -#: ../authconfig.py:225
-+#: ../authconfig.py:236
++#: ../authconfig.py:229
  msgid "workgroup authentication servers are in"
  msgstr "ワークグループ認証サーバー"
  
 -#: ../authconfig.py:226
-+#: ../authconfig.py:237
++#: ../authconfig.py:230
  msgid "<lowest-highest>"
 -msgstr "<最低-最高>"
 +msgstr "<lowest-highest>"
  
 -#: ../authconfig.py:227
-+#: ../authconfig.py:238
++#: ../authconfig.py:231
  msgid "uid range winbind will assign to domain or ads users"
  msgstr "winbindがdomainまたはadsユーザーに割り当てるuidの範囲"
  
 -#: ../authconfig.py:229
-+#: ../authconfig.py:240
++#: ../authconfig.py:233
  msgid ""
  "the character which will be used to separate the domain and user part of "
  "winbind-created user names if winbindusedefaultdomain is not enabled"
 -msgstr "winbindusedefaultdomainが有効でない場合に、winbind作成のユーザー名内でドメインとユーザーの部分を分離するのに使用する文字"
--
--#: ../authconfig.py:231
--msgid ""
--"the directory which winbind-created users will have as home directories"
--msgstr "ユーザーがホームディレクトリとして持つwinbind作成のディレクトリ"
 +msgstr ""
-+"winbindusedefaultdomainが有効になっていない場合、winbindで作成したユーザー名"
-+"のドメイン部分とユーザー部分を区別するために使用する文字"
++"winbindusedefaultdomainが有効になっていない場合、winbindで作成したユーザー名のドメイン部分とユーザー部分を区別するために使用する文字"
+ 
+-#: ../authconfig.py:231
++#: ../authconfig.py:235
+ msgid ""
+ "the directory which winbind-created users will have as home directories"
+-msgstr "ユーザーがホームディレクトリとして持つwinbind作成のディレクトリ"
++msgstr "winbindで作成したユーザーにホームディレクトリーとして持たせるディレクトリーを指定する"
  
 -#: ../authconfig.py:233
 -msgid "the group which winbind-created users will have as their primary group"
 -msgstr "ユーザーがそのプライマリグループとして持つwinbind作成のグループ"
-+#: ../authconfig.py:242
-+msgid "the directory which winbind-created users will have as home directories"
-+msgstr ""
-+"winbindで作成したユーザーにホームディレクトリーとして持たせるディレクトリーを"
-+"指定する"
- 
+-
 -#: ../authconfig.py:235
-+#: ../authconfig.py:244
++#: ../authconfig.py:237
  msgid "the shell which winbind-created users will have as their login shell"
 -msgstr "ユーザーがそのログインシェルとして持つwinbind作成のシェル"
-+msgstr ""
-+"winbindで作成したユーザーのログインシェルとして持たせるシェルを指定する"
++msgstr "winbindで作成したユーザーのログインシェルとして持たせるシェルを指定する"
  
 -#: ../authconfig.py:237
-+#: ../authconfig.py:246
++#: ../authconfig.py:239
  msgid ""
  "configures winbind to assume that users with no domain in their user names "
  "are domain users"
 -msgstr "ユーザー名の中にドメインを持たないユーザーをドメインユーザーと想定するようにwinbindを設定する"
-+msgstr ""
-+"ユーザー名にドメインがないユーザーはドメインユーザーとみなすようwinbindを設定"
-+"する"
++msgstr "ユーザー名にドメインがないユーザーはドメインユーザーとみなすようwinbindを設定する"
  
 -#: ../authconfig.py:239
-+#: ../authconfig.py:248
++#: ../authconfig.py:241
  msgid ""
  "configures winbind to assume that users with no domain in their user names "
  "are not domain users"
 -msgstr "ユーザー名の中にドメインを持たないユーザーをドメインユーザーと想定しない様にwinbindを設定する"
-+msgstr ""
-+"ユーザー名にドメインがないユーザーはドメインユーザーではないとみなすよう"
-+"winbindを設定する"
++msgstr "ユーザー名にドメインがないユーザーはドメインユーザーではないとみなすようwinbindを設定する"
  
 -#: ../authconfig.py:241
-+#: ../authconfig.py:250
++#: ../authconfig.py:243
  msgid "configures winbind to allow offline login"
  msgstr "オフラインでログインできるようにwinbindを設定する"
  
 -#: ../authconfig.py:243
-+#: ../authconfig.py:252
++#: ../authconfig.py:245
  msgid "configures winbind to prevent offline login"
  msgstr "オフラインでログインできないようにwinbindを設定する"
  
 -#: ../authconfig.py:245
-+#: ../authconfig.py:254
++#: ../authconfig.py:247
  msgid "winbind will use Kerberos 5 to authenticate"
 -msgstr ""
 +msgstr "認証時にwinbindにKerberos 5を使用させる"
  
 -#: ../authconfig.py:247
-+#: ../authconfig.py:256
++#: ../authconfig.py:249
  msgid "winbind will use the default authentication method"
 -msgstr ""
 +msgstr "winbindにデフォルトの認証方法を使用させる"
  
 -#: ../authconfig.py:249
-+#: ../authconfig.py:258
++#: ../authconfig.py:251
  msgid "join the winbind domain or ads realm now as this administrator"
  msgstr "管理者としてwinbindドメインかまたはADSレルムに参加する"
  
 -#: ../authconfig.py:252
-+#: ../authconfig.py:261
++#: ../authconfig.py:254
  msgid "enable IPAv2 for user information and authentication by default"
 -msgstr "ユーザー情報と認証のために IPAv2 をデフォルトで有効にします"
 +msgstr "ユーザー情報の検索および認証にIPAv2をデフォルトで有効にする"
  
 -#: ../authconfig.py:254
-+#: ../authconfig.py:263
++#: ../authconfig.py:256
  msgid "disable IPAv2 for user information and authentication by default"
 -msgstr "ユーザー情報と認証のために IPAv2 をデフォルトで無効にします"
 +msgstr "ユーザー情報の検索および認証にIPAv2をデフォルトで無効にする"
  
 -#: ../authconfig.py:256
-+#: ../authconfig.py:265
++#: ../authconfig.py:258
  msgid "the IPAv2 domain the system should be part of"
 -msgstr "システムが参加する IPAv2 ドメイン"
 +msgstr "システムを参加させるIPAv2ドメイン"
  
 -#: ../authconfig.py:258
-+#: ../authconfig.py:267
++#: ../authconfig.py:260
  msgid "the realm for the IPAv2 domain"
 -msgstr "IPAv2 ドメインのレルム"
 +msgstr "IPAv2ドメインのレルム"
  
 -#: ../authconfig.py:260
-+#: ../authconfig.py:269
++#: ../authconfig.py:262
  msgid "the server for the IPAv2 domain"
  msgstr "IPAv2 ドメインのサーバー"
  
 -#: ../authconfig.py:262
-+#: ../authconfig.py:271
++#: ../authconfig.py:264
  msgid "do not setup the NTP against the IPAv2 domain"
  msgstr "IPAv2 ドメインに対して NTP をセットアップしません"
  
 -#: ../authconfig.py:264
-+#: ../authconfig.py:273
++#: ../authconfig.py:266
  msgid "setup the NTP against the IPAv2 domain (default)"
  msgstr "IPAv2 ドメインに対して NTP をセットアップします（デフォルト）"
  
 -#: ../authconfig.py:266
-+#: ../authconfig.py:275
++#: ../authconfig.py:268
  msgid "join the IPAv2 domain as this account"
  msgstr "このアカウントで IPAv2 ドメインに参加"
  
 -#: ../authconfig.py:269
-+#: ../authconfig.py:278
++#: ../authconfig.py:271
  msgid "enable wins for hostname resolution"
  msgstr "ホスト名解決用のwinsを有効にする"
  
 -#: ../authconfig.py:271
-+#: ../authconfig.py:280
++#: ../authconfig.py:273
  msgid "disable wins for hostname resolution"
  msgstr "ホスト名解決用のwinsを無効にする"
  
 -#: ../authconfig.py:274
-+#: ../authconfig.py:283
++#: ../authconfig.py:276
  msgid "prefer dns over wins or nis for hostname resolution"
  msgstr "ホスト名解決にwinsまたはnisよりdnsを優先する"
  
 -#: ../authconfig.py:276
-+#: ../authconfig.py:285
++#: ../authconfig.py:278
  msgid "do not prefer dns over wins or nis for hostname resolution"
  msgstr "ホスト名解決にwinsまたはnisよりdnsを優先しない"
  
 -#: ../authconfig.py:279
-+#: ../authconfig.py:288
++#: ../authconfig.py:281
  msgid "enable hesiod for user information by default"
  msgstr "ユーザー情報に関してhesiodをデフォルトで有効にする"
  
 -#: ../authconfig.py:281
-+#: ../authconfig.py:290
++#: ../authconfig.py:283
  msgid "disable hesiod for user information by default"
  msgstr "ユーザー情報に関してhesiodをデフォルトで無効にする"
  
 -#: ../authconfig.py:283
-+#: ../authconfig.py:292
++#: ../authconfig.py:285
  msgid "default hesiod LHS"
  msgstr "デフォルトの hesiod LHS"
  
 -#: ../authconfig.py:285
-+#: ../authconfig.py:294
++#: ../authconfig.py:287
  msgid "default hesiod RHS"
  msgstr "デフォルトの hesiod RHS"
  
 -#: ../authconfig.py:288
-+#: ../authconfig.py:297
++#: ../authconfig.py:290
  msgid ""
  "enable SSSD for user information by default with manually managed "
  "configuration"
--msgstr "ユーザー情報に関して SSSD をデフォルトで有効にする。(手動管理の設定と一緒に)"
-+msgstr ""
-+"ユーザー情報に関して SSSD をデフォルトで有効にする。(手動管理の設定と一緒に)"
+ msgstr "ユーザー情報に関して SSSD をデフォルトで有効にする。(手動管理の設定と一緒に)"
  
 -#: ../authconfig.py:290
-+#: ../authconfig.py:299
++#: ../authconfig.py:292
  msgid ""
  "disable SSSD for user information by default (still used for supported "
  "configurations)"
--msgstr "ユーザー情報に関して SSSD をデフォルトで無効にする。(まだサポートされていない設定です)"
-+msgstr ""
-+"ユーザー情報に関して SSSD をデフォルトで無効にする。(まだサポートされていない"
-+"設定です)"
+ msgstr "ユーザー情報に関して SSSD をデフォルトで無効にする。(まだサポートされていない設定です)"
  
 -#: ../authconfig.py:292
-+#: ../authconfig.py:301
++#: ../authconfig.py:294
  msgid ""
--"enable SSSD for authentication by default with manually managed "
--"configuration"
-+"enable SSSD for authentication by default with manually managed configuration"
+ "enable SSSD for authentication by default with manually managed "
+ "configuration"
  msgstr "認証の SSSD をデフォルトで有効にする。(手動管理の設定と一緒に)"
  
 -#: ../authconfig.py:294
-+#: ../authconfig.py:303
++#: ../authconfig.py:296
  msgid ""
  "disable SSSD for authentication by default (still used for supported "
  "configurations)"
--msgstr "認証用のSSSDはデフォルトでは無効です (設定は現在もサポートされています)"
-+msgstr ""
-+"認証用のSSSDはデフォルトでは無効です (設定は現在もサポートされています)"
+ msgstr "認証用のSSSDはデフォルトでは無効です (設定は現在もサポートされています)"
  
 -#: ../authconfig.py:296
-+#: ../authconfig.py:305
++#: ../authconfig.py:298
  msgid "never use SSSD implicitly even for supported configurations"
--msgstr "もしサポートされている設定であっても、暗黙のうちにSSSDを利用しないでください。"
-+msgstr ""
-+"もしサポートされている設定であっても、暗黙のうちにSSSDを利用しないでくださ"
-+"い。"
+ msgstr "もしサポートされている設定であっても、暗黙のうちにSSSDを利用しないでください。"
  
 -#: ../authconfig.py:298
-+#: ../authconfig.py:307
++#: ../authconfig.py:300
  msgid "use SSSD implicitly if it supports the configuration"
  msgstr "もしサポートされている設定であれば、暗黙のうちにSSSDを利用する。"
  
 -#: ../authconfig.py:301
-+#: ../authconfig.py:310
++#: ../authconfig.py:303
  msgid "enable caching of user credentials in SSSD by default"
  msgstr "SSSD 内のユーザー信任情報のキャッシュをデフォルトで有効にする"
  
 -#: ../authconfig.py:303
-+#: ../authconfig.py:312
++#: ../authconfig.py:305
  msgid "disable caching of user credentials in SSSD by default"
  msgstr "SSSD 内のユーザー信任情報のキャッシュをデフォルトで無効にする"
  
 -#: ../authconfig.py:306
-+#: ../authconfig.py:315
++#: ../authconfig.py:308
  msgid ""
  "enable caching of user information by default (automatically disabled when "
  "SSSD is used)"
--msgstr "ユーザー情報のキャッシュをデフォルトで有効にする（SSSD が使用される時に自動的に無効にする）"
-+msgstr ""
-+"ユーザー情報のキャッシュをデフォルトで有効にする（SSSD が使用される時に自動的"
-+"に無効にする）"
+ msgstr "ユーザー情報のキャッシュをデフォルトで有効にする（SSSD が使用される時に自動的に無効にする）"
  
 -#: ../authconfig.py:308
-+#: ../authconfig.py:317
++#: ../authconfig.py:310
  msgid "disable caching of user information by default"
  msgstr "ユーザー情報のキャッシュをデフォルトで無効にする"
  
 -#: ../authconfig.py:311
-+#: ../authconfig.py:320
++#: ../authconfig.py:313
  msgid "local authorization is sufficient for local users"
  msgstr "ローカル認証はローカルユーザー用として問題ありません"
  
 -#: ../authconfig.py:313
-+#: ../authconfig.py:322
++#: ../authconfig.py:315
  msgid "authorize local users also through remote service"
  msgstr "リモートサービスを通してのローカルユーザーを認証"
  
 -#: ../authconfig.py:316
-+#: ../authconfig.py:325
++#: ../authconfig.py:318
  msgid "check access.conf during account authorization"
  msgstr "アカウント認証中に access.conf をチェックする"
  
 -#: ../authconfig.py:318
-+#: ../authconfig.py:327
++#: ../authconfig.py:320
  msgid "do not check access.conf during account authorization"
  msgstr "アカウント認証中に access.conf をチェックしない"
  
 -#: ../authconfig.py:321
-+#: ../authconfig.py:330
++#: ../authconfig.py:323
  msgid "authenticate system accounts by network services"
  msgstr "ネットワークサービスによる認証システムアカウント"
  
 -#: ../authconfig.py:323
-+#: ../authconfig.py:332
++#: ../authconfig.py:325
  msgid "authenticate system accounts by local files only"
  msgstr "ローカルファイルだけによる認証システムアカウント"
  
 -#: ../authconfig.py:326
-+#: ../authconfig.py:335
++#: ../authconfig.py:328
  msgid "create home directories for users on their first login"
  msgstr "利用者の最初のログイン時にホームディレクトリーを作成する"
  
 -#: ../authconfig.py:328
-+#: ../authconfig.py:337
++#: ../authconfig.py:330
  msgid "do not create home directories for users on their first login"
  msgstr "利用者の最初のログイン時にホームディレクトリーを作成しない"
  
 -#: ../authconfig.py:330 ../authconfig.py:332 ../authconfig.py:334
 -#: ../authconfig.py:336
-+#: ../authconfig.py:339 ../authconfig.py:341 ../authconfig.py:343
-+#: ../authconfig.py:345
++#: ../authconfig.py:332 ../authconfig.py:334 ../authconfig.py:336
++#: ../authconfig.py:338
  msgid "<number>"
  msgstr "<number>"
  
 -#: ../authconfig.py:331
-+#: ../authconfig.py:340
++#: ../authconfig.py:333
  msgid "minimum length of a password"
  msgstr "パスワードの最小数"
  
 -#: ../authconfig.py:333
-+#: ../authconfig.py:342
++#: ../authconfig.py:335
  msgid "minimum number of character classes in a password"
  msgstr "パスワードの文字クラスの最小数"
  
 -#: ../authconfig.py:335
-+#: ../authconfig.py:344
++#: ../authconfig.py:337
  msgid "maximum number of same consecutive characters in a password"
  msgstr "パスワードにおける同じ文字の最大連続数"
  
 -#: ../authconfig.py:337
-+#: ../authconfig.py:346
++#: ../authconfig.py:339
  msgid "maximum number of consecutive characters of same class in a password"
  msgstr "パスワードにおける同じ文字クラスの文字の最大連続数"
  
 -#: ../authconfig.py:339
-+#: ../authconfig.py:348
++#: ../authconfig.py:341
  msgid "require at least one lowercase character in a password"
  msgstr "パスワードに少なくとも1文字の小文字を必要とする"
  
 -#: ../authconfig.py:341
-+#: ../authconfig.py:350
++#: ../authconfig.py:343
  msgid "do not require lowercase characters in a password"
  msgstr "パスワードに小文字を必要としない"
  
 -#: ../authconfig.py:343
-+#: ../authconfig.py:352
++#: ../authconfig.py:345
  msgid "require at least one uppercase character in a password"
  msgstr "パスワードに少なくとも1文字の大文字を必要とする"
  
 -#: ../authconfig.py:345
-+#: ../authconfig.py:354
++#: ../authconfig.py:347
  msgid "do not require uppercase characters in a password"
  msgstr "パスワードに大文字を必要としない"
  
 -#: ../authconfig.py:347
-+#: ../authconfig.py:356
++#: ../authconfig.py:349
  msgid "require at least one digit in a password"
  msgstr "パスワードに少なくとも1文字の数字を必要とする"
  
 -#: ../authconfig.py:349
-+#: ../authconfig.py:358
++#: ../authconfig.py:351
  msgid "do not require digits in a password"
  msgstr "パスワードに数字を必要としない"
  
 -#: ../authconfig.py:351
-+#: ../authconfig.py:360
++#: ../authconfig.py:353
  msgid "require at least one other character in a password"
  msgstr "パスワードに少なくとも1文字の記号を必要とする"
  
 -#: ../authconfig.py:353
-+#: ../authconfig.py:362
++#: ../authconfig.py:355
  msgid "do not require other characters in a password"
  msgstr "パスワードに記号を必要としない"
  
 -#: ../authconfig.py:356
++#: ../authconfig.py:358
++msgid ""
++"enable account locking in case of too many consecutive authentication "
++"failures"
++msgstr "認証を続けて失敗した場合のにアカウントロックを有効にする"
++
++#: ../authconfig.py:360
++msgid ""
++"disable account locking on too many consecutive authentication failures"
++msgstr "認証を続けて失敗した場合のアカウントロックを無効にする"
++
++#: ../authconfig.py:361
++msgid "<options>"
++msgstr "<options>"
++
++#: ../authconfig.py:362
++msgid "the pam_faillock module options"
++msgstr "pam_faillock モジュールオプション"
++
 +#: ../authconfig.py:365
  msgid "do not start/stop portmap, ypbind, and nscd"
  msgstr "portmap、ypbind、nscd を起動/停止しない"
@@ -48362,10 +48354,7 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
 -#: ../authconfig.py:363
 +#: ../authconfig.py:372
  msgid "display Back instead of Cancel in the main dialog of the TUI"
--msgstr "テキスト UI のメインダイアログの中に「キャンセル」の代わりに「戻る」を表示する"
-+msgstr ""
-+"テキスト UI のメインダイアログの中に「キャンセル」の代わりに「戻る」を表示す"
-+"る"
+ msgstr "テキスト UI のメインダイアログの中に「キャンセル」の代わりに「戻る」を表示する"
  
 -#: ../authconfig.py:365
 +#: ../authconfig.py:374
@@ -48415,77 +48404,81 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  msgstr "予期しない引数"
  
 -#: ../authconfig.py:522
-+#: ../authconfig.py:530
++#: ../authconfig.py:532
  msgid "The passminlen minimum value is 6"
 -msgstr ""
 +msgstr "passminlen の最小値は 6 です"
  
 -#: ../authconfig.py:526
-+#: ../authconfig.py:534
++#: ../authconfig.py:536
  msgid "The passminlen option value is not an integer"
  msgstr "passminlen オプションの値が整数ではありません"
  
 -#: ../authconfig.py:534
-+#: ../authconfig.py:542
++#: ../authconfig.py:544
  msgid "The passminclass value must not be negative"
 -msgstr ""
 +msgstr "passminclass オプションの値は負の数にしないでください"
-+
-+#: ../authconfig.py:546
-+msgid "The passminclass value must not be higher than 4"
-+msgstr "passminclass の値は 4 以下にしてください"
  
 -#: ../authconfig.py:538
-+#: ../authconfig.py:550
++#: ../authconfig.py:548
++msgid "The passminclass value must not be higher than 4"
++msgstr "passminclass の値は 4 以下にしてください"
++
++#: ../authconfig.py:552
  msgid "The passminclass option value is not an integer"
  msgstr "passminclass オプションの値が整数ではありません"
  
 -#: ../authconfig.py:546
-+#: ../authconfig.py:558
++#: ../authconfig.py:560
  msgid "The passmaxrepeat value must not be negative"
 -msgstr ""
 +msgstr "passmaxrepeat の値を負の数にしないでください"
  
 -#: ../authconfig.py:550
-+#: ../authconfig.py:562
++#: ../authconfig.py:564
  msgid "The passmaxrepeat option value is not an integer"
  msgstr "passmaxrepeat オプションの値が整数ではありません"
  
 -#: ../authconfig.py:558
-+#: ../authconfig.py:570
++#: ../authconfig.py:572
  msgid "The passmaxclassrepeat value must not be negative"
 -msgstr ""
 +msgstr "passmaxclassrepeat の値を負の数にしないでください"
  
 -#: ../authconfig.py:562
-+#: ../authconfig.py:574
++#: ../authconfig.py:576
  msgid "The passmaxclassrepeat option value is not an integer"
  msgstr "passmaxclassrepeat オプションの値が整数ではありません"
  
 -#: ../authconfig.py:584
-+#: ../authconfig.py:596
++#: ../authconfig.py:598
  msgid "Bad smart card removal action specified."
  msgstr "不正なスマートカード取り出し動作が指定されました。"
  
 -#: ../authconfig.py:593
-+#: ../authconfig.py:605
++#: ../authconfig.py:602
++msgid ""
++"--enablerequiresmartcard is not supported for module 'sssd', option is "
++"ignored."
++msgstr "--enablerequiresmartcard はモジュール 'sssd' ではサポートされておらず、オプションは無視されます。"
++
++#: ../authconfig.py:611
  msgid "Unknown password hashing algorithm specified, using sha256."
--msgstr "不明なパスワードハッシュアルゴリズムが指定されたので、sha256を使用します。"
-+msgstr ""
-+"不明なパスワードハッシュアルゴリズムが指定されたので、sha256を使用します。"
+ msgstr "不明なパスワードハッシュアルゴリズムが指定されたので、sha256を使用します。"
  
 -#: ../authconfig.py:637
-+#: ../authconfig.py:649
++#: ../authconfig.py:655
  msgid "can only be run as root"
  msgstr "root としてのみ実行可能"
  
 -#: ../authconfig.py:653
-+#: ../authconfig.py:665
++#: ../authconfig.py:671
  msgid "dialog was cancelled"
  msgstr "ダイアログはキャンセルされました"
  
 -#: ../authconfig.py:685 ../authconfig-gtk.py:572
-+#: ../authconfig.py:697 ../authconfig-gtk.py:586
++#: ../authconfig.py:703 ../authconfig-gtk.py:586
  #, python-format
  msgid ""
 -"The %s file was not found, but it is required for %s support to work properly.\n"
@@ -48494,251 +48487,250 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  "Install the %s package, which provides this file."
 -msgstr "%s ファイルが見つかりませんが、このファイルは %s 用に正しく動作させるのをサポートするため必要です。\nこのファイルを提供している %s パッケージをインストールしてください。"
 +msgstr ""
-+"%s ファイルが見つかりませんが、このファイルは %s 用に正しく動作させるのをサ"
-+"ポートするため必要です。\n"
++"%s ファイルが見つかりませんが、このファイルは %s 用に正しく動作させるのをサポートするため必要です。\n"
 +"このファイルを提供している %s パッケージをインストールしてください。"
  
 -#: ../authconfig.py:687 ../authconfig.py:1033
-+#: ../authconfig.py:699 ../authconfig.py:1045
++#: ../authconfig.py:705 ../authconfig.py:1051
  msgid "Warning"
  msgstr "警告"
  
 -#: ../authconfig.py:687 ../authconfig.py:904 ../authconfig.py:912
 -#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:935
 -#: ../authconfig.py:979 ../authconfig.py:1033
-+#: ../authconfig.py:699 ../authconfig.py:916 ../authconfig.py:924
-+#: ../authconfig.py:930 ../authconfig.py:939 ../authconfig.py:947
-+#: ../authconfig.py:991 ../authconfig.py:1045
++#: ../authconfig.py:705 ../authconfig.py:922 ../authconfig.py:930
++#: ../authconfig.py:936 ../authconfig.py:945 ../authconfig.py:953
++#: ../authconfig.py:997 ../authconfig.py:1051
  msgid "Ok"
  msgstr "OK"
  
 -#: ../authconfig.py:691
-+#: ../authconfig.py:703
++#: ../authconfig.py:709
  msgid "caching"
  msgstr "キャッシュ化"
  
 -#: ../authconfig.py:692
-+#: ../authconfig.py:704
++#: ../authconfig.py:710
  msgid "Fingerprint reader"
  msgstr "指紋リーダー"
  
 -#: ../authconfig.py:693
-+#: ../authconfig.py:705
++#: ../authconfig.py:711
  msgid "Kerberos"
  msgstr "Kerberos"
  
 -#: ../authconfig.py:694
-+#: ../authconfig.py:706
++#: ../authconfig.py:712
  msgid "LDAP authentication"
  msgstr "LDAP 認証"
  
 -#: ../authconfig.py:695 ../authconfig-gtk.py:122
-+#: ../authconfig.py:707 ../authconfig-gtk.py:126
++#: ../authconfig.py:713 ../authconfig-gtk.py:126
  msgid "LDAP"
  msgstr "LDAP"
  
 -#: ../authconfig.py:696 ../authconfig-gtk.py:128
-+#: ../authconfig.py:708 ../authconfig-gtk.py:132
++#: ../authconfig.py:714 ../authconfig-gtk.py:132
  msgid "NIS"
  msgstr "NIS"
  
 -#: ../authconfig.py:697
-+#: ../authconfig.py:709
++#: ../authconfig.py:715
  msgid "shadow password"
  msgstr "シャドウパスワード"
  
 -#: ../authconfig.py:698 ../authconfig.py:700 ../authconfig-gtk.py:131
-+#: ../authconfig.py:710 ../authconfig.py:712 ../authconfig-gtk.py:135
++#: ../authconfig.py:716 ../authconfig.py:718 ../authconfig-gtk.py:135
  msgid "Winbind"
  msgstr "Winbind"
  
 -#: ../authconfig.py:699
-+#: ../authconfig.py:711
++#: ../authconfig.py:717
  msgid "Winbind authentication"
  msgstr "Winbind 認証"
  
 -#: ../authconfig.py:705
-+#: ../authconfig.py:717
++#: ../authconfig.py:723
  msgid "User Information"
  msgstr "ユーザー情報"
  
 -#: ../authconfig.py:708
-+#: ../authconfig.py:720
++#: ../authconfig.py:726
  msgid "Cache Information"
  msgstr "キャッシュ情報"
  
 -#: ../authconfig.py:711
-+#: ../authconfig.py:723
++#: ../authconfig.py:729
  msgid "Use LDAP"
  msgstr "LDAP を使用"
  
 -#: ../authconfig.py:714
-+#: ../authconfig.py:726
++#: ../authconfig.py:732
  msgid "Use NIS"
  msgstr "NIS を使用"
  
 -#: ../authconfig.py:717
-+#: ../authconfig.py:729
++#: ../authconfig.py:735
  msgid "Use IPAv2"
  msgstr "IPAv2 を使用"
  
 -#: ../authconfig.py:720
-+#: ../authconfig.py:732
++#: ../authconfig.py:738
  msgid "Use Winbind"
  msgstr "Winbind を使用"
  
 -#: ../authconfig.py:726 ../authconfig.desktop.in.h:1
-+#: ../authconfig.py:738 ../authconfig.desktop.in.h:1
++#: ../authconfig.py:744 ../authconfig.desktop.in.h:1
  msgid "Authentication"
  msgstr "認証"
  
 -#: ../authconfig.py:729
-+#: ../authconfig.py:741
++#: ../authconfig.py:747
  msgid "Use MD5 Passwords"
  msgstr "MD5 パスワードを使用"
  
 -#: ../authconfig.py:732
-+#: ../authconfig.py:744
++#: ../authconfig.py:750
  msgid "Use Shadow Passwords"
  msgstr "シャドウパスワードを使用"
  
 -#: ../authconfig.py:735
-+#: ../authconfig.py:747
++#: ../authconfig.py:753
  msgid "Use LDAP Authentication"
  msgstr "LDAP 認証を使用"
  
 -#: ../authconfig.py:738
-+#: ../authconfig.py:750
++#: ../authconfig.py:756
  msgid "Use Kerberos"
  msgstr "Kerberos 5 を使用"
  
 -#: ../authconfig.py:741
-+#: ../authconfig.py:753
++#: ../authconfig.py:759
  msgid "Use Fingerprint reader"
  msgstr "指紋リーダーを使用"
  
 -#: ../authconfig.py:745
-+#: ../authconfig.py:757
++#: ../authconfig.py:763
  msgid "Use Winbind Authentication"
  msgstr "Winbind 認証を使用"
  
 -#: ../authconfig.py:748
-+#: ../authconfig.py:760
++#: ../authconfig.py:766
  msgid "Local authorization is sufficient"
  msgstr "ローカル認証で十分"
  
 -#: ../authconfig.py:758 ../authconfig.py:904 ../authconfig.py:912
 -#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:979
-+#: ../authconfig.py:770 ../authconfig.py:916 ../authconfig.py:924
-+#: ../authconfig.py:930 ../authconfig.py:939 ../authconfig.py:991
++#: ../authconfig.py:776 ../authconfig.py:922 ../authconfig.py:930
++#: ../authconfig.py:936 ../authconfig.py:945 ../authconfig.py:997
  msgid "Back"
  msgstr "戻る"
  
 -#: ../authconfig.py:758 ../authconfig.py:935
-+#: ../authconfig.py:770 ../authconfig.py:947
++#: ../authconfig.py:776 ../authconfig.py:953
  msgid "Cancel"
  msgstr "取り消し"
  
 -#: ../authconfig.py:759 ../authconfig.py:904 ../authconfig.py:912
 -#: ../authconfig.py:918 ../authconfig.py:927 ../authconfig.py:979
-+#: ../authconfig.py:771 ../authconfig.py:916 ../authconfig.py:924
-+#: ../authconfig.py:930 ../authconfig.py:939 ../authconfig.py:991
++#: ../authconfig.py:777 ../authconfig.py:922 ../authconfig.py:930
++#: ../authconfig.py:936 ../authconfig.py:945 ../authconfig.py:997
  msgid "Next"
  msgstr "次"
  
 -#: ../authconfig.py:770 ../authconfig-gtk.py:805 ../authconfig.glade.h:1
-+#: ../authconfig.py:782 ../authconfig-gtk.py:821 ../authconfig.glade.h:1
++#: ../authconfig.py:788 ../authconfig-gtk.py:821 ../authconfig.glade.h:1
  msgid "Authentication Configuration"
  msgstr "認証の設定"
  
 -#: ../authconfig.py:900 ../authconfig.py:915 ../authconfig.py:973
-+#: ../authconfig.py:912 ../authconfig.py:927 ../authconfig.py:985
++#: ../authconfig.py:918 ../authconfig.py:933 ../authconfig.py:991
  #: ../authconfig.glade.h:40
  msgid "Domain:"
  msgstr "ドメイン:"
  
 -#: ../authconfig.py:901 ../authconfig.py:921
-+#: ../authconfig.py:913 ../authconfig.py:933
++#: ../authconfig.py:919 ../authconfig.py:939
  msgid "Realm:"
  msgstr "レルム(Realm):"
  
 -#: ../authconfig.py:902 ../authconfig.py:909 ../authconfig.py:916
-+#: ../authconfig.py:914 ../authconfig.py:921 ../authconfig.py:928
++#: ../authconfig.py:920 ../authconfig.py:927 ../authconfig.py:934
  msgid "Server:"
  msgstr "サーバー:"
  
 -#: ../authconfig.py:903
-+#: ../authconfig.py:915
++#: ../authconfig.py:921
  msgid "IPAv2 Settings"
  msgstr "IPAv2 の設定"
  
 -#: ../authconfig.py:905 ../authconfig.py:980
-+#: ../authconfig.py:917 ../authconfig.py:992
++#: ../authconfig.py:923 ../authconfig.py:998
  msgid "Join Domain"
  msgstr "ドメイン参加"
  
 -#: ../authconfig.py:908
-+#: ../authconfig.py:920
++#: ../authconfig.py:926
  msgid "Use TLS"
  msgstr "TLS を使用"
  
 -#: ../authconfig.py:910
-+#: ../authconfig.py:922
++#: ../authconfig.py:928
  msgid "Base DN:"
  msgstr "ベースDN:"
  
 -#: ../authconfig.py:911
-+#: ../authconfig.py:923
++#: ../authconfig.py:929
  msgid "LDAP Settings"
  msgstr "LDAP設定"
  
 -#: ../authconfig.py:917
-+#: ../authconfig.py:929
++#: ../authconfig.py:935
  msgid "NIS Settings"
  msgstr "NIS設定"
  
 -#: ../authconfig.py:922
-+#: ../authconfig.py:934
++#: ../authconfig.py:940
  msgid "KDC:"
  msgstr "KDC:"
  
 -#: ../authconfig.py:923
-+#: ../authconfig.py:935
++#: ../authconfig.py:941
  msgid "Admin Server:"
  msgstr "管理サーバー:"
  
 -#: ../authconfig.py:924
-+#: ../authconfig.py:936
++#: ../authconfig.py:942
  msgid "Use DNS to resolve hosts to realms"
  msgstr "DNSを使用してレルムのホストを解決する"
  
 -#: ../authconfig.py:925
-+#: ../authconfig.py:937
++#: ../authconfig.py:943
  msgid "Use DNS to locate KDCs for realms"
  msgstr "DNSを使用してレルム用のKDCを見付ける"
  
 -#: ../authconfig.py:926
-+#: ../authconfig.py:938
++#: ../authconfig.py:944
  msgid "Kerberos Settings"
  msgstr "Kerberos設定"
  
 -#: ../authconfig.py:930
-+#: ../authconfig.py:942
++#: ../authconfig.py:948
  msgid "Domain Administrator:"
  msgstr "ドメイン管理者:"
  
 -#: ../authconfig.py:931
-+#: ../authconfig.py:943
++#: ../authconfig.py:949
  msgid "Password:"
  msgstr "パスワード:"
  
 -#: ../authconfig.py:934
-+#: ../authconfig.py:946
++#: ../authconfig.py:952
  msgid "Join Settings"
  msgstr "Join設定"
  
 -#: ../authconfig.py:947 ../authconfig.glade.h:44
-+#: ../authconfig.py:959 ../authconfig.glade.h:44
++#: ../authconfig.py:965 ../authconfig.glade.h:44
  msgid ""
 -"Some of the configuration changes you've made should be saved to disk before"
 -" continuing.  If you do not save them, then your attempt to join the domain "
@@ -48747,54 +48739,53 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  "may fail.  Save changes?"
 -msgstr "設定変更の内の幾つかは、継続する前にディスクに保存する必要があります。 変更を保存しない場合、ドメインに参加する操作が失敗することがあります。 変更を保存しますか?"
 +msgstr ""
-+"設定変更の内の幾つかは、継続する前にディスクに保存する必要があります。 変更を"
-+"保存しない場合、ドメインに参加する操作が失敗することがあります。 変更を保存し"
-+"ますか?"
++"設定変更の内の幾つかは、継続する前にディスクに保存する必要があります。 変更を保存しない場合、ドメインに参加する操作が失敗することがあります。 "
++"変更を保存しますか?"
  
 -#: ../authconfig.py:954
-+#: ../authconfig.py:966
++#: ../authconfig.py:972
  msgid "Save Settings"
  msgstr "設定の保存"
  
 -#: ../authconfig.py:955
-+#: ../authconfig.py:967
++#: ../authconfig.py:973
  msgid "No"
  msgstr "いいえ"
  
 -#: ../authconfig.py:955
-+#: ../authconfig.py:967
++#: ../authconfig.py:973
  msgid "Yes"
  msgstr "はい"
  
  #. Why does your favorite shell not show up in the list?  Because it won't
  #. fit, that's why!
 -#: ../authconfig.py:972
-+#: ../authconfig.py:984
++#: ../authconfig.py:990
  msgid "Security Model:"
  msgstr "セキュリティモデル:"
  
 -#: ../authconfig.py:974
-+#: ../authconfig.py:986
++#: ../authconfig.py:992
  msgid "Domain Controllers:"
  msgstr "ドメインコントローラー:"
  
 -#: ../authconfig.py:975
-+#: ../authconfig.py:987
++#: ../authconfig.py:993
  msgid "ADS Realm:"
  msgstr "ADSレルム(Realm):"
  
 -#: ../authconfig.py:976
-+#: ../authconfig.py:988
++#: ../authconfig.py:994
  msgid "Template Shell:"
  msgstr "テンプレートシェル:"
  
 -#: ../authconfig.py:978
-+#: ../authconfig.py:990
++#: ../authconfig.py:996
  msgid "Winbind Settings"
  msgstr "Winbind設定"
  
 -#: ../authconfig.py:1028
-+#: ../authconfig.py:1040
++#: ../authconfig.py:1046
  #, python-format
  msgid ""
 -"To connect to a LDAP server with TLS protocol enabled you need a CA certificate which signed your server's certificate. Copy the certificate in the PEM format to the '%s' directory.\n"
@@ -48804,18 +48795,16 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  "Then press OK."
 -msgstr "LDAPサーバーにTLSプロトコルを使って接続するには、あなたのサーバー認証の署名があるCA認証が必要です。証明を'%s'ディレクトリにPEMフォーマットの認証をコピーしてください。\nそしてOKを押します。"
 +msgstr ""
-+"LDAPサーバーにTLSプロトコルを使って接続するには、あなたのサーバー認証の署名が"
-+"あるCA認証が必要です。証明を'%s'ディレクトリにPEMフォーマットの認証をコピーし"
-+"てください。\n"
++"LDAPサーバーにTLSプロトコルを使って接続するには、あなたのサーバー認証の署名があるCA認証が必要です。証明を'%s'ディレクトリにPEMフォーマットの認証をコピーしてください。\n"
 +"そしてOKを押します。"
  
  #. FIXME - version
 -#: ../authconfig.py:1042
-+#: ../authconfig.py:1054
++#: ../authconfig.py:1060
  msgid ""
  " <Tab>/<Alt-Tab> between elements   |   <Space> selects   |  <F12> next "
  "screen"
-@@ -870,59 +911,64 @@ msgstr "<Tab>/<Alt-Tab> 項目間の移�
+@@ -870,59 +916,61 @@ msgstr "<Tab>/<Alt-Tab> 項目間の移�
  msgid "Control how the system verifies users who attempt to log in"
  msgstr "ログインしようとするユーザーをシステムが確証する方法を制御する"
  
@@ -48827,9 +48816,8 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  "start your graphical user interface or set your DISPLAY variable.\n"
 -msgstr "グラフィカル環境を初期化できません。最も可能性の高い原因は、グラフィカルモードで起動されていないことです。GUIを起動するか、DISPLAY 値を設定してください。\n"
 +msgstr ""
-+"グラフィカル環境を初期化できません。最も可能性の高い原因は、グラフィカルモー"
-+"ドで起動されていないことです。GUIを起動するか、DISPLAY 値を設定してくださ"
-+"い。\n"
++"グラフィカル環境を初期化できません。最も可能性の高い原因は、グラフィカルモードで起動されていないことです。GUIを起動するか、DISPLAY "
++"値を設定してください。\n"
  
 -#: ../authconfig-gtk.py:119
 +#: ../authconfig-gtk.py:123
@@ -48877,7 +48865,7 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  msgstr "IPAv2 パスワード"
  
 -#: ../authconfig-gtk.py:533 ../authinfo.py:1639
-+#: ../authconfig-gtk.py:547 ../authinfo.py:1634
++#: ../authconfig-gtk.py:547 ../authinfo.py:1675
  msgid "Invalid LDAP URI."
 -msgstr ""
 +msgstr "無効な LDAP URI です。"
@@ -48886,69 +48874,25 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
 +#: ../authconfig-gtk.py:550
  msgid ""
  "You must provide ldaps:// server address or use TLS for LDAP authentication."
--msgstr "ldaps:// サーバーアドレスを記入するか、またはLDAP認証用のTLSを使用しなければなりません。"
-+msgstr ""
-+"ldaps:// サーバーアドレスを記入するか、またはLDAP認証用のTLSを使用しなければ"
-+"なりません。"
+ msgstr "ldaps:// サーバーアドレスを記入するか、またはLDAP認証用のTLSを使用しなければなりません。"
  
 -#: ../authconfig-gtk.py:543
 +#: ../authconfig-gtk.py:557
  msgid "Use the \"Join Domain\" button to join the IPAv2 domain."
  msgstr "IPAv2 ドメインに参加するには \"ドメイン参加\" ボタンを使用します。"
  
-@@ -966,9 +1012,11 @@ msgstr "指紋リーダーサポート�
+@@ -966,8 +1014,8 @@ msgstr "指紋リーダーサポート�
  
  #: ../authconfig.glade.h:11
  msgid ""
 -"Fingerprint authentication allows you to log in by scanning your finger with"
 -" the fingerprint reader."
--msgstr "指紋認証を使用すると、指紋読み取りと関連付けられた自分の指のスキャンでログインが可能になります。"
 +"Fingerprint authentication allows you to log in by scanning your finger with "
 +"the fingerprint reader."
-+msgstr ""
-+"指紋認証を使用すると、指紋読み取りと関連付けられた自分の指のスキャンでログイ"
-+"ンが可能になります。"
+ msgstr "指紋認証を使用すると、指紋読み取りと関連付けられた自分の指のスキャンでログインが可能になります。"
  
  #: ../authconfig.glade.h:12
- msgid "Enable _local access control"
-@@ -978,12 +1026,16 @@ msgstr "ローカルアクセス制御�
- msgid ""
- "When enabled /etc/security/access.conf will be consulted for authorization "
- "of users access."
--msgstr "有効ならば、/etc/security/access.conf がユーザーアクセスの許可のために利用されます。"
-+msgstr ""
-+"有効ならば、/etc/security/access.conf がユーザーアクセスの許可のために利用さ"
-+"れます。"
- 
- #: ../authconfig.glade.h:14
- msgid ""
- "<small><b>Tip:</b> This is managed via /etc/security/access.conf.</small>"
--msgstr "<small><b>ヒント:</b> これは /etc/security/access.conf を介して管理されます。</small>"
-+msgstr ""
-+"<small><b>ヒント:</b> これは /etc/security/access.conf を介して管理されます。"
-+"</small>"
- 
- #: ../authconfig.glade.h:15
- msgid "Hashing or crypto algorithm used for storing passwords of local users"
-@@ -1005,7 +1057,9 @@ msgstr "利用者の最初のログイ�
- msgid ""
- "If the home directory of an user doesn't exist yet it will be created "
- "automatically on his first login."
--msgstr "ユーザーのホームディレクトリーがなければ、最初のログイン時に自動的に作成されます。"
-+msgstr ""
-+"ユーザーのホームディレクトリーがなければ、最初のログイン時に自動的に作成され"
-+"ます。"
- 
- #: ../authconfig.glade.h:20
- msgid "<b>Smart Card Authentication Options</b>"
-@@ -1019,13 +1073,17 @@ msgstr "スマートカードサポー�
- msgid ""
- "Smart card authentication allows you to log in using a certificate and key "
- "associated with a smart card."
--msgstr "スマートカード認証を使用すると、スマートカードと関連付けられた証明証及びキーを使用したログインが可能になります。"
-+msgstr ""
-+"スマートカード認証を使用すると、スマートカードと関連付けられた証明証及びキー"
-+"を使用したログインが可能になります。"
+@@ -1023,9 +1071,10 @@ msgstr "スマートカード認証を�
  
  #: ../authconfig.glade.h:23
  msgid ""
@@ -48958,24 +48902,11 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
 +"<small><b>Tip:</b> Smart cards support logging into both local and centrally "
 +"managed accounts.</small>"
 +msgstr ""
-+"<small><b>ヒント:</b>スマートカードはローカルアカウントと中央管理のアカウント"
-+"の両方のログインをサポートします。</small>"
++"<small><b>ヒント:</b>スマートカードはローカルアカウントと中央管理のアカウントの両方のログインをサポートします。</small>"
  
  #: ../authconfig.glade.h:24
  msgid "Advanced _Options"
-@@ -1076,17 +1134,17 @@ msgid "Sa_me Class:"
- msgstr "同じクラス(_M):"
- 
- #: ../authconfig.glade.h:36
--msgid ""
--"<small><b>Tip:</b> These checks are disabled if the value is 0.</small>"
--msgstr "<small><b>ヒント:</b> これらのチェックは値が0ならば無効になります。</small>"
-+msgid "<small><b>Tip:</b> These checks are disabled if the value is 0.</small>"
-+msgstr ""
-+"<small><b>ヒント:</b> これらのチェックは値が0ならば無効になります。</small>"
- 
- #: ../authconfig.glade.h:37
- msgid "Pass_word Options"
+@@ -1085,8 +1134,8 @@ msgid "Pass_word Options"
  msgstr "パスワードオプション(_W)"
  
  #: ../authconfig.glade.h:38
@@ -48986,7 +48917,7 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  
  #: ../authconfig.glade.h:39
  msgid "Domain _administrator:"
-@@ -1105,163 +1163,203 @@ msgid "Do_n't Save"
+@@ -1105,163 +1154,185 @@ msgid "Do_n't Save"
  msgstr "保存しない(_N)"
  
  #: ../authconfig.glade.h:45
@@ -49010,9 +48941,8 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  "where the CA certificate in the PEM format can be downloaded from."
 -msgstr "LDAP サーバーに TLS プロトコルを使って接続するには、あなたのサーバー認証の署名がある CA 認証が必要です。PEM フォーマットの CA 認証をダウンロードできる URL を記入してください。"
 +msgstr ""
-+"LDAP サーバーに TLS プロトコルを使って接続するには、あなたのサーバー認証の署"
-+"名がある CA 認証が必要です。PEM フォーマットの CA 認証をダウンロードできる "
-+"URL を記入してください。"
++"LDAP サーバーに TLS プロトコルを使って接続するには、あなたのサーバー認証の署名がある CA 認証が必要です。PEM フォーマットの CA "
++"認証をダウンロードできる URL を記入してください。"
  
 -#: ../authconfig.glade.h:48
 +#: ../authconfig.glade.h:49
@@ -49069,20 +48999,14 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  msgid ""
  "Use Transport Layer Security extension for LDAP as defined by RFC-2830. It "
  "must not be ticked with ldaps server URI."
--msgstr "RFC-2830で定義されているようにLDAPにTLS拡張を使用する。 ldapsサーバーURIで印を付けてはいけない。"
-+msgstr ""
-+"RFC-2830で定義されているようにLDAPにTLS拡張を使用する。 ldapsサーバーURIで印"
-+"を付けてはいけない。"
+ msgstr "RFC-2830で定義されているようにLDAPにTLS拡張を使用する。 ldapsサーバーURIで印を付けてはいけない。"
  
 -#: ../authconfig.glade.h:59
 +#: ../authconfig.glade.h:60
  msgid ""
  "Click this button if you did not download a CA certificate yet or you have "
  "not set the CA certificate up by other means."
--msgstr "CA証明書をまだダウンロードしていない場合や、他の方法でCA証明書を設定していない場合は、このボタンをクリックします。"
-+msgstr ""
-+"CA証明書をまだダウンロードしていない場合や、他の方法でCA証明書を設定していな"
-+"い場合は、このボタンをクリックします。"
+ msgstr "CA証明書をまだダウンロードしていない場合や、他の方法でCA証明書を設定していない場合は、このボタンをクリックします。"
  
 -#: ../authconfig.glade.h:60
 +#: ../authconfig.glade.h:61
@@ -49169,74 +49093,59 @@ diff -up authconfig-6.2.8/po/ja.po.translations authconfig-6.2.8/po/ja.po
  msgid ""
  "All configuration files which were modified by the previous authentication "
  "configuration change will be restored from backup. Revert the changes?"
--msgstr "前回の認証設定変更により修正された全ての設定ファイルはバックアップから以前の設定に復元できます。変更を戻しますか ？"
-+msgstr ""
-+"前回の認証設定変更により修正された全ての設定ファイルはバックアップから以前の"
-+"設定に復元できます。変更を戻しますか ？"
+ msgstr "前回の認証設定変更により修正された全ての設定ファイルはバックアップから以前の設定に復元できます。変更を戻しますか ？"
  
 -#: ../authinfo.py:1050 ../authinfo.py:1943 ../authinfo.py:3343
 -#: ../authinfo.py:3396
-+#: ../authinfo.py:1025 ../authinfo.py:1952 ../authinfo.py:3357
-+#: ../authinfo.py:3410
++#: ../authinfo.py:1057 ../authinfo.py:1989 ../authinfo.py:3455
++#: ../authinfo.py:3508
  msgid "Lock"
  msgstr "ロック"
  
 -#: ../authinfo.py:1050 ../authinfo.py:1945
-+#: ../authinfo.py:1025 ../authinfo.py:1954
++#: ../authinfo.py:1057 ../authinfo.py:1991
  msgid "Ignore"
  msgstr "無視"
  
 -#: ../authinfo.py:3824
-+#: ../authinfo.py:3843
++#: ../authinfo.py:3939
  #, python-format
  msgid ""
  "Authentication module %s/pam_%s.so is missing. Authentication process might "
  "not work correctly."
--msgstr "認証モジュール %s/pam_%s.so がありません。認証プロセスが正常に動作しないかも知れません。"
-+msgstr ""
-+"認証モジュール %s/pam_%s.so がありません。認証プロセスが正常に動作しないかも"
-+"知れません。"
+ msgstr "認証モジュール %s/pam_%s.so がありません。認証プロセスが正常に動作しないかも知れません。"
  
 -#: ../authinfo.py:4322
-+#: ../authinfo.py:4323
++#: ../authinfo.py:4439
 +msgid "Winbind domain join was not successful."
 +msgstr "Winbind ドメインの参加に失敗しました。"
 +
-+#: ../authinfo.py:4326
++#: ../authinfo.py:4442
  msgid ""
 -"IPAv2 domain join was not succesful. The ipa-client-install command failed."
 -msgstr "IPAv2 ドメインの参加が成功しませんでした。ipa-client-install コマンドに失敗しました。"
 +"Winbind domain join was not successful. The net join command failed with the "
 +"following error:"
-+msgstr ""
-+"Winbind ドメインの参加に失敗しました。net join コマンドは次のエラーにより失敗"
-+"しました:"
++msgstr "Winbind ドメインの参加に失敗しました。net join コマンドは次のエラーにより失敗しました:"
  
 -#: ../authinfo.py:4397
-+#: ../authinfo.py:4363
++#: ../authinfo.py:4479
 +msgid "IPAv2 domain join was not successful."
 +msgstr "IPAv2 ドメインの参加に失敗しました。"
 +
-+#: ../authinfo.py:4366
++#: ../authinfo.py:4482
 +msgid ""
 +"IPAv2 domain join was not successful. The ipa-client-install command failed "
 +"with the following error:"
-+msgstr ""
-+"IPAv2 ドメインの参加に失敗しました。ipa-client-install コマンドは次のエラーに"
-+"より失敗しました:"
++msgstr "IPAv2 ドメインの参加に失敗しました。ipa-client-install コマンドは次のエラーにより失敗しました:"
 +
-+#: ../authinfo.py:4496
++#: ../authinfo.py:4612
  msgid "Error downloading CA certificate"
  msgstr "CA証明書のダウンロードでエラー"
 +
-+#~ msgid ""
-+#~ "the group which winbind-created users will have as their primary group"
-+#~ msgstr ""
-+#~ "winbindで作成したユーザーのプライマリーグループとして持たせるグループを指"
-+#~ "定する"
-diff -up authconfig-6.2.8/po/ka.po.translations authconfig-6.2.8/po/ka.po
---- authconfig-6.2.8/po/ka.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ka.po	2016-06-17 13:55:20.108342254 +0200
+diff -up new/po/ka.po.translations new/po/ka.po
+--- new/po/ka.po.translations	2017-05-24 11:35:13.605265922 +0200
++++ new/po/ka.po	2017-05-24 11:35:13.618265540 +0200
 @@ -1,856 +1,859 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -50657,9 +50566,9 @@ diff -up authconfig-6.2.8/po/ka.po.translations authconfig-6.2.8/po/ka.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/kn.po.translations authconfig-6.2.8/po/kn.po
---- authconfig-6.2.8/po/kn.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/kn.po	2016-06-17 13:55:20.109342277 +0200
+diff -up new/po/kn.po.translations new/po/kn.po
+--- new/po/kn.po.translations	2017-05-24 11:35:13.604265951 +0200
++++ new/po/kn.po	2017-05-24 11:35:13.618265540 +0200
 @@ -1,919 +1,965 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -52228,9 +52137,9 @@ diff -up authconfig-6.2.8/po/kn.po.translations authconfig-6.2.8/po/kn.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "ವಿನ್-ಬೈಂಡ್ ರಚಿಸಿದ ಬಳಕೆದಾರರು ಹೊಂದಿರುವ ಪ್ರಾಥಮಿಕ ಸಮೂಹವಾಗಿರುವ ಸಮೂಹ"
-diff -up authconfig-6.2.8/po/ko.po.translations authconfig-6.2.8/po/ko.po
---- authconfig-6.2.8/po/ko.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ko.po	2016-06-17 13:55:20.110342300 +0200
+diff -up new/po/ko.po.translations new/po/ko.po
+--- new/po/ko.po.translations	2017-05-24 11:35:13.604265951 +0200
++++ new/po/ko.po	2017-05-24 11:35:13.619265510 +0200
 @@ -1,863 +1,886 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -53759,9 +53668,9 @@ diff -up authconfig-6.2.8/po/ko.po.translations authconfig-6.2.8/po/ko.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind로 생성된 사용자가 일차 그룹으로 사용할 그룹"
-diff -up authconfig-6.2.8/po/ku.po.translations authconfig-6.2.8/po/ku.po
---- authconfig-6.2.8/po/ku.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ku.po	2016-06-17 13:55:20.111342323 +0200
+diff -up new/po/ku.po.translations new/po/ku.po
+--- new/po/ku.po.translations	2017-05-24 11:35:13.603265981 +0200
++++ new/po/ku.po	2017-05-24 11:35:13.619265510 +0200
 @@ -1,854 +1,856 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -55174,9 +55083,9 @@ diff -up authconfig-6.2.8/po/ku.po.translations authconfig-6.2.8/po/ku.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/LINGUAS.translations authconfig-6.2.8/po/LINGUAS
---- authconfig-6.2.8/po/LINGUAS.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/LINGUAS	2016-06-17 13:55:20.111342323 +0200
+diff -up new/po/LINGUAS.translations new/po/LINGUAS
+--- new/po/LINGUAS.translations	2017-05-24 11:35:13.591266333 +0200
++++ new/po/LINGUAS	2017-05-24 11:35:13.619265510 +0200
 @@ -35,6 +35,7 @@ kn
  ko
  ku
@@ -55193,9 +55102,9 @@ diff -up authconfig-6.2.8/po/LINGUAS.translations authconfig-6.2.8/po/LINGUAS
  tr
  uk
  ur
-diff -up authconfig-6.2.8/po/lo.po.translations authconfig-6.2.8/po/lo.po
---- authconfig-6.2.8/po/lo.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/lo.po	2016-06-17 13:55:20.111342323 +0200
+diff -up new/po/lo.po.translations new/po/lo.po
+--- new/po/lo.po.translations	2017-05-24 11:35:13.603265981 +0200
++++ new/po/lo.po	2017-05-24 11:35:13.619265510 +0200
 @@ -1,854 +1,856 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -56608,9 +56517,9 @@ diff -up authconfig-6.2.8/po/lo.po.translations authconfig-6.2.8/po/lo.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/lt.po.translations authconfig-6.2.8/po/lt.po
---- authconfig-6.2.8/po/lt.po.translations	2016-06-17 14:00:46.010821410 +0200
-+++ authconfig-6.2.8/po/lt.po	2016-06-17 11:26:40.000000000 +0200
+diff -up new/po/lt.po.translations new/po/lt.po
+--- new/po/lt.po.translations	2017-05-24 11:35:13.620265481 +0200
++++ new/po/lt.po	2017-05-24 11:35:13.619265510 +0200
 @@ -0,0 +1,1356 @@
 +# SOME DESCRIPTIVE TITLE.
 +# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -57968,9 +57877,9 @@ diff -up authconfig-6.2.8/po/lt.po.translations authconfig-6.2.8/po/lt.po
 +#: ../authinfo.py:4439
 +msgid "Error downloading CA certificate"
 +msgstr "Klaida parsiunčiant LĮ liudijimą"
-diff -up authconfig-6.2.8/po/lv.po.translations authconfig-6.2.8/po/lv.po
---- authconfig-6.2.8/po/lv.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/lv.po	2016-06-17 13:55:20.112342345 +0200
+diff -up new/po/lv.po.translations new/po/lv.po
+--- new/po/lv.po.translations	2017-05-24 11:35:13.602266010 +0200
++++ new/po/lv.po	2017-05-24 11:35:13.620265481 +0200
 @@ -1,856 +1,863 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -59405,9 +59314,9 @@ diff -up authconfig-6.2.8/po/lv.po.translations authconfig-6.2.8/po/lv.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/mai.po.translations authconfig-6.2.8/po/mai.po
---- authconfig-6.2.8/po/mai.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/mai.po	2016-06-17 13:55:20.113342369 +0200
+diff -up new/po/mai.po.translations new/po/mai.po
+--- new/po/mai.po.translations	2017-05-24 11:35:13.602266010 +0200
++++ new/po/mai.po	2017-05-24 11:35:13.620265481 +0200
 @@ -1,856 +1,873 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -60898,9 +60807,9 @@ diff -up authconfig-6.2.8/po/mai.po.translations authconfig-6.2.8/po/mai.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "समूह जकरा विंडबिंड-निर्मित प्रयोक्ता प्राथमिक समूहक रूपेँ रखताह"
-diff -up authconfig-6.2.8/po/mk.po.translations authconfig-6.2.8/po/mk.po
---- authconfig-6.2.8/po/mk.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/mk.po	2016-06-17 13:55:20.113342369 +0200
+diff -up new/po/mk.po.translations new/po/mk.po
+--- new/po/mk.po.translations	2017-05-24 11:35:13.601266039 +0200
++++ new/po/mk.po	2017-05-24 11:35:13.620265481 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -62374,9 +62283,9 @@ diff -up authconfig-6.2.8/po/mk.po.translations authconfig-6.2.8/po/mk.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "стандардна школката која ќе ја имаат групите креирани преку winbind"
-diff -up authconfig-6.2.8/po/ml.po.translations authconfig-6.2.8/po/ml.po
---- authconfig-6.2.8/po/ml.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ml.po	2016-06-17 13:55:20.115342414 +0200
+diff -up new/po/ml.po.translations new/po/ml.po
+--- new/po/ml.po.translations	2017-05-24 11:35:13.601266039 +0200
++++ new/po/ml.po	2017-05-24 11:35:13.620265481 +0200
 @@ -1,918 +1,976 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -63959,9 +63868,9 @@ diff -up authconfig-6.2.8/po/ml.po.translations authconfig-6.2.8/po/ml.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind സൃഷ്ടിച്ച ഉപയോക്താക്കള്‍ക്ക് പ്രൈമറി ഗ്രൂപ്പായി ഉപയോഗിക്കേണ്ട ഗ്രൂപ്പ് "
-diff -up authconfig-6.2.8/po/mr.po.translations authconfig-6.2.8/po/mr.po
---- authconfig-6.2.8/po/mr.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/mr.po	2016-06-17 13:55:20.115342414 +0200
+diff -up new/po/mr.po.translations new/po/mr.po
+--- new/po/mr.po.translations	2017-05-24 11:35:13.600266069 +0200
++++ new/po/mr.po	2017-05-24 11:35:13.620265481 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -65501,9 +65410,9 @@ diff -up authconfig-6.2.8/po/mr.po.translations authconfig-6.2.8/po/mr.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "समुह जो Winbind निर्मित उपोक्त्यांचा प्राथमिक समुह असेल"
-diff -up authconfig-6.2.8/po/ms.po.translations authconfig-6.2.8/po/ms.po
---- authconfig-6.2.8/po/ms.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ms.po	2016-06-17 13:55:20.116342437 +0200
+diff -up new/po/ms.po.translations new/po/ms.po
+--- new/po/ms.po.translations	2017-05-24 11:35:13.600266069 +0200
++++ new/po/ms.po	2017-05-24 11:35:13.621265451 +0200
 @@ -1,918 +1,942 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -66969,9 +66878,9 @@ diff -up authconfig-6.2.8/po/ms.po.translations authconfig-6.2.8/po/ms.po
 +#~ msgstr ""
 +#~ "kumpulan dimana pengguna dicipta-winbind akan dijadikan kumpulan utama "
 +#~ "mereka"
-diff -up authconfig-6.2.8/po/my.po.translations authconfig-6.2.8/po/my.po
---- authconfig-6.2.8/po/my.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/my.po	2016-06-17 13:55:20.117342460 +0200
+diff -up new/po/my.po.translations new/po/my.po
+--- new/po/my.po.translations	2017-05-24 11:35:13.599266098 +0200
++++ new/po/my.po	2017-05-24 11:35:13.621265451 +0200
 @@ -1,854 +1,856 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -68384,9 +68293,9 @@ diff -up authconfig-6.2.8/po/my.po.translations authconfig-6.2.8/po/my.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/nb.po.translations authconfig-6.2.8/po/nb.po
---- authconfig-6.2.8/po/nb.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/nb.po	2016-06-17 13:55:20.117342460 +0200
+diff -up new/po/nb.po.translations new/po/nb.po
+--- new/po/nb.po.translations	2017-05-24 11:35:13.599266098 +0200
++++ new/po/nb.po	2017-05-24 11:35:13.621265451 +0200
 @@ -1,919 +1,960 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -69962,9 +69871,9 @@ diff -up authconfig-6.2.8/po/nb.po.translations authconfig-6.2.8/po/nb.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "primærgruppe for brukere opprettet via winbind"
-diff -up authconfig-6.2.8/po/nds.po.translations authconfig-6.2.8/po/nds.po
---- authconfig-6.2.8/po/nds.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/nds.po	2016-06-17 13:55:20.118342483 +0200
+diff -up new/po/nds.po.translations new/po/nds.po
+--- new/po/nds.po.translations	2017-05-24 11:35:13.599266098 +0200
++++ new/po/nds.po	2017-05-24 11:35:13.621265451 +0200
 @@ -1,855 +1,858 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -71381,9 +71290,9 @@ diff -up authconfig-6.2.8/po/nds.po.translations authconfig-6.2.8/po/nds.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/nl.po.translations authconfig-6.2.8/po/nl.po
---- authconfig-6.2.8/po/nl.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/nl.po	2016-06-17 13:55:20.119342506 +0200
+diff -up new/po/nl.po.translations new/po/nl.po
+--- new/po/nl.po.translations	2017-05-24 11:35:13.599266098 +0200
++++ new/po/nl.po	2017-05-24 11:35:13.621265451 +0200
 @@ -1,929 +1,996 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -73000,9 +72909,9 @@ diff -up authconfig-6.2.8/po/nl.po.translations authconfig-6.2.8/po/nl.po
 +#~ msgstr ""
 +#~ "de groep die door winbind gecreëerde gebruikers zullen krijgen als hun "
 +#~ "primaire groep"
-diff -up authconfig-6.2.8/po/nn.po.translations authconfig-6.2.8/po/nn.po
---- authconfig-6.2.8/po/nn.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/nn.po	2016-06-17 13:55:20.119342506 +0200
+diff -up new/po/nn.po.translations new/po/nn.po
+--- new/po/nn.po.translations	2017-05-24 11:35:13.598266128 +0200
++++ new/po/nn.po	2017-05-24 11:35:13.621265451 +0200
 @@ -1,857 +1,860 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -74421,9 +74330,9 @@ diff -up authconfig-6.2.8/po/nn.po.translations authconfig-6.2.8/po/nn.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/or.po.translations authconfig-6.2.8/po/or.po
---- authconfig-6.2.8/po/or.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/or.po	2016-06-17 13:55:20.120342529 +0200
+diff -up new/po/or.po.translations new/po/or.po
+--- new/po/or.po.translations	2017-05-24 11:35:13.598266128 +0200
++++ new/po/or.po	2017-05-24 11:35:13.621265451 +0200
 @@ -1,921 +1,960 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -75997,9 +75906,9 @@ diff -up authconfig-6.2.8/po/or.po.translations authconfig-6.2.8/po/or.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "ୱିନ-ବାଇଣ୍ଡ-ସୃଷ୍ଟ ଚାଳକ ମାନଙ୍କ ର ସମୂହ ଟି ମୌଳିକ ସମୂହ ଭଳି କାର୍ଯ୍ଯ କରିବ"
-diff -up authconfig-6.2.8/po/pa.po.translations authconfig-6.2.8/po/pa.po
---- authconfig-6.2.8/po/pa.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/pa.po	2016-06-17 13:55:20.121342552 +0200
+diff -up new/po/pa.po.translations new/po/pa.po
+--- new/po/pa.po.translations	2017-05-24 11:35:13.597266157 +0200
++++ new/po/pa.po	2017-05-24 11:35:13.621265451 +0200
 @@ -1,925 +1,949 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -77530,9 +77439,9 @@ diff -up authconfig-6.2.8/po/pa.po.translations authconfig-6.2.8/po/pa.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "ਸਮੂਹ, ਜੋ ਕਿ ਵਿਨਬਾਈਂਡ-ਕਰੀਏਟਡ ਯੂਜ਼ਰ ਆਪਣੇ ਮੂਲ ਸਮੂਹ ਦੇ ਰੂਪ ਵਿੱਚ ਵਰਤਣਗੇ"
-diff -up authconfig-6.2.8/po/pl.po.translations authconfig-6.2.8/po/pl.po
---- authconfig-6.2.8/po/pl.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/pl.po	2016-06-17 13:55:20.122342575 +0200
+diff -up new/po/pl.po.translations new/po/pl.po
+--- new/po/pl.po.translations	2017-05-24 11:35:13.597266157 +0200
++++ new/po/pl.po	2017-05-24 11:35:13.622265422 +0200
 @@ -1,930 +1,1000 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -79161,9 +79070,9 @@ diff -up authconfig-6.2.8/po/pl.po.translations authconfig-6.2.8/po/pl.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "domyślna grupa dla użytkowników utworzonych przez winbind"
-diff -up authconfig-6.2.8/po/pt_BR.po.translations authconfig-6.2.8/po/pt_BR.po
---- authconfig-6.2.8/po/pt_BR.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/pt_BR.po	2016-06-17 13:55:20.123342598 +0200
+diff -up new/po/pt_BR.po.translations new/po/pt_BR.po
+--- new/po/pt_BR.po.translations	2017-05-24 11:35:13.596266187 +0200
++++ new/po/pt_BR.po	2017-05-24 11:35:13.622265422 +0200
 @@ -1,928 +1,998 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -80805,9 +80714,9 @@ diff -up authconfig-6.2.8/po/pt_BR.po.translations authconfig-6.2.8/po/pt_BR.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "o grupo que os usuários criados pelo winbind terão como grupo primário"
-diff -up authconfig-6.2.8/po/pt.po.translations authconfig-6.2.8/po/pt.po
---- authconfig-6.2.8/po/pt.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/pt.po	2016-06-17 13:55:20.124342621 +0200
+diff -up new/po/pt.po.translations new/po/pt.po
+--- new/po/pt.po.translations	2017-05-24 11:35:13.597266157 +0200
++++ new/po/pt.po	2017-05-24 11:35:13.622265422 +0200
 @@ -1,918 +1,968 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -82397,9 +82306,9 @@ diff -up authconfig-6.2.8/po/pt.po.translations authconfig-6.2.8/po/pt.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "o grupo primário dos utilizadores criados pelo winbind"
-diff -up authconfig-6.2.8/po/ro.po.translations authconfig-6.2.8/po/ro.po
---- authconfig-6.2.8/po/ro.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ro.po	2016-06-17 13:55:20.124342621 +0200
+diff -up new/po/ro.po.translations new/po/ro.po
+--- new/po/ro.po.translations	2017-05-24 11:35:13.596266187 +0200
++++ new/po/ro.po	2017-05-24 11:35:13.622265422 +0200
 @@ -1,917 +1,951 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -83878,9 +83787,9 @@ diff -up authconfig-6.2.8/po/ro.po.translations authconfig-6.2.8/po/ro.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "grupul pe care îl vor avea utilizatorii creați de winbind ca grup primar"
-diff -up authconfig-6.2.8/po/ru.po.translations authconfig-6.2.8/po/ru.po
---- authconfig-6.2.8/po/ru.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ru.po	2016-06-17 13:55:20.125342644 +0200
+diff -up new/po/ru.po.translations new/po/ru.po
+--- new/po/ru.po.translations	2017-05-24 11:35:13.596266187 +0200
++++ new/po/ru.po	2017-05-24 11:35:13.622265422 +0200
 @@ -1,933 +1,995 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -85525,9 +85434,9 @@ diff -up authconfig-6.2.8/po/ru.po.translations authconfig-6.2.8/po/ru.po
 +#~ msgstr ""
 +#~ "группа, которую созданные при помощи winbind пользователи будут "
 +#~ "использовать в качестве основной группы"
-diff -up authconfig-6.2.8/po/si.po.translations authconfig-6.2.8/po/si.po
---- authconfig-6.2.8/po/si.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/si.po	2016-06-17 13:55:20.126342667 +0200
+diff -up new/po/si.po.translations new/po/si.po
+--- new/po/si.po.translations	2017-05-24 11:35:13.595266216 +0200
++++ new/po/si.po	2017-05-24 11:35:13.622265422 +0200
 @@ -1,856 +1,859 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -86948,9 +86857,9 @@ diff -up authconfig-6.2.8/po/si.po.translations authconfig-6.2.8/po/si.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr "CA සහතික බාගත කිරීමෙදි දෝෂයකි"
-diff -up authconfig-6.2.8/po/sk.po.translations authconfig-6.2.8/po/sk.po
---- authconfig-6.2.8/po/sk.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/sk.po	2016-06-17 13:55:20.127342690 +0200
+diff -up new/po/sk.po.translations new/po/sk.po
+--- new/po/sk.po.translations	2017-05-24 11:35:13.595266216 +0200
++++ new/po/sk.po	2017-05-24 11:35:13.622265422 +0200
 @@ -1,922 +1,972 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -88634,9 +88543,9 @@ diff -up authconfig-6.2.8/po/sk.po.translations authconfig-6.2.8/po/sk.po
 +#~ msgstr ""
 +#~ "skupina, ktorá bude pre winbind-om vytvorených používateľov ich primárnou "
 +#~ "skupinou"
-diff -up authconfig-6.2.8/po/sl.po.translations authconfig-6.2.8/po/sl.po
---- authconfig-6.2.8/po/sl.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/sl.po	2016-06-17 13:55:20.127342690 +0200
+diff -up new/po/sl.po.translations new/po/sl.po
+--- new/po/sl.po.translations	2017-05-24 11:35:13.595266216 +0200
++++ new/po/sl.po	2017-05-24 11:35:13.623265392 +0200
 @@ -1,919 +1,953 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -90117,9 +90026,9 @@ diff -up authconfig-6.2.8/po/sl.po.translations authconfig-6.2.8/po/sl.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "glavna skupina za winbind ustvarjene uporabnike"
-diff -up authconfig-6.2.8/po/sq.po.translations authconfig-6.2.8/po/sq.po
---- authconfig-6.2.8/po/sq.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/sq.po	2016-06-17 13:55:20.128342713 +0200
+diff -up new/po/sq.po.translations new/po/sq.po
+--- new/po/sq.po.translations	2017-05-24 11:35:13.595266216 +0200
++++ new/po/sq.po	2017-05-24 11:35:13.623265392 +0200
 @@ -1,934 +1,1011 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -91912,9 +91821,9 @@ diff -up authconfig-6.2.8/po/sq.po.translations authconfig-6.2.8/po/sq.po
 +#~ msgstr ""
 +#~ "grupi që përdorues të krijuar nga \"winbind\"-i do ta kenë si grupin e "
 +#~ "tyre parësor"
-diff -up authconfig-6.2.8/po/sr@latin.po.translations authconfig-6.2.8/po/sr@latin.po
---- authconfig-6.2.8/po/sr@latin.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/sr@latin.po	2016-06-17 13:55:20.129342736 +0200
+diff -up new/po/sr@latin.po.translations new/po/sr@latin.po
+--- new/po/sr@latin.po.translations	2017-05-24 11:35:13.594266245 +0200
++++ new/po/sr@latin.po	2017-05-24 11:35:13.623265392 +0200
 @@ -1,918 +1,957 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -93477,9 +93386,9 @@ diff -up authconfig-6.2.8/po/sr@latin.po.translations authconfig-6.2.8/po/sr@lat
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "grupa koju će korisnici napravljeni winbindom imati kao osnovnu grupu"
-diff -up authconfig-6.2.8/po/sr.po.translations authconfig-6.2.8/po/sr.po
---- authconfig-6.2.8/po/sr.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/sr.po	2016-06-17 13:55:20.130342759 +0200
+diff -up new/po/sr.po.translations new/po/sr.po
+--- new/po/sr.po.translations	2017-05-24 11:35:13.594266245 +0200
++++ new/po/sr.po	2017-05-24 11:35:13.623265392 +0200
 @@ -1,926 +1,976 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -95151,9 +95060,9 @@ diff -up authconfig-6.2.8/po/sr.po.translations authconfig-6.2.8/po/sr.po
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr ""
 +#~ "група коју ће корисници направљени winbind-ом имати као основну групу"
-diff -up authconfig-6.2.8/po/sv.po.translations authconfig-6.2.8/po/sv.po
---- authconfig-6.2.8/po/sv.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/sv.po	2016-06-17 13:55:20.131342782 +0200
+diff -up new/po/sv.po.translations new/po/sv.po
+--- new/po/sv.po.translations	2017-05-24 11:35:13.594266245 +0200
++++ new/po/sv.po	2017-05-24 11:35:13.623265392 +0200
 @@ -1,920 +1,974 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -96755,9 +96664,9 @@ diff -up authconfig-6.2.8/po/sv.po.translations authconfig-6.2.8/po/sv.po
 +#~ msgstr ""
 +#~ "den grupp som winbind-skapade användare kommer att ha som deras primära "
 +#~ "grupp"
-diff -up authconfig-6.2.8/po/ta.po.translations authconfig-6.2.8/po/ta.po
---- authconfig-6.2.8/po/ta.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ta.po	2016-06-17 13:55:20.132342804 +0200
+diff -up new/po/ta.po.translations new/po/ta.po
+--- new/po/ta.po.translations	2017-05-24 11:35:13.594266245 +0200
++++ new/po/ta.po	2017-05-24 11:35:13.623265392 +0200
 @@ -1,7 +1,7 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -98329,9 +98238,9 @@ diff -up authconfig-6.2.8/po/ta.po.translations authconfig-6.2.8/po/ta.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind உருவாக்கிய குழுப்பெட்டியை பயனர்கள் முதல் குழுப்பெட்டியாக கொள்வர்"
-diff -up authconfig-6.2.8/po/te.po.translations authconfig-6.2.8/po/te.po
---- authconfig-6.2.8/po/te.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/te.po	2016-06-17 13:55:20.133342828 +0200
+diff -up new/po/te.po.translations new/po/te.po
+--- new/po/te.po.translations	2017-05-24 11:35:13.593266275 +0200
++++ new/po/te.po	2017-05-24 11:35:13.623265392 +0200
 @@ -1,858 +1,883 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -99861,9 +99770,9 @@ diff -up authconfig-6.2.8/po/te.po.translations authconfig-6.2.8/po/te.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind-created వినియోగదారుల సమూహం వాళ్ల ప్రాధమిక సమూహాన్ని కలిగి ఉండాలి"
-diff -up authconfig-6.2.8/po/tg.po.translations authconfig-6.2.8/po/tg.po
---- authconfig-6.2.8/po/tg.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/tg.po	2016-06-17 13:55:20.133342828 +0200
+diff -up new/po/tg.po.translations new/po/tg.po
+--- new/po/tg.po.translations	2017-05-24 11:35:13.593266275 +0200
++++ new/po/tg.po	2017-05-24 11:35:13.624265363 +0200
 @@ -1,855 +1,858 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -101283,9 +101192,9 @@ diff -up authconfig-6.2.8/po/tg.po.translations authconfig-6.2.8/po/tg.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/th.po.translations authconfig-6.2.8/po/th.po
---- authconfig-6.2.8/po/th.po.translations	2016-06-17 14:00:42.725746021 +0200
-+++ authconfig-6.2.8/po/th.po	2016-06-17 11:35:09.000000000 +0200
+diff -up new/po/th.po.translations new/po/th.po
+--- new/po/th.po.translations	2017-05-24 11:35:13.624265363 +0200
++++ new/po/th.po	2017-05-24 11:35:13.624265363 +0200
 @@ -0,0 +1,1283 @@
 +# SOME DESCRIPTIVE TITLE.
 +# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -102570,9 +102479,9 @@ diff -up authconfig-6.2.8/po/th.po.translations authconfig-6.2.8/po/th.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "ไดเรกทอรีที่ซึ่งผู้ใช้ที่สร้างจาก winbind จะมีในฐานะกลุ่มหลักของพวกเขา"
-diff -up authconfig-6.2.8/po/tr.po.translations authconfig-6.2.8/po/tr.po
---- authconfig-6.2.8/po/tr.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/tr.po	2016-06-17 13:55:20.134342850 +0200
+diff -up new/po/tr.po.translations new/po/tr.po
+--- new/po/tr.po.translations	2017-05-24 11:35:13.593266275 +0200
++++ new/po/tr.po	2017-05-24 11:35:13.624265363 +0200
 @@ -1,920 +1,955 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -104135,9 +104044,9 @@ diff -up authconfig-6.2.8/po/tr.po.translations authconfig-6.2.8/po/tr.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "winbind'in·yarattığı·kullanıcıların·sahip·olacağı ana grup"
-diff -up authconfig-6.2.8/po/uk.po.translations authconfig-6.2.8/po/uk.po
---- authconfig-6.2.8/po/uk.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/uk.po	2016-06-17 13:55:20.135342873 +0200
+diff -up new/po/uk.po.translations new/po/uk.po
+--- new/po/uk.po.translations	2017-05-24 11:35:13.593266275 +0200
++++ new/po/uk.po	2017-05-24 11:35:13.624265363 +0200
 @@ -1,919 +1,979 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -105740,9 +105649,9 @@ diff -up authconfig-6.2.8/po/uk.po.translations authconfig-6.2.8/po/uk.po
 +#~ msgstr ""
 +#~ "група, яку створені winbind користувачі будуть використовувати у якості "
 +#~ "первинної групи"
-diff -up authconfig-6.2.8/po/ur.po.translations authconfig-6.2.8/po/ur.po
---- authconfig-6.2.8/po/ur.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/ur.po	2016-06-17 13:55:20.135342873 +0200
+diff -up new/po/ur.po.translations new/po/ur.po
+--- new/po/ur.po.translations	2017-05-24 11:35:13.592266304 +0200
++++ new/po/ur.po	2017-05-24 11:35:13.624265363 +0200
 @@ -1,917 +1,939 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -107195,9 +107104,9 @@ diff -up authconfig-6.2.8/po/ur.po.translations authconfig-6.2.8/po/ur.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "کے یوزرز بناتی ھے کی ایک جیسی پرایمری گروپ ھے winbind وہ گروپ جو"
-diff -up authconfig-6.2.8/po/vi.po.translations authconfig-6.2.8/po/vi.po
---- authconfig-6.2.8/po/vi.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/vi.po	2016-06-17 13:55:20.136342896 +0200
+diff -up new/po/vi.po.translations new/po/vi.po
+--- new/po/vi.po.translations	2017-05-24 11:35:13.592266304 +0200
++++ new/po/vi.po	2017-05-24 11:35:13.624265363 +0200
 @@ -1,918 +1,923 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -108620,9 +108529,9 @@ diff -up authconfig-6.2.8/po/vi.po.translations authconfig-6.2.8/po/vi.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/zh_CN.po.translations authconfig-6.2.8/po/zh_CN.po
---- authconfig-6.2.8/po/zh_CN.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/zh_CN.po	2016-06-17 13:55:20.137342919 +0200
+diff -up new/po/zh_CN.po.translations new/po/zh_CN.po
+--- new/po/zh_CN.po.translations	2017-05-24 11:35:13.592266304 +0200
++++ new/po/zh_CN.po	2017-05-24 11:35:13.624265363 +0200
 @@ -1,864 +1,880 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -110097,9 +110006,9 @@ diff -up authconfig-6.2.8/po/zh_CN.po.translations authconfig-6.2.8/po/zh_CN.po
 +#~ msgid ""
 +#~ "the group which winbind-created users will have as their primary group"
 +#~ msgstr "此组将成为 winbind 所建用户的主要组"
-diff -up authconfig-6.2.8/po/zh_HK.po.translations authconfig-6.2.8/po/zh_HK.po
---- authconfig-6.2.8/po/zh_HK.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/zh_HK.po	2016-06-17 13:55:20.137342919 +0200
+diff -up new/po/zh_HK.po.translations new/po/zh_HK.po
+--- new/po/zh_HK.po.translations	2017-05-24 11:35:13.592266304 +0200
++++ new/po/zh_HK.po	2017-05-24 11:35:13.625265334 +0200
 @@ -1,854 +1,856 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -111513,9 +111422,9 @@ diff -up authconfig-6.2.8/po/zh_HK.po.translations authconfig-6.2.8/po/zh_HK.po
 +#: ../authinfo.py:4496
  msgid "Error downloading CA certificate"
  msgstr ""
-diff -up authconfig-6.2.8/po/zh_TW.po.translations authconfig-6.2.8/po/zh_TW.po
---- authconfig-6.2.8/po/zh_TW.po.translations	2013-11-01 16:08:01.000000000 +0100
-+++ authconfig-6.2.8/po/zh_TW.po	2016-06-17 13:55:20.138342942 +0200
+diff -up new/po/zh_TW.po.translations new/po/zh_TW.po
+--- new/po/zh_TW.po.translations	2017-05-24 11:35:13.592266304 +0200
++++ new/po/zh_TW.po	2017-05-24 11:35:13.625265334 +0200
 @@ -1,862 +1,875 @@
  # SOME DESCRIPTIVE TITLE.
  # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER

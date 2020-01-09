@@ -1,7 +1,7 @@
 Summary: Command line tool for setting up authentication from network services
 Name: authconfig
 Version: 6.2.8
-Release: 14%{?dist}
+Release: 30%{?dist}
 License: GPLv2+
 ExclusiveOS: Linux
 Group: System Environment/Base
@@ -33,10 +33,23 @@ Patch24: authconfig-6.2.8-shvfile-sort.patch
 Patch25: authconfig-6.2.8-nsswitch-no-update.patch
 Patch26: authconfig-6.2.8-nss-myhostname.patch
 Patch27: authconfig-6.2.8-initgroups.patch
+Patch28: authconfig-6.2.8-usr-lib-location.patch
+Patch29: authconfig-6.2.8-update-all-manpage.patch
+Patch30: authconfig-6.2.8-sssd-auth-for-local-users.patch
+Patch31: authconfig-6.2.8-sssd-smartcard-1.patch
+Patch32: authconfig-6.2.8-sssd-smartcard-2.patch
+Patch33: authconfig-6.2.8-faillock.patch
+Patch34: authconfig-6.2.8-sssd-catch-NoServiceError-exception.patch
+Patch35: authconfig-6.2.8-sssd-do-not-write-PAM-if-no-sssd-conf.patch
+Patch36: authconfig-6.2.8-faillock-preauth.patch
+Patch37: authconfig-6.2.8-faillock-args.patch
+Patch38: authconfig-6.2.8-information-leak.patch
+Patch39: authconfig-6.2.8.pam_succeed_if-can-return-PAM_IGNORE-in-pam_setcred.patch
+Patch40: authconfig-6.2.8-libdir.patch
 
 Requires: newt-python, pam >= 0.99.10.0, python, libpwquality > 0.9
 Conflicts: pam_krb5 < 1.49, samba-common < 3.0, samba-client < 3.0
-Conflicts: nss_ldap < 254, sssd < 0.99.1
+Conflicts: nss_ldap < 254, sssd < 1.15.1
 Conflicts: freeipa-client < 2.2.0, ipa-client < 2.2.0
 BuildRequires: glib2-devel, python >= 2.6, python-devel
 BuildRequires: desktop-file-utils, intltool, gettext, perl-XML-Parser
@@ -89,6 +102,19 @@ authentication schemes.
 %patch25 -p1 -b .no-update
 %patch26 -p1 -b .myhostname
 %patch27 -p1 -b .initgroups
+%patch28 -p1 -b .usr-lib-location.patch
+%patch29 -p1 -b .update-all-manpage.patch
+%patch30 -p1 -b .sssd-auth-for-local-users.patch
+%patch31 -p1 -b .sssd-smartcard-1.patch
+%patch32 -p1 -b .sssd-smartcard-2.patch
+%patch33 -p1 -b .faillock.patch
+%patch34 -p1 -b .sssd-catch-NoServiceError-exception.patch
+%patch35 -p1 -b .sssd-do-not-write-PAM-if-no-sssd-conf.patch
+%patch38 -p1 -b .information-leak.patch
+%patch36 -p1 -b .faillock-preauth.patch
+%patch37 -p1 -b .faillock-args.patch
+%patch39 -p1 -b .pam_succeed_if-can-return-PAM_IGNORE-in-pam_setcred.patch
+%patch40 -p1 -b .libdir.patch
 
 %build
 %configure
@@ -174,6 +200,51 @@ sed -i 's/pam_mkhomedir.so/pam_oddjob_mkhomedir.so/g' /etc/pam.d/*-auth-ac &>/de
 %{_datadir}/icons/hicolor/256x256/apps/system-config-authentication.*
 
 %changelog
+* Thu May 25 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-30
+- do not use /usr and LIBDIR together (#1455233)
+
+* Wed May 24 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-29
+- update translations (#1449625)
+
+* Wed May 17 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-28
+- ignore PAM_IGNORE for pam_succeed_if so application do not fail in pam_setcred() (#1450425)
+
+* Tue May 5 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-27
+- fix typo in the patch for CVE-2017-7488 (#1441604)
+
+* Tue May 5 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-26
+- CVE-2017-7488 authconfig: Information leak when SSSD is used for authentication against remote server (#1441604)
+
+* Tue May 5 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-25
+- faillock: change preauth phase to required and fix arguments handling (#1334449)
+
+* Tue May 4 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-24
+- faillock: add preauth phase so the account is actually blocked (#1334449)
+
+* Tue Apr 25 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-23
+- sssd: do not write SSSD PAM if there is no sssd.conf present (#1443949)
+
+* Tue Apr 25 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-21
+- sssd: do not ask for password with smartcards (#1441374)
+
+* Tue Apr 25 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-20
+- sssd: catch NoServiceError exception (#1441549)
+
+* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-19
+- Add pam_faillock support (#1334449)
+
+* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-18
+- Add SSSD Smartcard support (#1378943)
+
+* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-17
+- Enable SSSD authentication also for local users (#1329598)
+
+* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-16
+- Note that SSSD configuration may change with --updateall (#1339434)
+
+* Tue Mar 28 2017 Pavel Březina <pbrezina@redhat.com> - 6.2.8-15
+- change pam module location from /lib[64] to /usr/lib[64] (#1414494)
+
 * Thu Sep  1 2016 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-14
 - overwrite nsswitch.conf if inconsistent configuration of initgroups
   is present in it

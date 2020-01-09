@@ -1,0 +1,28 @@
+From 6cca35c84fe74d535c7a8455e3bc4ddace92479e Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Pavel=20B=C5=99ezina?= <pbrezina@redhat.com>
+Date: Thu, 2 Mar 2017 11:32:13 +0100
+Subject: [PATCH 2/7] Note that SSSD configuration may change in some cases
+
+---
+ man/en/authconfig.8 | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/man/en/authconfig.8 b/man/en/authconfig.8
+index 7338dc8d12de3484982cc3dfc29fd841be6d9890..6d478128800459ab20dd10821289212ceb031598 100644
+--- a/man/en/authconfig.8
++++ b/man/en/authconfig.8
+@@ -66,7 +66,10 @@ and \fB/etc/pam.d/system-auth\fP, but they do not set up the domain in the
+ \fISSSD\fR configuration files. The \fISSSD\fR configuration has to be
+ set up manually. The allowed configuration of services for \fISSSD\fR are: LDAP for
+ user information (\fB--enableldap\fR) and either LDAP (\fB--enableldapauth\fR), or
+-Kerberos (\fB--enablekrb5\fR) for authentication.
++Kerberos (\fB--enablekrb5\fR) for authentication. Please note that even though
++these options alone do not trigger any change in SSSD configuration files this
++may not be true if any of these options is used in conjunction with other
++options such as \fB--enableldap\fR or \fB--updateall\fR.
+ 
+ In case \fISSSD\fR does not support some feature of the legacy services that are
+ required for the site configuration, the use of the legacy services can be forced
+-- 
+2.9.3
+

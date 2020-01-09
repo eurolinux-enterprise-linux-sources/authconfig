@@ -1,0 +1,21 @@
+diff -Naur old/authinfo.py new/authinfo.py
+--- old/authinfo.py	2017-05-25 13:30:21.826490661 +0200
++++ new/authinfo.py	2017-05-25 13:32:39.131022017 +0200
+@@ -90,7 +90,7 @@
+ PATH_SCSETUP = "/usr/bin/pkcs11_setup"
+ 
+ PATH_LIBNSS_DB = LIBDIR + "/libnss_db.so.2"
+-PATH_LIBNSS_LDAP = "/usr" + LIBDIR + "/libnss_ldap.so.2"
++PATH_LIBNSS_LDAP = LIBDIR + "/libnss_ldap.so.2"
+ if not os.path.isfile(PATH_LIBNSS_LDAP):
+ 	PATH_LIBNSS_LDAP = LIBDIR + "/libnss_ldap.so.2"
+ PATH_LIBNSS_NIS = LIBDIR + "/libnss_nis.so.2"
+@@ -107,7 +107,7 @@
+ PATH_PAM_FPRINTD = AUTH_MODULE_DIR + "/pam_fprintd.so"
+ PATH_PAM_SSS = AUTH_MODULE_DIR + "/pam_sss.so"
+ 
+-PATH_LIBSSS_AUTOFS = "/usr" + LIBDIR + "/sssd/modules/libsss_autofs.so"
++PATH_LIBSSS_AUTOFS = LIBDIR + "/sssd/modules/libsss_autofs.so"
+ 
+ PATH_KRB5_INCLUDEDIR = "/var/lib/sss/pubconf/krb5.include.d/"
+ 
